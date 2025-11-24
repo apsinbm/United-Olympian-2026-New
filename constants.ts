@@ -89,7 +89,7 @@ export const ACTION_PLAN: ActionPoint[] = [
   },
   {
     id: 'transparency',
-    title: 'Radical Financial Transparency',
+    title: 'Financial Transparency',
     description: 'We will publish clear, downloadable financial reports accessible to every NOA president. Every dollar spent will be accounted for, with a focus on increasing the percentage of funds that go directly to helping Olympians.'
   },
   {
