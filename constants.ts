@@ -16,8 +16,8 @@ export const CANDIDATES: Candidate[] = [
     role: 'For President',
     sport: 'Alpine Skiing',
     country: 'Sweden',
-    imageAction: 'Pernilla Sport.webp',
-    imageHeadshot: 'Pernilla_Wiberg_2011-12-06_001.jpg',
+    imageAction: 'Pernilla Business.jpg',
+    imageHeadshot: 'Pernilla Sport.webp',
     achievements: [
       'Triple Olympic Medalist (Gold 1992, Gold 1994, Silver 1998)',
       '4x World Champion',
@@ -37,8 +37,8 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Secretary General',
     sport: 'Basketball',
     country: 'Nigeria',
-    imageAction: 'Lumi Sport.jpg',
-    imageHeadshot: 'Olumide-Oyedeji.jpg',
+    imageAction: 'Lumi Business.jpg',
+    imageHeadshot: 'Lumi Sport.jpg',
     achievements: [
       'NBA Player (Seattle SuperSonics, Orlando Magic)',
       'Captained Nigeria ("D\'Tigers") to 2015 AfroBasket Gold & 2012 Olympics',
@@ -58,8 +58,8 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Treasurer',
     sport: 'Alpine Skiing',
     country: 'Chinese Taipei',
-    imageAction: 'Thomas Sport.jpg',
-    imageHeadshot: 'Thomas.jpg',
+    imageAction: 'Thomas Business.jpg',
+    imageHeadshot: 'Thomas Sport.jpg',
     achievements: [
       'Two-time Winter Olympian (Calgary 1988, Albertville 1992)'
     ],
