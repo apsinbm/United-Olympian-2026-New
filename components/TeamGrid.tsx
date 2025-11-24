@@ -39,7 +39,7 @@ const TeamGrid: React.FC = () => {
               </div>
 
               {/* Middle: Content */}
-              <div className="flex-grow px-6 py-4 text-center">
+              <div className="flex-grow px-6 py-2 text-center">
                 <h3 className="text-2xl font-bold text-navy-deep leading-tight">{candidate.name}</h3>
                 <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{candidate.role}</p>
 
