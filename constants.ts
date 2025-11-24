@@ -33,7 +33,7 @@ export const CANDIDATES: Candidate[] = [
   },
   {
     id: 'lumi',
-    name: 'Olumide "Lumi" Oyedeji, OLY',
+    name: 'Olumide Oyedeji, OLY',
     role: 'For Secretary General',
     sport: 'Basketball',
     country: 'Nigeria',
