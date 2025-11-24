@@ -73,6 +73,16 @@ export const CANDIDATES: Candidate[] = [
 
 export const ACTION_PLAN: ActionPoint[] = [
   {
+    id: 'relations',
+    title: 'Independent but Collaborative IOC Relations',
+    description: 'Maintaining our independence as an association while working closely and constructively with the IOC. We are the bridge, not the barrier.'
+  },
+  {
+    id: 'rights',
+    title: 'Health, Pensions & Image Sovereignty',
+    description: 'We will aggressively champion a global safety net, lobbying for health insurance coverage and pension schemes for Olympians. Furthermore, we demand the absolute protection of Image Rights post-Games. Once the competition ends, your likeness belongs to you, and we will secure the frameworks to ensure you control your own legacy.'
+  },
+  {
     id: 'reform',
     title: 'Constitutional Reform & Gender Equity',
     description: 'We commit to actively protecting the historic 50/50 gender representation reform initiated by Pernilla Wiberg.'
@@ -88,11 +98,6 @@ export const ACTION_PLAN: ActionPoint[] = [
     description: 'Establishing a dedicated grant specifically for NOAs to run mental health and career transition workshops locally. Resources must be flexible to meet local cultural and economic needs.'
   },
   {
-    id: 'rights',
-    title: 'Health, Pensions & Image Sovereignty',
-    description: 'We will aggressively champion a global safety net, lobbying for health insurance coverage and pension schemes for Olympians. Furthermore, we demand the absolute protection of Image Rights post-Games. Once the competition ends, your likeness belongs to you, and we will secure the frameworks to ensure you control your own legacy.'
-  },
-  {
     id: 'empowerment',
     title: 'Regional NOA Empowerment',
     description: 'Shifting resources from centralized administration to regional hubs. Empowering local NOAs with the autonomy and funding to execute their own strategic plans without excessive bureaucratic oversight.'
@@ -106,10 +111,5 @@ export const ACTION_PLAN: ActionPoint[] = [
     id: 'legacy',
     title: 'Sustainable Legacy Projects',
     description: 'Legacy Grants for Olympians leading youth sports, education, and environmental initiatives in their communities.'
-  },
-  {
-    id: 'relations',
-    title: 'Independent but Collaborative IOC Relations',
-    description: 'Maintaining our independence as an association while working closely and constructively with the IOC. We are the bridge, not the barrier.'
   }
 ];
