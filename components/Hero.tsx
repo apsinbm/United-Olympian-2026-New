@@ -11,20 +11,8 @@ const Hero: React.FC = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col" id="mission">
-      {/* Video Background */}
+      {/* Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0 bg-navy-deep">
-        {/* Placeholder video source - normally would be local assets. Using a color fallback if video fails */}
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          className="w-full h-full object-cover opacity-30"
-          poster="https://picsum.photos/1920/1080?grayscale"
-        >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-athlete-running-on-a-track-during-the-day-44165-large.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/80 via-navy-deep/60 to-navy-deep"></div>
       </div>
