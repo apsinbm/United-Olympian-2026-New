@@ -20,17 +20,16 @@ const TeamGrid: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {CANDIDATES.map((candidate) => (
-            <div key={candidate.id} className="group relative bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              
-              {/* Top Half: Action Photo */}
+            <div key={candidate.id} className="group flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+
+              {/* Top: Business Photo */}
               <div className="h-56 w-full overflow-hidden bg-navy-deep relative">
-                <img 
-                  src={candidate.imageAction} 
+                <img
+                  src={candidate.imageAction}
                   onError={(e) => {
-                    // Fallback because local images won't load in this preview
                     (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}`;
                   }}
-                  alt={`${candidate.name} in action`} 
+                  alt={`${candidate.name} in action`}
                   className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -39,22 +38,11 @@ const TeamGrid: React.FC = () => {
                 </div>
               </div>
 
-              {/* Overlapping Headshot */}
-              <div className="relative px-6 -mt-16 text-center">
-                <div className="inline-block relative">
-                   <img 
-                    src={candidate.imageHeadshot} 
-                    onError={(e) => {
-                        (e.target as HTMLImageElement).src = `https://picsum.photos/300/300?random=${candidate.id}2`;
-                    }}
-                    alt={candidate.name} 
-                    className="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover bg-gray-200"
-                  />
-                </div>
-                
-                <h3 className="mt-4 text-2xl font-bold text-navy-deep leading-tight">{candidate.name}</h3>
+              {/* Middle: Content */}
+              <div className="flex-grow px-6 py-8 text-center">
+                <h3 className="text-2xl font-bold text-navy-deep leading-tight">{candidate.name}</h3>
                 <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{candidate.role}</p>
-                
+
                 <div className="mt-4 text-sm text-gray-600 space-y-2 mb-6">
                   <p className="flex items-center justify-center gap-2">
                     <Trophy size={16} className="text-gold" />
@@ -62,17 +50,28 @@ const TeamGrid: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="px-4 pb-8">
-                  <p className="text-gray-500 text-sm line-clamp-3 mb-6 font-serif italic">
-                    "{candidate.keyAchievement}"
-                  </p>
-                  <button 
-                    onClick={() => setSelectedCandidate(candidate)}
-                    className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors"
-                  >
-                    View Full Profile
-                  </button>
-                </div>
+                <p className="text-gray-500 text-sm line-clamp-3 mb-6 font-serif italic">
+                  "{candidate.keyAchievement}"
+                </p>
+
+                <button
+                  onClick={() => setSelectedCandidate(candidate)}
+                  className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors"
+                >
+                  View Full Profile
+                </button>
+              </div>
+
+              {/* Bottom: Sport Photo */}
+              <div className="h-56 w-full overflow-hidden bg-gray-200 relative">
+                <img
+                  src={candidate.imageHeadshot}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}2`;
+                  }}
+                  alt={`${candidate.name} sport`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           ))}
