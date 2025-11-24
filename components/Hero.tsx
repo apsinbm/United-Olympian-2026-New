@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Handshake } from 'lucide-react';
+import HeroSlideshow from './HeroSlideshow';
 
 const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -10,14 +11,11 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col" id="mission">
-      {/* Background */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden z-0 bg-navy-deep">
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/80 via-navy-deep/60 to-navy-deep"></div>
-      </div>
+    <div className="relative h-screen flex flex-col" id="mission">
+      {/* Background Slideshow */}
+      <HeroSlideshow />
 
-      <div className="relative z-10 flex-grow flex items-center justify-center text-center px-4">
+      <div className="relative z-10 h-[calc(100vh-140px)] flex items-center justify-center text-center px-4">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <span className="inline-block py-1 px-3 rounded-full bg-gold/20 text-gold border border-gold/40 text-sm font-bold mb-6 tracking-widest uppercase">
             Official 2026 Campaign
@@ -52,7 +50,7 @@ const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center gap-3 text-gray-300">
           <Handshake className="text-gold h-6 w-6" />
           <p className="font-medium text-sm md:text-base">
-            <span className="text-white font-bold">Independent but Collaborative.</span> We are the bridge to the IOC, not the barrier.
+            <span className="text-white font-bold">Independent but Collaborative.</span> We are the real bridge to the IOC.
           </p>
         </div>
       </div>

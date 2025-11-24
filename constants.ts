@@ -1,5 +1,21 @@
 import { Candidate, ActionPoint, Language } from './types';
 
+export const HERO_IMAGES = [
+  '/images/hero/unnamed-5.jpg',
+  '/images/hero/unnamed-6.jpg',
+  '/images/hero/unnamed-7.jpg',
+  '/images/hero/unnamed-8.jpg',
+  '/images/hero/unnamed-9.jpg',
+  '/images/hero/unnamed-10.jpg',
+  '/images/hero/unnamed-11.jpg',
+  '/images/hero/unnamed-12.jpg',
+  '/images/hero/unnamed-13.jpg',
+  '/images/hero/unnamed-14.jpg',
+  '/images/hero/unnamed-15.jpg',
+  '/images/hero/unnamed-16.jpg',
+  '/images/hero/unnamed-17.jpg',
+];
+
 export const LANGUAGES: Language[] = [
   { code: 'EN', label: 'English' },
   { code: 'FR', label: 'Français' },
@@ -27,7 +43,7 @@ export const CANDIDATES: Candidate[] = [
       'IOC Member (2002–2010): Ethics, Nominations, Coordination Commissions',
       'WOA Vice President (Current)'
     ],
-    keyAchievement: 'Overseeing constitutional reforms enabling 50/50 gender representation and negotiating the MOU with the IOC.',
+    keyAchievement: 'Constitutional reforms enabling 50/50 gender representation and negotiating the MOU with the IOC.',
     business: 'Owner/Operator of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden).',
     bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist and one of the few skiers to win World Cup races in all five disciplines, she knows what it takes to dominate. In governance, she has served as an IOC Member for eight years and is the current WOA Vice President. She was instrumental in the historic 50/50 gender representation reform. Outside of sport, she is a successful hotelier, owning and operating the Pernilla Wiberg Hotel in Sweden.'
   },
@@ -75,7 +91,7 @@ export const ACTION_PLAN: ActionPoint[] = [
   {
     id: 'relations',
     title: 'Independent but Collaborative IOC Relations',
-    description: 'Maintaining our independence as an association while working closely and constructively with the IOC. We are the bridge, not the barrier.'
+    description: 'Maintaining our independence as an association while working closely and constructively with the IOC. We are the real bridge.'
   },
   {
     id: 'rights',
