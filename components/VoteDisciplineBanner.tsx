@@ -13,7 +13,7 @@ const VoteDisciplineBanner: React.FC<VoteDisciplineBannerProps> = ({ variant = '
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-4">
         <Vote className="h-5 w-5 flex-shrink-0" />
         <p className="text-sm sm:text-base font-medium">
-          <span className="font-bold">Vote the complete slate:</span>{' '}
+          <span className="font-bold">The Complete Package:</span>{' '}
           <span className="text-white/90">Pernilla (President) + Lumi (Secretary General) + Thomas (Treasurer)</span>
         </p>
       </div>

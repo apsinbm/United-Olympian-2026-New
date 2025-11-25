@@ -13,7 +13,7 @@ const CoreMessages: React.FC = () => {
     <section className="py-20 bg-navy-deep" id="core-messages">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-gold font-bold tracking-widest uppercase text-sm">Why Vote For Us</span>
+          <span className="text-gold font-bold tracking-widest uppercase text-sm">Why Choose Us</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-4">
             Three Reasons. <span className="text-gold">One Clear Choice.</span>
           </h2>

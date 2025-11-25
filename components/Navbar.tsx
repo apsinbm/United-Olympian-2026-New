@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             <div className="bg-gold p-2 rounded-full mr-3 text-navy-deep">
               <Medal size={24} strokeWidth={2.5} />
             </div>
-            <span className="font-sans font-extrabold text-xl tracking-wider">UNITED OLYMPIANS</span>
+            <span className="font-sans font-extrabold text-xl tracking-wider">OLYMPIANS UNITED</span>
           </div>
 
           {/* Desktop Links */}

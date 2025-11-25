@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
           {/* CTA Side */}
           <div className="md:w-1/2 p-12 flex flex-col justify-center relative bg-navy-deep text-white">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-            <h2 className="text-4xl font-extrabold mb-6">Ready to upgrade the WOA?</h2>
+            <h2 className="text-4xl font-extrabold mb-6">Work with us to take the WOA to the next level.</h2>
             <p className="text-gray-300 text-lg mb-8 font-serif">
               We want to hear from your National Association. Request a meeting with Pernilla, Lumi, or Thomas to discuss your specific regional needs.
             </p>

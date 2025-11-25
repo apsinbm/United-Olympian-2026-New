@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
               <div className="bg-gold p-1.5 rounded-full mr-2 text-navy-deep">
                 <Medal size={20} strokeWidth={2.5} />
               </div>
-              <span className="font-sans font-extrabold text-lg tracking-wider">UNITED OLYMPIANS</span>
+              <span className="font-sans font-extrabold text-lg tracking-wider">OLYMPIANS UNITED</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               We are a group of OLYs dedicated to serving the World Olympians Association with integrity, transparency, and action.
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>&copy; 2026 United Olympians Campaign. All rights reserved.</p>
+          <p>&copy; 2026 Olympians United Campaign. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Built for the future of sport.</p>
         </div>
       </div>
