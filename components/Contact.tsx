@@ -23,10 +23,10 @@ const Contact: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <h2 className="text-4xl font-extrabold mb-6">Work with us to take the WOA to the next level.</h2>
             <p className="text-gray-300 text-lg mb-8 font-serif">
-              We want to hear from your National Association. Request a meeting with Pernilla, Lumi, or Thomas to discuss your specific regional needs.
+              We want to hear from your National Association. Request a meeting with Pernilla, Lumi, or Thomas to discuss the needs of your NOA and your Olympians.
             </p>
             <div className="flex items-center gap-2 text-gold font-bold text-xl">
-               <span>Your voice matters.</span>
+               <span>We built it. We secured it. We'll work with you to grow it.</span>
                <ArrowRight />
             </div>
           </div>

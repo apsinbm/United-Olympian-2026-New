@@ -116,7 +116,7 @@ export const CANDIDATES: Candidate[] = [
       'Olympic Family: Daughter (Figure Skating Worlds), Son (2026 Olympic qualifier)'
     ],
     governance: [
-      'World Olympian Association Member (2018–Present)',
+      'Advisor to WOA Treasurer',
       'Board Member: Taiwanese Chamber of Commerce of North America',
       'SMPTE Member (1996–Present)'
     ],
@@ -146,6 +146,7 @@ export const ACHIEVEMENTS = [
   { title: 'Service to Society Grants', description: 'Funding for Olympians making community impact' },
   { title: 'Service to Olympians Grants', description: 'Direct support for Olympians in need' },
   { title: 'IOC Funding Increase', description: 'Increased funding from IOC by 400%' },
+  { title: 'Fundraising Success', description: 'Raised millions to fund OLY Houses and World Olympians Forums' },
   { title: 'University Scholarships', description: 'Education opportunities for Olympians worldwide' },
   { title: 'Olympians Ceremonies', description: 'Established recognition ceremonies for new Olympians' },
   { title: 'Health Research', description: 'First-ever global musculoskeletal health survey of Olympians' },
