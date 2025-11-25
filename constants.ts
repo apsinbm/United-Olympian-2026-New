@@ -107,7 +107,7 @@ export const CANDIDATES: Candidate[] = [
     country: 'Chinese Taipei',
     location: 'Portland, Oregon, USA',
     imageAction: 'Thomas Business.jpg',
-    imageHeadshot: 'Thomas Sport.jpg',
+    imageHeadshot: 'Thomas Sport 2.jpg',
     achievements: [
       'Two-time Winter Olympian (Calgary 1988, Albertville 1992)',
       'World Championship & World Cup Competitor',
@@ -116,6 +116,7 @@ export const CANDIDATES: Candidate[] = [
       'Olympic Family: Daughter (Figure Skating Worlds), Son (2026 Olympic qualifier)'
     ],
     governance: [
+      'Director of International Affairs: Chinese Taipei Olympians Association',
       'Advisor to WOA Treasurer',
       'Board Member: Taiwanese Chamber of Commerce of North America',
       'SMPTE Member (1996–Present)'
