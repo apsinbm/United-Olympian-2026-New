@@ -67,7 +67,7 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Secretary General',
     sport: 'Basketball',
     country: 'Nigeria',
-    location: 'London, England',
+    location: 'Lagos, Nigeria',
     imageAction: 'Lumi Business.jpg',
     imageHeadshot: 'Lumi Sport.jpg',
     achievements: [
@@ -91,7 +91,7 @@ export const CANDIDATES: Candidate[] = [
       'Master\'s Degree in Public Relations & Image Management (Florida Metropolitan University)',
       'Loyola College, Ibadan'
     ],
-    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in London, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023, Laureus Ambassador, and holder of a Master\'s degree in Public Relations, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement.',
+    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
       twitter: 'https://x.com/olumideoyedeji1',
