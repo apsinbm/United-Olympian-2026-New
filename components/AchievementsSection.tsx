@@ -7,12 +7,12 @@ const AchievementsSection: React.FC = () => {
     <section className="py-20 bg-white" id="achievements">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-crimson font-bold tracking-widest uppercase text-sm">14 Years of Delivery</span>
+          <span className="text-crimson font-bold tracking-widest uppercase text-sm">14 Years of Successful Delivery</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mt-4">
             What We've <span className="text-gold">Already Built</span>
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            The other candidates promise what we already delivered. Here's our track record.
+            Some candidates promise what we've already delivered. Here's our track record.
           </p>
         </div>
 
