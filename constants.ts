@@ -32,20 +32,34 @@ export const CANDIDATES: Candidate[] = [
     role: 'For President',
     sport: 'Alpine Skiing',
     country: 'Sweden',
+    location: 'Monte Carlo, Monaco',
     imageAction: 'Pernilla Business.jpg',
     imageHeadshot: 'Pernilla Sport.webp',
     achievements: [
       'Triple Olympic Medalist (Gold 1992, Gold 1994, Silver 1998)',
       '4x World Champion',
-      'Winner of World Cup races in all 5 disciplines'
+      '24 Individual World Cup Victories',
+      'FIS World Cup Overall Champion 1997',
+      'Winner of World Cup races in all 5 disciplines',
+      'Renowned TV Sports Broadcaster'
     ],
     governance: [
-      'IOC Member (2002–2010): Ethics, Nominations, Coordination Commissions',
-      'WOA Vice President (Current)'
+      'IOC Member (2002–2010): Athletes\', Ethics, Nominations, Coordination Commissions',
+      'Chaired IOC Evaluation Commission for 1st Winter Youth Olympic Games (2008)',
+      'WOA IOC Athletes\' Commission Representative (2020–2025)',
+      'WOA Vice President (Current)',
+      'Champions for Peace Member'
     ],
     keyAchievement: 'Olympic Champion with 20+ years of sports diplomacy. Led constitutional reforms enabling 50/50 gender representation.',
-    business: 'Owner/Operator of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden).',
-    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist and one of the few skiers to win World Cup races in all five disciplines, she knows what it takes to dominate. In governance, she has served as an IOC Member for eight years and is the current WOA Vice President. She was instrumental in the historic 50/50 gender representation reform. Outside of sport, she is a successful hotelier, owning and operating the Pernilla Wiberg Hotel in Sweden.'
+    business: 'Entrepreneur and Owner of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden). Founder of Pernilla Wiberg Sportpromotion.',
+    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden. Based in Monaco since 1995, she is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
+    socialLinks: {
+      linkedIn: 'https://www.linkedin.com/in/pernilla-wiberg-bjerke-oly-0609271ba/',
+      twitter: 'https://x.com/pernillawiberg',
+      facebook: 'https://www.facebook.com/pernillawibergOLY/',
+      instagram: 'https://www.instagram.com/pernillawiberg/',
+      website: 'https://pernilla-wiberg.com'
+    }
   },
   {
     id: 'lumi',
@@ -53,20 +67,37 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Secretary General',
     sport: 'Basketball',
     country: 'Nigeria',
+    location: 'London, England',
     imageAction: 'Lumi Business.jpg',
     imageHeadshot: 'Lumi Sport.jpg',
     achievements: [
+      'First African player drafted outside America to the NBA (2000)',
       'NBA Player (Seattle SuperSonics, Orlando Magic)',
-      'Captained Nigeria ("D\'Tigers") to 2015 AfroBasket Gold & 2012 Olympics',
-      'Played professionally on 4 continents'
+      'Led Nigeria to first-ever AfroBasket Gold (2015) & 2012 Olympics',
+      'First African to compete in ALL major tournaments: Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, Asia Championships',
+      'Played professionally in 10 countries across 4 continents'
     ],
     governance: [
+      'Vice President: Nigeria Olympic Committee (NOC)',
       'President: Nigeria Olympians Association (NOA)',
-      'Member: FIBA Players\' Commission (2014–2019)'
+      'WADA Athlete Council Member (2023–Present)',
+      'Member: FIBA Players\' Commission (2014–2019)',
+      'Board Member: Nigeria Basketball Federation',
+      'Laureus Sport for Good Ambassador'
     ],
     keyAchievement: 'NBA Star and successful sports administrator. Founded the Youth Foundation that has mentored 40,000+ young people.',
     philosophy: 'Servant Leadership and bridging the gap for developing nations.',
-    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. An NBA veteran who played on four continents, Lumi captained Nigeria to historic victories. As President of the Nigeria Olympians Association, he has been a champion for athlete welfare. His philosophy of "Servant Leadership" is exemplified by his Youth Foundation, which has mentored over 40,000 young people. He is dedicated to bridging the gap for developing nations within the Olympic movement.'
+    education: [
+      'Master\'s Degree in Public Relations & Image Management (Florida Metropolitan University)',
+      'Loyola College, Ibadan'
+    ],
+    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in London, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023, Laureus Ambassador, and holder of a Master\'s degree in Public Relations, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement.',
+    socialLinks: {
+      linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
+      twitter: 'https://x.com/olumideoyedeji1',
+      facebook: 'https://www.facebook.com/olumideoyedejiyouthfoundation/',
+      instagram: 'https://www.instagram.com/olumideoyedeji1/'
+    }
   },
   {
     id: 'thomas',
@@ -74,16 +105,34 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Treasurer',
     sport: 'Alpine Skiing',
     country: 'Chinese Taipei',
+    location: 'Portland, Oregon, USA',
     imageAction: 'Thomas Business.jpg',
     imageHeadshot: 'Thomas Sport.jpg',
     achievements: [
-      'Two-time Winter Olympian (Calgary 1988, Albertville 1992)'
+      'Two-time Winter Olympian (Calgary 1988, Albertville 1992)',
+      'World Championship & World Cup Competitor',
+      'Chef de Mission for Guinea-Bissau (2026 Milano-Cortina Olympics)',
+      'Secretary General, Guinea-Bissau Winter Sports Federation',
+      'Olympic Family: Daughter (Figure Skating Worlds), Son (2026 Olympic qualifier)'
     ],
-    governance: [],
+    governance: [
+      'World Olympian Association Member (2018–Present)',
+      'Board Member: Taiwanese Chamber of Commerce of North America',
+      'SMPTE Member (1996–Present)'
+    ],
     keyAchievement: 'Business Wizard and Olympian. Built a global tech company from scratch that powered the Sochi 2014 and Paris 2024 Olympic broadcasts.',
-    business: 'Founder & CEO: Apantac LLC (Global leader in broadcast signal processing).',
-    trackRecord: 'Bootstrapped company in 2008; now ships 200+ products to 40+ countries. His technology powered broadcasts for Sochi 2014 and Paris 2024 Olympics.',
-    bioFull: 'Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei, Thomas is the Founder & CEO of Apantac LLC. He bootstrapped the company in 2008 during a global financial crisis and built it into a global leader in broadcast signal processing. His technology powered the broadcasts for the Sochi 2014 and Paris 2024 Olympics. Thomas brings deep financial literacy and a track record of scaling operations to the WOA.'
+    business: 'Founder & President: Apantac LLC (Global leader in broadcast signal processing). President: Eubank Investment Group.',
+    trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech (grew business 8x), Director of Marketing at Grass Valley ($50M P&L responsibility), worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems.',
+    education: [
+      'Harvard Business School - Executive Training (Marketing & Business Strategy)',
+      'University of London - Post Graduate Certificate (Sports Marketing, World Academy of Sport)'
+    ],
+    bioFull: 'Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei who competed at World Championships and World Cups, he now serves as Chef de Mission for Guinea-Bissau at the 2026 Milano-Cortina Olympics and Secretary General of their Winter Sports Federation. His Olympic legacy is a family affair—his daughter competed at the Figure Skating World Championships, and his son has qualified for the 2026 Olympics in Alpine Skiing.\n\nThomas founded Apantac in his basement during the 2008 financial crisis and built it into a global broadcast technology leader—winning the prestigious NAB PICK HIT AWARD in 2009 and now shipping 200+ products to 40+ countries. His technology has powered Olympic broadcasts, Soccer World Cups, and national broadcasters worldwide.\n\nWith Harvard Business School executive training, prior leadership at Grass Valley ($50M P&L) and Avitech (8x growth), and early career engineering on F-14/F-16 simulators and NASA Space Shuttle training systems, Thomas brings unmatched financial acumen and operational excellence to the WOA. Fluent in English and Mandarin Chinese.',
+    socialLinks: {
+      linkedIn: 'https://www.linkedin.com/in/thomas-tang-oly-5202b84/',
+      facebook: 'https://www.facebook.com/thomas.tang.18',
+      website: 'https://www.apantac.com'
+    }
   }
 ];
 
@@ -125,7 +174,7 @@ export const CORE_MESSAGES = [
 ];
 
 export const JOEL_ENDORSEMENT = {
-  quote: "For 14 years, we built the WOA from nothing into the organization that serves Olympians today. Pernilla, Lumi, and Thomas have been integral to every achievement. They have my full confidence to continue this work and take it to even greater heights. This is the team I trust to protect what we've built.",
+  quote: "For 14 years, we built the WOA from nothing into the organization that serves Olympians today. Pernilla, Lumi, and Thomas have been integral to many of these achievements. They have my full confidence to continue this work and take it to even greater heights. This is the team I trust to protect what we've built.",
   author: "Joël Bouzou",
   title: "WOA President (2010-2026)"
 };

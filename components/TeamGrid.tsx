@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { CANDIDATES } from '../constants';
 import { Candidate } from '../types';
-import { X, Award, Briefcase, Trophy, Globe, PlayCircle } from 'lucide-react';
+import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink } from 'lucide-react';
 
 const TeamGrid: React.FC = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
@@ -39,7 +39,7 @@ const TeamGrid: React.FC = () => {
               </div>
 
               {/* Middle: Content */}
-              <div className="flex-grow px-6 py-2 text-center">
+              <div className="flex-grow px-6 pt-4 pb-6 text-center">
                 <h3 className="text-2xl font-bold text-navy-deep leading-tight">{candidate.name}</h3>
                 <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{candidate.role}</p>
 
@@ -135,6 +135,93 @@ const TeamGrid: React.FC = () => {
                       <p>{selectedCandidate.country}</p>
                     </div>
                   </div>
+
+                  {selectedCandidate.location && (
+                    <div className="flex items-start gap-3">
+                      <MapPin className="text-gold shrink-0 mt-1" size={18} />
+                      <div>
+                        <span className="block text-white font-bold">Based In</span>
+                        <p>{selectedCandidate.location}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {selectedCandidate.education && selectedCandidate.education.length > 0 && (
+                    <div className="flex items-start gap-3">
+                      <GraduationCap className="text-gold shrink-0 mt-1" size={18} />
+                      <div>
+                        <span className="block text-white font-bold">Education</span>
+                        <ul className="list-disc pl-4 mt-1 space-y-1">
+                          {selectedCandidate.education.map((e, i) => (
+                            <li key={i}>{e}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
+
+                  {selectedCandidate.socialLinks && (
+                    <div className="mt-6 space-y-2">
+                      <span className="block text-white font-bold mb-2">Connect</span>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedCandidate.socialLinks.linkedIn && (
+                          <a
+                            href={selectedCandidate.socialLinks.linkedIn}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition-colors"
+                            title="LinkedIn"
+                          >
+                            <Linkedin size={18} />
+                          </a>
+                        )}
+                        {selectedCandidate.socialLinks.twitter && (
+                          <a
+                            href={selectedCandidate.socialLinks.twitter}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+                            title="X (Twitter)"
+                          >
+                            <Twitter size={18} />
+                          </a>
+                        )}
+                        {selectedCandidate.socialLinks.facebook && (
+                          <a
+                            href={selectedCandidate.socialLinks.facebook}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-[#1877F2] text-white rounded-lg hover:bg-[#0d5fc7] transition-colors"
+                            title="Facebook"
+                          >
+                            <Facebook size={18} />
+                          </a>
+                        )}
+                        {selectedCandidate.socialLinks.instagram && (
+                          <a
+                            href={selectedCandidate.socialLinks.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] text-white rounded-lg hover:opacity-80 transition-opacity"
+                            title="Instagram"
+                          >
+                            <Instagram size={18} />
+                          </a>
+                        )}
+                        {selectedCandidate.socialLinks.website && (
+                          <a
+                            href={selectedCandidate.socialLinks.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 bg-gold text-navy-deep rounded-lg hover:bg-gold-hover transition-colors"
+                            title="Website"
+                          >
+                            <ExternalLink size={18} />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -164,8 +251,17 @@ const TeamGrid: React.FC = () => {
                 </div>
 
                 <div className="prose prose-lg text-gray-600">
-                  <p className="mb-6">{selectedCandidate.bioFull}</p>
-                  
+                  {selectedCandidate.bioFull.split('\n\n').map((paragraph, index) => (
+                    <p key={index} className="mb-4">{paragraph}</p>
+                  ))}
+
+                  {selectedCandidate.trackRecord && (
+                    <div className="bg-gold/10 p-6 rounded-lg border-l-4 border-gold mb-6">
+                      <h5 className="font-bold text-navy-deep mb-2 text-lg">Track Record</h5>
+                      <p className="text-gray-700">{selectedCandidate.trackRecord}</p>
+                    </div>
+                  )}
+
                   {selectedCandidate.governance.length > 0 && (
                      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gold mb-6">
                         <h5 className="font-bold text-navy-deep mb-2 text-lg">Governance Experience</h5>

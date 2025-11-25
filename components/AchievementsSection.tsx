@@ -33,10 +33,10 @@ const AchievementsSection: React.FC = () => {
 
         <div className="bg-gradient-to-r from-navy-deep to-navy-light rounded-2xl p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
-            "14 years ago, the WOA had nothing. Our team built everything Olympians rely on today.
-            <span className="text-gold font-bold not-italic block mt-4">
-              Why start over? Continue what works.
-            </span>"
+            "14 years ago, the WOA had nothing. Our team built everything Olympians rely on today."
+          </p>
+          <p className="text-gold font-bold text-xl md:text-2xl mt-4">
+            Continue what works!
           </p>
         </div>
       </div>
