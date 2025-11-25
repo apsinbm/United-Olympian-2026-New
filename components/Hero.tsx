@@ -21,11 +21,12 @@ const Hero: React.FC = () => {
             Official 2026 Campaign
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-            Proven Leaders. <br/>
-            <span className="text-gold">United Action.</span>
+            New Leadership. <br/>
+            <span className="text-gold">Proven Experience.</span>
           </h1>
           <p className="text-lg md:text-2xl text-gray-300 mb-10 font-serif max-w-2xl mx-auto">
-            Gold Medalists, Global Captains, and Tech Innovators serving the next generation.
+            An Olympic Champion. An NBA Star. A Business Wizard.<br/>
+            <span className="text-white/90">Fresh ideas built on what works.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -50,7 +51,7 @@ const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center gap-3 text-gray-300">
           <Handshake className="text-gold h-6 w-6" />
           <p className="font-medium text-sm md:text-base">
-            <span className="text-white font-bold">Independent but Collaborative.</span> We are the real bridge to the IOC.
+            <span className="text-white font-bold">Three Continents. One Unified Vision.</span> Leadership that represents all Olympians.
           </p>
         </div>
       </div>

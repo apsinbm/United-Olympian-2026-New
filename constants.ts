@@ -43,7 +43,7 @@ export const CANDIDATES: Candidate[] = [
       'IOC Member (2002–2010): Ethics, Nominations, Coordination Commissions',
       'WOA Vice President (Current)'
     ],
-    keyAchievement: 'Constitutional reforms enabling 50/50 gender representation and negotiating the MOU with the IOC.',
+    keyAchievement: 'Olympic Champion with 20+ years of sports diplomacy. Led constitutional reforms enabling 50/50 gender representation.',
     business: 'Owner/Operator of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden).',
     bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist and one of the few skiers to win World Cup races in all five disciplines, she knows what it takes to dominate. In governance, she has served as an IOC Member for eight years and is the current WOA Vice President. She was instrumental in the historic 50/50 gender representation reform. Outside of sport, she is a successful hotelier, owning and operating the Pernilla Wiberg Hotel in Sweden.'
   },
@@ -64,7 +64,7 @@ export const CANDIDATES: Candidate[] = [
       'President: Nigeria Olympians Association (NOA)',
       'Member: FIBA Players\' Commission (2014–2019)'
     ],
-    keyAchievement: 'Founder of the Olumide Oyedeji Youth Foundation (40,000+ youths mentored).',
+    keyAchievement: 'NBA Star and successful sports administrator. Founded the Youth Foundation that has mentored 40,000+ young people.',
     philosophy: 'Servant Leadership and bridging the gap for developing nations.',
     bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. An NBA veteran who played on four continents, Lumi captained Nigeria to historic victories. As President of the Nigeria Olympians Association, he has been a champion for athlete welfare. His philosophy of "Servant Leadership" is exemplified by his Youth Foundation, which has mentored over 40,000 young people. He is dedicated to bridging the gap for developing nations within the Olympic movement.'
   },
@@ -80,12 +80,55 @@ export const CANDIDATES: Candidate[] = [
       'Two-time Winter Olympian (Calgary 1988, Albertville 1992)'
     ],
     governance: [],
-    keyAchievement: 'Financial literacy, scaling operations, and tangible innovation (hardware, not buzzwords).',
+    keyAchievement: 'Business Wizard and Olympian. Built a global tech company from scratch that powered the Sochi 2014 and Paris 2024 Olympic broadcasts.',
     business: 'Founder & CEO: Apantac LLC (Global leader in broadcast signal processing).',
     trackRecord: 'Bootstrapped company in 2008; now ships 200+ products to 40+ countries. His technology powered broadcasts for Sochi 2014 and Paris 2024 Olympics.',
     bioFull: 'Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei, Thomas is the Founder & CEO of Apantac LLC. He bootstrapped the company in 2008 during a global financial crisis and built it into a global leader in broadcast signal processing. His technology powered the broadcasts for the Sochi 2014 and Paris 2024 Olympics. Thomas brings deep financial literacy and a track record of scaling operations to the WOA.'
   }
 ];
+
+export const ACHIEVEMENTS = [
+  { title: 'OLY Designation', description: 'Created the OLY post-nominal letters for all Olympians worldwide' },
+  { title: 'World Olympians Forum', description: 'Established the global gathering of Olympians' },
+  { title: 'Olympians Houses', description: 'Ran the most successful Olympians Houses in Olympic history' },
+  { title: 'Grants Program', description: 'Created financial support system for NOAs and Olympians' },
+  { title: 'University Scholarships', description: 'Education opportunities for Olympians worldwide' },
+  { title: 'Olympians Ceremonies', description: 'Established recognition ceremonies for new Olympians' },
+  { title: 'Health Research', description: 'First-ever global musculoskeletal health survey of Olympians' },
+  { title: 'Partnership Network', description: 'Built relationships with World Academy of Sport, SkillsBuild, and more' },
+  { title: 'New IOC Agreement', description: 'Secured long-term funding and stability for all WOA programs' },
+  { title: 'Financial Independence', description: 'Built sustainable funding model independent from IOC control' },
+];
+
+export const CORE_MESSAGES = [
+  {
+    id: 'built',
+    title: 'We Built It',
+    subtitle: 'The Modern WOA',
+    description: 'We delivered every major program Olympians rely on today. Proven results, not promises.',
+    icon: 'Trophy'
+  },
+  {
+    id: 'secure',
+    title: 'We Secure It',
+    subtitle: 'Independent & Trusted',
+    description: 'We protect WOA independence while maintaining the strong working relationship that brings funding and influence.',
+    icon: 'Shield'
+  },
+  {
+    id: 'lead',
+    title: 'We Lead It',
+    subtitle: 'The Right Team',
+    description: 'An Olympic Champion, an NBA Star, and a Business Wizard. Experienced leaders ready to continue the work.',
+    icon: 'Users'
+  }
+];
+
+export const JOEL_ENDORSEMENT = {
+  quote: "For 14 years, we built the WOA from nothing into the organization that serves Olympians today. Pernilla, Lumi, and Thomas have been integral to every achievement. They have my full confidence to continue this work and take it to even greater heights. This is the team I trust to protect what we've built.",
+  author: "Joël Bouzou",
+  title: "WOA President (2010-2026)"
+};
 
 export const ACTION_PLAN: ActionPoint[] = [
   {
