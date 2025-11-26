@@ -159,8 +159,8 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: 'World Olympians Forum',
     description: 'Established the global gathering of Olympians',
     links: [
-      { url: 'https://olympians.org/news/403/', label: 'Inaugural Forum', description: 'Announcement of the inaugural World Olympians Forum in Moscow' },
-      { url: 'https://olympians.org/news/442/', label: 'First WOF Success', description: 'Report declaring the first World Olympians Forum a success with 284 delegates from 121 NOAs' },
+      { url: 'https://olympians.org/news/403/moscow-to-host-the-inaugural-world-olympians-forum/', label: 'Inaugural Forum', description: 'Announcement of the first World Olympians Forum' },
+      { url: 'https://olympians.org/news/442/world-olympians-forum-gets-underway-in-moscow/', label: 'First WOF Success', description: 'Report from World Olympians Forum in Moscow' },
       { url: 'https://olympians.org/news/1271/', label: '2019 Lausanne', description: 'Announcement of the 2019 World Olympians Forum in Lausanne' },
       { url: 'https://olympians.org/news/1936/', label: '2025 Monaco', description: 'Announcement of the 2025 World Olympians Forum in Monaco' },
       { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page summarising WOF editions and their themes' },
@@ -175,7 +175,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     links: [
       { url: 'https://olympians.org/news/735/olympians-reunion-centre-by-ey-wins-top-rio-award/', label: 'Top Rio Award', description: 'WOA report on the Rio Olympians Reunion Centre by EY winning the ACRio Hospitality House Award' },
       { url: 'https://olympians.org/news/732/', label: 'Most Successful Edition', description: 'Article describing the Rio 2016 Olympians Reunion Centre as the most successful edition to date' },
-      { url: 'https://olympians.org/news/284/', label: 'Venue Confirmation', description: 'Confirmation of the Rio Olympians Reunion Centre venue at Clube de Regatas do Flamengo' },
+      { url: 'https://olympians.org/news/284/woa-confirms-venue-for-rio-2016-olympians-reunion-centre/', label: 'Venue Confirmation', description: 'Confirms Rio 2016 Olympians Reunion Centre venue' },
       { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting the award-winning Rio 2016 Olympians Reunion Centre' },
     ]
   },
@@ -337,10 +337,10 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: 'Olympian.org Website',
     description: 'Rebuilt the Olympian.org website',
     links: [
-      { url: 'https://olympians.org/news/13/', label: 'New Brand Launch', description: 'WOA press release unveiling the new brand identity and website at Sochi 2014' },
+      { url: 'https://olympians.org/news/13/world-olympians-association-launches-new-website/', label: 'New Brand Launch', description: 'Original launch of the Olympian.org website' },
       { url: 'https://olympians.org/library/world_olympians_association_unveils_new_brand_identity_and_website_in_sochi_final.pdf', label: 'Full Press Release', description: 'Full press release on the 2014 rebrand and website launch' },
       { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page describing the 2014 modernisation and website rebuild' },
-      { url: 'https://olympians.org/news/33/', label: 'Email Addresses', description: 'Article promoting exclusive olympian.org email addresses for Olympians' },
+      { url: 'https://olympians.org/news/33/woa-website-launched-in-three-languages/', label: 'Multilingual Site', description: 'Early update on multilingual WOA site' },
       { url: 'https://olympians.org/woa/about/introduction/', label: 'WOA Introduction', description: 'Introduction to WOA and its services on the rebuilt site' },
       { url: 'https://olympians.org', label: 'Olympians.org', description: 'Current WOA website homepage' },
     ]
@@ -377,8 +377,8 @@ export const ACHIEVEMENTS: Achievement[] = [
     description: 'When Ebola struck and our NOAs asked for help we launched #TargetEbola and thanks to the global Olympian community we sent six containers of medical and other supplies to Sierra Leone and Liberia. Our #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.',
     links: [
       { url: 'https://olympians.org/news/1226/noas-join-forces-to-support-ebola-affected-communities/', label: '#TargetEbola Launch', description: 'WOA article on NOAs uniting to support Ebola-affected communities through #TargetEbola' },
-      { url: 'https://olympians.org/news/491/olympians-receive-presidential-accolade-for-targetebola/', label: 'Presidential Accolade', description: 'Report on Sierra Leone\'s president thanking WOA and Olympians for the #TargetEbola campaign' },
-      { url: 'https://olympians.org/news/222/ifs-show-support-for-targetebola/', label: 'IF Support', description: 'Story on international federations supporting the #TargetEbola appeal' },
+      { url: 'https://olympians.org/news/491/olympians-answer-call-to-help-ebola-hit-communities/', label: 'Olympians Mobilise', description: 'Olympians mobilise for Ebola-hit communities' },
+      { url: 'https://olympians.org/news/222/ifs-show-support-for-targetebola/', label: 'IF Support', description: 'IFs join the #TargetEbola campaign' },
       { url: 'https://olympians.org/actions/events/278/-targetebola-supplies-reach-sierra-leone', label: 'Supplies Reach Sierra Leone', description: 'Article on TargetEbola medical supplies reaching Sierra Leone' },
       { url: 'https://reliefweb.int/report/sierra-leone/world-olympians-association-launches-targetebola', label: 'ReliefWeb', description: 'ReliefWeb brief on WOA\'s TargetEbola campaign launch' },
       { url: 'https://olympians.org/news/883/', label: 'Liberia Legacy', description: 'Article on the legacy of the #TargetEbola campaign in Liberia' },
