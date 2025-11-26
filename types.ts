@@ -36,3 +36,15 @@ export interface Language {
   code: string;
   label: string;
 }
+
+export interface AchievementLink {
+  url: string;
+  label: string;
+  description: string;
+}
+
+export interface Achievement {
+  title: string;
+  description: string;
+  links?: AchievementLink[];
+}
