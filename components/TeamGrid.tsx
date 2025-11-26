@@ -30,7 +30,7 @@ const TeamGrid: React.FC = () => {
                     (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}`;
                   }}
                   alt={`${candidate.name} in action`}
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                  className={`h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ${candidate.id === 'thomas' ? 'w-[120%] -mr-[15%] ml-auto' : 'w-full'}`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute top-4 right-4 bg-gold text-navy-deep text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
