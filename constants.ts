@@ -149,7 +149,6 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/news/983/oly-post-nominal-letters-to-honour-olympians/', label: 'WOA Announcement', description: 'Launch of OLY post-nominal letters' },
       { url: 'https://olympians.org/news/986/over-3000-olympians-register-for-oly-letters/', label: 'Thousands Register', description: 'Early take-up of OLY post-nominals' },
       { url: 'https://olympians.org/news/1416/olympians-and-noas-get-creative-to-boost-oly-sign-ups/', label: 'Creative Sign-ups', description: 'NOAs promoting OLY sign-ups' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'WOA history page noting the creation of the OLY post-nominal initiative' },
       { url: 'https://en.wikipedia.org/wiki/OLY', label: 'Wikipedia - OLY', description: 'Wikipedia overview of the OLY post-nominal letters program' },
       { url: 'https://olympians.org/library/noa_guide/oly_ceremony_delivery_guide_en.pdf', label: 'OLY Ceremony Guide', description: 'Official OLY Ceremony Delivery Guide with global OLY registration figures' },
       { url: 'https://olympics.com/athlete365/articles/career/make-your-personal-brand-stand-out-with-oly', label: 'IOC Athlete365', description: 'IOC Athlete365 article promoting OLY as a professional credential for Olympians' },
@@ -170,13 +169,16 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
-    title: 'OLY House Rio',
-    description: 'Award-winning OLY House at Rio 2016',
+    title: 'Service to Society Grants',
+    description: 'Funding for Olympians making community impact',
     links: [
-      { url: 'https://olympians.org/news/735/olympians-reunion-centre-by-ey-wins-top-rio-award/', label: 'Top Rio Award', description: 'WOA report on the Rio Olympians Reunion Centre by EY winning the ACRio Hospitality House Award' },
-      { url: 'https://olympians.org/news/732/woa-celebrates-most-successful-olympians-reunion-centre-ever/', label: 'Most Successful Edition', description: 'Post-Games wrap on Rio Olympians Reunion Centre' },
-      { url: 'https://olympians.org/news/284/woa-confirms-venue-for-rio-2016-olympians-reunion-centre/', label: 'Venue Confirmation', description: 'Confirms Rio 2016 Olympians Reunion Centre venue' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting the award-winning Rio 2016 Olympians Reunion Centre' },
+      { url: 'https://olympians.org/noas/grants/', label: 'Grants Overview', description: 'Overview of WOA grants including Service to Society' },
+      { url: 'https://olympians.org/grants/service-to-society/', label: 'Service to Society', description: 'Dedicated page describing the Service to Society Grants for Olympian-led community projects' },
+      { url: 'https://olympians.org/news/774/woa-launches-service-to-society-grant-programme/', label: 'Programme Launch', description: 'Launch of Service to Society Grants' },
+      { url: 'https://olympians.org/news/1672/support-your-community-with-a-woa-grant/', label: 'Community Support', description: 'Community-focused grants explainer' },
+      { url: 'https://olympians.org/news/1767/olympians-give-back-to-their-communities-with-woa-grants/', label: '28 Projects Awarded', description: 'Case studies of Service to Society grants' },
+      { url: 'https://olympians.org/news/1840/30-olympian-led-projects-awarded-woa-grants/', label: '30 Projects in 2024', description: 'News on 30 projects in 25 countries receiving 2024 Service to Society and related grants' },
+      { url: 'https://olympics.com/ioc/news/inspirational-olympian-led-initiatives-rewarded-for-their-services-to-society-and-to-fellow-olympians', label: 'IOC Article', description: 'IOC article on Olympian-led projects funded by WOA grants' },
     ]
   },
   {
@@ -220,16 +222,13 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
-    title: 'Service to Society Grants',
-    description: 'Funding for Olympians making community impact',
+    title: 'OLY House Rio',
+    description: 'Award-winning OLY House at Rio 2016',
     links: [
-      { url: 'https://olympians.org/noas/grants/', label: 'Grants Overview', description: 'Overview of WOA grants including Service to Society' },
-      { url: 'https://olympians.org/grants/service-to-society/', label: 'Service to Society', description: 'Dedicated page describing the Service to Society Grants for Olympian-led community projects' },
-      { url: 'https://olympians.org/news/774/woa-launches-service-to-society-grant-programme/', label: 'Programme Launch', description: 'Launch of Service to Society Grants' },
-      { url: 'https://olympians.org/news/1672/support-your-community-with-a-woa-grant/', label: 'Community Support', description: 'Community-focused grants explainer' },
-      { url: 'https://olympians.org/news/1767/olympians-give-back-to-their-communities-with-woa-grants/', label: '28 Projects Awarded', description: 'Case studies of Service to Society grants' },
-      { url: 'https://olympians.org/news/1840/30-olympian-led-projects-awarded-woa-grants/', label: '30 Projects in 2024', description: 'News on 30 projects in 25 countries receiving 2024 Service to Society and related grants' },
-      { url: 'https://olympics.com/ioc/news/inspirational-olympian-led-initiatives-rewarded-for-their-services-to-society-and-to-fellow-olympians', label: 'IOC Article', description: 'IOC article on Olympian-led projects funded by WOA grants' },
+      { url: 'https://olympians.org/news/735/olympians-reunion-centre-by-ey-wins-top-rio-award/', label: 'Top Rio Award', description: 'WOA report on the Rio Olympians Reunion Centre by EY winning the ACRio Hospitality House Award' },
+      { url: 'https://olympians.org/news/732/woa-celebrates-most-successful-olympians-reunion-centre-ever/', label: 'Most Successful Edition', description: 'Post-Games wrap on Rio Olympians Reunion Centre' },
+      { url: 'https://olympians.org/news/284/woa-confirms-venue-for-rio-2016-olympians-reunion-centre/', label: 'Venue Confirmation', description: 'Confirms Rio 2016 Olympians Reunion Centre venue' },
+      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting the award-winning Rio 2016 Olympians Reunion Centre' },
     ]
   },
   {
@@ -264,7 +263,6 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/news/735/olympians-reunion-centre-by-ey-wins-top-rio-award/', label: 'EY Partnership', description: 'Story showing the EY-backed Rio OLY House winning a hospitality award' },
       { url: 'https://olympians.org/news/1843/oly-house-paris-to-be-at-an-historic-location/', label: 'Paris Partnership', description: 'Announcement highlighting the Caisse d\'Epargne partnership funding OLY House Paris' },
       { url: 'https://olympics.com/ioc/news/the-world-olympians-association-announces-financial-support-to-olympian-led-community-initiatives', label: 'IOC Report', description: 'IOC report on financial support to Olympian-led projects via WOA grants' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting sponsorship deals, including historic Osaka funding and other major partnerships' },
     ]
   },
   {
@@ -299,7 +297,6 @@ export const ACHIEVEMENTS: Achievement[] = [
     links: [
       { url: 'https://olympians.org/olympians/health/', label: 'Health Study', description: 'WOA Olympians Health Study page summarising key findings' },
       { url: 'https://olympians.org/news/1106/woa-olympic-games-musculoskeletal-health-study-kicks-off-in-pyeongchang/', label: 'Study Launch', description: 'Start of global musculoskeletal health study' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting the 2018 launch of the global health study' },
       { url: 'https://bjsm.bmj.com/content/55/1/46', label: 'BJSM Paper', description: 'British Journal of Sports Medicine paper on injuries and later-life health in 3,357 retired Olympians' },
       { url: 'https://pubmed.ncbi.nlm.nih.gov/33168580', label: 'PubMed Entry', description: 'PubMed entry for the BJSM Olympian health study' },
       { url: 'https://napier.ac.uk/about-us/news/olympianhealth', label: 'Edinburgh Napier', description: 'Edinburgh Napier University article on Dr Debbie Palmer\'s leadership of the study' },
