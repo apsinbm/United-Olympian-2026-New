@@ -182,17 +182,15 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
-    title: 'OLY House Paris',
-    description: 'Best OLY House ever at Paris 2024',
+    title: 'IOC Funding Increase',
+    description: 'Increased funding from IOC by up to 300%',
     links: [
-      { url: 'https://olympians.org/news/1843/oly-house-paris-to-be-at-an-historic-location/', label: 'Historic Location', description: 'Announcement of OLY House Paris at the historic Caisse d\'Epargne headquarters and the e-OLY House concept' },
-      { url: 'https://olympians.org/news/1866/94-year-old-olympian-stars-at-oly-house-paris-2024/', label: '94-Year-Old Star', description: 'Feature on a 94-year-old Olympian visiting OLY House Paris 2024' },
-      { url: 'https://olympians.org/news/1869/jesse-owens-and-luz-long-among-5-awarded-olympians-for-life-by-woa-patron-prince-albert/', label: 'Olympians for Life Awards', description: 'Article on Olympians for Life awards held at OLY House Paris 2024' },
-      { url: 'https://olympians.org/news/1875/oly-house-paris-2024-is-rocking/', label: 'Mid-Games Update', description: 'Mid-Games OLY House Paris update' },
-      { url: 'https://olympians.org/news/1887/six-films-chosen-for-prestigious-awards-at-oly-house-film-festival/', label: 'Film Festival', description: 'OLY House Film Festival awards' },
-      { url: 'https://olyhouse.org', label: 'OLY House Website', description: 'Dedicated OLY House website with Paris 2024 programme details' },
-      { url: 'https://olympics.com/athlete365/news/paris2024/meet-olympians-from-around-the-world-at-the-paris-2024-oly-house', label: 'IOC Athlete365', description: 'IOC Athlete365 article inviting Olympians to OLY House Paris' },
-      { url: 'https://youtube.com/watch?v=pwGuKFn_NGc', label: 'Video Highlights', description: 'Video highlights of OLY House Paris 2024' },
+      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting financial modernisation and increased IOC support' },
+      { url: 'https://olympians.org/manifesto/', label: 'Manifesto', description: '2020 candidate manifesto referencing "big budget increases" from the IOC' },
+      { url: 'https://olympians.org/news/1945/ioc-and-woa-strengthen-their-partnership-to-better-support-olympians/', label: '2025 Agreement', description: 'Strengthened IOC–WOA partnership and funding' },
+      { url: 'https://olympians.org/news/497/athlete-welfare-a-top-priority-for-woa-in-2016/', label: 'Athlete Welfare Priority', description: 'Athlete welfare and funding priorities' },
+      { url: 'https://olympians.org/news/1942/ioc-and-woa-to-reaffirm-commitment-to-work-closely-together/', label: 'Joint Communication', description: 'New MoU / partnership reaffirmation with IOC' },
+      { url: 'https://olympics.com/ioc/olympic-highlights', label: 'IOC Highlights', description: 'IOC highlights mentioning strengthened partnership with WOA' },
     ]
   },
   {
@@ -244,15 +242,17 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
-    title: 'IOC Funding Increase',
-    description: 'Increased funding from IOC by up to 300%',
+    title: 'OLY House Paris',
+    description: 'Best OLY House ever at Paris 2024',
     links: [
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting financial modernisation and increased IOC support' },
-      { url: 'https://olympians.org/manifesto/', label: 'Manifesto', description: '2020 candidate manifesto referencing "big budget increases" from the IOC' },
-      { url: 'https://olympians.org/news/1945/ioc-and-woa-strengthen-their-partnership-to-better-support-olympians/', label: '2025 Agreement', description: 'Strengthened IOC–WOA partnership and funding' },
-      { url: 'https://olympians.org/news/497/athlete-welfare-a-top-priority-for-woa-in-2016/', label: 'Athlete Welfare Priority', description: 'Athlete welfare and funding priorities' },
-      { url: 'https://olympians.org/news/1942/ioc-and-woa-to-reaffirm-commitment-to-work-closely-together/', label: 'Joint Communication', description: 'New MoU / partnership reaffirmation with IOC' },
-      { url: 'https://olympics.com/ioc/olympic-highlights', label: 'IOC Highlights', description: 'IOC highlights mentioning strengthened partnership with WOA' },
+      { url: 'https://olympians.org/news/1843/oly-house-paris-to-be-at-an-historic-location/', label: 'Historic Location', description: 'Announcement of OLY House Paris at the historic Caisse d\'Epargne headquarters and the e-OLY House concept' },
+      { url: 'https://olympians.org/news/1866/94-year-old-olympian-stars-at-oly-house-paris-2024/', label: '94-Year-Old Star', description: 'Feature on a 94-year-old Olympian visiting OLY House Paris 2024' },
+      { url: 'https://olympians.org/news/1869/jesse-owens-and-luz-long-among-5-awarded-olympians-for-life-by-woa-patron-prince-albert/', label: 'Olympians for Life Awards', description: 'Article on Olympians for Life awards held at OLY House Paris 2024' },
+      { url: 'https://olympians.org/news/1875/oly-house-paris-2024-is-rocking/', label: 'Mid-Games Update', description: 'Mid-Games OLY House Paris update' },
+      { url: 'https://olympians.org/news/1887/six-films-chosen-for-prestigious-awards-at-oly-house-film-festival/', label: 'Film Festival', description: 'OLY House Film Festival awards' },
+      { url: 'https://olyhouse.org', label: 'OLY House Website', description: 'Dedicated OLY House website with Paris 2024 programme details' },
+      { url: 'https://olympics.com/athlete365/news/paris2024/meet-olympians-from-around-the-world-at-the-paris-2024-oly-house', label: 'IOC Athlete365', description: 'IOC Athlete365 article inviting Olympians to OLY House Paris' },
+      { url: 'https://youtube.com/watch?v=pwGuKFn_NGc', label: 'Video Highlights', description: 'Video highlights of OLY House Paris 2024' },
     ]
   },
   {
@@ -416,7 +416,7 @@ export const CORE_MESSAGES = [
 export const JOEL_ENDORSEMENT = {
   quote: "For 14 years, we've worked tirelessly to create today's WOA which serves Olympians needs and empowers them to give back to their communities through our many services, initiatives and grants. Pernilla, Lumi, and Thomas have been integral to many of these achievements. They have my full confidence to continue this work and take the WOA to even greater heights. And, crucially, to protect our independence.",
   author: "Joël Bouzou",
-  title: "WOA President (2010-2026)"
+  title: "WOA President (2011-2026)"
 };
 
 export const ACTION_PLAN: ActionPoint[] = [
