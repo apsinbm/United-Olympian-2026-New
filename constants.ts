@@ -51,6 +51,7 @@ export const CANDIDATES: Candidate[] = [
       'Champions for Peace Member'
     ],
     keyAchievement: 'Double Olympic Champion with 20+ years of sports administration and athlete advocacy. Led the WOA constitutional reforms enabling 50/50 gender representation.',
+    philosophy: 'Make every-day life better for Olympians. Walk the talk.',
     business: 'Entrepreneur and Owner of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden). Founder of Pernilla Wiberg Sportpromotion.',
     bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden. Based in Monaco since 1995, she is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
     socialLinks: {
@@ -83,7 +84,10 @@ export const CANDIDATES: Candidate[] = [
       'WADA Athlete Council Member (2023–Present)',
       'Member: FIBA Players\' Commission (2014–2019)',
       'Board Member: Nigeria Basketball Federation',
-      'Laureus Sport for Good Ambassador'
+      'Laureus Sport for Good Ambassador',
+      'Created Wall of Honor for 1976 Nigerian athletes denied their Olympic moment',
+      'Secured 4-hectare Olympian Village with government for athlete welfare',
+      'Established Olympian Welfare Scheme providing insurance and emergency support'
     ],
     keyAchievement: 'NBA Star and successful sports administrator. Founded the Youth Foundation that has mentored 40,000+ young people.',
     philosophy: 'Servant Leadership and bridging the gap for developing nations.',
@@ -91,7 +95,7 @@ export const CANDIDATES: Candidate[] = [
       'Master\'s Degree in Public Relations & Image Management (Florida Metropolitan University)',
       'Loyola College, Ibadan'
     ],
-    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement.',
+    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement. Speaks English, Russian, Chinese, Korean, and French.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
       twitter: 'https://x.com/olumideoyedeji1',
@@ -146,17 +150,17 @@ export const ACHIEVEMENTS = [
   { title: 'Development Grants', description: 'Created development grants for growing NOAs' },
   { title: 'Service to Society Grants', description: 'Funding for Olympians making community impact' },
   { title: 'Service to Olympians Grants', description: 'Direct support for Olympians in need' },
-  { title: 'IOC Funding Increase', description: 'Increased funding from IOC by 400%' },
+  { title: 'IOC Funding Increase', description: 'Increased funding from IOC by up to 300%' },
   { title: 'Fundraising Success', description: 'Raised millions to fund OLY Houses and World Olympians Forums' },
   { title: 'University Scholarships', description: 'Education opportunities for Olympians worldwide' },
-  { title: 'Olympians Ceremonies', description: 'Established recognition ceremonies for new Olympians' },
+  { title: 'OLY Ceremonies', description: 'Established recognition ceremonies for new Olympians' },
   { title: 'Health Research', description: 'First-ever global musculoskeletal health survey of Olympians' },
-  { title: 'Olympians for Life', description: 'Developed the Olympians for Life program' },
+  { title: 'Olympians for Life', description: 'Created the Olympians for Life awards and ceremonies' },
   { title: 'NOA Guide & Toolkits', description: 'Created comprehensive NOA Guide and Toolkits' },
   { title: 'Olympian.org Website', description: 'Rebuilt the Olympian.org website' },
   { title: 'Partnership Network', description: 'Built relationships with World Academy of Sport, SkillsBuild, and more' },
-  { title: 'New IOC Agreement', description: 'Secured long-term funding and stability for all WOA programs' },
-  { title: 'Financial Independence', description: 'Built sustainable funding model independent from IOC control' },
+  { title: 'New IOC Agreement', description: 'Secured independence, long-term funding and stability for all WOA programs' },
+  { title: 'Successful Global Campaigns', description: 'When Ebola struck and our NOAs asked for help we launched #TargetEbola and thanks to the global Olympian community we sent six containers of medical and other supplies to Sierra Leone and Liberia. Our #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.' },
 ];
 
 export const CORE_MESSAGES = [
@@ -164,21 +168,21 @@ export const CORE_MESSAGES = [
     id: 'built',
     title: 'We Built It',
     subtitle: 'The Modern WOA',
-    description: 'We delivered every major program Olympians rely on today. Proven results, not promises.',
+    description: 'We helped deliver every major program Olympians rely on today. Proven results, not promises.',
     icon: 'Trophy'
   },
   {
     id: 'secure',
     title: 'We Secure It',
     subtitle: 'Independent & Trusted',
-    description: 'We protect WOA independence while maintaining the strong working relationship that brings funding and influence.',
+    description: 'We protected WOA independence while rebuilding the strong working relationship that brings funding and influence.',
     icon: 'Shield'
   },
   {
     id: 'lead',
-    title: 'We Lead It',
+    title: 'We\'re Listening',
     subtitle: 'The Right Team',
-    description: 'An Olympic Champion, an NBA Star, and a Business Wizard. Experienced leaders ready to continue the work.',
+    description: 'An Olympic Champion, an NBA Star, and a Business Wizard. Experienced leaders listening to your needs and ready to continue working with you.',
     icon: 'Users'
   }
 ];
@@ -198,36 +202,36 @@ export const ACTION_PLAN: ActionPoint[] = [
   {
     id: 'rights',
     title: 'Health, Pensions & Image Sovereignty',
-    description: 'We will aggressively champion a global safety net, lobbying for health insurance coverage and pension schemes for Olympians. Furthermore, we demand the absolute protection of Image Rights post-Games. Once the competition ends, your likeness belongs to you, and we will secure the frameworks to ensure you control your own legacy.'
+    description: 'We will aggressively champion a global safety net, lobbying for health insurance coverage and pension schemes for Olympians. Furthermore, we will demand the absolute protection of Image Rights post-Games. Once the competition ends, your likeness and your data belongs to you, and we will work to secure the frameworks that ensure you control your own legacy.'
   },
   {
     id: 'reform',
-    title: 'Constitutional Reform & Gender Equity',
-    description: 'We commit to actively protecting the historic 50/50 gender representation reform initiated by Pernilla Wiberg.'
+    title: 'Maintaining and Enhancing Gender Equity',
+    description: 'We commit to actively protect and enhance the historic 50/50 gender representation reform initiated by the WOA Constitution Committee chaired by Pernilla Wiberg.'
   },
   {
     id: 'transparency',
-    title: 'Financial Transparency',
-    description: 'We will publish clear, downloadable financial reports accessible to every NOA president. Every dollar spent will be accounted for, with a focus on increasing the percentage of funds that go directly to helping Olympians.'
+    title: 'Continuing Financial Transparency',
+    description: 'The current administration moved from publishing our annual audit reports every four years to publishing them every year. We will continue that practice and ensure we implement the latest financial best practices and good governance processes.'
   },
   {
     id: 'dignity',
-    title: "The 'Transition Dignity' Fund",
-    description: 'Establishing a dedicated grant specifically for NOAs to run mental health and career transition workshops locally. Resources must be flexible to meet local cultural and economic needs.'
+    title: "The Life Transition Fund",
+    description: 'We will establish a dedicated grant specifically for NOAs to run local mental health and life and career transition workshops. Resources will be flexible to meet local cultural and economic needs.'
   },
   {
     id: 'empowerment',
-    title: 'Regional NOA Empowerment',
-    description: 'Shifting resources from centralized administration to regional hubs. Empowering local NOAs with the autonomy and funding to execute their own strategic plans without excessive bureaucratic oversight.'
+    title: 'Building NOA Empowerment',
+    description: 'We will appoint a Development Officer for every continent and prioritise regional and continental workshops and meetings to build NOA capacity and experience.'
   },
   {
     id: 'digital',
-    title: 'Digital Community Platform',
-    description: "Building a real, usable digital network for Olympians to connect for mentorship and business opportunities. A functional tool for career networking, leveraging Thomas Tang's tech expertise."
+    title: 'Supercharging OLY Connect',
+    description: "We will leverage Thomas Tang's tech expertise to make OLY Connect the indispensable app for Olympians that provides them with benefits, opportunities, connections, and business, career and life networking and support."
   },
   {
     id: 'legacy',
-    title: 'Sustainable Legacy Projects',
-    description: 'Legacy Grants for Olympians leading youth sports, education, and environmental initiatives in their communities.'
+    title: 'Increasing NOA Grants',
+    description: 'The NOA Development Grants and Service to Society and Service to Olympians Grants are always oversubscribed. We will raise more funding to increase the number of grants we can award every year.'
   }
 ];

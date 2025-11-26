@@ -12,7 +12,7 @@ const AchievementsSection: React.FC = () => {
             What We've <span className="text-gold">Already Built</span>
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Some candidates promise what we've already delivered. Here's our track record.
+            Some candidates promise what is already being delivered. Here's our track record.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const AchievementsSection: React.FC = () => {
 
         <div className="bg-gradient-to-r from-navy-deep to-navy-light rounded-2xl p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
-            "14 years ago, the WOA had nothing. Our team built everything Olympians rely on today."
+            "14 years ago, the WOA did very little. No grants, no scholarships, no NOA toolkits, no Development Officers. Our team built the resources your NOA relies on today."
           </p>
           <p className="text-gold font-bold text-xl md:text-2xl mt-4">
             Continue what works!
