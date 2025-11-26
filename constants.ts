@@ -320,6 +320,18 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    title: 'Olympian.org Website',
+    description: 'Rebuilt the Olympian.org website',
+    links: [
+      { url: 'https://olympians.org/news/13/world-olympians-association-launches-new-website/', label: 'New Brand Launch', description: 'Original launch of the Olympian.org website' },
+      { url: 'https://olympians.org/library/world_olympians_association_unveils_new_brand_identity_and_website_in_sochi_final.pdf', label: 'Full Press Release', description: 'Full press release on the 2014 rebrand and website launch' },
+      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page describing the 2014 modernisation and website rebuild' },
+      { url: 'https://olympians.org/news/33/woa-website-launched-in-three-languages/', label: 'Multilingual Site', description: 'Early update on multilingual WOA site' },
+      { url: 'https://olympians.org/woa/about/introduction/', label: 'WOA Introduction', description: 'Introduction to WOA and its services on the rebuilt site' },
+      { url: 'https://olympians.org', label: 'Olympians.org', description: 'Current WOA website homepage' },
+    ]
+  },
+  {
     title: 'NOA Guide & Toolkits',
     description: 'Created comprehensive NOA Guide and Toolkits',
     links: [
@@ -331,18 +343,6 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/noas/noa-guide/finance-management/', label: 'Finance Management', description: 'Section on finance management and budgeting' },
       { url: 'https://olympians.org/noas/noa-guide/communications/', label: 'Communications', description: 'Communications toolkit for NOAs' },
       { url: 'https://olympians.org/noas/noa-guide/resource-library/', label: 'Resource Library', description: 'Resource library with templates and sample documents' },
-    ]
-  },
-  {
-    title: 'Olympian.org Website',
-    description: 'Rebuilt the Olympian.org website',
-    links: [
-      { url: 'https://olympians.org/news/13/world-olympians-association-launches-new-website/', label: 'New Brand Launch', description: 'Original launch of the Olympian.org website' },
-      { url: 'https://olympians.org/library/world_olympians_association_unveils_new_brand_identity_and_website_in_sochi_final.pdf', label: 'Full Press Release', description: 'Full press release on the 2014 rebrand and website launch' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page describing the 2014 modernisation and website rebuild' },
-      { url: 'https://olympians.org/news/33/woa-website-launched-in-three-languages/', label: 'Multilingual Site', description: 'Early update on multilingual WOA site' },
-      { url: 'https://olympians.org/woa/about/introduction/', label: 'WOA Introduction', description: 'Introduction to WOA and its services on the rebuilt site' },
-      { url: 'https://olympians.org', label: 'Olympians.org', description: 'Current WOA website homepage' },
     ]
   },
   {

@@ -34,9 +34,9 @@ const AchievementsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-12" ref={dropdownRef}>
+        <div className="grid md:grid-cols-3 gap-6 mb-12" ref={dropdownRef}>
           {ACHIEVEMENTS.map((achievement, index) => (
-            <div key={index} className="relative">
+            <div key={index} className={`relative ${index === ACHIEVEMENTS.length - 1 ? 'md:col-span-3' : ''}`}>
               <div
                 onClick={() => achievement.links && achievement.links.length > 0 && toggleExpanded(index)}
                 className={`flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gold/50 hover:shadow-lg transition-all ${
