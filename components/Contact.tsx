@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                 </div>
                 <button 
                   type="submit" 
-                  className="w-full bg-crimson hover:bg-crimson-hover text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all"
+                  className="w-full bg-bermuda hover:bg-bermuda-dark text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all"
                 >
                   Request Meeting
                 </button>
