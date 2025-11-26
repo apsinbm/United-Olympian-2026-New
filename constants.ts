@@ -300,7 +300,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://bjsm.bmj.com/content/55/1/46', label: 'BJSM Paper', description: 'British Journal of Sports Medicine paper on injuries and later-life health in 3,357 retired Olympians' },
       { url: 'https://pubmed.ncbi.nlm.nih.gov/33168580', label: 'PubMed Entry', description: 'PubMed entry for the BJSM Olympian health study' },
       { url: 'https://napier.ac.uk/about-us/news/olympianhealth', label: 'Edinburgh Napier', description: 'Edinburgh Napier University article on Dr Debbie Palmer\'s leadership of the study' },
-      { url: 'https://fims.org/news-events/news/long-term-health-of-olympians', label: 'FIMS News', description: 'FIMS/WOA news about collaboration on long-term Olympian health' },
+      { url: 'https://www.fims.org/news/the-long-term-health-of-olympians-a-fims-and-woa-collaboration/', label: 'FIMS News', description: 'FIMS/WOA news about collaboration on long-term Olympian health' },
     ]
   },
   {
@@ -335,11 +335,11 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/noas/noa-guide/', label: 'NOA Guide', description: 'Main NOA Guide homepage' },
       { url: 'https://olympians.org/news/1286/new-noa-guide-will-boost-capabilities/', label: 'Guide Launch', description: 'Launch article for the NOA Guide at the World Olympians Forum' },
       { url: 'https://olympians.org/noas/noa-guide/member-engagement/', label: 'Member Engagement', description: 'Toolkit section on member engagement and services' },
-      { url: 'https://olympians.org/noas/noa-guide/project-delivery/', label: 'Project Delivery', description: 'Toolkit section on project delivery and use of grants' },
-      { url: 'https://olympians.org/noas/noa-guide/leadership-governance/', label: 'Leadership & Governance', description: 'Section on leadership, governance and structures' },
+      { url: 'https://olympians.org/noas/noa-guide/project-delivery-overview/', label: 'Project Delivery', description: 'Toolkit section on project delivery and use of grants' },
+      { url: 'https://olympians.org/noas/noa-guide/leadership-governance-overview/', label: 'Leadership & Governance', description: 'Section on leadership, governance and structures' },
       { url: 'https://olympians.org/noas/noa-guide/finance-management/', label: 'Finance Management', description: 'Section on finance management and budgeting' },
-      { url: 'https://olympians.org/noas/noa-guide/communications/', label: 'Communications', description: 'Communications toolkit for NOAs' },
-      { url: 'https://olympians.org/noas/noa-guide/resource-library/', label: 'Resource Library', description: 'Resource library with templates and sample documents' },
+      { url: 'https://olympians.org/noas/noa-guide/communications-overview/', label: 'Communications', description: 'Communications toolkit for NOAs' },
+      { url: 'https://olympians.org/noas/noa-guide/resource-library-overview/', label: 'Resource Library', description: 'Resource library with templates and sample documents' },
     ]
   },
   {
@@ -353,7 +353,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://worldacademy.sport/scholarship', label: 'WAoS Scholarships', description: 'WAoS scholarship information aligned with Olympian programmes' },
       { url: 'https://worldacademy.sport', label: 'World Academy of Sport', description: 'Main WAoS homepage' },
       { url: 'https://skillsbuild.org/organizations-supporting-adult-learners/partners', label: 'SkillsBuild Partners', description: 'IBM SkillsBuild partners page listing WOA among global partners' },
-      { url: 'https://fims.org/news-events/news/long-term-health-of-olympians', label: 'FIMS Partnership', description: 'FIMS news on partnering with WOA on Olympian health' },
+      { url: 'https://www.fims.org/news/the-long-term-health-of-olympians-a-fims-and-woa-collaboration/', label: 'FIMS Partnership', description: 'FIMS news on partnering with WOA on Olympian health' },
     ]
   },
   {
