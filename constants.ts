@@ -173,9 +173,9 @@ export const CORE_MESSAGES = [
   },
   {
     id: 'secure',
-    title: 'We Secure It',
+    title: 'We Secured It',
     subtitle: 'Independent & Trusted',
-    description: 'We protected WOA independence while rebuilding the strong working relationship that brings funding and influence.',
+    description: 'We protected WOA independence while rebuilding the strong working relationship with the IOC that brings funding and influence.',
     icon: 'Shield'
   },
   {
