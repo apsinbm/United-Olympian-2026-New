@@ -25,9 +25,9 @@ const AchievementsSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="achievements">
+    <section className="py-12 md:py-20 bg-white" id="achievements">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <span className="text-crimson font-bold tracking-widest uppercase text-sm">14 Years of Successful Delivery</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mt-4">
             What We've <span className="text-gold">Already Built</span>
@@ -121,9 +121,7 @@ const AchievementsSection: React.FC = () => {
           </div>
         )}
 
-        <div className="hidden md:block mb-6"></div>
-
-        <div className="bg-gradient-to-r from-nordic-slate to-nordic-storm rounded-2xl p-8 md:p-12 text-center">
+        <div className="bg-gradient-to-r from-nordic-slate to-nordic-storm rounded-2xl p-6 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
             "14 years ago, the WOA did very little. No grants, no scholarships, no NOA toolkits, no Development Officers. Our team built the resources your NOA relies on today."
           </p>
