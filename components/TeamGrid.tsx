@@ -1,12 +1,46 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { CANDIDATES } from '../constants';
 import { Candidate } from '../types';
-import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink } from 'lucide-react';
+import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const GALLERY_ORDER = [15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 16, 17, 18];
 
 const TeamGrid: React.FC = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  const navigateLightbox = useCallback((direction: 'prev' | 'next') => {
+    if (!lightboxImage) return;
+    const match = lightboxImage.match(/\/Pernilla\/(\d+)\.jpg/);
+    if (!match) return;
+    const currentNum = parseInt(match[1]);
+    const currentIndex = GALLERY_ORDER.indexOf(currentNum);
+    if (currentIndex === -1) return;
+
+    let newIndex;
+    if (direction === 'next') {
+      newIndex = (currentIndex + 1) % GALLERY_ORDER.length;
+    } else {
+      newIndex = (currentIndex - 1 + GALLERY_ORDER.length) % GALLERY_ORDER.length;
+    }
+    setLightboxImage(`/Pernilla/${GALLERY_ORDER[newIndex]}.jpg`);
+  }, [lightboxImage]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!lightboxImage) return;
+      if (e.key === 'ArrowRight') {
+        navigateLightbox('next');
+      } else if (e.key === 'ArrowLeft') {
+        navigateLightbox('prev');
+      } else if (e.key === 'Escape') {
+        setLightboxImage(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxImage, navigateLightbox]);
 
   return (
     <section id="team" className="py-24 bg-light-grey">
@@ -229,7 +263,7 @@ const TeamGrid: React.FC = () => {
                     <div className="mt-6">
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
-                        {[15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 16, 17, 18].map((num) => (
+                        {GALLERY_ORDER.map((num) => (
                           <div key={num} className="w-full h-20 rounded-lg overflow-hidden">
                             <img
                               src={`/Pernilla/${num}.jpg`}
@@ -385,6 +419,23 @@ const TeamGrid: React.FC = () => {
           >
             <X size={24} />
           </button>
+
+          {/* Previous button */}
+          <button
+            onClick={(e) => { e.stopPropagation(); navigateLightbox('prev'); }}
+            className="absolute left-4 p-3 bg-white/10 rounded-full hover:bg-white/20 transition text-white z-10"
+          >
+            <ChevronLeft size={32} />
+          </button>
+
+          {/* Next button */}
+          <button
+            onClick={(e) => { e.stopPropagation(); navigateLightbox('next'); }}
+            className="absolute right-4 p-3 bg-white/10 rounded-full hover:bg-white/20 transition text-white z-10"
+          >
+            <ChevronRight size={32} />
+          </button>
+
           <img
             src={lightboxImage}
             alt="Gallery full view"
