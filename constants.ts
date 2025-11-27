@@ -32,7 +32,7 @@ export const CANDIDATES: Candidate[] = [
     role: 'For President',
     sport: 'Alpine Skiing',
     country: 'Sweden',
-    location: 'Monte Carlo, Monaco',
+    location: 'Idre Fjäll, Sweden & Monte Carlo, Monaco',
     imageAction: 'Pernilla Business.jpg',
     imageHeadshot: 'Pernilla Sport.webp',
     achievements: [
@@ -53,7 +53,7 @@ export const CANDIDATES: Candidate[] = [
     keyAchievement: 'Double Olympic Champion with 20+ years of sports administration and athlete advocacy. Led the WOA constitutional reforms enabling 50/50 gender representation.',
     philosophy: 'Make every-day life better for Olympians. Walk the talk.',
     business: 'Entrepreneur and Owner of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden). Founder of Pernilla Wiberg Sportpromotion.',
-    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden. Based in Monaco since 1995, she is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
+    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden. Based in Idre Fjäll, Sweden and Monte Carlo, Monaco since 1995, she is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/pernilla-wiberg-bjerke-oly-0609271ba/',
       twitter: 'https://x.com/pernillawiberg',
