@@ -22,8 +22,8 @@ const App: React.FC = () => {
         <TeamGrid />
         <CoreMessages />
         <AchievementsSection />
-        <EndorsementBanner />
         <ActionPlan />
+        <EndorsementBanner />
         <Contact />
       </main>
       <VoteDisciplineBanner variant="bottom" />
