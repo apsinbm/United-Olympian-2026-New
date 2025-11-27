@@ -88,7 +88,7 @@ const AchievementsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-bermuda-dark to-bermuda rounded-2xl p-8 md:p-12 text-center">
+        <div className="bg-gradient-to-r from-ocean-deep to-ocean-mid rounded-2xl p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
             "14 years ago, the WOA did very little. No grants, no scholarships, no NOA toolkits, no Development Officers. Our team built the resources your NOA relies on today."
           </p>

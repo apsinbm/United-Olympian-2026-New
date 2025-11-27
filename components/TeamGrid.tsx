@@ -231,7 +231,7 @@ const TeamGrid: React.FC = () => {
 
                 {/* Video Biography Section */}
                 <div className="mb-8 group relative rounded-xl overflow-hidden shadow-lg bg-navy-deep">
-                  <div className="absolute top-4 left-4 z-10 bg-bermuda text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                  <div className="absolute top-4 left-4 z-10 bg-ocean-mid text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
                     <PlayCircle size={12} />
                     <span>Video Bio</span>
                   </div>
@@ -268,7 +268,7 @@ const TeamGrid: React.FC = () => {
                         <ul className="space-y-2">
                            {selectedCandidate.governance.map((g, i) => (
                               <li key={i} className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 bg-bermuda rounded-full"></span>
+                                <span className="w-1.5 h-1.5 bg-ocean-mid rounded-full"></span>
                                 {g}
                               </li>
                            ))}
