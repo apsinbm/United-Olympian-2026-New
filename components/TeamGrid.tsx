@@ -4,7 +4,15 @@ import { CANDIDATES } from '../constants';
 import { Candidate } from '../types';
 import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const GALLERY_ORDER = [15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 16, 17, 18];
+// Gallery pairs: sport photos paired with diplomacy photos
+const GALLERY_PAIRS = Array.from({ length: 18 }, (_, i) => ({
+  num: i + 1,
+  sport: `/Pernilla/${i + 1}.jpg`,
+  diplomacy: `/Pernilla/Pernilla Diplomacy/${i + 1}.jpeg`
+}));
+
+// Flat list of all images for lightbox navigation (sport, diplomacy, sport, diplomacy...)
+const ALL_GALLERY_IMAGES = GALLERY_PAIRS.flatMap(({ sport, diplomacy }) => [sport, diplomacy]);
 
 const TeamGrid: React.FC = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
@@ -12,19 +20,16 @@ const TeamGrid: React.FC = () => {
 
   const navigateLightbox = useCallback((direction: 'prev' | 'next') => {
     if (!lightboxImage) return;
-    const match = lightboxImage.match(/\/Pernilla\/(\d+)\.jpg/);
-    if (!match) return;
-    const currentNum = parseInt(match[1]);
-    const currentIndex = GALLERY_ORDER.indexOf(currentNum);
+    const currentIndex = ALL_GALLERY_IMAGES.indexOf(lightboxImage);
     if (currentIndex === -1) return;
 
     let newIndex;
     if (direction === 'next') {
-      newIndex = (currentIndex + 1) % GALLERY_ORDER.length;
+      newIndex = (currentIndex + 1) % ALL_GALLERY_IMAGES.length;
     } else {
-      newIndex = (currentIndex - 1 + GALLERY_ORDER.length) % GALLERY_ORDER.length;
+      newIndex = (currentIndex - 1 + ALL_GALLERY_IMAGES.length) % ALL_GALLERY_IMAGES.length;
     }
-    setLightboxImage(`/Pernilla/${GALLERY_ORDER[newIndex]}.jpg`);
+    setLightboxImage(ALL_GALLERY_IMAGES[newIndex]);
   }, [lightboxImage]);
 
   useEffect(() => {
@@ -262,21 +267,31 @@ const TeamGrid: React.FC = () => {
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-6 hidden md:block">
                       <span className="block text-white font-bold mb-3">Gallery</span>
-                      <div className="grid grid-cols-2 gap-2">
-                        {GALLERY_ORDER.map((num) => (
-                          <div key={num} className="w-full h-20 rounded-lg overflow-hidden">
-                            <img
-                              src={`/Pernilla/${num}.jpg`}
-                              alt={`Pernilla gallery ${num}`}
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-                              style={
-                                num === 3 ? { objectPosition: 'top' } :
-                                num === 17 ? { objectPosition: 'center 25%' } :
-                                num === 13 ? { transform: 'scale(1.5)' } :
-                                undefined
-                              }
-                              onClick={() => setLightboxImage(`/Pernilla/${num}.jpg`)}
-                            />
+                      <div className="space-y-2">
+                        {GALLERY_PAIRS.map(({ num, sport, diplomacy }) => (
+                          <div key={num} className="grid grid-cols-2 gap-2">
+                            <div className="w-full h-20 rounded-lg overflow-hidden">
+                              <img
+                                src={sport}
+                                alt={`Pernilla sport ${num}`}
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={
+                                  num === 3 ? { objectPosition: 'top' } :
+                                  num === 17 ? { objectPosition: 'center 25%' } :
+                                  num === 13 ? { transform: 'scale(1.5)' } :
+                                  undefined
+                                }
+                                onClick={() => setLightboxImage(sport)}
+                              />
+                            </div>
+                            <div className="w-full h-20 rounded-lg overflow-hidden">
+                              <img
+                                src={diplomacy}
+                                alt={`Pernilla diplomacy ${num}`}
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                onClick={() => setLightboxImage(diplomacy)}
+                              />
+                            </div>
                           </div>
                         ))}
                       </div>
@@ -405,22 +420,32 @@ const TeamGrid: React.FC = () => {
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-8 md:hidden">
                       <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
-                      <div className="grid grid-cols-3 gap-2">
-                        {GALLERY_ORDER.map((num) => (
-                          <div key={num} className="w-full aspect-square rounded-lg overflow-hidden">
-                            <img
-                              src={`/Pernilla/${num}.jpg`}
-                              alt={`Pernilla gallery ${num}`}
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-                              style={
-                                num === 3 ? { objectPosition: 'top' } :
-                                num === 17 ? { objectPosition: 'center 25%' } :
-                                num === 13 ? { transform: 'scale(1.5)' } :
-                                undefined
-                              }
-                              onClick={() => setLightboxImage(`/Pernilla/${num}.jpg`)}
-                            />
-                          </div>
+                      <div className="grid grid-cols-1 gap-2">
+                        {GALLERY_PAIRS.map(({ num, sport, diplomacy }) => (
+                          <React.Fragment key={num}>
+                            <div className="w-full aspect-square rounded-lg overflow-hidden">
+                              <img
+                                src={sport}
+                                alt={`Pernilla sport ${num}`}
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={
+                                  num === 3 ? { objectPosition: 'top' } :
+                                  num === 17 ? { objectPosition: 'center 25%' } :
+                                  num === 13 ? { transform: 'scale(1.5)' } :
+                                  undefined
+                                }
+                                onClick={() => setLightboxImage(sport)}
+                              />
+                            </div>
+                            <div className="w-full aspect-square rounded-lg overflow-hidden">
+                              <img
+                                src={diplomacy}
+                                alt={`Pernilla diplomacy ${num}`}
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                onClick={() => setLightboxImage(diplomacy)}
+                              />
+                            </div>
+                          </React.Fragment>
                         ))}
                       </div>
                     </div>
