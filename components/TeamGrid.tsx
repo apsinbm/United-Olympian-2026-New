@@ -229,7 +229,7 @@ const TeamGrid: React.FC = () => {
                     <div className="mt-6">
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
-                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map((num) => (
+                        {[15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 16, 17, 18].map((num) => (
                           <div key={num} className="w-full h-20 rounded-lg overflow-hidden">
                             <img
                               src={`/Pernilla/${num}.jpg`}
@@ -388,7 +388,7 @@ const TeamGrid: React.FC = () => {
           <img
             src={lightboxImage}
             alt="Gallery full view"
-            className={`object-contain rounded-lg shadow-2xl ${lightboxImage.includes('/1.jpg') ? 'max-w-[12vw] max-h-[12vh]' : 'max-w-[90vw] max-h-[90vh]'}`}
+            className={`object-contain rounded-lg shadow-2xl ${lightboxImage.includes('/1.jpg') ? 'max-w-[25vw] max-h-[25vh]' : 'max-w-[90vw] max-h-[90vh]'}`}
             onClick={(e) => e.stopPropagation()}
           />
         </div>
