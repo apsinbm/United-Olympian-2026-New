@@ -258,9 +258,9 @@ const TeamGrid: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Photo Gallery - Pernilla only for now */}
+                  {/* Photo Gallery - Pernilla only, hidden on mobile (shown at end of content area instead) */}
                   {selectedCandidate.id === 'pernilla' && (
-                    <div className="mt-6">
+                    <div className="mt-6 hidden md:block">
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
                         {GALLERY_ORDER.map((num) => (
@@ -397,6 +397,31 @@ const TeamGrid: React.FC = () => {
                             allowFullScreen
                           />
                         </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Photo Gallery - Mobile only, shown at end of content */}
+                  {selectedCandidate.id === 'pernilla' && (
+                    <div className="mt-8 md:hidden">
+                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <div className="grid grid-cols-3 gap-2">
+                        {GALLERY_ORDER.map((num) => (
+                          <div key={num} className="w-full aspect-square rounded-lg overflow-hidden">
+                            <img
+                              src={`/Pernilla/${num}.jpg`}
+                              alt={`Pernilla gallery ${num}`}
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              style={
+                                num === 3 ? { objectPosition: 'top' } :
+                                num === 17 ? { objectPosition: 'center 25%' } :
+                                num === 13 ? { transform: 'scale(1.5)' } :
+                                undefined
+                              }
+                              onClick={() => setLightboxImage(`/Pernilla/${num}.jpg`)}
+                            />
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}

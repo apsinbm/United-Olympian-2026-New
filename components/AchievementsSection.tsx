@@ -98,7 +98,7 @@ const AchievementsSection: React.FC = () => {
 
         {/* View All button - mobile only */}
         {!showAllMobile && (
-          <div className="md:hidden text-center mb-12">
+          <div className="md:hidden text-center mb-6">
             <button
               onClick={() => setShowAllMobile(true)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-navy-deep text-white font-bold rounded-full hover:bg-navy-light transition-colors"
@@ -110,7 +110,7 @@ const AchievementsSection: React.FC = () => {
         )}
 
         {showAllMobile && (
-          <div className="md:hidden text-center mb-12">
+          <div className="md:hidden text-center mb-6">
             <button
               onClick={() => setShowAllMobile(false)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 text-navy-deep font-bold rounded-full hover:bg-gray-300 transition-colors"
@@ -121,7 +121,7 @@ const AchievementsSection: React.FC = () => {
           </div>
         )}
 
-        <div className="hidden md:block mb-12"></div>
+        <div className="hidden md:block mb-6"></div>
 
         <div className="bg-gradient-to-r from-nordic-slate to-nordic-storm rounded-2xl p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">

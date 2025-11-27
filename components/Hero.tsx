@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       {/* Background Slideshow */}
       <HeroSlideshow />
 
-      <div className="relative z-10 h-[calc(100vh-140px)] flex items-center justify-center text-center px-4">
+      <div className="relative z-10 h-[calc(100vh-140px)] flex items-center justify-center text-center px-4 pt-16 md:pt-0">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           <span className="inline-block py-1 px-3 rounded-full bg-gold/20 text-gold border border-gold/40 text-sm font-bold mb-6 tracking-widest uppercase">
             Official 2026 Campaign
