@@ -6,11 +6,17 @@ export interface SocialLinks {
   website?: string;
 }
 
+export interface OlympicYear {
+  year: number;
+  medal?: 'gold' | 'silver' | 'bronze';
+}
+
 export interface Candidate {
   id: string;
   name: string;
   role: string;
   sport: string;
+  olympicYears?: OlympicYear[];
   country: string;
   location?: string;
   imageAction: string;

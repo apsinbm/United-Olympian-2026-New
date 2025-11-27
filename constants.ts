@@ -31,6 +31,12 @@ export const CANDIDATES: Candidate[] = [
     name: 'Pernilla Wiberg, OLY',
     role: 'For President',
     sport: 'Alpine Skiing',
+    olympicYears: [
+      { year: 1992, medal: 'gold' },
+      { year: 1994, medal: 'gold' },
+      { year: 1998, medal: 'silver' },
+      { year: 2002 }
+    ],
     country: 'Sweden',
     location: 'Idre Fjäll, Sweden & Monte Carlo, Monaco',
     imageAction: 'Pernilla Business.jpg',
@@ -67,6 +73,9 @@ export const CANDIDATES: Candidate[] = [
     name: 'Olumide Oyedeji, OLY',
     role: 'For Secretary General',
     sport: 'Basketball',
+    olympicYears: [
+      { year: 2012 }
+    ],
     country: 'Nigeria',
     location: 'Lagos, Nigeria',
     imageAction: 'Lumi Business.jpg',
@@ -108,31 +117,39 @@ export const CANDIDATES: Candidate[] = [
     name: 'Thomas Tang, OLY',
     role: 'For Treasurer',
     sport: 'Alpine Skiing',
+    olympicYears: [
+      { year: 1988 },
+      { year: 1992 }
+    ],
     country: 'Chinese Taipei',
     location: 'Taipei',
     imageAction: 'Thomas Business.jpg',
     imageHeadshot: 'Thomas Sport 2.jpg',
     achievements: [
       'Two-time Winter Olympian (Calgary 1988, Albertville 1992)',
-      'World Championship & World Cup Competitor',
-      'Chef de Mission for Guinea-Bissau (2026 Milano-Cortina Olympics)',
-      'Secretary General, Guinea-Bissau Winter Sports Federation',
-      'Olympic Family: Daughter (Figure Skating Worlds), Son (2026 Olympic qualifier)'
+      'Alpine World Championships Competitor (1989)',
+      'Alpine World Cup Competitor (1989)',
+      'Chinese Taipei National Ski Team (1987–1992)'
     ],
     governance: [
+      'Secretary General: Guinea-Bissau Winter Sports Federation (2023–Present)',
+      'President & CEO: Apantac LLC (2008–Present)',
+      'President: Eubank Investment Group (2012–Present)',
+      'President: Anextus Trading & Export, Guinea-Bissau (2024–Present)',
+      'Board Member: Taiwanese American Chamber of Commerce (2023–Present)',
       'Director of International Affairs: Chinese Taipei Olympians Association',
-      'Advisor to WOA Treasurer',
-      'Board Member: Taiwanese Chamber of Commerce of North America',
-      'Society of Motion Picture and Television Engineers Member (1996–Present)'
+      'Advisor to WOA Treasurer'
     ],
     keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that powered multiple generations of Olympic broadcasts.',
     business: 'Founder & President: Apantac LLC (Global leader in broadcast signal processing). President: Eubank Investment Group.',
     trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech (grew business 8x), Director of Marketing at Grass Valley ($50M P&L responsibility), worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems.',
     education: [
-      'Harvard Business School - Executive Training (Marketing & Business Strategy)',
-      'University of London - Post Graduate Certificate (Sports Marketing, World Academy of Sport)'
+      'Harvard Business School - Executive Education (Marketing & Business Strategy)',
+      'Westminster College - M.S., Computer Science',
+      'University of Utah - M.S., Applied Physics',
+      'University of Utah - B.S., Physics'
     ],
-    bioFull: 'Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei who competed at World Championships and World Cups, he now serves as Chef de Mission for Guinea-Bissau at the 2026 Milano-Cortina Olympics and Secretary General of their Winter Sports Federation. His Olympic legacy is a family affair—his daughter competed at the Figure Skating World Championships, and his son has qualified for the 2026 Olympics in Alpine Skiing.\n\nThomas founded Apantac in his basement during the 2008 financial crisis and built it into a global broadcast technology leader—winning the prestigious NAB PICK HIT AWARD in 2009 and now shipping 200+ products to 40+ countries. His technology has powered Olympic broadcasts, Soccer World Cups, and national broadcasters worldwide.\n\nWith Harvard Business School executive training, prior leadership at Grass Valley ($50M P&L) and Avitech (8x growth), and early career engineering on F-14/F-16 simulators and NASA Space Shuttle training systems, Thomas brings unmatched financial acumen and operational excellence to the WOA. Fluent in English, Mandarin, Cantonese, and Taiwanese.',
+    bioFull: 'Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei who competed at World Championships and World Cups, he now serves as Chef de Mission for Guinea-Bissau at the 2026 Milano-Cortina Olympics and Secretary General of their Winter Sports Federation. His Olympic legacy is a family affair—his daughter competed at Figure Skating at an international level, and his sons have qualified for the 2022 and 2026 Olympics in Alpine Skiing.\n\nThomas founded Apantac in his basement during the 2008 financial crisis and built it into a global broadcast and ProAV technology leader—winning the prestigious NAB PICK HIT AWARD in 2009 and now shipping 200+ products to 40+ countries, from Greenland to New Zealand. His technology has powered Olympic broadcasts, Soccer World Cups, major professional sports leagues, and national broadcasters worldwide, and is used daily by leading social media for their event spaces.\n\nWith Harvard Business School executive training, prior leadership at Philips Broadcast ($50M P&L) and career engineering on F-14/F-16 simulators and NASA Space Shuttle training systems, Thomas brings unmatched financial acumen and operational excellence to the WOA. Fluent in English, Mandarin, Cantonese, and Taiwanese.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/thomas-tang-oly-5202b84/',
       facebook: 'https://www.facebook.com/thomas.tang.18',

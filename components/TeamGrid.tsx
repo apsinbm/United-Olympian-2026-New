@@ -1,8 +1,44 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { CANDIDATES } from '../constants';
-import { Candidate } from '../types';
+import { Candidate, OlympicYear } from '../types';
 import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+
+// Medal icon component
+const MedalIcon: React.FC<{ type: 'gold' | 'silver' | 'bronze' }> = ({ type }) => {
+  const colors = {
+    gold: { fill: '#FFD700', stroke: '#B8860B', ribbon: '#DC143C' },
+    silver: { fill: '#C0C0C0', stroke: '#808080', ribbon: '#1E90FF' },
+    bronze: { fill: '#CD7F32', stroke: '#8B4513', ribbon: '#228B22' }
+  };
+  const c = colors[type];
+  return (
+    <svg width="16" height="20" viewBox="0 0 16 20" className="inline-block -mt-1">
+      {/* Ribbon */}
+      <path d="M6 0 L4 8 L8 6 L12 8 L10 0 Z" fill={c.ribbon} />
+      {/* Medal circle */}
+      <circle cx="8" cy="13" r="6" fill={c.fill} stroke={c.stroke} strokeWidth="1" />
+      {/* Star on medal */}
+      <path d="M8 9 L9 11.5 L11.5 11.5 L9.5 13 L10.5 15.5 L8 14 L5.5 15.5 L6.5 13 L4.5 11.5 L7 11.5 Z" fill={c.stroke} />
+    </svg>
+  );
+};
+
+// Olympic years display component
+const OlympicYearsDisplay: React.FC<{ years?: OlympicYear[] }> = ({ years }) => {
+  if (!years || years.length === 0) return null;
+  return (
+    <span className="flex flex-wrap items-center justify-center gap-2">
+      {years.map((oy, idx) => (
+        <span key={oy.year} className="inline-flex items-center gap-0.5">
+          <span className="font-semibold">{oy.year}</span>
+          {oy.medal && <MedalIcon type={oy.medal} />}
+          {idx < years.length - 1 && <span className="ml-1">,</span>}
+        </span>
+      ))}
+    </span>
+  );
+};
 
 // Gallery pairs: sport photos paired with diplomacy photos
 const GALLERY_PAIRS = Array.from({ length: 18 }, (_, i) => ({
@@ -84,10 +120,16 @@ const TeamGrid: React.FC = () => {
                 <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{candidate.role}</p>
 
                 <div className="mt-4 text-sm text-gray-600 space-y-2 mb-6">
-                  <p className="flex items-center justify-center gap-2">
-                    <Trophy size={16} className="text-gold" />
-                    <span>{candidate.sport}</span>
-                  </p>
+                  <div className="flex items-center justify-center gap-2">
+                    {candidate.olympicYears ? (
+                      <OlympicYearsDisplay years={candidate.olympicYears} />
+                    ) : (
+                      <>
+                        <Trophy size={16} className="text-gold flex-shrink-0" />
+                        <span>{candidate.sport}</span>
+                      </>
+                    )}
+                  </div>
                 </div>
 
                 <p className="text-gray-500 text-sm line-clamp-3 mb-6 font-serif italic">
