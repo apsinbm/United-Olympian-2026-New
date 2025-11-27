@@ -137,8 +137,7 @@ export const CANDIDATES: Candidate[] = [
       'President: Eubank Investment Group (2012–Present)',
       'President: Anextus Trading & Export, Guinea-Bissau (2024–Present)',
       'Board Member: Taiwanese American Chamber of Commerce (2023–Present)',
-      'Director of International Affairs: Chinese Taipei Olympians Association',
-      'Advisor to WOA Treasurer'
+      'Director of International Affairs: Chinese Taipei Olympians Association'
     ],
     keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that powered multiple generations of Olympic broadcasts.',
     business: 'Founder & President: Apantac LLC (Global leader in broadcast & ProAV, HQ in Beaverton, Oregon with offices in Paris, Taipei, Tokyo, Singapore & Mexico City). President: Eubank Investment Group.',
