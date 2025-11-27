@@ -463,6 +463,24 @@ const TeamGrid: React.FC = () => {
                     </div>
                   )}
 
+                  {/* Vimeo Video - Thomas only */}
+                  {selectedCandidate.id === 'thomas' && (
+                    <div className="mt-8">
+                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <div className="space-y-4">
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://player.vimeo.com/video/24643468"
+                            title="Thomas Tang - Apantac"
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Photo Gallery - Mobile only, shown at end of content */}
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-8 md:hidden">
