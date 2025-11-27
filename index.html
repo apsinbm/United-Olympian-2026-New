@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olympians United 2026 | Proven Leaders. United Action.</title>
-    
+    <title>Olympians United 2026 | Ocean Gradient Theme</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,19 +18,24 @@
           extend: {
             colors: {
               navy: {
-                deep: '#0f172a', // Primary
-                light: '#1e293b',
+                deep: '#0F4C75', // Deep ocean blue
+                light: '#3282B8', // Mid ocean blue
               },
               gold: {
-                DEFAULT: '#fbbf24', // Accent 1
-                hover: '#d97706',
+                DEFAULT: '#D4AF37', // Classic Olympic gold
+                hover: '#B8960C',
               },
               crimson: {
-                DEFAULT: '#dc2626', // Accent 2
-                hover: '#b91c1c',
+                DEFAULT: '#3282B8', // Replace red with mid blue
+                hover: '#0F4C75',
               },
               light: {
-                grey: '#f3f4f6',
+                grey: '#F7FBFC', // Soft ocean white
+              },
+              ocean: {
+                deep: '#0F4C75',    // Deep ocean
+                mid: '#3282B8',     // Mid blue
+                light: '#BBE1FA',   // Sky blue / foam
               }
             },
             fontFamily: {
@@ -47,14 +52,14 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #0f172a; 
+        background: #F7FBFC;
       }
       ::-webkit-scrollbar-thumb {
-        background: #fbbf24;
+        background: #3282B8;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #d97706;
+        background: #0F4C75;
       }
       html {
         scroll-behavior: smooth;
