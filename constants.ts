@@ -109,7 +109,7 @@ export const CANDIDATES: Candidate[] = [
     role: 'For Treasurer',
     sport: 'Alpine Skiing',
     country: 'Chinese Taipei',
-    location: 'Portland, Oregon, USA',
+    location: 'Taipei',
     imageAction: 'Thomas Business.jpg',
     imageHeadshot: 'Thomas Sport 2.jpg',
     achievements: [
@@ -123,9 +123,9 @@ export const CANDIDATES: Candidate[] = [
       'Director of International Affairs: Chinese Taipei Olympians Association',
       'Advisor to WOA Treasurer',
       'Board Member: Taiwanese Chamber of Commerce of North America',
-      'SMPTE Member (1996–Present)'
+      'Society of Motion Picture and Television Engineers Member (1996–Present)'
     ],
-    keyAchievement: 'Business Wizard and Olympian. Built a global tech company from scratch that powered the Sochi 2014 and Paris 2024 Olympic broadcasts.',
+    keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that powered multiple generations of Olympic broadcasts.',
     business: 'Founder & President: Apantac LLC (Global leader in broadcast signal processing). President: Eubank Investment Group.',
     trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech (grew business 8x), Director of Marketing at Grass Valley ($50M P&L responsibility), worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems.',
     education: [
