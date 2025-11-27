@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { ACTION_PLAN } from '../constants';
 import { ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
 
+const MOBILE_INITIAL_COUNT = 3;
+
 const ActionPlan: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [showAllMobile, setShowAllMobile] = useState(false);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -36,10 +39,11 @@ const ActionPlan: React.FC = () => {
           <div className="lg:w-2/3 space-y-4">
             {ACTION_PLAN.map((item, index) => {
               const isOpen = openIndex === index;
+              const hiddenOnMobile = !showAllMobile && index >= MOBILE_INITIAL_COUNT;
               return (
-                <div 
-                  key={item.id} 
-                  className={`rounded-lg transition-all duration-300 overflow-hidden ${isOpen ? 'bg-white text-navy-deep' : 'bg-navy-light hover:bg-navy-light/80 text-white'}`}
+                <div
+                  key={item.id}
+                  className={`rounded-lg transition-all duration-300 overflow-hidden ${isOpen ? 'bg-white text-navy-deep' : 'bg-navy-light hover:bg-navy-light/80 text-white'} ${hiddenOnMobile ? 'hidden md:block' : ''}`}
                 >
                   <button
                     onClick={() => toggleAccordion(index)}
@@ -55,8 +59,8 @@ const ActionPlan: React.FC = () => {
                     </div>
                     {isOpen ? <ChevronUp className="shrink-0 ml-4 text-crimson" /> : <ChevronDown className="shrink-0 ml-4 text-gray-400" />}
                   </button>
-                  
-                  <div 
+
+                  <div
                     className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                   >
                     <div className="px-6 pb-6 pl-[4.5rem] pr-8">
@@ -72,6 +76,31 @@ const ActionPlan: React.FC = () => {
                 </div>
               );
             })}
+
+            {/* View All button - mobile only */}
+            {!showAllMobile && (
+              <div className="md:hidden text-center pt-4">
+                <button
+                  onClick={() => setShowAllMobile(true)}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy-deep font-bold rounded-full hover:bg-yellow-400 transition-colors"
+                >
+                  View All {ACTION_PLAN.length} Commitments
+                  <ChevronDown className="h-5 w-5" />
+                </button>
+              </div>
+            )}
+
+            {showAllMobile && (
+              <div className="md:hidden text-center pt-4">
+                <button
+                  onClick={() => setShowAllMobile(false)}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-navy-light text-white font-bold rounded-full hover:bg-navy-light/80 transition-colors"
+                >
+                  Show Less
+                  <ChevronUp className="h-5 w-5" />
+                </button>
+              </div>
+            )}
           </div>
 
         </div>
