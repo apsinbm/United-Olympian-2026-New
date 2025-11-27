@@ -2,8 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CheckCircle2, ChevronDown, ExternalLink } from 'lucide-react';
 import { ACHIEVEMENTS } from '../constants';
 
+const MOBILE_INITIAL_COUNT = 6;
+
 const AchievementsSection: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [showAllMobile, setShowAllMobile] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,9 +37,14 @@ const AchievementsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12" ref={dropdownRef}>
+        <div className="grid md:grid-cols-3 gap-6 mb-6" ref={dropdownRef}>
           {ACHIEVEMENTS.map((achievement, index) => (
-            <div key={index} className={`relative ${index === ACHIEVEMENTS.length - 1 ? 'md:col-span-3' : ''}`}>
+            <div
+              key={index}
+              className={`relative ${index === ACHIEVEMENTS.length - 1 ? 'md:col-span-3' : ''} ${
+                !showAllMobile && index >= MOBILE_INITIAL_COUNT ? 'hidden md:block' : ''
+              }`}
+            >
               <div
                 onClick={() => achievement.links && achievement.links.length > 0 && toggleExpanded(index)}
                 className={`flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-gold/50 hover:shadow-lg transition-all ${
@@ -87,6 +95,33 @@ const AchievementsSection: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* View All button - mobile only */}
+        {!showAllMobile && (
+          <div className="md:hidden text-center mb-12">
+            <button
+              onClick={() => setShowAllMobile(true)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-navy-deep text-white font-bold rounded-full hover:bg-navy-light transition-colors"
+            >
+              View All {ACHIEVEMENTS.length} Achievements
+              <ChevronDown className="h-5 w-5" />
+            </button>
+          </div>
+        )}
+
+        {showAllMobile && (
+          <div className="md:hidden text-center mb-12">
+            <button
+              onClick={() => setShowAllMobile(false)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 text-navy-deep font-bold rounded-full hover:bg-gray-300 transition-colors"
+            >
+              Show Less
+              <ChevronDown className="h-5 w-5 rotate-180" />
+            </button>
+          </div>
+        )}
+
+        <div className="hidden md:block mb-12"></div>
 
         <div className="bg-gradient-to-r from-nordic-slate to-nordic-storm rounded-2xl p-8 md:p-12 text-center">
           <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
