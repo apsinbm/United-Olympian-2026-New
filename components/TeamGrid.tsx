@@ -6,6 +6,7 @@ import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin
 
 const TeamGrid: React.FC = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   return (
     <section id="team" className="py-24 bg-light-grey">
@@ -96,8 +97,8 @@ const TeamGrid: React.FC = () => {
             <div className="flex flex-col md:flex-row">
               {/* Modal Left: Image & Quick Stats */}
               <div className="md:w-1/3 bg-navy-light text-white p-8">
-                <img 
-                  src={selectedCandidate.imageHeadshot} 
+                <img
+                  src={selectedCandidate.id === 'pernilla' ? '/Pernilla Headshot.jpg' : selectedCandidate.imageHeadshot}
                   onError={(e) => { (e.target as HTMLImageElement).src = `https://picsum.photos/300/300?random=${selectedCandidate.id}2`; }}
                   className="w-32 h-32 rounded-full border-4 border-gold shadow-lg mb-6 mx-auto md:mx-0 object-cover"
                   alt={selectedCandidate.name}
@@ -222,6 +223,31 @@ const TeamGrid: React.FC = () => {
                       </div>
                     </div>
                   )}
+
+                  {/* Photo Gallery - Pernilla only for now */}
+                  {selectedCandidate.id === 'pernilla' && (
+                    <div className="mt-6">
+                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <div className="grid grid-cols-2 gap-2">
+                        {[16, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1, 17, 18].map((num) => (
+                          <div key={num} className="w-full h-20 rounded-lg overflow-hidden">
+                            <img
+                              src={`/Pernilla/${num}.jpg`}
+                              alt={`Pernilla gallery ${num}`}
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              style={
+                                num === 3 ? { objectPosition: 'top' } :
+                                num === 17 ? { objectPosition: 'center 25%' } :
+                                num === 13 ? { transform: 'scale(1.5)' } :
+                                undefined
+                              }
+                              onClick={() => setLightboxImage(`/Pernilla/${num}.jpg`)}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -282,10 +308,89 @@ const TeamGrid: React.FC = () => {
                        <p className="text-navy-deep font-serif italic text-lg">"{selectedCandidate.keyAchievement}"</p>
                     </div>
                   )}
+
+                  {/* YouTube Videos - Pernilla only */}
+                  {selectedCandidate.id === 'pernilla' && (
+                    <div className="mt-8">
+                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <div className="space-y-4">
+                        {/* Video 1 - embedding disabled by owner, show custom thumbnail with link */}
+                        <a
+                          href="https://www.youtube.com/watch?v=ARHMZ4OR5Fs"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block aspect-video rounded-lg overflow-hidden shadow-md"
+                        >
+                          <img
+                            src="/Pernilla/Pernilla Lift.jpg"
+                            alt="Pernilla Wiberg Video 1"
+                            className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                          />
+                        </a>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/4_xpxJqbpX8"
+                            title="Pernilla Wiberg Video 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/llhptd5RZsw?start=120"
+                            title="Pernilla Wiberg Video 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/TYJWxz5Bmgo"
+                            title="Pernilla Wiberg Video 4"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/JCOqo-i4kbo"
+                            title="Pernilla Wiberg Video 5"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Lightbox for gallery images */}
+      {lightboxImage && (
+        <div
+          className="fixed inset-0 z-[70] flex items-center justify-center bg-navy-deep/95 backdrop-blur-sm cursor-pointer"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            onClick={() => setLightboxImage(null)}
+            className="absolute top-4 right-4 p-2 bg-white/10 rounded-full hover:bg-white/20 transition text-white z-10"
+          >
+            <X size={24} />
+          </button>
+          <img
+            src={lightboxImage}
+            alt="Gallery full view"
+            className={`object-contain rounded-lg shadow-2xl ${lightboxImage.includes('/1.jpg') ? 'max-w-[12vw] max-h-[12vh]' : 'max-w-[90vw] max-h-[90vh]'}`}
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </section>
