@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollTo('mission')} className="hover:text-gold transition-colors font-medium">Our Mission</button>
             <button onClick={() => scrollTo('team')} className="hover:text-gold transition-colors font-medium">The Team</button>
+            <button onClick={() => scrollTo('achievements')} className="hover:text-gold transition-colors font-medium">Our Accomplishments</button>
             <button onClick={() => scrollTo('action-plan')} className="hover:text-gold transition-colors font-medium">2026 Action Plan</button>
             
             {/* Language Switcher */}
@@ -76,8 +76,8 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden bg-navy-deep border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-            <button onClick={() => scrollTo('mission')} className="block px-3 py-2 text-base font-medium hover:text-gold">Our Mission</button>
             <button onClick={() => scrollTo('team')} className="block px-3 py-2 text-base font-medium hover:text-gold">The Team</button>
+            <button onClick={() => scrollTo('achievements')} className="block px-3 py-2 text-base font-medium hover:text-gold">Our Accomplishments</button>
             <button onClick={() => scrollTo('action-plan')} className="block px-3 py-2 text-base font-medium hover:text-gold">2026 Action Plan</button>
             <div className="flex space-x-2 py-2">
               {LANGUAGES.slice(0, 3).map(l => (

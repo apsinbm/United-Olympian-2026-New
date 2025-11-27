@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import CollaborationBanner from './components/CollaborationBanner';
 import VoteDisciplineBanner from './components/VoteDisciplineBanner';
 import CoreMessages from './components/CoreMessages';
 import AchievementsSection from './components/AchievementsSection';
@@ -17,9 +18,10 @@ const App: React.FC = () => {
       <Navbar />
       <main>
         <Hero />
+        <CollaborationBanner />
+        <TeamGrid />
         <CoreMessages />
         <AchievementsSection />
-        <TeamGrid />
         <EndorsementBanner />
         <ActionPlan />
         <Contact />
