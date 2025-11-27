@@ -121,8 +121,8 @@ const AchievementsSection: React.FC = () => {
           </div>
         )}
 
-        <div className="bg-gradient-to-r from-nordic-slate to-nordic-storm rounded-2xl p-6 md:p-12 text-center">
-          <p className="text-xl md:text-2xl text-white font-serif italic max-w-3xl mx-auto">
+        <div className="rounded-2xl p-6 md:p-12 text-center" style={{ background: 'linear-gradient(to right, #1A365D, #2D4A6F)' }}>
+          <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto" style={{ color: '#FFFFFF' }}>
             "14 years ago, the WOA did very little. No grants, no scholarships, no NOA toolkits, no Development Officers. Our team built the resources your NOA relies on today."
           </p>
           <p className="text-gold font-bold text-xl md:text-2xl mt-4">
