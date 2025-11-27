@@ -90,7 +90,7 @@ const TeamGrid: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mb-4">The Dream Team</h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto font-serif">
-            Three experienced and successful Olympian administrators. One unified vision for the future of the WOA.
+            Three experienced and successful administrators. One unified vision for the future of the World Olympians Association.
           </p>
         </div>
 
