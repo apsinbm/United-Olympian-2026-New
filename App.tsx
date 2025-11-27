@@ -6,7 +6,6 @@ import VoteDisciplineBanner from './components/VoteDisciplineBanner';
 import CoreMessages from './components/CoreMessages';
 import AchievementsSection from './components/AchievementsSection';
 import TeamGrid from './components/TeamGrid';
-import EndorsementBanner from './components/EndorsementBanner';
 import ActionPlan from './components/ActionPlan';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <CoreMessages />
         <AchievementsSection />
         <ActionPlan />
-        <EndorsementBanner />
         <Contact />
       </main>
       <VoteDisciplineBanner variant="bottom" />
