@@ -289,6 +289,11 @@ const TeamGrid: React.FC = () => {
                                 src={diplomacy}
                                 alt={`Pernilla diplomacy ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={
+                                  [4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
+                                  num === 18 ? { objectPosition: 'center 20%' } :
+                                  undefined
+                                }
                                 onClick={() => setLightboxImage(diplomacy)}
                               />
                             </div>
@@ -442,6 +447,11 @@ const TeamGrid: React.FC = () => {
                                 src={diplomacy}
                                 alt={`Pernilla diplomacy ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={
+                                  [4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
+                                  num === 18 ? { objectPosition: 'center 20%' } :
+                                  undefined
+                                }
                                 onClick={() => setLightboxImage(diplomacy)}
                               />
                             </div>
