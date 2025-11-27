@@ -46,16 +46,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Collaboration Banner */}
-      <div className="relative z-20 bg-white/5 backdrop-blur-sm border-t border-white/10 py-6">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center gap-3 text-gray-300">
-          <Handshake className="text-gold h-6 w-6" />
-          <p className="font-medium text-sm md:text-base">
-            <span className="text-white font-bold">Three Continents. One Unified Vision.</span> Leadership that represents all Olympians.
-          </p>
-        </div>
-      </div>
-
       <div className="absolute bottom-4 left-0 right-0 z-10 flex justify-center animate-bounce">
         <ChevronDown className="text-white/50 w-8 h-8" />
       </div>

@@ -160,9 +160,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     links: [
       { url: 'https://olympians.org/news/403/moscow-to-host-the-inaugural-world-olympians-forum/', label: 'Inaugural Forum', description: 'Announcement of the first World Olympians Forum' },
       { url: 'https://olympians.org/news/442/world-olympians-forum-gets-underway-in-moscow/', label: 'First WOF Success', description: 'Report from World Olympians Forum in Moscow' },
-      { url: 'https://olympians.org/news/1271/', label: '2019 Lausanne', description: 'Announcement of the 2019 World Olympians Forum in Lausanne' },
-      { url: 'https://olympians.org/news/1936/', label: '2025 Monaco', description: 'Announcement of the 2025 World Olympians Forum in Monaco' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page summarising WOF editions and their themes' },
+      { url: 'https://olympians.org/news/1292/successful-world-olympians-forum-empowers-olympians-worldwide/', label: '2019 Lausanne Forum', description: 'Full article on the 2019 World Olympians Forum in Lausanne' },
       { url: 'https://olympics.ie/inaugural-world-olympians-forum-declared-a-resounding-success/', label: 'Irish NOC Report', description: 'Irish NOC report on the success of the inaugural WOF' },
       { url: 'https://eurolympic.org/inaugural-world-olympians-forum', label: 'EOC Coverage', description: 'European Olympic Committees coverage of the first WOF' },
       { url: 'https://olympics.com/ioc/news/the-biggest-ever-international-athletes-forum', label: 'IOC Article', description: 'IOC article referencing joint IOC–WOA sessions and WOF context' },
@@ -185,37 +183,27 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: 'IOC Funding Increase',
     description: 'Increased funding from IOC by up to 300%',
     links: [
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting financial modernisation and increased IOC support' },
-      { url: 'https://olympians.org/manifesto/', label: 'Manifesto', description: '2020 candidate manifesto referencing "big budget increases" from the IOC' },
       { url: 'https://olympians.org/news/1945/ioc-and-woa-strengthen-their-partnership-to-better-support-olympians/', label: '2025 Agreement', description: 'Strengthened IOC–WOA partnership and funding' },
       { url: 'https://olympians.org/news/497/athlete-welfare-a-top-priority-for-woa-in-2016/', label: 'Athlete Welfare Priority', description: 'Athlete welfare and funding priorities' },
       { url: 'https://olympians.org/news/1942/ioc-and-woa-to-reaffirm-commitment-to-work-closely-together/', label: 'Joint Communication', description: 'New MoU / partnership reaffirmation with IOC' },
-      { url: 'https://olympics.com/ioc/olympic-highlights', label: 'IOC Highlights', description: 'IOC highlights mentioning strengthened partnership with WOA' },
     ]
   },
   {
     title: 'Development Officers',
     description: 'Established regional development officers to support NOAs',
     links: [
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting the creation and expansion of regional Development Officer roles' },
       { url: 'https://olympians.org/news/1179/establish-regional-development-officers-to-support-noas/', label: 'Asia Officer', description: 'Announcement of regional Development Officers' },
       { url: 'https://olympians.org/news/1295/woa-welcomes-new-development-officers/', label: 'Americas Recruitment', description: 'New Development Officers introduced' },
       { url: 'https://olympians.org/news/1564/woa-development-officers-bring-support-closer-to-noas/', label: 'Africa Position', description: 'Update on Development Officers\' impact' },
-      { url: 'https://olympians.org/news/1624/new-development-officer-to-support-asian-noas/', label: 'Asia Appointment', description: 'Asia-focused Development Officer appointment' },
-      { url: 'https://olympians.org/news/1782/new-development-officer-to-support-european-noas/', label: 'Europe Appointment', description: 'European Development Officer appointment' },
-      { url: 'https://olympians.org/news/1847/new-development-officer-to-support-african-noas/', label: 'Africa Appointment', description: 'African Development Officer appointment' },
     ]
   },
   {
     title: 'Development Grants',
-    description: 'Created development grants for growing NOAs',
+    description: 'Created development grants to help grow NOAs',
     links: [
       { url: 'https://olympians.org/noas/grants/', label: 'Grants Overview', description: 'Central grants page describing NOA Development Grants and other WOA grant streams' },
       { url: 'https://olympians.org/grants/development-grants/', label: 'Development Grants', description: 'Specific page for NOA Development Grants with criteria and application details' },
       { url: 'https://olympians.org/news/536/woa-launches-2016-noa-development-grants/', label: '2016 Launch', description: 'Launch of NOA Development Grants' },
-      { url: 'https://olympians.org/news/1516/apply-now-for-5-000-woa-grant/', label: 'Apply for Grants', description: 'General WOA grants application call' },
-      { url: 'https://olympians.org/news/1739/female-olympians-apply-now-for-grants-of-up-to-5-000/', label: '2023 Programme', description: 'Grants specifically for female Olympians' },
-      { url: 'https://olympians.org/news/1820/apply-now-for-woa-2024-grants/', label: '2024 Programme', description: 'Latest WOA grants round announcement' },
       { url: 'https://olympians.org/noas/noa-guide/project-delivery/', label: 'NOA Guide', description: 'NOA Guide section explaining project delivery and use of WOA grants' },
     ]
   },
@@ -231,7 +219,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     title: 'Service to Olympians Grants',
-    description: 'Direct support for Olympians in need',
+    description: 'Direct support for Olympians',
     links: [
       { url: 'https://olympians.org/noas/grants/', label: 'Grants Overview', description: 'Main grants overview including Service to Olympians' },
       { url: 'https://olympians.org/grants/service-to-olympians/', label: 'Service to Olympians', description: 'Page explaining Service to Olympians Grants for education, skills and reunion activities' },
@@ -281,7 +269,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     title: 'OLY Ceremonies',
-    description: 'Established recognition ceremonies for new Olympians',
+    description: 'Established recognition ceremonies for Olympians',
     links: [
       { url: 'https://olympians.org/library/noa_guide/oly_ceremony_delivery_guide_en.pdf', label: 'Ceremony Guide', description: 'Official guide for NOAs on delivering OLY ceremonies' },
       { url: 'https://olympians.org/news/1796/chilean-olympians-make-history-in-santiago/', label: 'Chile Ceremony', description: 'Coverage of a major OLY certificate ceremony in Chile' },
@@ -313,7 +301,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://youtube.com/watch?v=Lf3cF-nc_U4', label: 'Ceremony Video', description: 'Video of an Olympians for Life ceremony' },
       { url: 'https://hockey.org.au/news/lynch-receives-olympians-for-life-accolade/', label: 'Rachael Lynch', description: 'Story on Rachael Lynch OLY being named an Olympian for Life' },
       { url: 'https://www.olympic.org.nz/news/barbara-kendall-made-an-olympian-for-life', label: 'Barbara Kendall', description: 'NZOC article on Barbara Kendall\'s Olympian for Life honour' },
-      { url: 'https://olympics.com/en/news/an-olympian-for-life-keeping-the-flame-alive', label: 'IOC Feature', description: 'IOC feature on the Olympians for Life initiative' },
+      { url: 'https://www.olympics.com/en/news/an-olympian-for-life-keeping-the-flame-alive-beyond-the-games', label: 'IOC Feature', description: 'IOC feature on the Olympians for Life initiative' },
     ]
   },
   {
@@ -322,7 +310,6 @@ export const ACHIEVEMENTS: Achievement[] = [
     links: [
       { url: 'https://olympians.org/news/13/world-olympians-association-launches-new-website/', label: 'New Brand Launch', description: 'Original launch of the Olympian.org website' },
       { url: 'https://olympians.org/library/world_olympians_association_unveils_new_brand_identity_and_website_in_sochi_final.pdf', label: 'Full Press Release', description: 'Full press release on the 2014 rebrand and website launch' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page describing the 2014 modernisation and website rebuild' },
       { url: 'https://olympians.org/news/33/woa-website-launched-in-three-languages/', label: 'Multilingual Site', description: 'Early update on multilingual WOA site' },
       { url: 'https://olympians.org/woa/about/introduction/', label: 'WOA Introduction', description: 'Introduction to WOA and its services on the rebuilt site' },
       { url: 'https://olympians.org', label: 'Olympians.org', description: 'Current WOA website homepage' },
@@ -343,48 +330,40 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
-    title: 'Partnership Network',
+    title: 'Relationship Network',
     description: 'Built relationships with World Academy of Sport, SkillsBuild, and more',
     links: [
-      { url: 'https://olympians.org/skillsbuild/', label: 'IBM SkillsBuild', description: 'WOA page introducing the IBM SkillsBuild partnership for Olympians' },
-      { url: 'https://olympians.org/news/1438/', label: 'WAoS MOU', description: 'Announcement of the MOU with World Academy of Sport' },
-      { url: 'https://olympians.org/news/1712/', label: 'Learning Opportunities', description: 'Article on new learning and earning opportunities via WAoS partnership' },
+      { url: 'https://olympians.org/skillsbuild/', label: 'SkillsBuild', description: 'WOA page introducing the SkillsBuild partnership for Olympians' },
       { url: 'https://worldacademy.sport/news-scholarship-mou', label: 'WAoS Press Release', description: 'WAoS press release on its scholarship MOU with WOA' },
       { url: 'https://worldacademy.sport/scholarship', label: 'WAoS Scholarships', description: 'WAoS scholarship information aligned with Olympian programmes' },
-      { url: 'https://worldacademy.sport', label: 'World Academy of Sport', description: 'Main WAoS homepage' },
-      { url: 'https://skillsbuild.org/organizations-supporting-adult-learners/partners', label: 'SkillsBuild Partners', description: 'IBM SkillsBuild partners page listing WOA among global partners' },
       { url: 'https://www.fims.org/news/the-long-term-health-of-olympians-a-fims-and-woa-collaboration/', label: 'FIMS Partnership', description: 'FIMS news on partnering with WOA on Olympian health' },
     ]
   },
   {
-    title: 'New IOC Agreement',
+    title: 'New Agreement with IOC',
     description: 'Secured independence, long-term funding and stability for all WOA programs',
     links: [
       { url: 'https://olympians.org/news/1945/ioc-and-woa-strengthen-their-partnership-to-better-support-olympians/', label: '2025 Agreement', description: 'WOA announcement of the 2025 Cooperation and Licence Agreement with the IOC' },
       { url: 'https://olympians.org/news/1942/', label: 'Joint Communication', description: 'Earlier joint communication outlining the IOC–WOA commitment to collaborate' },
       { url: 'https://www.insidethegames.biz/articles/1155387/woa-ioc-partneship-renew-agreement', label: 'InsideTheGames', description: 'InsideTheGames report on renewal of the IOC–WOA partnership agreement' },
       { url: 'https://www.olympics.com/ioc/news/ioc-and-world-olympians-association-strengthen-their-partnership-to-better-support-olympians', label: 'IOC News', description: 'IOC news release on the strengthened partnership and Licence Agreement' },
-      { url: 'https://olympics.com/ioc/olympic-highlights', label: 'IOC Highlights', description: 'IOC highlights feed referencing the renewed WOA partnership' },
-      { url: 'https://olympians.org/woa/about/history/', label: 'WOA History', description: 'History page noting strengthened IOC partnership and governance' },
-      { url: 'https://olympians.org/manifesto/', label: 'Manifesto', description: '2020 manifesto discussing alignment with the IOC that preceded the new agreement' },
     ]
   },
   {
     title: 'Successful Global Campaigns',
     description: 'When Ebola struck and our NOAs asked for help we launched #TargetEbola and thanks to the global Olympian community we sent six containers of medical and other supplies to Sierra Leone and Liberia. Our #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.',
     links: [
-      { url: 'https://olympians.org/news/1226/noas-join-forces-to-support-ebola-affected-communities/', label: '#TargetEbola Launch', description: 'WOA article on NOAs uniting to support Ebola-affected communities through #TargetEbola' },
+      { url: 'https://olympians.org/news/204/join-the-targetebola-fundraising-campaign-and-help-save-lives/', label: '#TargetEbola Launch', description: 'WOA article on launching the #TargetEbola fundraising campaign' },
       { url: 'https://olympians.org/news/491/olympians-answer-call-to-help-ebola-hit-communities/', label: 'Olympians Mobilise', description: 'Olympians mobilise for Ebola-hit communities' },
       { url: 'https://olympians.org/news/222/ifs-show-support-for-targetebola/', label: 'IF Support', description: 'IFs join the #TargetEbola campaign' },
       { url: 'https://olympians.org/actions/events/278/-targetebola-supplies-reach-sierra-leone', label: 'Supplies Reach Sierra Leone', description: 'Article on TargetEbola medical supplies reaching Sierra Leone' },
-      { url: 'https://reliefweb.int/report/sierra-leone/world-olympians-association-launches-targetebola', label: 'ReliefWeb', description: 'ReliefWeb brief on WOA\'s TargetEbola campaign launch' },
+      { url: 'https://olympians.org/news/287/woa-gives-anti-ebola-supplies-to-sierra-leone-noc-president/', label: 'Sierra Leone NOC', description: 'WOA gives anti-Ebola supplies to Sierra Leone NOC President' },
       { url: 'https://olympians.org/news/883/legacy-of-target-ebola-campaign-lives-on-in-liberia/', label: 'Liberia Legacy', description: 'Ongoing impact of TargetEbola in Liberia' },
-      { url: 'https://olympians.org/news/1670/givebacktoukraine/', label: '#GiveBackToUkraine', description: 'Announcement of the GiveBackToUkraine initiative within #OlympiansForUkraine' },
+      { url: 'https://olympians.org/news/1675/woa-upholds-athletes-right-to-compete-and-launches-ukraine-appeal/', label: '#GiveBackToUkraine', description: 'WOA upholds athletes\' right to compete and launches Ukraine appeal' },
       { url: 'https://olympians.org/news/1678/join-olympians-around-the-world-and-raise-your-whitecard-on-april6/', label: 'WhiteCard Campaign', description: 'WhiteCard / Peace and Sport campaign call' },
       { url: 'https://olympians.org/news/1688/please-donate-now-to-olympiansforukraine/', label: 'Donation Appeal', description: 'Main #OlympiansforUkraine donation appeal' },
-      { url: 'https://www.insidethegames.biz/articles/1111213/world-olympians-association-ukraine', label: 'InsideTheGames Ukraine', description: 'InsideTheGames coverage of WOA\'s Ukraine support initiatives' },
       { url: 'https://www.insidethegames.biz/articles/1130425/trauma-recovery-woa', label: 'Trauma Recovery', description: 'InsideTheGames story on trauma-recovery work for Ukrainian Olympians funded by the appeal' },
-      { url: 'https://olympics.com/ioc/news/further-support-for-ukrainian-olympic-community', label: 'IOC Support', description: 'IOC news on broader support for Ukrainian athletes, including WOA-linked efforts' },
+      { url: 'https://www.olympics.com/ioc/news/ioc-stands-in-solidarity-with-ukraine', label: 'IOC Support', description: 'IOC stands in solidarity with Ukraine' },
     ]
   },
 ];

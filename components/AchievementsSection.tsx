@@ -30,7 +30,7 @@ const AchievementsSection: React.FC = () => {
             What We've <span className="text-gold">Already Built</span>
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Some candidates promise what is already being delivered. Here's our track record.
+            Here's our track record.
           </p>
         </div>
 
