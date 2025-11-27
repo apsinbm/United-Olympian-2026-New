@@ -122,7 +122,7 @@ export const CANDIDATES: Candidate[] = [
       { year: 1992 }
     ],
     country: 'Chinese Taipei',
-    location: 'Taipei',
+    location: 'Taipei, with residences in Park City (Utah), Portland (Oregon), Hong Kong & Guinea-Bissau',
     imageAction: 'Thomas Business.jpg',
     imageHeadshot: 'Thomas Sport 2.jpg',
     achievements: [
@@ -141,7 +141,7 @@ export const CANDIDATES: Candidate[] = [
       'Advisor to WOA Treasurer'
     ],
     keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that powered multiple generations of Olympic broadcasts.',
-    business: 'Founder & President: Apantac LLC (Global leader in broadcast signal processing). President: Eubank Investment Group.',
+    business: 'Founder & President: Apantac LLC (Global leader in broadcast & ProAV, HQ in Beaverton, Oregon with offices in Paris, Taipei, Tokyo, Singapore & Mexico City). President: Eubank Investment Group.',
     trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech (grew business 8x), Director of Marketing at Grass Valley ($50M P&L responsibility), worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems.',
     education: [
       'Harvard Business School - Executive Education (Marketing & Business Strategy)',
