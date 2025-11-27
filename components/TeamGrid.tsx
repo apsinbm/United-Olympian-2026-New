@@ -229,7 +229,7 @@ const TeamGrid: React.FC = () => {
                     <div className="mt-6">
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
-                        {[16, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1, 17, 18].map((num) => (
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map((num) => (
                           <div key={num} className="w-full h-20 rounded-lg overflow-hidden">
                             <img
                               src={`/Pernilla/${num}.jpg`}
