@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <h2 className="text-4xl font-extrabold mb-6">Work with us to take the WOA to the next level.</h2>
             <p className="text-gray-300 text-lg mb-8 font-serif">
-              We want to hear from your National Association. Request a meeting with Pernilla, Lumi, or Thomas to discuss the needs of your NOA and your Olympians.
+              We want to hear from Olympians and National Olympians Associations. Request a meeting with Pernilla, Lumi, or Thomas to discuss the needs of your NOA and your Olympians.
             </p>
             <div className="flex items-center gap-2 text-gold font-bold text-xl">
                <span>We built it. We secured it. We'll work with you to grow it.</span>
@@ -74,12 +74,21 @@ const Contact: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-1">WhatsApp Number <span className="text-gray-400 font-normal">(optional)</span></label>
+                  <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-1">WhatsApp Number</label>
                   <input
                     type="tel"
                     id="whatsapp"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition"
                     placeholder="+1 234 567 8900"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea
+                    id="message"
+                    rows={3}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition resize-none"
+                    placeholder="Any questions or information you'd like to share..."
                   />
                 </div>
                 <button 
