@@ -132,13 +132,13 @@ const TeamGrid: React.FC = () => {
                   </div>
                 </div>
 
-                <p className="text-gray-500 text-sm line-clamp-3 mb-6 font-serif italic">
+                <p className="text-gray-500 text-sm line-clamp-6 mb-6 font-serif italic">
                   "{candidate.keyAchievement}"
                 </p>
 
                 <button
                   onClick={() => setSelectedCandidate(candidate)}
-                  className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors"
+                  className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors mb-4"
                 >
                   View Full Profile
                 </button>

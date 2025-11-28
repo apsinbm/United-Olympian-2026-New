@@ -58,8 +58,8 @@ export const CANDIDATES: Candidate[] = [
     ],
     keyAchievement: 'Double Olympic Champion with 20+ years of sports administration and athlete advocacy. Led the WOA constitutional reforms enabling 50/50 gender representation.',
     philosophy: 'Make every-day life better for Olympians. Walk the talk.',
-    business: 'Entrepreneur and Owner of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden). Founder of Pernilla Wiberg Sportpromotion.',
-    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden. Based in Idre Fjäll, Sweden and Monte Carlo, Monaco since 1995, she is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
+    business: 'Entrepreneur and Owner of the Pernilla Wiberg Hotel (Idre Fjäll, Sweden). CEO of Pernilla Wiberg Sportpromotion.',
+    bioFull: 'Pernilla Wiberg is a legend on the slopes and a powerhouse in the boardroom. As a Triple Olympic Medalist with 24 individual World Cup victories, 61 World Cup podiums, and the 1997 Overall World Cup title, she is one of the few skiers in history to win races in all five alpine disciplines—her 1991 World Championship gold was the first for a Scandinavian woman in 33 years.\n\nBeyond competition, she became a renowned TV sports commentator for Sveriges Television (SVT). In governance, she served as an IOC Member for eight years across multiple commissions, chaired the IOC Evaluation Commission for the first Winter Youth Olympic Games, and represented the WOA on the IOC Athletes\' Commission from 2020–2025.\n\nAs current WOA Vice President, she was instrumental in the historic 50/50 gender representation reform. A Champions for Peace member and successful entrepreneur, she owns and operates the Pernilla Wiberg Hotel in Sweden and is CEO of Pernilla Wiberg Sportpromotion. Based in Idre Fjäll, Sweden and Monte Carlo, Monaco since 1995—strategically positioned near WOA Patron Prince Albert and the IOC in Lausanne. She is married with two children. Fluent in Swedish, English, French, German, and Norwegian.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/pernilla-wiberg-bjerke-oly-0609271ba/',
       twitter: 'https://x.com/pernillawiberg',
@@ -94,17 +94,18 @@ export const CANDIDATES: Candidate[] = [
       'Member: FIBA Players\' Commission (2014–2019)',
       'Board Member: Nigeria Basketball Federation',
       'Laureus Sport for Good Ambassador',
-      'Created Wall of Honor for 1976 Nigerian athletes denied their Olympic moment',
+      'Secured lifetime business class travel for 1976 Nigerian athletes on Air Peace',
       'Secured 4-hectare Olympian Village with government for athlete welfare',
-      'Established Olympian Welfare Scheme providing insurance and emergency support'
+      'Established Olympian Welfare Scheme providing insurance and emergency support',
+      'Founded youth mentorship program reaching 40,000+ young people since 2002'
     ],
-    keyAchievement: 'NBA Star and successful sports administrator. Founded the Youth Foundation that has mentored 40,000+ young people.',
-    philosophy: 'Servant Leadership and bridging the gap for developing nations.',
+    keyAchievement: 'NBA Star turned athlete advocate. Founded programs that have mentored 40,000+ young people and secured tangible welfare benefits for athletes across Africa.',
+    philosophy: 'Athlete-First Leadership. Understanding the billion-dollar business of professional sport to better protect athlete welfare, retirement, and image rights.',
     education: [
       'Master\'s Degree in Public Relations & Image Management (Florida Metropolitan University)',
       'Loyola College, Ibadan'
     ],
-    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Servant Leadership" philosophy has mentored over 40,000 young people through his foundation and basketball camps since 2002. He is dedicated to bridging the gap for developing nations within the Olympic movement. Speaks English, Russian, Chinese, Korean, and French.',
+    bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Athlete-First Leadership" philosophy delivers real results: mentoring 40,000+ young people through his foundation since 2002, securing lifetime business class travel for Nigeria\'s 1976 athletes through Air Peace, negotiating a 4-hectare Olympian Village with government, and establishing the Olympian Welfare Scheme providing insurance and emergency support. His professional sport experience—navigating contracts, endorsements, and athlete transitions across 10 countries—gives him unique insight into the welfare, retirement, and image rights issues facing Olympians today. Speaks English, Russian, Chinese, Korean, and French.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
       twitter: 'https://x.com/olumideoyedeji1',
@@ -139,7 +140,7 @@ export const CANDIDATES: Candidate[] = [
       'Board Member: Taiwanese American Chamber of Commerce (2023–Present)',
       'Director of International Affairs: Chinese Taipei Olympians Association'
     ],
-    keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that powered multiple generations of Olympic broadcasts.',
+    keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that has powered multiple generations of Olympic and FIFA World Cup and leading global sporting events.',
     business: 'Founder & President: Apantac LLC (Global leader in broadcast & ProAV, HQ in Beaverton, Oregon with offices in Paris, Taipei, Tokyo, Singapore & Mexico City). President: Eubank Investment Group.',
     trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech (grew business 8x), Director of Marketing at Grass Valley ($50M P&L responsibility), worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems.',
     education: [
@@ -389,7 +390,7 @@ export const CORE_MESSAGES = [
     id: 'built',
     title: 'We Built It',
     subtitle: 'The Modern WOA',
-    description: 'We helped deliver every major program Olympians rely on today. Proven results, not promises.',
+    description: 'We helped deliver every major program Olympians rely on today. We are credible because we have done it—14 years of proven results, not promises.',
     icon: 'Trophy'
   },
   {
@@ -403,7 +404,7 @@ export const CORE_MESSAGES = [
     id: 'lead',
     title: 'We\'re Listening',
     subtitle: 'The Right Team',
-    description: 'An Olympic Champion, an NBA Star, and a Business Wizard. Experienced leaders listening to your needs and ready to continue working with you.',
+    description: 'An Olympic Champion, an NBA Star, and a Business Wizard—with complementary expertise: Pernilla brings Olympic governance and IOC experience, Lumi brings professional sport business insight, Thomas brings financial and technology acumen. The complete package, listening to your needs.',
     icon: 'Users'
   }
 ];

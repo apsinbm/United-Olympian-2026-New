@@ -79,9 +79,13 @@ const Navbar: React.FC = () => {
             <button onClick={() => scrollTo('team')} className="block px-3 py-2 text-base font-medium hover:text-gold">The Team</button>
             <button onClick={() => scrollTo('achievements')} className="block px-3 py-2 text-base font-medium hover:text-gold">Our Accomplishments</button>
             <button onClick={() => scrollTo('action-plan')} className="block px-3 py-2 text-base font-medium hover:text-gold">2026 Action Plan</button>
-            <div className="flex space-x-2 py-2">
-              {LANGUAGES.slice(0, 3).map(l => (
-                <span key={l.code} className="text-xs text-gray-400 border border-gray-600 px-2 py-1 rounded cursor-pointer" onClick={() => { setCurrentLang(l.code); setIsOpen(false);}}>
+            <div className="flex flex-wrap justify-center gap-2 py-2">
+              {LANGUAGES.map(l => (
+                <span
+                  key={l.code}
+                  className={`text-xs border px-2 py-1 rounded cursor-pointer transition-colors ${currentLang === l.code ? 'bg-gold text-navy-deep border-gold' : 'text-gray-400 border-gray-600 hover:border-gold hover:text-gold'}`}
+                  onClick={() => { setCurrentLang(l.code); setIsOpen(false);}}
+                >
                   {l.code}
                 </span>
               ))}
