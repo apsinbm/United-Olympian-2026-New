@@ -41,14 +41,33 @@ const OlympicYearsDisplay: React.FC<{ years?: OlympicYear[] }> = ({ years }) => 
 };
 
 // Gallery pairs: sport photos paired with diplomacy photos
-const GALLERY_PAIRS = Array.from({ length: 18 }, (_, i) => ({
-  num: i + 1,
-  sport: `/Pernilla/${i + 1}.jpg`,
-  diplomacy: `/Pernilla/Pernilla Diplomacy/${i + 1}.jpeg`
+// Custom order: 1-16, then 18, then 17
+const GALLERY_ORDER = [...Array.from({ length: 16 }, (_, i) => i + 1), 18, 17];
+const GALLERY_PAIRS = GALLERY_ORDER.map((num) => ({
+  num,
+  sport: `/Pernilla/${num}.jpg`,
+  diplomacy: `/Pernilla/Pernilla Diplomacy/${num}.jpeg`
 }));
 
-// Flat list of all images for lightbox navigation (sport, diplomacy, sport, diplomacy...)
-const ALL_GALLERY_IMAGES = GALLERY_PAIRS.flatMap(({ sport, diplomacy }) => [sport, diplomacy]);
+// Additional photos from More photos folder
+const MORE_PHOTOS = [
+  '/Pernilla/More photos/0a.jpg',
+  '/Pernilla/More photos/1a.JPG',
+  '/Pernilla/More photos/2a.jpg',
+  '/Pernilla/More photos/3a.jpg',
+  '/Pernilla/More photos/4a.jpg',
+  '/Pernilla/More photos/5a.jpg',
+  '/Pernilla/More photos/6a.jpg',
+  '/Pernilla/More photos/7a.jpg',
+  '/Pernilla/More photos/8a.jpg',
+  '/Pernilla/More photos/9a.jpg',
+];
+
+// Flat list of all images for lightbox navigation (sport, diplomacy, sport, diplomacy..., then more photos)
+const ALL_GALLERY_IMAGES = [
+  ...GALLERY_PAIRS.flatMap(({ sport, diplomacy }) => [sport, diplomacy]),
+  ...MORE_PHOTOS
+];
 
 const TeamGrid: React.FC = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
@@ -167,7 +186,7 @@ const TeamGrid: React.FC = () => {
             className="absolute inset-0 bg-navy-deep/90 backdrop-blur-sm"
             onClick={() => setSelectedCandidate(null)}
           ></div>
-          <div className="relative bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl animate-fade-in">
+          <div className="relative bg-white rounded-2xl w-full max-w-[95vw] md:max-w-[90vw] max-h-[90vh] overflow-y-auto shadow-2xl animate-fade-in">
             <button 
               onClick={() => setSelectedCandidate(null)}
               className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition text-navy-deep z-10"
@@ -312,13 +331,13 @@ const TeamGrid: React.FC = () => {
                       <div className="space-y-2">
                         {GALLERY_PAIRS.map(({ num, sport, diplomacy }) => (
                           <div key={num} className="grid grid-cols-2 gap-2">
-                            <div className="w-full h-20 rounded-lg overflow-hidden">
+                            <div className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
                               <img
                                 src={sport}
                                 alt={`Pernilla sport ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
-                                  num === 3 ? { objectPosition: 'top' } :
+                                  num === 3 ? { objectPosition: 'center 15%' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
@@ -326,13 +345,13 @@ const TeamGrid: React.FC = () => {
                                 onClick={() => setLightboxImage(sport)}
                               />
                             </div>
-                            <div className="w-full h-20 rounded-lg overflow-hidden">
+                            <div className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
                               <img
                                 src={diplomacy}
                                 alt={`Pernilla diplomacy ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
-                                  [4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
+                                  [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
                                   num === 18 ? { objectPosition: 'center 20%' } :
                                   undefined
                                 }
@@ -341,6 +360,22 @@ const TeamGrid: React.FC = () => {
                             </div>
                           </div>
                         ))}
+                        {/* Additional photos */}
+                        <div className="grid grid-cols-2 gap-2">
+                          {MORE_PHOTOS.map((photo, idx) => (
+                            <div key={`more-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
+                              <img
+                                src={photo}
+                                alt={`Pernilla photo ${idx + 1}`}
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={
+                                  [2, 3, 4, 5, 9].includes(idx) ? { objectPosition: 'center 10%' } : undefined
+                                }
+                                onClick={() => setLightboxImage(photo)}
+                              />
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   )}
@@ -459,6 +494,15 @@ const TeamGrid: React.FC = () => {
                             allowFullScreen
                           />
                         </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/rXaIflEoyyo"
+                            title="Pernilla Wiberg Video 6"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
                       </div>
                     </div>
                   )}
@@ -494,7 +538,7 @@ const TeamGrid: React.FC = () => {
                                 alt={`Pernilla sport ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
-                                  num === 3 ? { objectPosition: 'top' } :
+                                  num === 3 ? { objectPosition: 'center 15%' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
@@ -508,7 +552,7 @@ const TeamGrid: React.FC = () => {
                                 alt={`Pernilla diplomacy ${num}`}
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
-                                  [4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
+                                  [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
                                   num === 18 ? { objectPosition: 'center 20%' } :
                                   undefined
                                 }
@@ -516,6 +560,17 @@ const TeamGrid: React.FC = () => {
                               />
                             </div>
                           </React.Fragment>
+                        ))}
+                        {/* Additional photos */}
+                        {MORE_PHOTOS.map((photo, idx) => (
+                          <div key={`more-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
+                            <img
+                              src={photo}
+                              alt={`Pernilla photo ${idx + 1}`}
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              onClick={() => setLightboxImage(photo)}
+                            />
+                          </div>
                         ))}
                       </div>
                     </div>
