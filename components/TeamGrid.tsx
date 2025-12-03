@@ -525,6 +525,32 @@ const TeamGrid: React.FC = () => {
                     </div>
                   )}
 
+                  {/* Instagram Video - Lumi only */}
+                  {selectedCandidate.id === 'lumi' && (
+                    <div className="mt-8">
+                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <div className="space-y-4">
+                        <a
+                          href="https://www.instagram.com/reel/DOWVJFqCDxr/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block aspect-video rounded-lg overflow-hidden shadow-md relative group"
+                        >
+                          <img
+                            src="/Lumi Business.jpg"
+                            alt="Olumide Oyedeji Video"
+                            className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 bg-white/80 rounded-full flex items-center justify-center">
+                              <PlayCircle size={40} className="text-navy-deep" />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Photo Gallery - Mobile only, shown at end of content */}
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-8 md:hidden">

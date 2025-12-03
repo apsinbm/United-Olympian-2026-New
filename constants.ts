@@ -101,10 +101,6 @@ export const CANDIDATES: Candidate[] = [
     ],
     keyAchievement: 'NBA Star turned athlete advocate. Founded programs that have mentored 40,000+ young people and secured tangible welfare benefits for athletes across Africa.',
     philosophy: 'Athlete-First Leadership. Understanding the billion-dollar business of professional sport to better protect athlete welfare, retirement, and image rights.',
-    education: [
-      'Master\'s Degree in Public Relations & Image Management (Florida Metropolitan University)',
-      'Loyola College, Ibadan'
-    ],
     bioFull: 'Olumide "Lumi" Oyedeji brings a global perspective and a heart for service. The first African player ever drafted outside America to the NBA (42nd pick, 2000), Lumi made history as the inaugural African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games, and Asia Championships.\n\nA Nigerian League MVP, 3× CBA rebounding leader, and 2× BBL Slam Dunk Contest champion, he led Nigeria to their first-ever AfroBasket trophy in 2015 and represented them at the 2012 Olympics and 1999 World Cup.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, and Board Member of the Nigeria Basketball Federation. A WADA Athlete Council member since 2023 and Laureus Ambassador, his "Athlete-First Leadership" philosophy delivers real results: mentoring 40,000+ young people through his foundation since 2002, securing lifetime business class travel for Nigeria\'s 1976 athletes through Air Peace, negotiating a 4-hectare Olympian Village with government, and establishing the Olympian Welfare Scheme providing insurance and emergency support. His professional sport experience—navigating contracts, endorsements, and athlete transitions across 10 countries—gives him unique insight into the welfare, retirement, and image rights issues facing Olympians today. Speaks English, Russian, Chinese, Korean, and French.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
