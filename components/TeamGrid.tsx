@@ -537,7 +537,7 @@ const TeamGrid: React.FC = () => {
                           className="block aspect-video rounded-lg overflow-hidden shadow-md relative group"
                         >
                           <img
-                            src="/Lumi Business.jpg"
+                            src="/Lumi/Lumi & Child.png"
                             alt="Olumide Oyedeji Video"
                             className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
                           />
