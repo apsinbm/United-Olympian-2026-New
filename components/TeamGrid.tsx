@@ -99,6 +99,107 @@ const LUMI_GALLERY_PHOTOS = [
   '/Lumi/WhatsApp Image 2025-12-09 at 19.31.12.jpeg',
 ];
 
+// Thomas gallery photos
+const THOMAS_GALLERY_PHOTOS = [
+  '/Thomas/WOA Election Photos/IMG_0155.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0211.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0516.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0566.JPEG',
+  '/Thomas/WOA Election Photos/IMG_0834.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0847.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0850.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0950.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0992.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1068.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1089.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1101.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1171.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1172.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1174.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1194.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1207.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1247.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1298.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1389.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1399.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1406.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1907.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1953.jpeg',
+  '/Thomas/WOA Election Photos/IMG_1954.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2148.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2175.JPG',
+  '/Thomas/WOA Election Photos/IMG_2253.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2259.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2260.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2419.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2436.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2829.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2836.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2874.jpeg',
+  '/Thomas/WOA Election Photos/IMG_2947.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3143.JPEG',
+  '/Thomas/WOA Election Photos/IMG_3177.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3226.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3293.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3351.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3354.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3375.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3395.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3460.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3467.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3488.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3490.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3614.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3653.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3686.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3690.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3723.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3734.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3754.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3898.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3910.jpeg',
+  '/Thomas/WOA Election Photos/IMG_3995.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4023.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4133.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4175.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4275.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4290.JPG',
+  '/Thomas/WOA Election Photos/IMG_4294.JPG',
+  '/Thomas/WOA Election Photos/IMG_4479.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4484.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4615.jpeg',
+  '/Thomas/WOA Election Photos/IMG_4927.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5212.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5484.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5488.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5509.JPEG',
+  '/Thomas/WOA Election Photos/IMG_5691.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5700.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5807.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5826.jpeg',
+  '/Thomas/WOA Election Photos/IMG_5870.jpeg',
+  '/Thomas/WOA Election Photos/IMG_6071.jpeg',
+  '/Thomas/WOA Election Photos/IMG_6374.jpeg',
+  '/Thomas/WOA Election Photos/IMG_6761.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9442.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9604.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9612.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9622.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9627.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9636.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9643.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9645.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9662.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9666.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9672.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9685.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9727.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9753.jpeg',
+  '/Thomas/WOA Election Photos/44e1be3a-033d-4232-a905-64b7a548ba81.JPEG',
+  '/Thomas/WOA Election Photos/4776813a-1ba5-4ad8-88c6-784f8b7e32cb.jpg',
+  '/Thomas/WOA Election Photos/DSC06743.JPEG',
+];
+
 // Flat list of all Pernilla images for lightbox navigation (sport, diplomacy, sport, diplomacy..., then more photos)
 const PERNILLA_GALLERY_IMAGES = [
   ...GALLERY_PAIRS.flatMap(({ sport, diplomacy }) => [sport, diplomacy]),
@@ -108,7 +209,8 @@ const PERNILLA_GALLERY_IMAGES = [
 // Combined gallery for lightbox navigation
 const ALL_GALLERY_IMAGES = [
   ...PERNILLA_GALLERY_IMAGES,
-  ...LUMI_GALLERY_PHOTOS
+  ...LUMI_GALLERY_PHOTOS,
+  ...THOMAS_GALLERY_PHOTOS
 ];
 
 const TeamGrid: React.FC = () => {
@@ -448,6 +550,26 @@ const TeamGrid: React.FC = () => {
                       </div>
                     </div>
                   )}
+
+                  {/* Photo Gallery - Thomas only, hidden on mobile (shown at end of content area instead) */}
+                  {selectedCandidate.id === 'thomas' && (
+                    <div className="mt-6 hidden md:block">
+                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <div className="grid grid-cols-2 gap-2">
+                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => (
+                          <div key={`thomas-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
+                            <img
+                              src={photo}
+                              alt={`Thomas photo ${idx + 1}`}
+                              loading="lazy"
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-top"
+                              onClick={() => setLightboxImage(photo)}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -766,6 +888,26 @@ const TeamGrid: React.FC = () => {
                               loading="lazy"
                               className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                               style={{ objectPosition: photo.includes('19.06.52') ? 'center 20%' : 'top' }}
+                              onClick={() => setLightboxImage(photo)}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Photo Gallery - Thomas only, Mobile, shown at end of content */}
+                  {selectedCandidate.id === 'thomas' && (
+                    <div className="mt-8 md:hidden">
+                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <div className="grid grid-cols-1 gap-2">
+                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => (
+                          <div key={`thomas-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
+                            <img
+                              src={photo}
+                              alt={`Thomas photo ${idx + 1}`}
+                              loading="lazy"
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-top"
                               onClick={() => setLightboxImage(photo)}
                             />
                           </div>
