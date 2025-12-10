@@ -28,6 +28,7 @@ export interface Candidate {
   philosophy?: string;
   trackRecord?: string;
   education?: string[];
+  manifesto?: string;
   bioFull: string;
   socialLinks?: SocialLinks;
 }

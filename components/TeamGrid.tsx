@@ -476,6 +476,21 @@ const TeamGrid: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Vision Statement / Manifesto */}
+                {selectedCandidate.manifesto && (
+                  <div className="mb-8 bg-gradient-to-br from-navy-deep to-navy-light p-8 rounded-xl shadow-lg">
+                    <h5 className="text-gold font-bold text-xl mb-4 flex items-center gap-2">
+                      <span className="w-8 h-1 bg-gold rounded"></span>
+                      My Vision for the WOA
+                    </h5>
+                    <div className="text-white/90 space-y-4">
+                      {selectedCandidate.manifesto.split('\n\n').map((paragraph, index) => (
+                        <p key={index} className="leading-relaxed">{paragraph}</p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 <div className="prose prose-lg text-gray-600">
                   {selectedCandidate.bioFull.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="mb-4">{paragraph}</p>
