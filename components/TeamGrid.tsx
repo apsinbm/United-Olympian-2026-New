@@ -380,6 +380,7 @@ const TeamGrid: React.FC = () => {
                               <img
                                 src={sport}
                                 alt={`Pernilla sport ${num}`}
+                                loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
                                   num === 3 ? { objectPosition: 'center 15%' } :
@@ -394,6 +395,7 @@ const TeamGrid: React.FC = () => {
                               <img
                                 src={diplomacy}
                                 alt={`Pernilla diplomacy ${num}`}
+                                loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
                                   [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
@@ -412,6 +414,7 @@ const TeamGrid: React.FC = () => {
                               <img
                                 src={photo}
                                 alt={`Pernilla photo ${idx + 1}`}
+                                loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
                                   [2, 3, 4, 5, 9].includes(idx) ? { objectPosition: 'center 10%' } : undefined
@@ -435,6 +438,7 @@ const TeamGrid: React.FC = () => {
                             <img
                               src={photo}
                               alt={`Lumi photo ${idx + 1}`}
+                              loading="lazy"
                               className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                               style={{ objectPosition: photo.includes('19.06.52') ? 'center 20%' : 'top' }}
                               onClick={() => setLightboxImage(photo)}
@@ -528,6 +532,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/4_xpxJqbpX8"
                             title="Pernilla Wiberg Video 2"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           />
@@ -537,6 +543,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/llhptd5RZsw?start=120"
                             title="Pernilla Wiberg Video 3"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           />
@@ -546,6 +554,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/TYJWxz5Bmgo"
                             title="Pernilla Wiberg Video 4"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           />
@@ -555,6 +565,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/JCOqo-i4kbo"
                             title="Pernilla Wiberg Video 5"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           />
@@ -564,6 +576,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://www.youtube.com/embed/rXaIflEoyyo"
                             title="Pernilla Wiberg Video 6"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                           />
@@ -582,6 +596,8 @@ const TeamGrid: React.FC = () => {
                             className="w-full h-full"
                             src="https://player.vimeo.com/video/24643468"
                             title="Thomas Tang - Apantac"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowFullScreen
                           />
@@ -615,52 +631,52 @@ const TeamGrid: React.FC = () => {
                         </a>
                         {/* MP4 Videos */}
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.30.38.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 19.44.32.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38 (1).mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.40.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.39.58.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.54.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.55.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.08.08.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls className="w-full h-full object-cover">
+                          <video controls preload="none" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.34.24.mp4" type="video/mp4" />
                           </video>
                         </div>
@@ -679,6 +695,7 @@ const TeamGrid: React.FC = () => {
                               <img
                                 src={sport}
                                 alt={`Pernilla sport ${num}`}
+                                loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
                                   num === 3 ? { objectPosition: 'center 15%' } :
@@ -693,6 +710,7 @@ const TeamGrid: React.FC = () => {
                               <img
                                 src={diplomacy}
                                 alt={`Pernilla diplomacy ${num}`}
+                                loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
                                   [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
@@ -710,6 +728,7 @@ const TeamGrid: React.FC = () => {
                             <img
                               src={photo}
                               alt={`Pernilla photo ${idx + 1}`}
+                              loading="lazy"
                               className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                               onClick={() => setLightboxImage(photo)}
                             />
@@ -729,6 +748,7 @@ const TeamGrid: React.FC = () => {
                             <img
                               src={photo}
                               alt={`Lumi photo ${idx + 1}`}
+                              loading="lazy"
                               className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                               style={{ objectPosition: photo.includes('19.06.52') ? 'center 20%' : 'top' }}
                               onClick={() => setLightboxImage(photo)}
