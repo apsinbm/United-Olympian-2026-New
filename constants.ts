@@ -83,11 +83,12 @@ export const CANDIDATES: Candidate[] = [
     achievements: [
       'First African player drafted outside America to the NBA (2000)',
       'NBA Player (Seattle SuperSonics, Orlando Magic, Atlanta Hawks)',
-      'Led Nigeria to first-ever AfroBasket Gold (2015) & 2012 Olympics',
+      'Led Nigeria to first-ever Gold Medal in Basketball at 2011 All Africa Games',
+      'Led Nigeria to first-ever AfroBasket Gold (2015) & first Olympic appearance (2012)',
       'Team Nigeria Captain (2006–2016)',
-      'First African to compete in ALL major tournaments: Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games',
+      'Only African to compete in ALL major tournaments: Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, All Africa Games',
       'MVP awards in German, Korean, Chinese & Nigerian leagues',
-      'Played professionally in 12 countries across 4 continents'
+      'Played professionally in 18 countries across 4 continents over 2 decades'
     ],
     governance: [
       'Vice President: Nigeria Olympic Committee',
@@ -95,7 +96,6 @@ export const CANDIDATES: Candidate[] = [
       'Chairman: World Olympians Association Job Committee',
       'Chairman: Nigeria Athlete Commission',
       'President: West Africa Basketball',
-      'WADA Athlete Council Member (2023–Present)',
       'BAL Ambassador',
       'NBA Africa Ambassador',
       'Laureus Global Ambassador',
@@ -106,8 +106,8 @@ export const CANDIDATES: Candidate[] = [
     ],
     keyAchievement: 'NBA Star turned athlete advocate. Founded programs that have mentored 45,000+ young people across 30+ cities worldwide and secured tangible welfare benefits for athletes across Africa.',
     philosophy: 'Athlete-First Leadership. Understanding the billion-dollar business of professional sport to better protect athlete welfare, retirement, and image rights.',
-    business: 'Founder & President: Olumide Oyedeji Youth Foundation (2000–Present). President & CEO: Hoops & Read Basketball Club (Nigeria Premier League). President: Dolphins Basketball Club of Lagos.',
-    bioFull: 'Olumide "Lumi" Oyedeji is one of the most decorated basketball players in African history. The first African player ever drafted outside America to the NBA (2000), he made history as the only African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, and All Africa Games.\n\nAs Team Nigeria Captain from 2006–2016, he led Nigeria to their first-ever AfroBasket Gold in Tunisia 2015 and to their first Olympic appearance at London 2012. His 20-year international career (1996–2016) includes 9 FIBA Africa Championships, 5 All Africa Games (Gold 2011, Silver 2003, Bronze 1999/2007/2015), and championships in Spain, Italy, Greece, UK, Russia, Germany, Japan, South Korea, China, Jordan, and Puerto Rico. He earned MVP honours in the German, Korean, Chinese, and Nigerian leagues.\n\nNow based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, Chairman of the WOA Job Committee, and President of West Africa Basketball. A WADA Athlete Council member, BAL Ambassador, NBA Africa Ambassador, and Laureus Global Ambassador, his foundation has mentored over 45,000 young people across 30+ cities in 20+ countries since 2000. Through Hoops & Read Basketball Club, he has produced 2 NBA players, 45 college players, and 20+ professionals in Europe, Asia, and South America.',
+    business: 'Chairman & CEO: Legendary Venture and Lume Global Consultancy (200+ employees, including 6 Olympians and 20+ former athletes). Founder & President: Olumide Oyedeji Youth Foundation (2000–Present). President & CEO: Hoops & Read Basketball Club (Nigeria Premier League). President: Dolphins Basketball Club of Lagos.',
+    bioFull: 'Olumide "Lumi" Oyedeji is one of the most decorated basketball players in African history and a true Renaissance man. Not only a legendary professional athlete, but also a Career and Motivational Speaker, Sports Administrator, Guidance & Counselor expert, Performance Management specialist, Leadership & Management professional, Psychologist, and well-renowned Philanthropist.\n\nThe first African player ever drafted outside America to the NBA (2000), he made history as the only African to compete in ALL major basketball tournaments worldwide—Olympics, World Cup, NBA, EuroLeague, Commonwealth Games, and All Africa Games. His remarkable career spanned over two decades (1996–2016), playing professionally in 18 countries across 4 continents with different cultural backgrounds, giving him a unique understanding of the needs of Olympians on every continent.\n\nAs Team Nigeria Captain from 2006–2016, he led Nigeria to their first-ever Gold Medal in Basketball at the 2011 All Africa Games in Mozambique, their first-ever AfroBasket Gold in Tunisia 2015, and their first Olympic appearance at London 2012. His international career includes 9 FIBA Africa Championships, 5 All Africa Games (Gold 2011, Silver 2003, Bronze 1999/2007/2015), and championships in Spain, Italy, Greece, UK, Russia, Germany, Japan, South Korea, China, Jordan, Slovenia, Kuwait, and Puerto Rico. He earned MVP honours in the German, Korean, Chinese, and Nigerian leagues.\n\nBeyond sport, he is Chairman & CEO of Legendary Venture and Lume Global Consultancy, employing over 200 people including 6 Olympians and 20+ former athletes. Now based in Lagos, he serves as Vice President of the Nigeria Olympic Committee, President of the Nigeria Olympians Association, Chairman of the WOA Job Committee, and President of West Africa Basketball. A BAL Ambassador, NBA Africa Ambassador, and Laureus Global Ambassador, his foundation has mentored over 45,000 young people across 30+ cities in 20+ countries since 2000. Through Hoops & Read Basketball Club, he has produced 2 NBA players, 45 college players, and 20+ professionals in Europe, Asia, and South America.',
     socialLinks: {
       linkedIn: 'https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/',
       twitter: 'https://x.com/olumideoyedeji1',
