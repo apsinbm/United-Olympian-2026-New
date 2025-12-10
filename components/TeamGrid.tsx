@@ -63,10 +63,52 @@ const MORE_PHOTOS = [
   '/Pernilla/More photos/9a.jpg',
 ];
 
-// Flat list of all images for lightbox navigation (sport, diplomacy, sport, diplomacy..., then more photos)
-const ALL_GALLERY_IMAGES = [
+// Lumi gallery photos (mixed order for variety)
+const LUMI_GALLERY_PHOTOS = [
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.29.jpeg',      // Nigeria #15 Olympics shooting
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.40.jpeg',      // Suit red tie on stairs
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.52.jpeg',      // Seattle Sonics green jersey
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.47.jpeg',      // With child in grey shirt
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.12 (1).jpeg',  // Group ceremony photo
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.49.jpeg',      // White traditional outfit stairs
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.52 (1).jpeg',  // Sonics #00 shooting
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.18.jpeg',      // Two men OLY sashes
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.07.56.jpeg',      // Nigeria #15 biting medal
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.43 (1).jpeg',  // White Gucci tracksuit
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.19.jpeg',      // Group seated OLY members
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.51.jpeg',      // Flowers ceremony suit
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.48.jpeg',      // With toddler basketball
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.20.jpeg',      // Three men conversation
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.49 (1).jpeg',  // Black traditional with sunglasses
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.50.jpeg',      // Coaching youth orange jerseys
+  '/Lumi/WhatsApp Image 2025-12-09 at 21.34.40.jpeg',      // Youth group photo outdoor
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.07.57.jpeg',      // Full suit on stairs
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.41.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.14.jpeg',      // Award ceremony group
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.22.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.42.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.24.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.13.42.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.13.50.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.26.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.14.07.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 21.34.39.jpeg',      // Night memorial photo
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.15.03.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.06.43.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.15.18.jpeg',
+  '/Lumi/WhatsApp Image 2025-12-09 at 19.31.12.jpeg',
+];
+
+// Flat list of all Pernilla images for lightbox navigation (sport, diplomacy, sport, diplomacy..., then more photos)
+const PERNILLA_GALLERY_IMAGES = [
   ...GALLERY_PAIRS.flatMap(({ sport, diplomacy }) => [sport, diplomacy]),
   ...MORE_PHOTOS
+];
+
+// Combined gallery for lightbox navigation
+const ALL_GALLERY_IMAGES = [
+  ...PERNILLA_GALLERY_IMAGES,
+  ...LUMI_GALLERY_PHOTOS
 ];
 
 const TeamGrid: React.FC = () => {
@@ -104,7 +146,7 @@ const TeamGrid: React.FC = () => {
 
   return (
     <section id="team" className="py-24 bg-light-grey">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mb-4">The Dream Team</h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-6"></div>
@@ -118,14 +160,15 @@ const TeamGrid: React.FC = () => {
             <div key={candidate.id} className="group flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
 
               {/* Top: Business Photo */}
-              <div className="h-56 w-full overflow-hidden bg-navy-deep relative">
+              <div className="h-64 md:h-72 w-full overflow-hidden bg-navy-deep relative">
                 <img
                   src={candidate.imageAction}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}`;
                   }}
                   alt={`${candidate.name} in action`}
-                  className={`h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ${candidate.id === 'thomas' ? 'w-[120%] -mr-[15%] ml-auto' : 'w-full'}`}
+                  className="h-full w-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                  style={{ objectPosition: candidate.id === 'thomas' ? '80% 40%' : candidate.id === 'lumi' ? 'center 10%' : 'center 30%' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute top-4 right-4 bg-gold text-navy-deep text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
@@ -164,7 +207,7 @@ const TeamGrid: React.FC = () => {
               </div>
 
               {/* Bottom: Sport Photo */}
-              <div className="h-56 w-full overflow-hidden bg-gray-200 relative">
+              <div className="h-64 md:h-72 w-full overflow-hidden bg-gray-200 relative">
                 <img
                   src={candidate.imageHeadshot}
                   onError={(e) => {
@@ -172,6 +215,7 @@ const TeamGrid: React.FC = () => {
                   }}
                   alt={`${candidate.name} sport`}
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: candidate.id === 'lumi' ? 'center 35%' : 'center' }}
                 />
               </div>
             </div>
@@ -198,9 +242,10 @@ const TeamGrid: React.FC = () => {
               {/* Modal Left: Image & Quick Stats */}
               <div className="md:w-1/3 bg-navy-light text-white p-8">
                 <img
-                  src={selectedCandidate.id === 'pernilla' ? '/Pernilla Headshot.jpg' : selectedCandidate.imageHeadshot}
+                  src={selectedCandidate.id === 'pernilla' ? '/Pernilla Headshot.jpg' : selectedCandidate.id === 'lumi' ? '/Lumi/WhatsApp Image 2025-12-09 at 19.07.56.jpeg' : selectedCandidate.imageHeadshot}
                   onError={(e) => { (e.target as HTMLImageElement).src = `https://picsum.photos/300/300?random=${selectedCandidate.id}2`; }}
                   className="w-32 h-32 rounded-full border-4 border-gold shadow-lg mb-6 mx-auto md:mx-0 object-cover"
+                  style={{ objectPosition: selectedCandidate.id === 'lumi' ? '80% -10%' : 'center' }}
                   alt={selectedCandidate.name}
                 />
                 <h3 className="text-2xl font-bold mb-1">{selectedCandidate.name}</h3>
@@ -379,6 +424,26 @@ const TeamGrid: React.FC = () => {
                       </div>
                     </div>
                   )}
+
+                  {/* Photo Gallery - Lumi only, hidden on mobile (shown at end of content area instead) */}
+                  {selectedCandidate.id === 'lumi' && (
+                    <div className="mt-6 hidden md:block">
+                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <div className="grid grid-cols-2 gap-2">
+                        {LUMI_GALLERY_PHOTOS.map((photo, idx) => (
+                          <div key={`lumi-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
+                            <img
+                              src={photo}
+                              alt={`Lumi photo ${idx + 1}`}
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              style={{ objectPosition: photo.includes('19.06.52') ? 'center 20%' : 'top' }}
+                              onClick={() => setLightboxImage(photo)}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -525,11 +590,12 @@ const TeamGrid: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Instagram Video - Lumi only */}
+                  {/* Videos - Lumi only */}
                   {selectedCandidate.id === 'lumi' && (
                     <div className="mt-8">
                       <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
                       <div className="space-y-4">
+                        {/* Instagram Video Link */}
                         <a
                           href="https://www.instagram.com/reel/DOWVJFqCDxr/"
                           target="_blank"
@@ -547,6 +613,57 @@ const TeamGrid: React.FC = () => {
                             </div>
                           </div>
                         </a>
+                        {/* MP4 Videos */}
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.30.38.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 19.44.32.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38 (1).mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.40.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.39.58.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.54.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.55.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.08.08.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls className="w-full h-full object-cover">
+                            <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.34.24.mp4" type="video/mp4" />
+                          </video>
+                        </div>
                       </div>
                     </div>
                   )}
@@ -594,6 +711,26 @@ const TeamGrid: React.FC = () => {
                               src={photo}
                               alt={`Pernilla photo ${idx + 1}`}
                               className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              onClick={() => setLightboxImage(photo)}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Photo Gallery - Lumi only, Mobile, shown at end of content */}
+                  {selectedCandidate.id === 'lumi' && (
+                    <div className="mt-8 md:hidden">
+                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <div className="grid grid-cols-1 gap-2">
+                        {LUMI_GALLERY_PHOTOS.map((photo, idx) => (
+                          <div key={`lumi-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
+                            <img
+                              src={photo}
+                              alt={`Lumi photo ${idx + 1}`}
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                              style={{ objectPosition: photo.includes('19.06.52') ? 'center 20%' : 'top' }}
                               onClick={() => setLightboxImage(photo)}
                             />
                           </div>

@@ -79,7 +79,7 @@ export const CANDIDATES: Candidate[] = [
     country: 'Nigeria',
     location: 'Lagos, Nigeria',
     imageAction: 'Lumi Business.jpg',
-    imageHeadshot: 'Lumi Sport.jpg',
+    imageHeadshot: 'Lumi/WhatsApp Image 2025-12-09 at 19.06.52.jpeg',
     achievements: [
       'First African player drafted outside America to the NBA (2000)',
       'NBA Player (Seattle SuperSonics, Orlando Magic, Atlanta Hawks)',
