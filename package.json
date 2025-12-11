@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "googleapis": "168.0.0",
     "lucide-react": "^0.554.0",
     "react": "19.2.1",
     "react-dom": "19.2.1"

@@ -1,13 +1,43 @@
 import React, { useState } from 'react';
-import { Send, ArrowRight } from 'lucide-react';
+import { Send, ArrowRight, Loader2 } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setLoading(true);
+    setError('');
+
+    const form = e.currentTarget;
+    const formData = {
+      name: (form.elements.namedItem('name') as HTMLInputElement).value,
+      noa: (form.elements.namedItem('noa') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      whatsapp: (form.elements.namedItem('whatsapp') as HTMLInputElement).value,
+      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit');
+      }
+
+      setSubmitted(true);
+      form.reset();
+    } catch (err) {
+      setError('Something went wrong. Please try again or contact us directly.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -17,7 +47,7 @@ const Contact: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="bg-navy-deep rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[500px]">
-          
+
           {/* CTA Side */}
           <div className="md:w-1/2 p-12 flex flex-col justify-center relative bg-navy-deep text-white">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
@@ -40,26 +70,41 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-navy-deep mb-2">Request Sent!</h3>
                 <p className="text-gray-500">We will be in touch shortly to schedule.</p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  className="mt-6 text-sm text-navy-deep underline hover:no-underline"
+                >
+                  Submit another request
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
+                    {error}
+                  </div>
+                )}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name (OLY)</label>
-                  <input 
-                    type="text" 
-                    id="name" 
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition"
+                    disabled={loading}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder="Jane Doe, OLY"
                   />
                 </div>
                 <div>
                   <label htmlFor="noa" className="block text-sm font-medium text-gray-700 mb-1">National Association</label>
-                  <input 
-                    type="text" 
-                    id="noa" 
+                  <input
+                    type="text"
+                    id="noa"
+                    name="noa"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition"
+                    disabled={loading}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder="e.g. French Olympians Association"
                   />
                 </div>
@@ -68,8 +113,10 @@ const Contact: React.FC = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition"
+                    disabled={loading}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder="jane@example.com"
                   />
                 </div>
@@ -78,7 +125,9 @@ const Contact: React.FC = () => {
                   <input
                     type="tel"
                     id="whatsapp"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition"
+                    name="whatsapp"
+                    disabled={loading}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder="+1 234 567 8900"
                   />
                 </div>
@@ -86,16 +135,26 @@ const Contact: React.FC = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition resize-none"
+                    disabled={loading}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition resize-none disabled:bg-gray-100"
                     placeholder="Any questions or information you'd like to share..."
                   />
                 </div>
-                <button 
-                  type="submit" 
-                  className="w-full bg-crimson hover:bg-crimson-hover text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all"
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-crimson hover:bg-crimson-hover text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
-                  Request Meeting
+                  {loading ? (
+                    <>
+                      <Loader2 className="animate-spin" size={20} />
+                      Sending...
+                    </>
+                  ) : (
+                    'Request Meeting'
+                  )}
                 </button>
               </form>
             )}
