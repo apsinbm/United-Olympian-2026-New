@@ -766,7 +766,7 @@ const TeamGrid: React.FC = () => {
                     <p key={index} className="mb-4">{paragraph}</p>
                   ))}
 
-                  {translatedModal.trackRecord && (
+                  {translatedModal.trackRecord && selectedCandidate.id === 'thomas' && (
                     <div className="bg-gold/10 p-6 rounded-lg border-l-4 border-gold mb-6">
                       <h5 className="font-bold text-navy-deep mb-2 text-lg">{t('team.trackRecord')}</h5>
                       <p className="text-gray-700">{translatedModal.trackRecord}</p>
