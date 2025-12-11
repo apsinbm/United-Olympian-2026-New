@@ -47,7 +47,7 @@ export const CANDIDATES: Candidate[] = [
       '24 Individual World Cup Victories',
       'FIS World Cup Overall Champion 1997',
       'Winner of World Cup races in all 5 disciplines',
-      'Renowned TV Sports Broadcaster'
+      'Renowned TV Broadcaster'
     ],
     governance: [
       'IOC Member (2002–2010): Athletes\', Ethics, Nominations, Coordination Commissions',
