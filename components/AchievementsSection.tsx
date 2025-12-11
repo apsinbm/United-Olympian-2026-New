@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { CheckCircle2, ChevronDown, ExternalLink } from 'lucide-react';
 import { ACHIEVEMENTS } from '../constants';
+import { useTranslation } from '../context/LanguageContext';
 
 const MOBILE_INITIAL_COUNT = 6;
 
@@ -8,6 +9,7 @@ const AchievementsSection: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [showAllMobile, setShowAllMobile] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -28,12 +30,12 @@ const AchievementsSection: React.FC = () => {
     <section className="py-12 md:py-20 bg-white" id="achievements">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-16">
-          <span className="text-crimson font-bold tracking-widest uppercase text-sm">14 Years of Successful Delivery</span>
+          <span className="text-crimson font-bold tracking-widest uppercase text-sm">{t('achievements.sectionLabel')}</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mt-4">
-            What We've <span className="text-gold">Already Built</span>
+            {t('achievements.sectionTitle')} <span className="text-gold">{t('achievements.sectionTitleHighlight')}</span>
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-            Here's our track record.
+            {t('achievements.sectionSubtitle')}
           </p>
         </div>
 
@@ -70,7 +72,7 @@ const AchievementsSection: React.FC = () => {
               {expandedIndex === index && achievement.links && achievement.links.length > 0 && (
                 <div className="absolute z-50 left-0 right-0 mt-2 bg-white rounded-xl border border-gray-200 shadow-xl max-h-80 overflow-y-auto">
                   <div className="p-3">
-                    <p className="text-xs text-gray-500 uppercase font-bold mb-2 px-2">Related Resources</p>
+                    <p className="text-xs text-gray-500 uppercase font-bold mb-2 px-2">{t('achievements.relatedResources')}</p>
                     {achievement.links.map((link, linkIndex) => (
                       <a
                         key={linkIndex}
@@ -103,7 +105,7 @@ const AchievementsSection: React.FC = () => {
               onClick={() => setShowAllMobile(true)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-navy-deep text-white font-bold rounded-full hover:bg-navy-light transition-colors"
             >
-              View All {ACHIEVEMENTS.length} Achievements
+              {t('achievements.viewAll').replace('{count}', String(ACHIEVEMENTS.length))}
               <ChevronDown className="h-5 w-5" />
             </button>
           </div>
@@ -115,7 +117,7 @@ const AchievementsSection: React.FC = () => {
               onClick={() => setShowAllMobile(false)}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-200 text-navy-deep font-bold rounded-full hover:bg-gray-300 transition-colors"
             >
-              Show Less
+              {t('achievements.showLess')}
               <ChevronDown className="h-5 w-5 rotate-180" />
             </button>
           </div>
@@ -123,10 +125,10 @@ const AchievementsSection: React.FC = () => {
 
         <div className="rounded-2xl p-6 md:p-12 text-center" style={{ background: 'linear-gradient(to right, #1A365D, #2D4A6F)' }}>
           <p className="text-xl md:text-2xl font-serif italic max-w-3xl mx-auto" style={{ color: '#FFFFFF' }}>
-            "14 years ago, the WOA did very little. No grants, no scholarships, no NOA toolkits, no Development Officers. Our team built the resources your NOA relies on today."
+            "{t('achievements.quote')}"
           </p>
           <p className="text-gold font-bold text-xl md:text-2xl mt-4">
-            Continue what works!
+            {t('achievements.quoteCTA')}
           </p>
         </div>
       </div>

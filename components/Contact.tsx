@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Send, ArrowRight, Loader2 } from 'lucide-react';
+import { useTranslation } from '../context/LanguageContext';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -51,12 +53,12 @@ const Contact: React.FC = () => {
           {/* CTA Side */}
           <div className="md:w-1/2 p-12 flex flex-col justify-center relative bg-navy-deep text-white">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-            <h2 className="text-4xl font-extrabold mb-6">Work with us to take the WOA to the next level.</h2>
+            <h2 className="text-4xl font-extrabold mb-6">{t('contact.title')}</h2>
             <p className="text-gray-300 text-lg mb-8 font-serif">
-              We want to hear from Olympians and National Olympians Associations. Request a meeting with Pernilla, Lumi, or Thomas to discuss the needs of your NOA and your Olympians.
+              {t('contact.subtitle')}
             </p>
             <div className="flex items-center gap-2 text-gold font-bold text-xl">
-               <span>We built it. We secured it. We'll work with you to grow it.</span>
+               <span>{t('contact.tagline')}</span>
                <ArrowRight />
             </div>
           </div>
@@ -68,24 +70,24 @@ const Contact: React.FC = () => {
                 <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Send size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-navy-deep mb-2">Request Sent!</h3>
-                <p className="text-gray-500">We will be in touch shortly to schedule.</p>
+                <h3 className="text-2xl font-bold text-navy-deep mb-2">{t('contact.success.title')}</h3>
+                <p className="text-gray-500">{t('contact.success.message')}</p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="mt-6 text-sm text-navy-deep underline hover:no-underline"
                 >
-                  Submit another request
+                  {t('contact.success.another')}
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {error && (
                   <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
-                    {error}
+                    {t('contact.error')}
                   </div>
                 )}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name (OLY)</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.form.nameLabel')}</label>
                   <input
                     type="text"
                     id="name"
@@ -93,11 +95,11 @@ const Contact: React.FC = () => {
                     required
                     disabled={loading}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
-                    placeholder="Jane Doe, OLY"
+                    placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="noa" className="block text-sm font-medium text-gray-700 mb-1">National Association</label>
+                  <label htmlFor="noa" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.form.noaLabel')}</label>
                   <input
                     type="text"
                     id="noa"
@@ -105,11 +107,11 @@ const Contact: React.FC = () => {
                     required
                     disabled={loading}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
-                    placeholder="e.g. French Olympians Association"
+                    placeholder={t('contact.form.noaPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.form.emailLabel')}</label>
                   <input
                     type="email"
                     id="email"
@@ -117,29 +119,29 @@ const Contact: React.FC = () => {
                     required
                     disabled={loading}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
-                    placeholder="jane@example.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-1">WhatsApp Number</label>
+                  <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.form.whatsappLabel')}</label>
                   <input
                     type="tel"
                     id="whatsapp"
                     name="whatsapp"
                     disabled={loading}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
-                    placeholder="+1 234 567 8900"
+                    placeholder={t('contact.form.whatsappPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">{t('contact.form.messageLabel')}</label>
                   <textarea
                     id="message"
                     name="message"
                     rows={3}
                     disabled={loading}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition resize-none disabled:bg-gray-100"
-                    placeholder="Any questions or information you'd like to share..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
                 <button
@@ -150,10 +152,10 @@ const Contact: React.FC = () => {
                   {loading ? (
                     <>
                       <Loader2 className="animate-spin" size={20} />
-                      Sending...
+                      {t('contact.form.submitting')}
                     </>
                   ) : (
-                    'Request Meeting'
+                    t('contact.form.submit')
                   )}
                 </button>
               </form>

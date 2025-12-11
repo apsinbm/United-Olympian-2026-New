@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CollaborationBanner from './components/CollaborationBanner';
@@ -11,11 +12,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const { isRTL } = useLanguage();
 
   return (
-    <div className="min-h-screen font-sans text-navy-deep">
+    <div className={`min-h-screen font-sans text-navy-deep ${isRTL ? 'rtl' : 'ltr'}`}>
       <VoteDisciplineBanner variant="top" />
       <Navbar />
       <main>
@@ -31,6 +33,14 @@ const App: React.FC = () => {
       <Footer onPrivacyClick={() => setIsPrivacyOpen(true)} />
       <PrivacyPolicy isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 };
 

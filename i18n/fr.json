@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "brand": "OLYMPIENS UNIS",
+    "team": "L'Équipe",
+    "accomplishments": "Nos Réalisations",
+    "actionPlan": "Plan d'Action 2026",
+    "joinMovement": "Rejoignez le Mouvement"
+  },
+  "hero": {
+    "badge": "Campagne Officielle 2026",
+    "title1": "Nouveau Leadership.",
+    "title2": "Expérience Prouvée.",
+    "subtitle": "Une Championne Olympique. Une Star NBA. Un Génie des Affaires.",
+    "subtitleHighlight": "Des idées nouvelles fondées sur ce qui fonctionne.",
+    "ctaPrimary": "Rencontrez l'Équipe",
+    "ctaSecondary": "Voir le Plan d'Action 2026"
+  },
+  "voteBanner": {
+    "label": "L'Équipe Complète :",
+    "candidates": "Pernilla (Présidente) + Lumi (Secrétaire Général) + Thomas (Trésorier)"
+  },
+  "collaboration": {
+    "highlight": "Trois Continents. Une Vision Unifiée.",
+    "subtitle": "Un leadership qui représente tous les Olympiens."
+  },
+  "team": {
+    "sectionLabel": "Rencontrez les Candidats",
+    "sectionTitle": "L'Équipe Qui",
+    "sectionTitleHighlight": "Délivre",
+    "sectionSubtitle": "Ensemble, nous apportons l'héritage olympique, le sens des affaires mondial et l'expérience de la défense des athlètes.",
+    "viewFullProfile": "Voir le Profil Complet",
+    "forPresident": "Pour Présidente",
+    "forSecretaryGeneral": "Pour Secrétaire Général",
+    "forTreasurer": "Pour Trésorier",
+    "videoIntroduction": "Présentation Vidéo",
+    "biography": "Biographie",
+    "athleticAchievements": "Palmarès Sportif",
+    "governanceExperience": "Expérience en Gouvernance",
+    "keyAchievement": "Réalisation Clé",
+    "trackRecord": "Parcours",
+    "business": "Entreprise",
+    "philosophy": "Philosophie",
+    "education": "Formation",
+    "myVision": "Ma Vision pour l'AMO",
+    "videos": "Vidéos",
+    "photoGallery": "Galerie Photos",
+    "close": "Fermer",
+    "followOn": "Suivre sur",
+    "visitWebsite": "Visiter le Site",
+    "athleticHighlights": "Palmarès Sportif",
+    "country": "Pays",
+    "basedIn": "Basé à",
+    "connect": "Connecter"
+  },
+  "core": {
+    "sectionLabel": "Pourquoi Nous Choisir",
+    "sectionTitle": "Trois Raisons.",
+    "sectionTitleHighlight": "Un Choix Clair.",
+    "sectionSubtitle": "Un nouveau leadership avec l'expérience pour délivrer et la vision pour aller plus loin.",
+    "built": {
+      "title": "Nous l'Avons Construit",
+      "subtitle": "L'AMO Moderne",
+      "description": "Nous avons contribué à la mise en place de chaque programme majeur sur lequel les Olympiens comptent aujourd'hui. Nous sommes crédibles parce que nous l'avons fait—14 ans de résultats prouvés, pas de promesses."
+    },
+    "secure": {
+      "title": "Nous l'Avons Sécurisé",
+      "subtitle": "Indépendant et Fiable",
+      "description": "Nous avons protégé l'indépendance de l'AMO tout en reconstruisant la relation de travail solide avec le CIO qui apporte financement et influence."
+    },
+    "lead": {
+      "title": "Nous Sommes à l'Écoute",
+      "subtitle": "La Bonne Équipe",
+      "description": "Une Championne Olympique, une Star NBA et un Génie des Affaires—avec des expertises complémentaires : Pernilla apporte la gouvernance olympique et l'expérience du CIO, Lumi apporte la connaissance du business du sport professionnel, Thomas apporte l'expertise financière et technologique. L'équipe complète, à l'écoute de vos besoins."
+    }
+  },
+  "achievements": {
+    "sectionLabel": "14 Ans de Réalisations Réussies",
+    "sectionTitle": "Ce Que Nous Avons",
+    "sectionTitleHighlight": "Déjà Construit",
+    "sectionSubtitle": "Voici notre bilan.",
+    "viewAll": "Voir les {count} Réalisations",
+    "showLess": "Voir Moins",
+    "relatedResources": "Ressources Associées",
+    "quote": "Il y a 14 ans, l'AMO faisait très peu. Pas de subventions, pas de bourses, pas de guides pour les ANO, pas d'Agents de Développement. Notre équipe a construit les ressources sur lesquelles votre ANO compte aujourd'hui.",
+    "quoteCTA": "Continuons ce qui fonctionne !",
+    "items": {
+      "olyDesignation": {
+        "title": "Désignation OLY",
+        "description": "Création des lettres post-nominales OLY pour tous les Olympiens du monde"
+      },
+      "worldForum": {
+        "title": "Forum Mondial des Olympiens",
+        "description": "Établissement du rassemblement mondial des Olympiens"
+      },
+      "serviceToSociety": {
+        "title": "Subventions Service à la Société",
+        "description": "Financement pour les Olympiens ayant un impact communautaire"
+      },
+      "iocFunding": {
+        "title": "Augmentation du Financement CIO",
+        "description": "Augmentation du financement du CIO jusqu'à 300%"
+      },
+      "devOfficers": {
+        "title": "Agents de Développement",
+        "description": "Mise en place d'agents de développement régionaux pour soutenir les ANO"
+      },
+      "devGrants": {
+        "title": "Subventions de Développement",
+        "description": "Création de subventions de développement pour aider à faire croître les ANO"
+      },
+      "olyHouseRio": {
+        "title": "OLY House Rio",
+        "description": "OLY House primée à Rio 2016"
+      },
+      "serviceToOlympians": {
+        "title": "Subventions Service aux Olympiens",
+        "description": "Soutien direct aux Olympiens"
+      },
+      "olyHouseParis": {
+        "title": "OLY House Paris",
+        "description": "La meilleure OLY House jamais organisée à Paris 2024"
+      },
+      "fundraising": {
+        "title": "Succès de la Collecte de Fonds",
+        "description": "Des millions collectés pour financer les OLY Houses et les Forums Mondiaux des Olympiens"
+      },
+      "scholarships": {
+        "title": "Bourses Universitaires",
+        "description": "Opportunités éducatives pour les Olympiens du monde entier"
+      },
+      "olyCeremonies": {
+        "title": "Cérémonies OLY",
+        "description": "Mise en place de cérémonies de reconnaissance pour les Olympiens"
+      },
+      "healthResearch": {
+        "title": "Recherche sur la Santé",
+        "description": "Première enquête mondiale sur la santé musculo-squelettique des Olympiens"
+      },
+      "olympiansForLife": {
+        "title": "Olympiens pour la Vie",
+        "description": "Création des prix et cérémonies Olympiens pour la Vie"
+      },
+      "website": {
+        "title": "Site Olympian.org",
+        "description": "Refonte du site Olympian.org"
+      },
+      "noaGuide": {
+        "title": "Guide et Outils ANO",
+        "description": "Création d'un guide complet et d'outils pour les ANO"
+      },
+      "relationships": {
+        "title": "Réseau de Relations",
+        "description": "Construction de relations avec World Academy of Sport, SkillsBuild, et plus"
+      },
+      "iocAgreement": {
+        "title": "Nouvel Accord avec le CIO",
+        "description": "Sécurisation de l'indépendance, du financement à long terme et de la stabilité pour tous les programmes de l'AMO"
+      },
+      "campaigns": {
+        "title": "Campagnes Mondiales Réussies",
+        "description": "Quand Ebola a frappé et que nos ANO ont demandé de l'aide, nous avons lancé #TargetEbola et grâce à la communauté olympienne mondiale, nous avons envoyé six conteneurs de fournitures médicales et autres en Sierra Leone et au Liberia. Notre campagne #OlympiansforUkraine a collecté des fonds pour aider les familles olympiennes ukrainiennes déplacées."
+      }
+    }
+  },
+  "actionPlan": {
+    "sectionLabel": "Le Manifeste",
+    "sectionTitle": "Notre",
+    "sectionTitleHighlight": "Plan d'Action 2026",
+    "sectionSubtitle": "Nous n'avons pas que des slogans. Nous avons une feuille de route concrète, financée et actionnable pour moderniser l'AMO et autonomiser les Associations Nationales d'Olympiens.",
+    "whyMatters": "Pourquoi c'est important",
+    "whyMattersText": "L'AMO doit évoluer d'un organisme cérémoniel vers un réseau de soutien fonctionnel. Notre plan se concentre sur la décentralisation financière et des outils concrets pour la vie après le sport.",
+    "commitment": "Engagement",
+    "viewAll": "Voir les {count} Engagements",
+    "showLess": "Voir Moins",
+    "items": {
+      "relations": {
+        "title": "Relations CIO Indépendantes mais Collaboratives",
+        "description": "Maintenir notre indépendance en tant qu'association tout en travaillant étroitement et constructivement avec le CIO. Nous sommes le vrai pont."
+      },
+      "rights": {
+        "title": "Santé, Retraites et Souveraineté de l'Image",
+        "description": "Nous défendrons agressivement un filet de sécurité mondial, en faisant pression pour une couverture d'assurance maladie et des régimes de retraite pour les Olympiens. De plus, nous exigerons la protection absolue des Droits à l'Image après les Jeux. Une fois la compétition terminée, votre image et vos données vous appartiennent, et nous travaillerons à sécuriser les cadres qui vous garantissent le contrôle de votre propre héritage."
+      },
+      "reform": {
+        "title": "Maintien et Renforcement de l'Équité de Genre",
+        "description": "Nous nous engageons à protéger activement et à renforcer la réforme historique de représentation 50/50 des genres initiée par le Comité de Constitution de l'AMO présidé par Pernilla Wiberg."
+      },
+      "transparency": {
+        "title": "Poursuivre la Transparence Financière",
+        "description": "L'administration actuelle est passée de la publication de nos rapports d'audit annuels tous les quatre ans à leur publication annuelle. Nous continuerons cette pratique et veillerons à mettre en œuvre les dernières meilleures pratiques financières et processus de bonne gouvernance."
+      },
+      "dignity": {
+        "title": "Le Fonds de Transition de Vie",
+        "description": "Nous établirons une subvention dédiée spécifiquement pour que les ANO organisent des ateliers locaux de santé mentale et de transition de vie et de carrière. Les ressources seront flexibles pour répondre aux besoins culturels et économiques locaux."
+      },
+      "empowerment": {
+        "title": "Renforcer l'Autonomisation des ANO",
+        "description": "Nous nommerons un Agent de Développement pour chaque continent et prioriserons les ateliers et réunions régionaux et continentaux pour renforcer la capacité et l'expérience des ANO."
+      },
+      "digital": {
+        "title": "Dynamiser OLY Connect",
+        "description": "Nous utiliserons l'expertise technologique de Thomas Tang pour faire d'OLY Connect l'application indispensable pour les Olympiens qui leur offre des avantages, des opportunités, des connexions, et un réseau de soutien professionnel, de carrière et de vie."
+      },
+      "legacy": {
+        "title": "Augmenter les Subventions ANO",
+        "description": "Les Subventions de Développement ANO et les Subventions Service à la Société et Service aux Olympiens sont toujours sursollicitées. Nous collecterons plus de fonds pour augmenter le nombre de subventions que nous pouvons attribuer chaque année."
+      }
+    }
+  },
+  "endorsement": {
+    "quote": "Depuis 14 ans, nous avons travaillé sans relâche pour créer l'AMO d'aujourd'hui qui répond aux besoins des Olympiens et leur permet de redonner à leurs communautés à travers nos nombreux services, initiatives et subventions. Pernilla, Lumi et Thomas ont été essentiels à nombre de ces réalisations. Ils ont toute ma confiance pour poursuivre ce travail et porter l'AMO vers de nouveaux sommets. Et, surtout, pour protéger notre indépendance.",
+    "author": "Joël Bouzou",
+    "title": "Président de l'AMO (2011-2026)"
+  },
+  "contact": {
+    "title": "Travaillons ensemble pour porter l'AMO au niveau supérieur.",
+    "subtitle": "Nous voulons entendre les Olympiens et les Associations Nationales d'Olympiens. Demandez une réunion avec Pernilla, Lumi ou Thomas pour discuter des besoins de votre ANO et de vos Olympiens.",
+    "tagline": "Nous l'avons construit. Nous l'avons sécurisé. Nous travaillerons avec vous pour le faire grandir.",
+    "form": {
+      "nameLabel": "Nom Complet (OLY)",
+      "namePlaceholder": "Marie Dupont, OLY",
+      "noaLabel": "Association Nationale",
+      "noaPlaceholder": "ex. Association des Olympiens Français",
+      "emailLabel": "Adresse Email",
+      "emailPlaceholder": "marie@example.com",
+      "whatsappLabel": "Numéro WhatsApp",
+      "whatsappPlaceholder": "+33 6 12 34 56 78",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Des questions ou informations que vous souhaitez partager...",
+      "submit": "Demander une Réunion",
+      "submitting": "Envoi en cours..."
+    },
+    "success": {
+      "title": "Demande Envoyée !",
+      "message": "Nous vous contacterons bientôt pour planifier.",
+      "another": "Soumettre une autre demande"
+    },
+    "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement."
+  },
+  "footer": {
+    "brand": "OLYMPIENS UNIS",
+    "description": "Nous sommes un groupe d'OLY dédiés à servir l'Association Mondiale des Olympiens avec intégrité, transparence et action.",
+    "navigation": "Navigation",
+    "navMission": "Notre Mission",
+    "navCandidates": "Les Candidats",
+    "navActionPlan": "Plan d'Action 2026",
+    "legal": "Mentions Légales",
+    "privacyPolicy": "Politique de Confidentialité",
+    "copyright": "2026 Campagne Olympiens Unis. Tous droits réservés.",
+    "tagline": "Construit pour l'avenir du sport."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : Décembre 2025",
+    "sections": {
+      "collection": {
+        "title": "Informations que Nous Collectons",
+        "content": "Nous collectons les informations que vous fournissez directement, notamment votre nom, adresse email, Association Nationale d'Olympiens, numéro WhatsApp et tout message que vous soumettez via notre formulaire de contact."
+      },
+      "usage": {
+        "title": "Comment Nous Utilisons Vos Informations",
+        "content": "Nous utilisons vos informations pour répondre à vos demandes, planifier des réunions avec nos candidats et communiquer sur la campagne Olympiens Unis 2026. Nous ne vendons ni ne partageons vos informations personnelles avec des tiers à des fins marketing."
+      },
+      "thirdParty": {
+        "title": "Services Tiers",
+        "content": "Notre site peut intégrer du contenu de services tiers tels que YouTube et Vimeo pour le contenu vidéo. Ces services peuvent collecter des informations sur votre visite. Veuillez consulter leurs politiques de confidentialité respectives pour plus d'informations."
+      },
+      "retention": {
+        "title": "Conservation des Données",
+        "content": "Nous conservons vos informations uniquement le temps nécessaire pour atteindre les objectifs décrits dans cette politique ou selon les exigences légales."
+      },
+      "rights": {
+        "title": "Vos Droits",
+        "content": "Vous avez le droit d'accéder, de corriger ou de supprimer vos informations personnelles. Pour exercer ces droits, veuillez nous contacter via le formulaire de contact de notre site."
+      },
+      "contact": {
+        "title": "Nous Contacter",
+        "content": "Si vous avez des questions sur cette Politique de Confidentialité, veuillez utiliser le formulaire de contact de notre site pour nous joindre."
+      }
+    },
+    "close": "Fermer"
+  }
+}

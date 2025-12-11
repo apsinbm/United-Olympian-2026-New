@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "brand": "奥运健儿联盟",
+    "team": "团队",
+    "accomplishments": "我们的成就",
+    "actionPlan": "2026行动计划",
+    "joinMovement": "加入运动"
+  },
+  "hero": {
+    "badge": "2026官方竞选",
+    "title1": "新领导力。",
+    "title2": "经验验证。",
+    "subtitle": "奥运冠军。NBA球星。商业奇才。",
+    "subtitleHighlight": "基于成功经验的创新理念。",
+    "ctaPrimary": "认识团队",
+    "ctaSecondary": "查看2026行动计划"
+  },
+  "voteBanner": {
+    "label": "完整组合：",
+    "candidates": "佩尼拉（主席）+ 卢米（秘书长）+ 托马斯（司库）"
+  },
+  "collaboration": {
+    "highlight": "三大洲。统一愿景。",
+    "subtitle": "代表所有奥运健儿的领导力。"
+  },
+  "team": {
+    "sectionLabel": "认识候选人",
+    "sectionTitle": "能够",
+    "sectionTitleHighlight": "交付成果的团队",
+    "sectionSubtitle": "我们共同带来奥运遗产、全球商业智慧和运动员倡导经验。",
+    "viewFullProfile": "查看完整资料",
+    "forPresident": "竞选主席",
+    "forSecretaryGeneral": "竞选秘书长",
+    "forTreasurer": "竞选司库",
+    "videoIntroduction": "视频介绍",
+    "biography": "个人简介",
+    "athleticAchievements": "运动成就",
+    "governanceExperience": "治理经验",
+    "keyAchievement": "关键成就",
+    "trackRecord": "履历记录",
+    "business": "商业经历",
+    "philosophy": "理念",
+    "education": "教育背景",
+    "myVision": "我对WOA的愿景",
+    "videos": "视频",
+    "photoGallery": "照片集",
+    "close": "关闭",
+    "followOn": "关注",
+    "visitWebsite": "访问网站",
+    "athleticHighlights": "体育成就",
+    "country": "国家",
+    "basedIn": "居住地",
+    "connect": "联系"
+  },
+  "core": {
+    "sectionLabel": "为什么选择我们",
+    "sectionTitle": "三个理由。",
+    "sectionTitleHighlight": "明确的选择。",
+    "sectionSubtitle": "新领导力，拥有交付能力和更远愿景的经验。",
+    "built": {
+      "title": "我们建设了它",
+      "subtitle": "现代化的WOA",
+      "description": "我们帮助推出了今天奥运健儿所依赖的每一个重要项目。我们的可信度来自于我们的实际行动——14年的验证成果，而非空洞承诺。"
+    },
+    "secure": {
+      "title": "我们保障了它",
+      "subtitle": "独立且可信",
+      "description": "我们保护了WOA的独立性，同时重建了与国际奥委会的稳固工作关系，从而获得资金和影响力。"
+    },
+    "lead": {
+      "title": "我们倾听",
+      "subtitle": "合适的团队",
+      "description": "奥运冠军、NBA球星和商业奇才——具有互补专长：佩尼拉带来奥运治理和国际奥委会经验，卢米带来职业体育商业洞察，托马斯带来财务和技术能力。完整组合，倾听您的需求。"
+    }
+  },
+  "achievements": {
+    "sectionLabel": "14年成功交付",
+    "sectionTitle": "我们已经",
+    "sectionTitleHighlight": "建设完成的成就",
+    "sectionSubtitle": "这是我们的记录。",
+    "viewAll": "查看全部{count}项成就",
+    "showLess": "收起",
+    "relatedResources": "相关资源",
+    "quote": "14年前，WOA几乎没有任何作为。没有资助、没有奖学金、没有NOA工具包、没有发展官员。我们的团队建立了您的NOA今天所依赖的资源。",
+    "quoteCTA": "让成功继续！",
+    "items": {
+      "olyDesignation": {
+        "title": "OLY称号",
+        "description": "为全球所有奥运健儿创建OLY后缀称号"
+      },
+      "worldForum": {
+        "title": "世界奥运健儿论坛",
+        "description": "建立奥运健儿全球聚会"
+      },
+      "serviceToSociety": {
+        "title": "社会服务资助",
+        "description": "为有社区影响力的奥运健儿提供资金"
+      },
+      "iocFunding": {
+        "title": "国际奥委会资金增加",
+        "description": "国际奥委会资金增加高达300%"
+      },
+      "devOfficers": {
+        "title": "发展官员",
+        "description": "设立区域发展官员以支持NOA"
+      },
+      "devGrants": {
+        "title": "发展资助",
+        "description": "创建发展资助以帮助NOA成长"
+      },
+      "olyHouseRio": {
+        "title": "里约OLY之家",
+        "description": "里约2016获奖的OLY之家"
+      },
+      "serviceToOlympians": {
+        "title": "奥运健儿服务资助",
+        "description": "对奥运健儿的直接支持"
+      },
+      "olyHouseParis": {
+        "title": "巴黎OLY之家",
+        "description": "巴黎2024史上最佳OLY之家"
+      },
+      "fundraising": {
+        "title": "筹款成功",
+        "description": "筹集数百万资金用于OLY之家和世界奥运健儿论坛"
+      },
+      "scholarships": {
+        "title": "大学奖学金",
+        "description": "为全球奥运健儿提供教育机会"
+      },
+      "olyCeremonies": {
+        "title": "OLY仪式",
+        "description": "为奥运健儿建立表彰仪式"
+      },
+      "healthResearch": {
+        "title": "健康研究",
+        "description": "首次全球奥运健儿肌肉骨骼健康调查"
+      },
+      "olympiansForLife": {
+        "title": "终身奥运健儿",
+        "description": "创建终身奥运健儿奖项和仪式"
+      },
+      "website": {
+        "title": "Olympian.org网站",
+        "description": "重建Olympian.org网站"
+      },
+      "noaGuide": {
+        "title": "NOA指南与工具包",
+        "description": "为NOA创建全面指南和工具包"
+      },
+      "relationships": {
+        "title": "关系网络",
+        "description": "与世界体育学院、SkillsBuild等建立关系"
+      },
+      "iocAgreement": {
+        "title": "与国际奥委会的新协议",
+        "description": "确保所有WOA项目的独立性、长期资金和稳定性"
+      },
+      "campaigns": {
+        "title": "成功的全球活动",
+        "description": "当埃博拉爆发且我们的NOA请求帮助时，我们发起了#TargetEbola活动，感谢全球奥运社区，我们向塞拉利昂和利比里亚运送了六个集装箱的医疗和其他物资。我们的#OlympiansforUkraine活动筹集资金帮助流离失所的乌克兰奥运家庭。"
+      }
+    }
+  },
+  "actionPlan": {
+    "sectionLabel": "宣言",
+    "sectionTitle": "我们的",
+    "sectionTitleHighlight": "2026行动计划",
+    "sectionSubtitle": "我们不仅有口号。我们有具体的、有资金支持的、可执行的路线图来实现WOA现代化并赋能全国奥运健儿协会。",
+    "whyMatters": "为什么这很重要",
+    "whyMattersText": "WOA需要从礼仪性机构发展为功能性支持网络。我们的计划专注于财务去中心化和运动后生活的实际工具。",
+    "commitment": "承诺",
+    "viewAll": "查看全部{count}项承诺",
+    "showLess": "收起",
+    "items": {
+      "relations": {
+        "title": "独立但合作的国际奥委会关系",
+        "description": "在与国际奥委会紧密建设性合作的同时保持我们作为协会的独立性。我们是真正的桥梁。"
+      },
+      "rights": {
+        "title": "健康、养老金和肖像权主权",
+        "description": "我们将积极倡导全球安全网，游说为奥运健儿提供医疗保险和养老金计划。此外，我们将要求赛后肖像权的绝对保护。比赛结束后，您的形象和数据属于您，我们将努力确保框架保障您对自己遗产的控制。"
+      },
+      "reform": {
+        "title": "维护和加强性别平等",
+        "description": "我们承诺积极保护和加强由佩尼拉·维贝里主持的WOA宪法委员会发起的历史性50/50性别代表改革。"
+      },
+      "transparency": {
+        "title": "持续财务透明",
+        "description": "现任行政部门已将年度审计报告从每四年发布一次改为每年发布。我们将继续这一做法，并确保实施最新的财务最佳实践和良好治理流程。"
+      },
+      "dignity": {
+        "title": "人生转型基金",
+        "description": "我们将专门设立资助，供NOA举办当地心理健康和人生及职业转型研讨会。资源将灵活以满足当地文化和经济需求。"
+      },
+      "empowerment": {
+        "title": "建设NOA能力",
+        "description": "我们将为每个大洲任命一名发展官员，并优先举办区域和大陆研讨会和会议以建设NOA能力和经验。"
+      },
+      "digital": {
+        "title": "强化OLY Connect",
+        "description": "我们将利用托马斯·唐的技术专长，使OLY Connect成为奥运健儿不可或缺的应用程序，为他们提供福利、机会、联系以及商业、职业和生活网络支持。"
+      },
+      "legacy": {
+        "title": "增加NOA资助",
+        "description": "NOA发展资助和社会服务及奥运健儿服务资助总是供不应求。我们将筹集更多资金以增加每年可颁发的资助数量。"
+      }
+    }
+  },
+  "endorsement": {
+    "quote": "14年来，我们不懈努力创建了今天的WOA，它服务于奥运健儿的需求，并通过我们众多的服务、倡议和资助使他们能够回馈社区。佩尼拉、卢米和托马斯是这些成就的重要组成部分。我完全信任他们继续这项工作并将WOA推向更高的高度。而且，至关重要的是，保护我们的独立性。",
+    "author": "乔尔·布祖",
+    "title": "WOA主席（2011-2026）"
+  },
+  "contact": {
+    "title": "与我们合作，将WOA推向新高度。",
+    "subtitle": "我们希望听到奥运健儿和全国奥运健儿协会的声音。请求与佩尼拉、卢米或托马斯会面，讨论您的NOA和奥运健儿的需求。",
+    "tagline": "我们建设了它。我们保障了它。我们将与您合作使其发展。",
+    "form": {
+      "nameLabel": "全名（OLY）",
+      "namePlaceholder": "张伟，OLY",
+      "noaLabel": "全国协会",
+      "noaPlaceholder": "例如：中国奥运健儿协会",
+      "emailLabel": "电子邮件",
+      "emailPlaceholder": "zhangwei@example.com",
+      "whatsappLabel": "WhatsApp号码",
+      "whatsappPlaceholder": "+86 138 0000 0000",
+      "messageLabel": "留言",
+      "messagePlaceholder": "您想分享的任何问题或信息...",
+      "submit": "请求会面",
+      "submitting": "发送中..."
+    },
+    "success": {
+      "title": "请求已发送！",
+      "message": "我们将尽快与您联系安排时间。",
+      "another": "提交另一个请求"
+    },
+    "error": "出现问题。请重试或直接联系我们。"
+  },
+  "footer": {
+    "brand": "奥运健儿联盟",
+    "description": "我们是一群致力于以诚信、透明和行动服务世界奥运健儿协会的OLY。",
+    "navigation": "导航",
+    "navMission": "我们的使命",
+    "navCandidates": "候选人",
+    "navActionPlan": "2026行动计划",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "copyright": "2026奥运健儿联盟竞选。保留所有权利。",
+    "tagline": "为体育的未来而建。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2025年12月",
+    "sections": {
+      "collection": {
+        "title": "我们收集的信息",
+        "content": "我们收集您直接提供的信息，包括您的姓名、电子邮件地址、全国奥运健儿协会、WhatsApp号码以及您通过联系表单提交的任何消息。"
+      },
+      "usage": {
+        "title": "我们如何使用您的信息",
+        "content": "我们使用您的信息来回复您的询问、安排与我们候选人的会面，以及就奥运健儿联盟2026竞选进行沟通。我们不会出于营销目的向第三方出售或分享您的个人信息。"
+      },
+      "thirdParty": {
+        "title": "第三方服务",
+        "content": "我们的网站可能嵌入来自第三方服务（如YouTube和Vimeo）的视频内容。这些服务可能会收集有关您访问的信息。请参阅它们各自的隐私政策以获取更多信息。"
+      },
+      "retention": {
+        "title": "数据保留",
+        "content": "我们仅在完成本政策所述目的所需的时间内或法律要求的时间内保留您的信息。"
+      },
+      "rights": {
+        "title": "您的权利",
+        "content": "您有权访问、更正或删除您的个人信息。要行使这些权利，请使用我们网站上的联系表单与我们联系。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "content": "如果您对本隐私政策有任何疑问，请使用我们网站上的联系表单与我们联系。"
+      }
+    },
+    "close": "关闭"
+  }
+}

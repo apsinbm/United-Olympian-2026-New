@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "brand": "OLÍMPICOS UNIDOS",
+    "team": "El Equipo",
+    "accomplishments": "Nuestros Logros",
+    "actionPlan": "Plan de Acción 2026",
+    "joinMovement": "Únete al Movimiento"
+  },
+  "hero": {
+    "badge": "Campaña Oficial 2026",
+    "title1": "Nuevo Liderazgo.",
+    "title2": "Experiencia Comprobada.",
+    "subtitle": "Una Campeona Olímpica. Una Estrella de la NBA. Un Genio de los Negocios.",
+    "subtitleHighlight": "Ideas frescas basadas en lo que funciona.",
+    "ctaPrimary": "Conoce al Equipo",
+    "ctaSecondary": "Ver Plan de Acción 2026"
+  },
+  "voteBanner": {
+    "label": "El Paquete Completo:",
+    "candidates": "Pernilla (Presidenta) + Lumi (Secretario General) + Thomas (Tesorero)"
+  },
+  "collaboration": {
+    "highlight": "Tres Continentes. Una Visión Unificada.",
+    "subtitle": "Liderazgo que representa a todos los Olímpicos."
+  },
+  "team": {
+    "sectionLabel": "Conoce a los Candidatos",
+    "sectionTitle": "El Equipo Que",
+    "sectionTitleHighlight": "Cumple",
+    "sectionSubtitle": "Juntos, aportamos legado olímpico, visión empresarial global y experiencia en defensa de los atletas.",
+    "viewFullProfile": "Ver Perfil Completo",
+    "forPresident": "Para Presidenta",
+    "forSecretaryGeneral": "Para Secretario General",
+    "forTreasurer": "Para Tesorero",
+    "videoIntroduction": "Presentación en Video",
+    "biography": "Biografía",
+    "athleticAchievements": "Logros Deportivos",
+    "governanceExperience": "Experiencia en Gobernanza",
+    "keyAchievement": "Logro Clave",
+    "trackRecord": "Trayectoria",
+    "business": "Negocios",
+    "philosophy": "Filosofía",
+    "education": "Educación",
+    "myVision": "Mi Visión para la AMO",
+    "videos": "Videos",
+    "photoGallery": "Galería de Fotos",
+    "close": "Cerrar",
+    "followOn": "Seguir en",
+    "visitWebsite": "Visitar Sitio Web",
+    "athleticHighlights": "Logros Deportivos",
+    "country": "País",
+    "basedIn": "Ubicado en",
+    "connect": "Conectar"
+  },
+  "core": {
+    "sectionLabel": "Por Qué Elegirnos",
+    "sectionTitle": "Tres Razones.",
+    "sectionTitleHighlight": "Una Elección Clara.",
+    "sectionSubtitle": "Nuevo liderazgo con la experiencia para cumplir y la visión para ir más allá.",
+    "built": {
+      "title": "Lo Construimos",
+      "subtitle": "La AMO Moderna",
+      "description": "Ayudamos a implementar cada programa importante del que dependen los Olímpicos hoy. Somos creíbles porque lo hicimos—14 años de resultados comprobados, no promesas."
+    },
+    "secure": {
+      "title": "Lo Aseguramos",
+      "subtitle": "Independiente y Confiable",
+      "description": "Protegimos la independencia de la AMO mientras reconstruíamos la sólida relación de trabajo con el COI que aporta financiamiento e influencia."
+    },
+    "lead": {
+      "title": "Escuchamos",
+      "subtitle": "El Equipo Correcto",
+      "description": "Una Campeona Olímpica, una Estrella de la NBA y un Genio de los Negocios—con experiencias complementarias: Pernilla aporta gobernanza olímpica y experiencia en el COI, Lumi aporta conocimiento del negocio del deporte profesional, Thomas aporta experiencia financiera y tecnológica. El paquete completo, escuchando tus necesidades."
+    }
+  },
+  "achievements": {
+    "sectionLabel": "14 Años de Entregas Exitosas",
+    "sectionTitle": "Lo Que Ya",
+    "sectionTitleHighlight": "Hemos Construido",
+    "sectionSubtitle": "Este es nuestro historial.",
+    "viewAll": "Ver los {count} Logros",
+    "showLess": "Ver Menos",
+    "relatedResources": "Recursos Relacionados",
+    "quote": "Hace 14 años, la AMO hacía muy poco. Sin subvenciones, sin becas, sin guías para ANO, sin Oficiales de Desarrollo. Nuestro equipo construyó los recursos de los que tu ANO depende hoy.",
+    "quoteCTA": "¡Continuemos lo que funciona!",
+    "items": {
+      "olyDesignation": {
+        "title": "Designación OLY",
+        "description": "Creación de las letras post-nominales OLY para todos los Olímpicos del mundo"
+      },
+      "worldForum": {
+        "title": "Foro Mundial de Olímpicos",
+        "description": "Establecimiento del encuentro global de Olímpicos"
+      },
+      "serviceToSociety": {
+        "title": "Subvenciones Servicio a la Sociedad",
+        "description": "Financiamiento para Olímpicos con impacto comunitario"
+      },
+      "iocFunding": {
+        "title": "Aumento de Financiamiento del COI",
+        "description": "Aumento del financiamiento del COI hasta un 300%"
+      },
+      "devOfficers": {
+        "title": "Oficiales de Desarrollo",
+        "description": "Establecimiento de oficiales de desarrollo regionales para apoyar a las ANO"
+      },
+      "devGrants": {
+        "title": "Subvenciones de Desarrollo",
+        "description": "Creación de subvenciones de desarrollo para ayudar a crecer a las ANO"
+      },
+      "olyHouseRio": {
+        "title": "OLY House Río",
+        "description": "OLY House galardonada en Río 2016"
+      },
+      "serviceToOlympians": {
+        "title": "Subvenciones Servicio a los Olímpicos",
+        "description": "Apoyo directo para los Olímpicos"
+      },
+      "olyHouseParis": {
+        "title": "OLY House París",
+        "description": "La mejor OLY House de la historia en París 2024"
+      },
+      "fundraising": {
+        "title": "Éxito en Recaudación de Fondos",
+        "description": "Millones recaudados para financiar OLY Houses y Foros Mundiales de Olímpicos"
+      },
+      "scholarships": {
+        "title": "Becas Universitarias",
+        "description": "Oportunidades educativas para Olímpicos de todo el mundo"
+      },
+      "olyCeremonies": {
+        "title": "Ceremonias OLY",
+        "description": "Establecimiento de ceremonias de reconocimiento para Olímpicos"
+      },
+      "healthResearch": {
+        "title": "Investigación de Salud",
+        "description": "Primera encuesta global de salud musculoesquelética de Olímpicos"
+      },
+      "olympiansForLife": {
+        "title": "Olímpicos de por Vida",
+        "description": "Creación de los premios y ceremonias Olímpicos de por Vida"
+      },
+      "website": {
+        "title": "Sitio Web Olympian.org",
+        "description": "Reconstrucción del sitio web Olympian.org"
+      },
+      "noaGuide": {
+        "title": "Guía y Herramientas ANO",
+        "description": "Creación de guía integral y herramientas para las ANO"
+      },
+      "relationships": {
+        "title": "Red de Relaciones",
+        "description": "Construcción de relaciones con World Academy of Sport, SkillsBuild y más"
+      },
+      "iocAgreement": {
+        "title": "Nuevo Acuerdo con el COI",
+        "description": "Asegurada la independencia, financiamiento a largo plazo y estabilidad para todos los programas de la AMO"
+      },
+      "campaigns": {
+        "title": "Campañas Globales Exitosas",
+        "description": "Cuando el Ébola golpeó y nuestras ANO pidieron ayuda, lanzamos #TargetEbola y gracias a la comunidad olímpica global enviamos seis contenedores de suministros médicos y otros a Sierra Leona y Liberia. Nuestra campaña #OlympiansforUkraine recaudó fondos para ayudar a familias olímpicas ucranianas desplazadas."
+      }
+    }
+  },
+  "actionPlan": {
+    "sectionLabel": "El Manifiesto",
+    "sectionTitle": "Nuestro",
+    "sectionTitleHighlight": "Plan de Acción 2026",
+    "sectionSubtitle": "No solo tenemos eslóganes. Tenemos una hoja de ruta concreta, financiada y ejecutable para modernizar la AMO y empoderar a las Asociaciones Nacionales de Olímpicos.",
+    "whyMatters": "Por qué importa",
+    "whyMattersText": "La AMO necesita evolucionar de un organismo ceremonial a una red de apoyo funcional. Nuestro plan se centra en la descentralización financiera y herramientas tangibles para la vida después del deporte.",
+    "commitment": "Compromiso",
+    "viewAll": "Ver los {count} Compromisos",
+    "showLess": "Ver Menos",
+    "items": {
+      "relations": {
+        "title": "Relaciones COI Independientes pero Colaborativas",
+        "description": "Manteniendo nuestra independencia como asociación mientras trabajamos de cerca y constructivamente con el COI. Somos el puente real."
+      },
+      "rights": {
+        "title": "Salud, Pensiones y Soberanía de Imagen",
+        "description": "Defenderemos agresivamente una red de seguridad global, presionando por cobertura de seguro de salud y esquemas de pensión para Olímpicos. Además, exigiremos la protección absoluta de los Derechos de Imagen después de los Juegos. Una vez que termine la competencia, tu imagen y tus datos te pertenecen, y trabajaremos para asegurar los marcos que garanticen que controles tu propio legado."
+      },
+      "reform": {
+        "title": "Mantener y Mejorar la Equidad de Género",
+        "description": "Nos comprometemos a proteger activamente y mejorar la histórica reforma de representación de género 50/50 iniciada por el Comité de Constitución de la AMO presidido por Pernilla Wiberg."
+      },
+      "transparency": {
+        "title": "Continuar la Transparencia Financiera",
+        "description": "La administración actual pasó de publicar nuestros informes de auditoría anuales cada cuatro años a publicarlos cada año. Continuaremos esa práctica y aseguraremos implementar las últimas mejores prácticas financieras y procesos de buena gobernanza."
+      },
+      "dignity": {
+        "title": "El Fondo de Transición de Vida",
+        "description": "Estableceremos una subvención dedicada específicamente para que las ANO realicen talleres locales de salud mental y transición de vida y carrera. Los recursos serán flexibles para satisfacer las necesidades culturales y económicas locales."
+      },
+      "empowerment": {
+        "title": "Construir el Empoderamiento de las ANO",
+        "description": "Nombraremos un Oficial de Desarrollo para cada continente y priorizaremos talleres y reuniones regionales y continentales para construir la capacidad y experiencia de las ANO."
+      },
+      "digital": {
+        "title": "Potenciar OLY Connect",
+        "description": "Aprovecharemos la experiencia tecnológica de Thomas Tang para hacer de OLY Connect la aplicación indispensable para los Olímpicos que les proporciona beneficios, oportunidades, conexiones y apoyo de redes profesionales, de carrera y de vida."
+      },
+      "legacy": {
+        "title": "Aumentar las Subvenciones ANO",
+        "description": "Las Subvenciones de Desarrollo ANO y las Subvenciones Servicio a la Sociedad y Servicio a los Olímpicos están siempre sobresuscritas. Recaudaremos más fondos para aumentar el número de subvenciones que podemos otorgar cada año."
+      }
+    }
+  },
+  "endorsement": {
+    "quote": "Durante 14 años, hemos trabajado incansablemente para crear la AMO de hoy que sirve las necesidades de los Olímpicos y los empodera para retribuir a sus comunidades a través de nuestros muchos servicios, iniciativas y subvenciones. Pernilla, Lumi y Thomas han sido fundamentales para muchos de estos logros. Tienen toda mi confianza para continuar este trabajo y llevar a la AMO a alturas aún mayores. Y, crucialmente, para proteger nuestra independencia.",
+    "author": "Joël Bouzou",
+    "title": "Presidente de la AMO (2011-2026)"
+  },
+  "contact": {
+    "title": "Trabaja con nosotros para llevar a la AMO al siguiente nivel.",
+    "subtitle": "Queremos escuchar a los Olímpicos y a las Asociaciones Nacionales de Olímpicos. Solicita una reunión con Pernilla, Lumi o Thomas para discutir las necesidades de tu ANO y tus Olímpicos.",
+    "tagline": "Lo construimos. Lo aseguramos. Trabajaremos contigo para hacerlo crecer.",
+    "form": {
+      "nameLabel": "Nombre Completo (OLY)",
+      "namePlaceholder": "María García, OLY",
+      "noaLabel": "Asociación Nacional",
+      "noaPlaceholder": "ej. Asociación de Olímpicos Españoles",
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "maria@ejemplo.com",
+      "whatsappLabel": "Número de WhatsApp",
+      "whatsappPlaceholder": "+34 612 345 678",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cualquier pregunta o información que quieras compartir...",
+      "submit": "Solicitar Reunión",
+      "submitting": "Enviando..."
+    },
+    "success": {
+      "title": "¡Solicitud Enviada!",
+      "message": "Nos pondremos en contacto pronto para agendar.",
+      "another": "Enviar otra solicitud"
+    },
+    "error": "Algo salió mal. Por favor intenta de nuevo o contáctanos directamente."
+  },
+  "footer": {
+    "brand": "OLÍMPICOS UNIDOS",
+    "description": "Somos un grupo de OLYs dedicados a servir a la Asociación Mundial de Olímpicos con integridad, transparencia y acción.",
+    "navigation": "Navegación",
+    "navMission": "Nuestra Misión",
+    "navCandidates": "Los Candidatos",
+    "navActionPlan": "Plan de Acción 2026",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "copyright": "2026 Campaña Olímpicos Unidos. Todos los derechos reservados.",
+    "tagline": "Construido para el futuro del deporte."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Diciembre 2025",
+    "sections": {
+      "collection": {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos la información que proporcionas directamente, incluyendo tu nombre, dirección de correo electrónico, Asociación Nacional de Olímpicos, número de WhatsApp y cualquier mensaje que envíes a través de nuestro formulario de contacto."
+      },
+      "usage": {
+        "title": "Cómo Usamos Tu Información",
+        "content": "Usamos tu información para responder a tus consultas, programar reuniones con nuestros candidatos y comunicar sobre la campaña Olímpicos Unidos 2026. No vendemos ni compartimos tu información personal con terceros con fines de marketing."
+      },
+      "thirdParty": {
+        "title": "Servicios de Terceros",
+        "content": "Nuestro sitio web puede incorporar contenido de servicios de terceros como YouTube y Vimeo para contenido de video. Estos servicios pueden recopilar información sobre tu visita. Por favor consulta sus respectivas políticas de privacidad para más información."
+      },
+      "retention": {
+        "title": "Retención de Datos",
+        "content": "Retenemos tu información solo el tiempo necesario para cumplir los propósitos descritos en esta política o según lo requiera la ley."
+      },
+      "rights": {
+        "title": "Tus Derechos",
+        "content": "Tienes derecho a acceder, corregir o eliminar tu información personal. Para ejercer estos derechos, por favor contáctanos usando el formulario de contacto en nuestro sitio web."
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "content": "Si tienes preguntas sobre esta Política de Privacidad, por favor usa el formulario de contacto en nuestro sitio web para contactarnos."
+      }
+    },
+    "close": "Cerrar"
+  }
+}

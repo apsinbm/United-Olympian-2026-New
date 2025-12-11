@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { CANDIDATES } from '../constants';
 import { Candidate, OlympicYear } from '../types';
 import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from '../context/LanguageContext';
 
 // Helper function to parse markdown-style links [text](url) into React elements
 const parseMarkdownLinks = (text: string): React.ReactNode[] => {
@@ -249,6 +250,7 @@ const ALL_GALLERY_IMAGES = [
 ];
 
 const TeamGrid: React.FC = () => {
+  const { t } = useTranslation();
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
@@ -285,10 +287,11 @@ const TeamGrid: React.FC = () => {
     <section id="team" className="py-24 bg-light-grey">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mb-4">The Dream Team</h2>
+          <span className="text-crimson font-bold tracking-widest uppercase text-sm">{t('team.sectionLabel')}</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-navy-deep mt-4 mb-4">{t('team.sectionTitle')} <span className="text-gold">{t('team.sectionTitleHighlight')}</span></h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto font-serif">
-            Three experienced and successful administrators. One unified vision for the future of the World Olympians Association.
+            {t('team.sectionSubtitle')}
           </p>
         </div>
 
@@ -339,7 +342,7 @@ const TeamGrid: React.FC = () => {
                   onClick={() => setSelectedCandidate(candidate)}
                   className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors mb-4"
                 >
-                  View Full Profile
+                  {t('team.viewFullProfile')}
                 </button>
               </div>
 
@@ -392,7 +395,7 @@ const TeamGrid: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <Award className="text-gold shrink-0 mt-1" size={18} />
                     <div>
-                      <span className="block text-white font-bold">Athletic Highlights</span>
+                      <span className="block text-white font-bold">{t('team.athleticHighlights')}</span>
                       <ul className="list-disc pl-4 mt-1 space-y-1">
                         {selectedCandidate.achievements.map((a, i) => (
                           <li key={i}>{a}</li>
@@ -405,7 +408,7 @@ const TeamGrid: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <Briefcase className="text-gold shrink-0 mt-1" size={18} />
                       <div>
-                        <span className="block text-white font-bold">Business</span>
+                        <span className="block text-white font-bold">{t('team.business')}</span>
                         <p>{selectedCandidate.business}</p>
                       </div>
                     </div>
@@ -414,7 +417,7 @@ const TeamGrid: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <Globe className="text-gold shrink-0 mt-1" size={18} />
                     <div>
-                      <span className="block text-white font-bold">Country</span>
+                      <span className="block text-white font-bold">{t('team.country')}</span>
                       <p>{selectedCandidate.country}</p>
                     </div>
                   </div>
@@ -423,7 +426,7 @@ const TeamGrid: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <MapPin className="text-gold shrink-0 mt-1" size={18} />
                       <div>
-                        <span className="block text-white font-bold">Based In</span>
+                        <span className="block text-white font-bold">{t('team.basedIn')}</span>
                         <p>{selectedCandidate.location}</p>
                       </div>
                     </div>
@@ -433,7 +436,7 @@ const TeamGrid: React.FC = () => {
                     <div className="flex items-start gap-3">
                       <GraduationCap className="text-gold shrink-0 mt-1" size={18} />
                       <div>
-                        <span className="block text-white font-bold">Education</span>
+                        <span className="block text-white font-bold">{t('team.education')}</span>
                         <ul className="list-disc pl-4 mt-1 space-y-1">
                           {selectedCandidate.education.map((e, i) => (
                             <li key={i}>{e}</li>
@@ -445,7 +448,7 @@ const TeamGrid: React.FC = () => {
 
                   {selectedCandidate.socialLinks && (
                     <div className="mt-6 space-y-2">
-                      <span className="block text-white font-bold mb-2">Connect</span>
+                      <span className="block text-white font-bold mb-2">{t('team.connect')}</span>
                       <div className="flex flex-wrap gap-2">
                         {selectedCandidate.socialLinks.linkedIn && (
                           <a
@@ -622,7 +625,7 @@ const TeamGrid: React.FC = () => {
 
               {/* Modal Right: Bio */}
               <div className="md:w-2/3 p-8 md:p-12">
-                <h4 className="text-3xl font-extrabold text-navy-deep mb-6 font-serif">Biography</h4>
+                <h4 className="text-3xl font-extrabold text-navy-deep mb-6 font-serif">{t('team.biography')}</h4>
 
                 {/* Video Biography Section */}
                 <div className="mb-8 group relative rounded-xl overflow-hidden shadow-lg bg-navy-deep">
@@ -658,7 +661,7 @@ const TeamGrid: React.FC = () => {
                   <div className="mb-8 bg-gradient-to-br from-navy-deep to-navy-light p-8 rounded-xl shadow-lg">
                     <h5 className="text-gold font-bold text-xl mb-4 flex items-center gap-2">
                       <span className="w-8 h-1 bg-gold rounded"></span>
-                      My Vision for the WOA
+                      {t('team.myVision')}
                     </h5>
                     <div className="text-white/90 space-y-4">
                       {selectedCandidate.manifesto.split('\n\n').map((paragraph, index) => (
@@ -675,7 +678,7 @@ const TeamGrid: React.FC = () => {
 
                   {selectedCandidate.trackRecord && (
                     <div className="bg-gold/10 p-6 rounded-lg border-l-4 border-gold mb-6">
-                      <h5 className="font-bold text-navy-deep mb-2 text-lg">Track Record</h5>
+                      <h5 className="font-bold text-navy-deep mb-2 text-lg">{t('team.trackRecord')}</h5>
                       <p className="text-gray-700">{selectedCandidate.trackRecord}</p>
                     </div>
                   )}
@@ -966,7 +969,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Mobile only, shown at end of content */}
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-8 md:hidden">
-                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.photoGallery')}</h5>
                       <div className="grid grid-cols-1 gap-2">
                         {GALLERY_PAIRS.map(({ num, sport, diplomacy }) => (
                           <React.Fragment key={num}>
@@ -1020,7 +1023,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Lumi only, Mobile, shown at end of content */}
                   {selectedCandidate.id === 'lumi' && (
                     <div className="mt-8 md:hidden">
-                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.photoGallery')}</h5>
                       <div className="grid grid-cols-1 gap-2">
                         {LUMI_GALLERY_PHOTOS.map((photo, idx) => (
                           <div key={`lumi-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
@@ -1041,7 +1044,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Thomas only, Mobile, shown at end of content */}
                   {selectedCandidate.id === 'thomas' && (
                     <div className="mt-8 md:hidden">
-                      <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.photoGallery')}</h5>
                       <div className="grid grid-cols-1 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
                           // Custom positioning for Thomas photos
