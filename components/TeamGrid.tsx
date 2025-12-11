@@ -630,16 +630,28 @@ const TeamGrid: React.FC = () => {
                     <PlayCircle size={12} />
                     <span>Video Bio</span>
                   </div>
-                  <video 
-                    controls 
-                    className="w-full aspect-video object-cover"
-                    poster={`https://picsum.photos/seed/${selectedCandidate.id}video/800/450`}
-                  >
-                    <source src={`/videos/${selectedCandidate.id}_bio.mp4`} type="video/mp4" />
-                    {/* Fallback for demo purposes */}
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-people-jogging-on-a-running-track-32777-large.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  {selectedCandidate.id === 'pernilla' ? (
+                    <iframe
+                      className="w-full aspect-video"
+                      src="https://www.youtube.com/embed/E1ypHlcJQ6M"
+                      title="Pernilla Wiberg - Video Bio"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  ) : (
+                    <video
+                      controls
+                      className="w-full aspect-video object-cover"
+                      poster={`https://picsum.photos/seed/${selectedCandidate.id}video/800/450`}
+                    >
+                      <source src={`/videos/${selectedCandidate.id}_bio.mp4`} type="video/mp4" />
+                      <source src="https://assets.mixkit.co/videos/preview/mixkit-people-jogging-on-a-running-track-32777-large.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
                   <div className="bg-navy-light px-4 py-2 text-white text-sm">
                     <span className="text-gold font-bold">Watch:</span> A personal message from {selectedCandidate.name.split(' ')[0]}.
                   </div>
