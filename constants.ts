@@ -169,6 +169,7 @@ I believe deeply in the power of Olympians to inspire peace, service, and unity.
 
 export const ACHIEVEMENTS: Achievement[] = [
   {
+    key: 'olyDesignation',
     title: 'OLY Designation',
     description: 'Created the OLY post-nominal letters for all Olympians worldwide',
     links: [
@@ -181,6 +182,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'worldForum',
     title: 'World Olympians Forum',
     description: 'Established the global gathering of Olympians',
     links: [
@@ -193,6 +195,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'serviceToSociety',
     title: 'Service to Society Grants',
     description: 'Funding for Olympians making community impact',
     links: [
@@ -206,6 +209,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'iocFunding',
     title: 'IOC Funding Increase',
     description: 'Increased funding from IOC by up to 300%',
     links: [
@@ -215,6 +219,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'devOfficers',
     title: 'Development Officers',
     description: 'Established regional development officers to support NOAs',
     links: [
@@ -224,6 +229,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'devGrants',
     title: 'Development Grants',
     description: 'Created development grants to help grow NOAs',
     links: [
@@ -234,6 +240,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'olyHouseRio',
     title: 'OLY House Rio',
     description: 'Award-winning OLY House at Rio 2016',
     links: [
@@ -244,6 +251,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'serviceToOlympians',
     title: 'Service to Olympians Grants',
     description: 'Direct support for Olympians',
     links: [
@@ -256,6 +264,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'olyHouseParis',
     title: 'OLY House Paris',
     description: 'Best OLY House ever at Paris 2024',
     links: [
@@ -270,6 +279,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'fundraising',
     title: 'Fundraising Success',
     description: 'Raised millions to fund OLY Houses and World Olympians Forums',
     links: [
@@ -280,6 +290,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'scholarships',
     title: 'University Scholarships',
     description: 'Education opportunities for Olympians worldwide',
     links: [
@@ -294,6 +305,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'olyCeremonies',
     title: 'OLY Ceremonies',
     description: 'Established recognition ceremonies for Olympians',
     links: [
@@ -306,6 +318,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'healthResearch',
     title: 'Health Research',
     description: 'First-ever global musculoskeletal health survey of Olympians',
     links: [
@@ -318,6 +331,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'olympiansForLife',
     title: 'Olympians for Life',
     description: 'Created the Olympians for Life awards and ceremonies',
     links: [
@@ -331,6 +345,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'website',
     title: 'Olympian.org Website',
     description: 'Rebuilt the Olympian.org website',
     links: [
@@ -342,6 +357,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'noaGuide',
     title: 'NOA Guide & Toolkits',
     description: 'Created comprehensive NOA Guide and Toolkits',
     links: [
@@ -356,6 +372,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'relationships',
     title: 'Relationship Network',
     description: 'Built relationships with World Academy of Sport, SkillsBuild, and more',
     links: [
@@ -366,6 +383,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'iocAgreement',
     title: 'New Agreement with IOC',
     description: 'Secured independence, long-term funding and stability for all WOA programs',
     links: [
@@ -376,6 +394,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     ]
   },
   {
+    key: 'campaigns',
     title: 'Successful Global Campaigns',
     description: 'When Ebola struck and our NOAs asked for help we launched #TargetEbola and thanks to the global Olympian community we sent six containers of medical and other supplies to Sierra Leone and Liberia. Our #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.',
     links: [

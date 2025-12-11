@@ -56,7 +56,7 @@ const AchievementsSection: React.FC = () => {
                 <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
                 <div className="flex-grow">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-bold text-navy-deep text-lg">{achievement.title}</h3>
+                    <h3 className="font-bold text-navy-deep text-lg">{t(`achievements.items.${achievement.key}.title`) || achievement.title}</h3>
                     {achievement.links && achievement.links.length > 0 && (
                       <ChevronDown
                         className={`h-5 w-5 text-gray-400 transition-transform ${
@@ -65,7 +65,7 @@ const AchievementsSection: React.FC = () => {
                       />
                     )}
                   </div>
-                  <p className="text-gray-600 mt-1">{achievement.description}</p>
+                  <p className="text-gray-600 mt-1">{t(`achievements.items.${achievement.key}.description`) || achievement.description}</p>
                 </div>
               </div>
 

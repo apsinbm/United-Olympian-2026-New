@@ -51,6 +51,7 @@ export interface AchievementLink {
 }
 
 export interface Achievement {
+  key: string;
   title: string;
   description: string;
   links?: AchievementLink[];
