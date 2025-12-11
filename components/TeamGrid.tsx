@@ -770,11 +770,57 @@ const TeamGrid: React.FC = () => {
                     </div>
                   )}
 
-                  {/* Vimeo Video - Thomas only */}
+                  {/* Videos - Thomas only */}
                   {selectedCandidate.id === 'thomas' && (
                     <div className="mt-8">
                       <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
                       <div className="space-y-4">
+                        {/* YouTube Videos */}
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/W1X_zPLEulA"
+                            title="Thomas Tang YouTube Video 1"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/JmFjJXkfHkw"
+                            title="Thomas Tang YouTube Video 2"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/nbOXHGimUD4"
+                            title="Thomas Tang YouTube Video 3"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/IXNAiMQkNGc"
+                            title="Thomas Tang YouTube Video 4"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                        {/* Vimeo Video */}
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
                           <iframe
                             className="w-full h-full"
