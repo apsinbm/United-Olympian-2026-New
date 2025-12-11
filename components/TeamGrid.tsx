@@ -591,17 +591,22 @@ const TeamGrid: React.FC = () => {
                     <div className="mt-6 hidden md:block">
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
-                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => (
-                          <div key={`thomas-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
-                            <img
-                              src={photo}
-                              alt={`Thomas photo ${idx + 1}`}
-                              loading="lazy"
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-center"
-                              onClick={() => setLightboxImage(photo)}
-                            />
-                          </div>
-                        ))}
+                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
+                          // Custom positioning for Thomas photos - most are rotated landscapes
+                          // Use 'center 15%' - shows more headroom for faces
+                          return (
+                            <div key={`thomas-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
+                              <img
+                                src={photo}
+                                alt={`Thomas photo ${idx + 1}`}
+                                loading="lazy"
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={{ objectPosition: 'center 15%' }}
+                                onClick={() => setLightboxImage(photo)}
+                              />
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
@@ -936,17 +941,22 @@ const TeamGrid: React.FC = () => {
                     <div className="mt-8 md:hidden">
                       <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
                       <div className="grid grid-cols-1 gap-2">
-                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => (
-                          <div key={`thomas-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
-                            <img
-                              src={photo}
-                              alt={`Thomas photo ${idx + 1}`}
-                              loading="lazy"
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-center"
-                              onClick={() => setLightboxImage(photo)}
-                            />
-                          </div>
-                        ))}
+                        {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
+                          // Custom positioning for Thomas photos - most are rotated landscapes
+                          // Use 'center 15%' - shows more headroom for faces
+                          return (
+                            <div key={`thomas-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
+                              <img
+                                src={photo}
+                                alt={`Thomas photo ${idx + 1}`}
+                                loading="lazy"
+                                className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
+                                style={{ objectPosition: 'center 15%' }}
+                                onClick={() => setLightboxImage(photo)}
+                              />
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
