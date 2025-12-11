@@ -142,7 +142,7 @@ export const CANDIDATES: Candidate[] = [
       'Board Member: Taiwanese American Chamber of Commerce (2023–Present)',
       'Director of International Affairs: Chinese Taipei Olympians Association'
     ],
-    keyAchievement: 'Business, Technology Wizard, Built a global tech company from scratch that has powered multiple generations of Olympic and FIFA World Cup and leading global sporting events.',
+    keyAchievement: 'Business and Technology Wizard. Built a global tech company from scratch powering Olympic Games and FIFA World Cup broadcasts worldwide.',
     business: 'Founder & President: Apantac LLC (Global leader in broadcast & ProAV, HQ in Beaverton, Oregon with offices in Paris, Taipei, Tokyo, Singapore & Mexico City). President: Eubank Investment Group.',
     trackRecord: 'Founded Apantac in his basement in 2008. Won prestigious PICK HIT AWARD at NAB 2009 and multiple "Best of Show" awards. By 2014: 200+ products distributed in 40+ countries. Technology powers Olympic Games broadcasts, Soccer World Cups, and national broadcasters worldwide. Prior experience: VP at Avitech International (grew business 8x), Director of Marketing at Philips Electronics Broadcast Division ($50M P&L responsibility), Asia Pacific Area Director at Vizrt, worked on F-14/F-16 flight simulators and NASA Space Shuttle training systems at Evans & Sutherland. Holds 6 patents and published works in laser spectroscopy, virtual production, and AV technology.',
     education: [
