@@ -592,8 +592,11 @@ const TeamGrid: React.FC = () => {
                       <span className="block text-white font-bold mb-3">Gallery</span>
                       <div className="grid grid-cols-2 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
-                          // Custom positioning for Thomas photos - most are rotated landscapes
-                          // Use 'center 15%' - shows more headroom for faces
+                          // Custom positioning for Thomas photos
+                          // Most photos use 'center 15%' for headroom, but some have too much ceiling
+                          // and need 'center 50%' to show less top
+                          const tooMuchHeadroomIndices = [2, 40, 67, 69, 82]; // IMG_0516, IMG_3293, IMG_4615, IMG_5212, IMG_9604
+                          const objectPos = tooMuchHeadroomIndices.includes(idx) ? 'center 50%' : 'center 15%';
                           return (
                             <div key={`thomas-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
                               <img
@@ -601,7 +604,7 @@ const TeamGrid: React.FC = () => {
                                 alt={`Thomas photo ${idx + 1}`}
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-                                style={{ objectPosition: 'center 15%' }}
+                                style={{ objectPosition: objectPos }}
                                 onClick={() => setLightboxImage(photo)}
                               />
                             </div>
@@ -942,8 +945,11 @@ const TeamGrid: React.FC = () => {
                       <h5 className="font-bold text-navy-deep mb-4">Photo Gallery</h5>
                       <div className="grid grid-cols-1 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
-                          // Custom positioning for Thomas photos - most are rotated landscapes
-                          // Use 'center 15%' - shows more headroom for faces
+                          // Custom positioning for Thomas photos
+                          // Most photos use 'center 15%' for headroom, but some have too much ceiling
+                          // and need 'center 50%' to show less top
+                          const tooMuchHeadroomIndices = [2, 40, 67, 69, 82]; // IMG_0516, IMG_3293, IMG_4615, IMG_5212, IMG_9604
+                          const objectPos = tooMuchHeadroomIndices.includes(idx) ? 'center 50%' : 'center 15%';
                           return (
                             <div key={`thomas-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
                               <img
@@ -951,7 +957,7 @@ const TeamGrid: React.FC = () => {
                                 alt={`Thomas photo ${idx + 1}`}
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
-                                style={{ objectPosition: 'center 15%' }}
+                                style={{ objectPosition: objectPos }}
                                 onClick={() => setLightboxImage(photo)}
                               />
                             </div>
