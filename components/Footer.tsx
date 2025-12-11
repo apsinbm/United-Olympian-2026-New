@@ -1,7 +1,11 @@
 import React from 'react';
 import { Medal } from 'lucide-react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  onPrivacyClick: () => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
   return (
     <footer className="bg-navy-deep border-t border-gray-800 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,8 +35,8 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-gold uppercase tracking-widest text-sm mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact Support</a></li>
+              <li><button onClick={onPrivacyClick} className="hover:text-white transition">Privacy Policy</button></li>
+              <li><a href="#contact" className="hover:text-white transition">Contact Support</a></li>
             </ul>
           </div>
 

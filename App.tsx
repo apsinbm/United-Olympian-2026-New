@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CollaborationBanner from './components/CollaborationBanner';
@@ -9,8 +9,11 @@ import TeamGrid from './components/TeamGrid';
 import ActionPlan from './components/ActionPlan';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const App: React.FC = () => {
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+
   return (
     <div className="min-h-screen font-sans text-navy-deep">
       <VoteDisciplineBanner variant="top" />
@@ -25,7 +28,8 @@ const App: React.FC = () => {
         <Contact />
       </main>
       <VoteDisciplineBanner variant="bottom" />
-      <Footer />
+      <Footer onPrivacyClick={() => setIsPrivacyOpen(true)} />
+      <PrivacyPolicy isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
     </div>
   );
 };
