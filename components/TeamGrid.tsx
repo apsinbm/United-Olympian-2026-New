@@ -593,10 +593,14 @@ const TeamGrid: React.FC = () => {
                       <div className="grid grid-cols-2 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
                           // Custom positioning for Thomas photos
-                          // Most photos use 'center 15%' for headroom, but some have too much ceiling
-                          // and need 'center 50%' to show less top
-                          const tooMuchHeadroomIndices = [2, 40, 67, 69, 82]; // IMG_0516, IMG_3293, IMG_4615, IMG_5212, IMG_9604
-                          const objectPos = tooMuchHeadroomIndices.includes(idx) ? 'center 50%' : 'center 15%';
+                          // Most rotated photos use 'center 15%' for headroom
+                          // Properly cropped photos (40, 67, 82, 89) use 'center'
+                          // Photos with too much ceiling (2, 69) use 'center 50%'
+                          const properlyCroppedIndices = [40, 67, 82, 89]; // IMG_3293, IMG_4615, IMG_9604, IMG_9662 - replaced with cropped versions
+                          const tooMuchHeadroomIndices = [2, 69]; // IMG_0516, IMG_5212
+                          let objectPos = 'center 15%';
+                          if (properlyCroppedIndices.includes(idx)) objectPos = 'center';
+                          else if (tooMuchHeadroomIndices.includes(idx)) objectPos = 'center 50%';
                           return (
                             <div key={`thomas-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
                               <img
@@ -946,10 +950,14 @@ const TeamGrid: React.FC = () => {
                       <div className="grid grid-cols-1 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
                           // Custom positioning for Thomas photos
-                          // Most photos use 'center 15%' for headroom, but some have too much ceiling
-                          // and need 'center 50%' to show less top
-                          const tooMuchHeadroomIndices = [2, 40, 67, 69, 82]; // IMG_0516, IMG_3293, IMG_4615, IMG_5212, IMG_9604
-                          const objectPos = tooMuchHeadroomIndices.includes(idx) ? 'center 50%' : 'center 15%';
+                          // Most rotated photos use 'center 15%' for headroom
+                          // Properly cropped photos (40, 67, 82, 89) use 'center'
+                          // Photos with too much ceiling (2, 69) use 'center 50%'
+                          const properlyCroppedIndices = [40, 67, 82, 89]; // IMG_3293, IMG_4615, IMG_9604, IMG_9662 - replaced with cropped versions
+                          const tooMuchHeadroomIndices = [2, 69]; // IMG_0516, IMG_5212
+                          let objectPos = 'center 15%';
+                          if (properlyCroppedIndices.includes(idx)) objectPos = 'center';
+                          else if (tooMuchHeadroomIndices.includes(idx)) objectPos = 'center 50%';
                           return (
                             <div key={`thomas-mobile-${idx}`} className="w-full aspect-square rounded-lg overflow-hidden">
                               <img
