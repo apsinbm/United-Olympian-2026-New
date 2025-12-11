@@ -279,5 +279,100 @@
       }
     },
     "close": "Fermer"
+  },
+  "candidates": {
+    "pernilla": {
+      "name": "Pernilla Wiberg, OLY",
+      "role": "Pour Présidente",
+      "sport": "Ski Alpin",
+      "country": "Suède",
+      "location": "Idre Fjäll, Suède & Monte Carlo, Monaco",
+      "keyAchievement": "Double Championne Olympique avec plus de 20 ans d'administration sportive et de défense des athlètes. A dirigé les réformes constitutionnelles de l'AMO permettant la représentation 50/50 des genres.",
+      "philosophy": "Améliorer la vie quotidienne des Olympiens. Joindre les actes à la parole.",
+      "business": "Entrepreneuse et Propriétaire de l'Hôtel Pernilla Wiberg (Idre Fjäll, Suède). PDG de Pernilla Wiberg Sportpromotion.",
+      "achievements": [
+        "Triple Médaillée Olympique (Or 1992, Or 1994, Argent 1998)",
+        "4 fois Championne du Monde",
+        "24 Victoires Individuelles en Coupe du Monde",
+        "Championne du Classement Général de la Coupe du Monde FIS 1997",
+        "Vainqueure de courses de Coupe du Monde dans les 5 disciplines",
+        "Présentatrice TV Renommée"
+      ],
+      "governance": [
+        "Membre du CIO (2002–2010) : Commissions des Athlètes, Éthique, Nominations, Coordination",
+        "Présidente de la Commission d'Évaluation du CIO pour les 1ers Jeux Olympiques de la Jeunesse d'Hiver (2008)",
+        "Représentante de l'AMO à la Commission des Athlètes du CIO (2020–2025)",
+        "Vice-Présidente de l'AMO (Actuel)",
+        "Membre de Champions for Peace"
+      ],
+      "bioFull": "Pernilla Wiberg est une légende sur les pistes et une force dans le monde des affaires. En tant que Triple Médaillée Olympique avec 24 victoires individuelles en Coupe du Monde, 61 podiums en Coupe du Monde et le titre du Classement Général 1997, elle est l'une des rares skieuses de l'histoire à avoir gagné des courses dans les cinq disciplines alpines—son or aux Championnats du Monde 1991 fut le premier pour une femme scandinave en 33 ans.\n\nAu-delà de la compétition, elle est devenue une commentatrice sportive TV renommée pour Sveriges Television (SVT). En gouvernance, elle a été Membre du CIO pendant huit ans dans plusieurs commissions, a présidé la Commission d'Évaluation du CIO pour les premiers Jeux Olympiques de la Jeunesse d'Hiver, et a représenté l'AMO à la Commission des Athlètes du CIO de 2020 à 2025.\n\nEn tant que Vice-Présidente actuelle de l'AMO, elle a été instrumentale dans la réforme historique de représentation 50/50 des genres. Membre de Champions for Peace et entrepreneuse accomplie, elle possède et exploite l'Hôtel Pernilla Wiberg en Suède et est PDG de Pernilla Wiberg Sportpromotion. Basée à Idre Fjäll, Suède et Monte Carlo, Monaco depuis 1995—stratégiquement positionnée près du Patron de l'AMO le Prince Albert et du CIO à Lausanne. Elle est mariée et a deux enfants. Parle couramment suédois, anglais, français, allemand et norvégien."
+    },
+    "lumi": {
+      "name": "Olumide Oyedeji, OLY",
+      "role": "Pour Secrétaire Général",
+      "sport": "Basketball",
+      "country": "Nigeria",
+      "location": "Lagos, Nigeria",
+      "keyAchievement": "Star NBA devenue défenseur des athlètes. A transformé l'Association des Olympiens du Nigeria et fondé des programmes jeunesse ayant mentoré plus de 45 000 jeunes dans plus de 30 villes de plus de 20 pays.",
+      "philosophy": "Leadership centré sur l'Athlète. Comprendre le business milliardaire du sport professionnel pour mieux protéger le bien-être des athlètes, leur retraite et leurs droits à l'image.",
+      "business": "Président-Directeur Général : Legendary Venture et Lume Global Consultancy (200+ employés, dont 6 Olympiens et 20+ anciens athlètes). Fondateur et Président : Fondation Olumide Oyedeji pour la Jeunesse (2000–Présent). Président-Directeur Général : Hoops & Read Basketball Club (Premier League du Nigeria). Président : Dolphins Basketball Club de Lagos.",
+      "achievements": [
+        "Premier joueur africain drafté hors d'Amérique vers la NBA (2000)",
+        "Joueur NBA (Seattle SuperSonics, Orlando Magic, Atlanta Hawks)",
+        "A mené le Nigeria à sa première Médaille d'Or en Basketball aux Jeux Africains 2011",
+        "A mené le Nigeria à son premier Or AfroBasket (2015) et première participation olympique (2012)",
+        "Capitaine de l'Équipe du Nigeria (2006–2016)",
+        "Seul Africain à avoir participé à TOUS les grands tournois : Jeux Olympiques, Coupe du Monde, NBA, EuroLeague, Jeux du Commonwealth, Jeux Africains",
+        "Prix MVP dans les ligues allemande, coréenne, chinoise et nigériane",
+        "A joué professionnellement dans 18 pays sur 4 continents pendant 2 décennies"
+      ],
+      "governance": [
+        "Vice-Président : Comité Olympique du Nigeria",
+        "Président : Association des Olympiens du Nigeria",
+        "Président : Comité Emploi de l'Association Mondiale des Olympiens",
+        "Président : Commission des Athlètes du Nigeria",
+        "Président : Basketball Afrique de l'Ouest",
+        "Ambassadeur BAL",
+        "Ambassadeur NBA Afrique",
+        "Ambassadeur Mondial Laureus",
+        "Ancien Membre Exécutif : Commission des Joueurs FIBA",
+        "Vice-Président : Conseil de Développement Zone 3 FIBA",
+        "Membre du Conseil : Fédération Nigériane de Basketball",
+        "Président : Commission Sport Pour Tous CNO"
+      ],
+      "bioFull": "Olumide « Lumi » Oyedeji est l'un des basketteurs les plus décorés de l'histoire africaine et un véritable homme de la Renaissance. Non seulement un athlète professionnel légendaire, mais aussi Conférencier de Carrière et Motivateur, Administrateur Sportif, expert en Orientation et Conseil, spécialiste en Gestion de la Performance, professionnel en Leadership et Management, Psychologue, et Philanthrope renommé.\n\nPremier joueur africain jamais drafté hors d'Amérique vers la NBA (2000), il a fait l'histoire comme le seul Africain à avoir participé à TOUS les grands tournois de basketball mondiaux—Jeux Olympiques, Coupe du Monde, NBA, EuroLeague, Jeux du Commonwealth et Jeux Africains. Sa remarquable carrière a duré plus de deux décennies (1996–2016), jouant professionnellement dans 18 pays sur 4 continents avec différentes cultures, lui donnant une compréhension unique des besoins des Olympiens sur chaque continent.\n\nEn tant que Capitaine de l'Équipe du Nigeria de 2006 à 2016, il a mené le Nigeria à sa première Médaille d'Or en Basketball aux Jeux Africains 2011 au Mozambique, son premier Or AfroBasket en Tunisie 2015, et sa première participation olympique à Londres 2012. Sa carrière internationale comprend 9 Championnats d'Afrique FIBA, 5 Jeux Africains (Or 2011, Argent 2003, Bronze 1999/2007/2015), et des championnats en Espagne, Italie, Grèce, Royaume-Uni, Russie, Allemagne, Japon, Corée du Sud, Chine, Jordanie, Slovénie, Koweït et Porto Rico. Il a obtenu les honneurs de MVP dans les ligues allemande, coréenne, chinoise et nigériane.\n\nAu-delà du sport, il est Président-Directeur Général de Legendary Venture et Lume Global Consultancy, employant plus de 200 personnes dont 6 Olympiens et 20+ anciens athlètes. Maintenant basé à Lagos, il est Vice-Président du Comité Olympique du Nigeria, Président de l'Association des Olympiens du Nigeria, Président du Comité Emploi de l'AMO, et Président de Basketball Afrique de l'Ouest.\n\nEn tant que Président de l'Association des Olympiens du Nigeria, il a transformé l'organisation par un rebranding complet, obtenu des prestations d'assurance pour les Olympiens, établi le Village des Olympiens et un centre de loisirs sur plusieurs hectares de terrain, obtenu l'inclusion de l'ANO comme membre à part entière du Comité Exécutif du Comité Olympique du Nigeria, et établi le Fonds Fiduciaire des Olympiens. Sa philosophie de leadership est centrée sur la récompense, le soutien et la célébration des Olympiens tout en promouvant leur inclusion dans la prise de décision.\n\nAmbassadeur BAL, Ambassadeur NBA Afrique et Ambassadeur Mondial Laureus, sa fondation a mentoré plus de 45 000 jeunes dans plus de 30 villes de plus de 20 pays depuis 2000. À travers Hoops & Read Basketball Club, il a produit 2 joueurs NBA, 45 joueurs universitaires, et 20+ professionnels en Europe, Asie et Amérique du Sud."
+    },
+    "thomas": {
+      "name": "Thomas Tang, OLY",
+      "role": "Pour Trésorier",
+      "sport": "Ski Alpin",
+      "country": "Taipei Chinois",
+      "location": "Taipei, avec résidences à Park City (Utah), Portland (Oregon), Hong Kong et Guinée-Bissau",
+      "keyAchievement": "Génie des Affaires et de la Technologie. A construit une entreprise technologique mondiale à partir de zéro qui alimente les diffusions des Jeux Olympiques et de la Coupe du Monde FIFA dans le monde entier. Actif dans le développement des sports d'hiver.",
+      "business": "Fondateur et Président : Apantac LLC (Leader mondial en broadcast et ProAV, siège à Beaverton, Oregon avec des bureaux à Paris, Taipei, Tokyo, Singapour et Mexico). Président : Eubank Investment Group.",
+      "trackRecord": "A fondé Apantac dans son sous-sol en 2008. A remporté le prestigieux PICK HIT AWARD au NAB 2009 et plusieurs prix « Best of Show ». En 2014 : 200+ produits distribués dans 40+ pays. La technologie alimente les diffusions des Jeux Olympiques, des Coupes du Monde de Football, et des diffuseurs nationaux du monde entier. Expérience antérieure : VP chez Avitech International (a multiplié l'activité par 8), Directeur Marketing chez Philips Electronics Division Broadcast (responsabilité P&L de 50M$), Directeur Région Asie-Pacifique chez Vizrt, a travaillé sur les simulateurs de vol F-14/F-16 et les systèmes d'entraînement de la Navette Spatiale NASA chez Evans & Sutherland. Détient 6 brevets et publications en spectroscopie laser, production virtuelle et technologie AV.",
+      "achievements": [
+        "Double Olympien d'Hiver (Calgary 1988, Albertville 1992)",
+        "Compétiteur aux Championnats du Monde de Ski Alpin (1989)",
+        "Compétiteur en Coupe du Monde de Ski Alpin (1989)",
+        "Équipe Nationale de Ski du Taipei Chinois (1987–1992)"
+      ],
+      "governance": [
+        "Secrétaire Général : Fédération des Sports d'Hiver de Guinée-Bissau (2023–Présent)",
+        "Président-Directeur Général : Apantac LLC (2008–Présent)",
+        "Président : Eubank Investment Group (2012–Présent)",
+        "Président : Anextus Trading & Export, Guinée-Bissau (2024–Présent)",
+        "Membre du Conseil : Chambre de Commerce Taiwano-Américaine (2023–Présent)",
+        "Directeur des Affaires Internationales : Association des Olympiens du Taipei Chinois"
+      ],
+      "education": [
+        "Harvard Business School - Formation Executive (Marketing et Stratégie d'Entreprise)",
+        "Westminster College - M.S., Informatique",
+        "Université de l'Utah - M.S., Physique Appliquée",
+        "Université de l'Utah - B.S., Physique"
+      ],
+      "manifesto": "En tant qu'Olympien, leader et défenseur mondial des athlètes, je me présente au poste de Trésorier de l'Association Mondiale des Olympiens avec une mission claire : préserver l'intégrité financière de l'AMO, renforcer sa durabilité à long terme, et garantir que les Olympiens bénéficient d'une gestion des ressources transparente, responsable et impactante. Mon parcours professionnel comprend plus de 30 ans de leadership exécutif dans le business international, la technologie et le développement à but non lucratif. J'ai géré des budgets de plusieurs millions de dollars, construit des organisations mondiales prospères et mis en place des systèmes financiers solides. J'apporterai ces mêmes principes et compétences à l'AMO.\n\nSi élu, j'assurerai la transparence financière et la responsabilité à travers des normes de reporting claires, des audits indépendants continus, et une communication ouverte pour que chaque ANO puisse voir exactement comment les ressources de l'AMO sont utilisées. Je travaillerai à sécuriser un financement durable et à construire des partenariats à long terme qui honorent les valeurs olympiques tout en garantissant que l'AMO reste financièrement solide et indépendante. Je crois que la collaboration avec le CIO est essentielle pour l'alignement et un objectif partagé, mais l'AMO doit toujours maintenir sa propre identité, autonomie et capacité à défendre les Olympiens avec clarté et neutralité.\n\nMon engagement s'étend au service au niveau communautaire, où le cœur du mouvement olympien vit véritablement. Je veillerai à ce que plus de ressources atteignent les initiatives de base en soutenant l'éducation, la santé, la transition de carrière et les programmes locaux qui élèvent la jeunesse et inspirent l'espoir. Les petites ANO et les pays en développement recevront une attention particulière pour garantir un accès équitable et un impact significatif.\n\nJe crois profondément au pouvoir des Olympiens d'inspirer la paix, le service et l'unité. En tant que Trésorier, j'honorerai cette responsabilité avec intégrité, discipline et engagement inébranlable. Ensemble, nous renforcerons l'AMO et autonomiserons les Olympiens pour les générations à venir.",
+      "bioFull": "Thomas Tang combine la détermination olympique avec l'innovation de la Silicon Valley. Double Olympien d'Hiver pour le Taipei Chinois ayant participé aux Championnats du Monde et aux Coupes du Monde, il est maintenant Chef de Mission pour la Guinée-Bissau aux Jeux Olympiques de Milano-Cortina 2026 et Secrétaire Général de leur Fédération des Sports d'Hiver—pilotant l'introduction des sports d'hiver dans une nation tropicale, obtenant l'adhésion à la FIS et établissant des programmes de développement des athlètes. Son héritage olympique est une affaire de famille—sa fille a participé en Patinage Artistique au niveau international, et ses fils se sont qualifiés pour les Jeux Olympiques 2022 et 2026 en Ski Alpin.\n\nThomas a fondé Apantac dans son sous-sol pendant la crise financière de 2008 et l'a développée en un leader mondial du broadcast, ProAV et technologie openGear—remportant plusieurs prix « Best of Show » dont le prestigieux NAB PICK HIT AWARD en 2009, et expédiant maintenant 200+ produits dans 40+ pays, du Groenland à la Nouvelle-Zélande. Sa technologie a alimenté les diffusions olympiques, les Coupes du Monde de Football, les grandes ligues sportives professionnelles et les diffuseurs nationaux du monde entier, et est utilisée quotidiennement par les principaux réseaux sociaux pour leurs espaces événementiels.\n\nSa carrière de 30+ ans couvre le leadership exécutif dans le business international, la technologie et le développement à but non lucratif. Avant de fonder Apantac, il a été Vice-Président chez Avitech International (2004–2008) dirigeant les ventes mondiales et l'expansion produit dans les technologies de broadcast et multiviewer, Directeur Marketing chez Philips Electronics Division Broadcast (1999–2004) dirigeant la stratégie en Amérique du Nord et Asie-Pacifique avec une responsabilité P&L de 50M$, Directeur Région Asie-Pacifique chez Vizrt (1997–1999) développant la présence sur le marché pour les graphiques broadcast et les systèmes de visualisation en temps réel, et Directeur Commercial Régional chez Evans & Sutherland (1989–1997) où il a commencé comme Ingénieur Logiciel Senior travaillant sur les simulateurs de vol F-14/F-16 et les systèmes d'entraînement de la Navette Spatiale NASA avant de progresser vers les ventes régionales.\n\nThomas détient des brevets et publications incluant Spectroscopie Laser (SPIE, 1987), Calibration de Caméra Physique avec Arrière-plans Virtuels (1996), Ombres Dynamiques en Production de Studio Virtuel (1997), Sorties Multiviewer en Cascade via SATA (2009), Montage Magnétique Mécanique pour Équipement AV (2014), et Gestion Intelligente de Sortie DA Basée sur EDID (2018).\n\nIl est également Membre du Conseil de la Chambre de Commerce Taiwano-Américaine (2023–Présent), soutenant la collaboration commerciale trans-Pacifique et l'entrepreneuriat taiwanais en Amérique du Nord, et Président d'Eubank Investment Group (2012–Présent) et Anextus Trading & Export en Guinée-Bissau (2024–Présent).\n\nAvec une formation executive de Harvard Business School en Marketing et Stratégie d'Entreprise, un M.S. en Informatique de Westminster College, et à la fois un M.S. en Physique Appliquée et un B.S. en Physique de l'Université de l'Utah, Thomas apporte une acuité financière et une excellence opérationnelle inégalées à l'AMO. Parle couramment anglais, mandarin, cantonais et taïwanais."
+    }
   }
 }

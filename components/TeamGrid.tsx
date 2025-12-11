@@ -1,9 +1,27 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { CANDIDATES } from '../constants';
 import { Candidate, OlympicYear } from '../types';
 import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useTranslation } from '../context/LanguageContext';
+import { useTranslation, useLanguage } from '../context/LanguageContext';
+
+// Type for translated candidate content
+interface TranslatedCandidateContent {
+  name: string;
+  role: string;
+  sport: string;
+  country: string;
+  location: string;
+  keyAchievement: string;
+  philosophy?: string;
+  business?: string;
+  trackRecord?: string;
+  achievements: string[];
+  governance: string[];
+  education?: string[];
+  manifesto?: string;
+  bioFull: string;
+}
 
 // Helper function to parse markdown-style links [text](url) into React elements
 const parseMarkdownLinks = (text: string): React.ReactNode[] => {
@@ -251,8 +269,77 @@ const ALL_GALLERY_IMAGES = [
 
 const TeamGrid: React.FC = () => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  // Memoized translated content for modal - computed when selectedCandidate or language changes
+  const translatedModal = useMemo(() => {
+    if (!selectedCandidate) return null;
+    const candidateKey = selectedCandidate.id as 'pernilla' | 'lumi' | 'thomas';
+    return {
+      name: t(`candidates.${candidateKey}.name`) || selectedCandidate.name,
+      role: t(`candidates.${candidateKey}.role`) || selectedCandidate.role,
+      sport: t(`candidates.${candidateKey}.sport`) || selectedCandidate.sport,
+      country: t(`candidates.${candidateKey}.country`) || selectedCandidate.country,
+      location: t(`candidates.${candidateKey}.location`) || selectedCandidate.location || '',
+      keyAchievement: t(`candidates.${candidateKey}.keyAchievement`) || selectedCandidate.keyAchievement,
+      philosophy: t(`candidates.${candidateKey}.philosophy`) || selectedCandidate.philosophy,
+      business: t(`candidates.${candidateKey}.business`) || selectedCandidate.business,
+      trackRecord: t(`candidates.${candidateKey}.trackRecord`) || selectedCandidate.trackRecord,
+      achievements: (() => {
+        const translated = t(`candidates.${candidateKey}.achievements`);
+        if (Array.isArray(translated)) return translated;
+        return selectedCandidate.achievements;
+      })(),
+      governance: (() => {
+        const translated = t(`candidates.${candidateKey}.governance`);
+        if (Array.isArray(translated)) return translated;
+        return selectedCandidate.governance;
+      })(),
+      education: (() => {
+        const translated = t(`candidates.${candidateKey}.education`);
+        if (Array.isArray(translated)) return translated;
+        return selectedCandidate.education;
+      })(),
+      manifesto: t(`candidates.${candidateKey}.manifesto`) || selectedCandidate.manifesto,
+      bioFull: t(`candidates.${candidateKey}.bioFull`) || selectedCandidate.bioFull,
+    };
+  }, [selectedCandidate, t]);
+
+  // Helper function to get translated candidate content
+  const getTranslatedContent = useCallback((candidate: Candidate): TranslatedCandidateContent => {
+    const candidateKey = candidate.id as 'pernilla' | 'lumi' | 'thomas';
+
+    return {
+      name: t(`candidates.${candidateKey}.name`) || candidate.name,
+      role: t(`candidates.${candidateKey}.role`) || candidate.role,
+      sport: t(`candidates.${candidateKey}.sport`) || candidate.sport,
+      country: t(`candidates.${candidateKey}.country`) || candidate.country,
+      location: t(`candidates.${candidateKey}.location`) || candidate.location || '',
+      keyAchievement: t(`candidates.${candidateKey}.keyAchievement`) || candidate.keyAchievement,
+      philosophy: t(`candidates.${candidateKey}.philosophy`) || candidate.philosophy,
+      business: t(`candidates.${candidateKey}.business`) || candidate.business,
+      trackRecord: t(`candidates.${candidateKey}.trackRecord`) || candidate.trackRecord,
+      achievements: (() => {
+        const translated = t(`candidates.${candidateKey}.achievements`);
+        if (Array.isArray(translated)) return translated;
+        return candidate.achievements;
+      })(),
+      governance: (() => {
+        const translated = t(`candidates.${candidateKey}.governance`);
+        if (Array.isArray(translated)) return translated;
+        return candidate.governance;
+      })(),
+      education: (() => {
+        const translated = t(`candidates.${candidateKey}.education`);
+        if (Array.isArray(translated)) return translated;
+        return candidate.education;
+      })(),
+      manifesto: t(`candidates.${candidateKey}.manifesto`) || candidate.manifesto,
+      bioFull: t(`candidates.${candidateKey}.bioFull`) || candidate.bioFull,
+    };
+  }, [t]);
 
   const navigateLightbox = useCallback((direction: 'prev' | 'next') => {
     if (!lightboxImage) return;
@@ -296,7 +383,9 @@ const TeamGrid: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {CANDIDATES.map((candidate) => (
+          {CANDIDATES.map((candidate) => {
+            const translated = getTranslatedContent(candidate);
+            return (
             <div key={candidate.id} className="group flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
 
               {/* Top: Business Photo */}
@@ -306,20 +395,20 @@ const TeamGrid: React.FC = () => {
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}`;
                   }}
-                  alt={`${candidate.name} in action`}
+                  alt={`${translated.name} in action`}
                   className="h-full w-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
                   style={{ objectPosition: candidate.id === 'thomas' ? '80% 40%' : candidate.id === 'lumi' ? 'center 10%' : 'center 30%' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute top-4 right-4 bg-gold text-navy-deep text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                  {candidate.country}
+                  {translated.country}
                 </div>
               </div>
 
               {/* Middle: Content */}
               <div className="flex-grow px-6 pt-4 pb-6 text-center">
-                <h3 className="text-2xl font-bold text-navy-deep leading-tight">{candidate.name}</h3>
-                <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{candidate.role}</p>
+                <h3 className="text-2xl font-bold text-navy-deep leading-tight">{translated.name}</h3>
+                <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{translated.role}</p>
 
                 <div className="mt-4 text-sm text-gray-600 space-y-2 mb-6">
                   <div className="flex items-center justify-center gap-2">
@@ -328,14 +417,14 @@ const TeamGrid: React.FC = () => {
                     ) : (
                       <>
                         <Trophy size={16} className="text-gold flex-shrink-0" />
-                        <span>{candidate.sport}</span>
+                        <span>{translated.sport}</span>
                       </>
                     )}
                   </div>
                 </div>
 
                 <p className="text-gray-500 text-sm line-clamp-6 mb-6 font-serif italic">
-                  "{candidate.keyAchievement}"
+                  "{translated.keyAchievement}"
                 </p>
 
                 <button
@@ -353,13 +442,14 @@ const TeamGrid: React.FC = () => {
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://picsum.photos/800/600?random=${candidate.id}2`;
                   }}
-                  alt={`${candidate.name} sport`}
+                  alt={`${translated.name} sport`}
                   className="w-full h-full object-cover"
                   style={{ objectPosition: candidate.id === 'lumi' ? 'center 35%' : 'center' }}
                 />
               </div>
             </div>
-          ))}
+          );
+          })}
         </div>
       </div>
 
@@ -386,10 +476,10 @@ const TeamGrid: React.FC = () => {
                   onError={(e) => { (e.target as HTMLImageElement).src = `https://picsum.photos/300/300?random=${selectedCandidate.id}2`; }}
                   className="w-32 h-32 rounded-full border-4 border-gold shadow-lg mb-6 mx-auto md:mx-0 object-cover"
                   style={{ objectPosition: selectedCandidate.id === 'lumi' ? '80% -10%' : 'center' }}
-                  alt={selectedCandidate.name}
+                  alt={translatedModal.name}
                 />
-                <h3 className="text-2xl font-bold mb-1">{selectedCandidate.name}</h3>
-                <p className="text-gold font-medium mb-6">{selectedCandidate.role}</p>
+                <h3 className="text-2xl font-bold mb-1">{translatedModal.name}</h3>
+                <p className="text-gold font-medium mb-6">{translatedModal.role}</p>
                 
                 <div className="space-y-4 text-sm text-gray-300">
                   <div className="flex items-start gap-3">
@@ -397,19 +487,19 @@ const TeamGrid: React.FC = () => {
                     <div>
                       <span className="block text-white font-bold">{t('team.athleticHighlights')}</span>
                       <ul className="list-disc pl-4 mt-1 space-y-1">
-                        {selectedCandidate.achievements.map((a, i) => (
+                        {translatedModal.achievements.map((a, i) => (
                           <li key={i}>{a}</li>
                         ))}
                       </ul>
                     </div>
                   </div>
-                  
-                  {selectedCandidate.business && (
+
+                  {translatedModal.business && (
                     <div className="flex items-start gap-3">
                       <Briefcase className="text-gold shrink-0 mt-1" size={18} />
                       <div>
                         <span className="block text-white font-bold">{t('team.business')}</span>
-                        <p>{selectedCandidate.business}</p>
+                        <p>{translatedModal.business}</p>
                       </div>
                     </div>
                   )}
@@ -418,27 +508,27 @@ const TeamGrid: React.FC = () => {
                     <Globe className="text-gold shrink-0 mt-1" size={18} />
                     <div>
                       <span className="block text-white font-bold">{t('team.country')}</span>
-                      <p>{selectedCandidate.country}</p>
+                      <p>{translatedModal.country}</p>
                     </div>
                   </div>
 
-                  {selectedCandidate.location && (
+                  {translatedModal.location && (
                     <div className="flex items-start gap-3">
                       <MapPin className="text-gold shrink-0 mt-1" size={18} />
                       <div>
                         <span className="block text-white font-bold">{t('team.basedIn')}</span>
-                        <p>{selectedCandidate.location}</p>
+                        <p>{translatedModal.location}</p>
                       </div>
                     </div>
                   )}
 
-                  {selectedCandidate.education && selectedCandidate.education.length > 0 && (
+                  {translatedModal.education && translatedModal.education.length > 0 && (
                     <div className="flex items-start gap-3">
                       <GraduationCap className="text-gold shrink-0 mt-1" size={18} />
                       <div>
                         <span className="block text-white font-bold">{t('team.education')}</span>
                         <ul className="list-disc pl-4 mt-1 space-y-1">
-                          {selectedCandidate.education.map((e, i) => (
+                          {translatedModal.education.map((e, i) => (
                             <li key={i}>{e}</li>
                           ))}
                         </ul>
@@ -512,7 +602,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Pernilla only, hidden on mobile (shown at end of content area instead) */}
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-6 hidden md:block">
-                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <span className="block text-white font-bold mb-3">{t('team.photoGallery')}</span>
                       <div className="space-y-2">
                         {GALLERY_PAIRS.map(({ num, sport, diplomacy }) => (
                           <div key={num} className="grid grid-cols-2 gap-2">
@@ -571,7 +661,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Lumi only, hidden on mobile (shown at end of content area instead) */}
                   {selectedCandidate.id === 'lumi' && (
                     <div className="mt-6 hidden md:block">
-                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <span className="block text-white font-bold mb-3">{t('team.photoGallery')}</span>
                       <div className="grid grid-cols-2 gap-2">
                         {LUMI_GALLERY_PHOTOS.map((photo, idx) => (
                           <div key={`lumi-${idx}`} className="w-full h-28 lg:h-36 xl:h-40 rounded-lg overflow-hidden">
@@ -592,7 +682,7 @@ const TeamGrid: React.FC = () => {
                   {/* Photo Gallery - Thomas only, hidden on mobile (shown at end of content area instead) */}
                   {selectedCandidate.id === 'thomas' && (
                     <div className="mt-6 hidden md:block">
-                      <span className="block text-white font-bold mb-3">Gallery</span>
+                      <span className="block text-white font-bold mb-3">{t('team.photoGallery')}</span>
                       <div className="grid grid-cols-2 gap-2">
                         {THOMAS_GALLERY_PHOTOS.map((photo, idx) => {
                           // Custom positioning for Thomas photos
@@ -652,19 +742,19 @@ const TeamGrid: React.FC = () => {
                     </video>
                   )}
                   <div className="bg-navy-light px-4 py-2 text-white text-sm">
-                    <span className="text-gold font-bold">Watch:</span> A personal message from {selectedCandidate.name.split(' ')[0]}.
+                    <span className="text-gold font-bold">Watch:</span> A personal message from {translatedModal.name.split(' ')[0]}.
                   </div>
                 </div>
 
                 {/* Vision Statement / Manifesto */}
-                {selectedCandidate.manifesto && (
+                {translatedModal.manifesto && (
                   <div className="mb-8 bg-gradient-to-br from-navy-deep to-navy-light p-8 rounded-xl shadow-lg">
                     <h5 className="text-gold font-bold text-xl mb-4 flex items-center gap-2">
                       <span className="w-8 h-1 bg-gold rounded"></span>
                       {t('team.myVision')}
                     </h5>
                     <div className="text-white/90 space-y-4">
-                      {selectedCandidate.manifesto.split('\n\n').map((paragraph, index) => (
+                      {translatedModal.manifesto.split('\n\n').map((paragraph, index) => (
                         <p key={index} className="leading-relaxed">{parseMarkdownLinks(paragraph)}</p>
                       ))}
                     </div>
@@ -672,22 +762,22 @@ const TeamGrid: React.FC = () => {
                 )}
 
                 <div className="prose prose-lg text-gray-600">
-                  {selectedCandidate.bioFull.split('\n\n').map((paragraph, index) => (
+                  {translatedModal.bioFull.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="mb-4">{paragraph}</p>
                   ))}
 
-                  {selectedCandidate.trackRecord && (
+                  {translatedModal.trackRecord && (
                     <div className="bg-gold/10 p-6 rounded-lg border-l-4 border-gold mb-6">
                       <h5 className="font-bold text-navy-deep mb-2 text-lg">{t('team.trackRecord')}</h5>
-                      <p className="text-gray-700">{selectedCandidate.trackRecord}</p>
+                      <p className="text-gray-700">{translatedModal.trackRecord}</p>
                     </div>
                   )}
 
-                  {selectedCandidate.governance.length > 0 && (
+                  {translatedModal.governance.length > 0 && (
                      <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gold mb-6">
-                        <h5 className="font-bold text-navy-deep mb-2 text-lg">Governance Experience</h5>
+                        <h5 className="font-bold text-navy-deep mb-2 text-lg">{t('team.governanceExperience')}</h5>
                         <ul className="space-y-2">
-                           {selectedCandidate.governance.map((g, i) => (
+                           {translatedModal.governance.map((g, i) => (
                               <li key={i} className="flex items-center gap-2">
                                 <span className="w-1.5 h-1.5 bg-crimson rounded-full"></span>
                                 {g}
@@ -697,17 +787,17 @@ const TeamGrid: React.FC = () => {
                      </div>
                   )}
 
-                  {selectedCandidate.keyAchievement && (
+                  {translatedModal.keyAchievement && (
                     <div className="mt-8">
-                       <h5 className="font-bold text-navy-deep mb-2">Key Achievement</h5>
-                       <p className="text-navy-deep font-serif italic text-lg">"{selectedCandidate.keyAchievement}"</p>
+                       <h5 className="font-bold text-navy-deep mb-2">{t('team.keyAchievement')}</h5>
+                       <p className="text-navy-deep font-serif italic text-lg">"{translatedModal.keyAchievement}"</p>
                     </div>
                   )}
 
                   {/* YouTube Videos - Pernilla only */}
                   {selectedCandidate.id === 'pernilla' && (
                     <div className="mt-8">
-                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.videos')}</h5>
                       <div className="space-y-4">
                         {/* Video 1 - embedding disabled by owner, show custom thumbnail with link */}
                         <a
@@ -784,7 +874,7 @@ const TeamGrid: React.FC = () => {
                   {/* Videos - Thomas only */}
                   {selectedCandidate.id === 'thomas' && (
                     <div className="mt-8">
-                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.videos')}</h5>
                       <div className="space-y-4">
                         {/* YouTube Videos */}
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
@@ -891,7 +981,7 @@ const TeamGrid: React.FC = () => {
                   {/* Videos - Lumi only */}
                   {selectedCandidate.id === 'lumi' && (
                     <div className="mt-8">
-                      <h5 className="font-bold text-navy-deep mb-4">Videos</h5>
+                      <h5 className="font-bold text-navy-deep mb-4">{t('team.videos')}</h5>
                       <div className="space-y-4">
                         {/* Instagram Video Link */}
                         <a
