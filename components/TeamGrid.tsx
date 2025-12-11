@@ -562,7 +562,7 @@ const TeamGrid: React.FC = () => {
                               src={photo}
                               alt={`Thomas photo ${idx + 1}`}
                               loading="lazy"
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-top"
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-center"
                               onClick={() => setLightboxImage(photo)}
                             />
                           </div>
@@ -907,7 +907,7 @@ const TeamGrid: React.FC = () => {
                               src={photo}
                               alt={`Thomas photo ${idx + 1}`}
                               loading="lazy"
-                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-top"
+                              className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer object-center"
                               onClick={() => setLightboxImage(photo)}
                             />
                           </div>
