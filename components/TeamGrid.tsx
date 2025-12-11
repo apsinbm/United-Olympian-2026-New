@@ -768,52 +768,52 @@ const TeamGrid: React.FC = () => {
                         </a>
                         {/* MP4 Videos */}
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 22.30.38.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.30.38.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 19.44.32.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 19.44.32.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.34.38.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.34.38 (1).jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.38 (1).mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.34.40.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.34.40.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.39.58.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.39.58.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.47.54.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.54.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 21.47.55.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 21.47.55.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 22.08.08.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.08.08.mp4" type="video/mp4" />
                           </video>
                         </div>
                         <div className="aspect-video rounded-lg overflow-hidden shadow-md">
-                          <video controls preload="none" className="w-full h-full object-cover">
+                          <video controls preload="none" poster="/Lumi/Videos/thumbnails/WhatsApp Video 2025-12-09 at 22.34.24.jpg" className="w-full h-full object-cover">
                             <source src="/Lumi/Videos/WhatsApp Video 2025-12-09 at 22.34.24.mp4" type="video/mp4" />
                           </video>
                         </div>
