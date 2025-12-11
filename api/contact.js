@@ -23,12 +23,19 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    // Initialize Google Sheets API
-    const auth = new google.auth.GoogleAuth({
-      credentials: {
+    // Initialize Google Sheets API - try GOOGLE_CREDENTIALS first, fall back to individual vars
+    let credentials;
+    if (process.env.GOOGLE_CREDENTIALS) {
+      credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+    } else {
+      credentials = {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-      },
+      };
+    }
+
+    const auth = new google.auth.GoogleAuth({
+      credentials,
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
@@ -47,7 +54,8 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true });
   } catch (error) {
-    console.error('Error submitting form:', error);
-    return res.status(500).json({ error: 'Failed to submit form' });
+    console.error('Error submitting form:', error.message);
+    console.error('Stack:', error.stack);
+    return res.status(500).json({ error: 'Failed to submit form', details: error.message });
   }
 }
