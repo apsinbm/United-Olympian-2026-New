@@ -137,7 +137,7 @@ const LUMI_GALLERY_PHOTOS = [
 // Thomas gallery photos
 const THOMAS_GALLERY_PHOTOS = [
   '/Thomas/WOA Election Photos/IMG_0155.jpeg',
-  '/Thomas/WOA Election Photos/IMG_0211.jpeg',
+  '/Thomas/WOA Election Photos/IMG_9604.jpeg',
   '/Thomas/WOA Election Photos/IMG_0516.jpeg',
   '/Thomas/WOA Election Photos/IMG_0566.JPEG',
   '/Thomas/WOA Election Photos/IMG_0834.jpeg',
@@ -217,7 +217,7 @@ const THOMAS_GALLERY_PHOTOS = [
   '/Thomas/WOA Election Photos/IMG_6374.jpeg',
   '/Thomas/WOA Election Photos/IMG_6761.jpeg',
   '/Thomas/WOA Election Photos/IMG_9442.jpeg',
-  '/Thomas/WOA Election Photos/IMG_9604.jpeg',
+  '/Thomas/WOA Election Photos/IMG_0211.jpeg',
   '/Thomas/WOA Election Photos/IMG_9612.jpeg',
   '/Thomas/WOA Election Photos/IMG_9622.jpeg',
   '/Thomas/WOA Election Photos/IMG_9627.jpeg',
@@ -596,7 +596,7 @@ const TeamGrid: React.FC = () => {
                           // Most rotated photos use 'center 15%' for headroom
                           // Properly cropped photos (40, 67, 82, 89) use 'center'
                           // Photos with too much ceiling (2, 69) use 'center 50%'
-                          const properlyCroppedIndices = [40, 67, 82, 89]; // IMG_3293, IMG_4615, IMG_9604, IMG_9662 - replaced with cropped versions
+                          const properlyCroppedIndices = [1, 40, 67, 89]; // IMG_9604, IMG_3293, IMG_4615, IMG_9662 - replaced with cropped versions
                           const tooMuchHeadroomIndices = [2, 69]; // IMG_0516, IMG_5212
                           let objectPos = 'center 15%';
                           if (properlyCroppedIndices.includes(idx)) objectPos = 'center';
@@ -953,7 +953,7 @@ const TeamGrid: React.FC = () => {
                           // Most rotated photos use 'center 15%' for headroom
                           // Properly cropped photos (40, 67, 82, 89) use 'center'
                           // Photos with too much ceiling (2, 69) use 'center 50%'
-                          const properlyCroppedIndices = [40, 67, 82, 89]; // IMG_3293, IMG_4615, IMG_9604, IMG_9662 - replaced with cropped versions
+                          const properlyCroppedIndices = [1, 40, 67, 89]; // IMG_9604, IMG_3293, IMG_4615, IMG_9662 - replaced with cropped versions
                           const tooMuchHeadroomIndices = [2, 69]; // IMG_0516, IMG_5212
                           let objectPos = 'center 15%';
                           if (properlyCroppedIndices.includes(idx)) objectPos = 'center';
