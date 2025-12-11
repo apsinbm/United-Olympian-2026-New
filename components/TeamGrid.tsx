@@ -4,6 +4,41 @@ import { CANDIDATES } from '../constants';
 import { Candidate, OlympicYear } from '../types';
 import { X, Award, Briefcase, Trophy, Globe, PlayCircle, GraduationCap, Linkedin, MapPin, Twitter, Facebook, Instagram, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
+// Helper function to parse markdown-style links [text](url) into React elements
+const parseMarkdownLinks = (text: string): React.ReactNode[] => {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    // Add the link
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gold underline hover:text-gold/80 transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  // Add remaining text after last link
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : [text];
+};
+
 // Medal icon component
 const MedalIcon: React.FC<{ type: 'gold' | 'silver' | 'bronze' }> = ({ type }) => {
   const colors = {
@@ -607,7 +642,7 @@ const TeamGrid: React.FC = () => {
                     </h5>
                     <div className="text-white/90 space-y-4">
                       {selectedCandidate.manifesto.split('\n\n').map((paragraph, index) => (
-                        <p key={index} className="leading-relaxed">{paragraph}</p>
+                        <p key={index} className="leading-relaxed">{parseMarkdownLinks(paragraph)}</p>
                       ))}
                     </div>
                   </div>
