@@ -29,7 +29,7 @@ const ActionPlan: React.FC = () => {
             </p>
             <div className="p-6 bg-navy-light rounded-xl border border-white/10 shadow-lg">
               <h3 className="font-bold text-xl mb-2 text-white">Why this matters</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-white/90 text-sm">
                 The WOA needs to evolve from a ceremonial body to a functional support network. Our plan focuses on financial decentralization and tangible tools for life after sport.
               </p>
             </div>
