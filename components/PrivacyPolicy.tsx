@@ -24,7 +24,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ isOpen, onClose }) => {
         </div>
 
         <div className="px-6 py-6 space-y-6 text-gray-700">
-          <p className="text-sm text-gray-500">Last updated: December 2024</p>
+          <p className="text-sm text-gray-500">Last updated: December 2025</p>
 
           <section>
             <h3 className="font-bold text-navy-deep mb-2">Information We Collect</h3>
