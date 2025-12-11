@@ -626,10 +626,6 @@ const TeamGrid: React.FC = () => {
 
                 {/* Video Biography Section */}
                 <div className="mb-8 group relative rounded-xl overflow-hidden shadow-lg bg-navy-deep">
-                  <div className="absolute top-4 left-4 z-10 bg-crimson text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-sm">
-                    <PlayCircle size={12} />
-                    <span>Video Bio</span>
-                  </div>
                   {selectedCandidate.id === 'pernilla' ? (
                     <iframe
                       className="w-full aspect-video"
