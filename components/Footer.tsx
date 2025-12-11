@@ -36,7 +36,6 @@ const Footer: React.FC<FooterProps> = ({ onPrivacyClick }) => {
             <h4 className="font-bold text-gold uppercase tracking-widest text-sm mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li><button onClick={onPrivacyClick} className="hover:text-white transition">Privacy Policy</button></li>
-              <li><a href="#contact" className="hover:text-white transition">Contact Support</a></li>
             </ul>
           </div>
 
