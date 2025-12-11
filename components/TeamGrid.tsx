@@ -786,6 +786,47 @@ const TeamGrid: React.FC = () => {
                             allowFullScreen
                           />
                         </div>
+                        {/* MP4 Videos */}
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_1936.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_1936.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_2787.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_2787.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_3723.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_3723.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_4263.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_4263.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_6220.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_6220.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_8576.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_8576.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_9556.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_9556.mp4" type="video/mp4" />
+                          </video>
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                          <video controls preload="none" poster="/Thomas/WOA Election Photos/WOA Election Video/thumbnails/IMG_9656.jpg" className="w-full h-full object-cover">
+                            <source src="/Thomas/WOA Election Photos/WOA Election Video/IMG_9656.mp4" type="video/mp4" />
+                          </video>
+                        </div>
                       </div>
                     </div>
                   )}
