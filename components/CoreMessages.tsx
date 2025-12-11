@@ -37,7 +37,7 @@ const CoreMessages: React.FC = () => {
               <div className="pt-8">
                 <span className="text-gold text-sm font-bold tracking-wider">{message.subtitle}</span>
                 <h3 className="text-2xl font-bold text-white mt-2 mb-4">{message.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{message.description}</p>
+                <p className="text-gray-300 text-lg leading-relaxed">{message.description}</p>
               </div>
 
               <div className="absolute bottom-4 right-4 text-6xl font-extrabold text-white/5">
