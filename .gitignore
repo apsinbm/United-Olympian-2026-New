@@ -33,3 +33,4 @@ dist-ssr
 *-credentials*.json
 *service-account*.json
 olympians-united-*.json
+.env*.local
