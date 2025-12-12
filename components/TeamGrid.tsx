@@ -454,7 +454,7 @@ const TeamGrid: React.FC = () => {
               </div>
 
               {/* Button - visible on mobile only, after sport photo */}
-              <div className="md:hidden px-6 pb-6 order-4">
+              <div className="md:hidden px-6 pt-4 pb-6 order-4">
                 <button
                   onClick={() => setSelectedCandidate(candidate)}
                   className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors"
