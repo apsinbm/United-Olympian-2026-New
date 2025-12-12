@@ -8,6 +8,7 @@ interface LanguageContextType {
   language: LanguageCode;
   setLanguage: (lang: LanguageCode) => void;
   t: (key: string) => string;
+  tRaw: (key: string) => unknown;
   isRTL: boolean;
 }
 
@@ -36,8 +37,8 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     setLanguageState(lang);
   };
 
-  // Translation function with dot notation support
-  const t = (key: string): string => {
+  // Raw translation function that returns any type (including arrays)
+  const tRaw = (key: string): unknown => {
     const keys = key.split('.');
     let value: unknown = translations[language] || translations.EN;
 
@@ -51,18 +52,24 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
           if (value && typeof value === 'object' && fallbackKey in value) {
             value = (value as Record<string, unknown>)[fallbackKey];
           } else {
-            return key; // Return key if not found
+            return undefined; // Return undefined if not found
           }
         }
         break;
       }
     }
 
+    return value;
+  };
+
+  // String-only translation function with dot notation support
+  const t = (key: string): string => {
+    const value = tRaw(key);
     return typeof value === 'string' ? value : key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, isRTL }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tRaw, isRTL }}>
       {children}
     </LanguageContext.Provider>
   );
@@ -77,6 +84,6 @@ export const useLanguage = (): LanguageContextType => {
 };
 
 export const useTranslation = () => {
-  const { t, language, isRTL } = useLanguage();
-  return { t, language, isRTL };
+  const { t, tRaw, language, isRTL } = useLanguage();
+  return { t, tRaw, language, isRTL };
 };

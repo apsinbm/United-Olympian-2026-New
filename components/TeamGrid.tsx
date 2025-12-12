@@ -268,7 +268,7 @@ const ALL_GALLERY_IMAGES = [
 ];
 
 const TeamGrid: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, tRaw } = useTranslation();
   const { language } = useLanguage();
   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -288,24 +288,24 @@ const TeamGrid: React.FC = () => {
       business: t(`candidates.${candidateKey}.business`) || selectedCandidate.business,
       trackRecord: t(`candidates.${candidateKey}.trackRecord`) || selectedCandidate.trackRecord,
       achievements: (() => {
-        const translated = t(`candidates.${candidateKey}.achievements`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.achievements`);
+        if (Array.isArray(translated)) return translated as string[];
         return selectedCandidate.achievements;
       })(),
       governance: (() => {
-        const translated = t(`candidates.${candidateKey}.governance`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.governance`);
+        if (Array.isArray(translated)) return translated as string[];
         return selectedCandidate.governance;
       })(),
       education: (() => {
-        const translated = t(`candidates.${candidateKey}.education`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.education`);
+        if (Array.isArray(translated)) return translated as string[];
         return selectedCandidate.education;
       })(),
       manifesto: t(`candidates.${candidateKey}.manifesto`) || selectedCandidate.manifesto,
       bioFull: t(`candidates.${candidateKey}.bioFull`) || selectedCandidate.bioFull,
     };
-  }, [selectedCandidate, t]);
+  }, [selectedCandidate, t, tRaw]);
 
   // Helper function to get translated candidate content
   const getTranslatedContent = useCallback((candidate: Candidate): TranslatedCandidateContent => {
@@ -322,24 +322,24 @@ const TeamGrid: React.FC = () => {
       business: t(`candidates.${candidateKey}.business`) || candidate.business,
       trackRecord: t(`candidates.${candidateKey}.trackRecord`) || candidate.trackRecord,
       achievements: (() => {
-        const translated = t(`candidates.${candidateKey}.achievements`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.achievements`);
+        if (Array.isArray(translated)) return translated as string[];
         return candidate.achievements;
       })(),
       governance: (() => {
-        const translated = t(`candidates.${candidateKey}.governance`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.governance`);
+        if (Array.isArray(translated)) return translated as string[];
         return candidate.governance;
       })(),
       education: (() => {
-        const translated = t(`candidates.${candidateKey}.education`);
-        if (Array.isArray(translated)) return translated;
+        const translated = tRaw(`candidates.${candidateKey}.education`);
+        if (Array.isArray(translated)) return translated as string[];
         return candidate.education;
       })(),
       manifesto: t(`candidates.${candidateKey}.manifesto`) || candidate.manifesto,
       bioFull: t(`candidates.${candidateKey}.bioFull`) || candidate.bioFull,
     };
-  }, [t]);
+  }, [t, tRaw]);
 
   const navigateLightbox = useCallback((direction: 'prev' | 'next') => {
     if (!lightboxImage) return;
