@@ -410,7 +410,7 @@ const TeamGrid: React.FC = () => {
               </div>
 
               {/* Middle: Content */}
-              <div className="flex-grow px-6 pt-4 pb-6 text-center">
+              <div className="flex-grow px-6 pt-4 pb-6 text-center order-2">
                 <h3 className="text-2xl font-bold text-navy-deep leading-tight">{translated.name}</h3>
                 <p className="text-crimson font-bold text-sm uppercase tracking-wide mt-1">{translated.role}</p>
 
@@ -431,16 +431,17 @@ const TeamGrid: React.FC = () => {
                   "{translated.keyAchievement}"
                 </p>
 
+                {/* Button - visible on desktop only */}
                 <button
                   onClick={() => setSelectedCandidate(candidate)}
-                  className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors mb-4"
+                  className="hidden md:block w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors mb-4"
                 >
                   {t('team.viewFullProfile')}
                 </button>
               </div>
 
               {/* Bottom: Sport Photo */}
-              <div className="h-64 md:h-72 w-full overflow-hidden bg-gray-200 relative">
+              <div className="h-64 md:h-72 w-full overflow-hidden bg-gray-200 relative order-3">
                 <img
                   src={candidate.imageHeadshot}
                   onError={(e) => {
@@ -450,6 +451,16 @@ const TeamGrid: React.FC = () => {
                   className="w-full h-full object-cover"
                   style={{ objectPosition: candidate.id === 'lumi' ? 'center 35%' : 'center' }}
                 />
+              </div>
+
+              {/* Button - visible on mobile only, after sport photo */}
+              <div className="md:hidden px-6 pb-6 order-4">
+                <button
+                  onClick={() => setSelectedCandidate(candidate)}
+                  className="w-full py-2 border-2 border-navy-deep text-navy-deep font-bold rounded hover:bg-navy-deep hover:text-white transition-colors"
+                >
+                  {t('team.viewFullProfile')}
+                </button>
               </div>
             </div>
           );
