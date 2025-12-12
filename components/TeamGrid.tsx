@@ -386,7 +386,11 @@ const TeamGrid: React.FC = () => {
           {CANDIDATES.map((candidate) => {
             const translated = getTranslatedContent(candidate);
             return (
-            <div key={candidate.id} className="group flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div key={candidate.id} className={`group flex flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 ${
+              candidate.id === 'pernilla' ? 'order-1 md:order-2' :
+              candidate.id === 'lumi' ? 'order-2 md:order-1' :
+              'order-3'
+            }`}>
 
               {/* Top: Business Photo */}
               <div className="h-64 md:h-72 w-full overflow-hidden bg-navy-deep relative">
