@@ -1,6 +1,7 @@
 import { google } from 'googleapis';
 
-const SHEET_ID = '1543n4DIpHyBXFHFoGZGS9lggPlue2xLZ-bNyKYcU1Ko';
+// Use environment variable for Sheet ID (defense in depth)
+const SHEET_ID = process.env.GOOGLE_SHEET_ID || '1543n4DIpHyBXFHFoGZGS9lggPlue2xLZ-bNyKYcU1Ko';
 
 // Allowed origins for CORS
 const ALLOWED_ORIGINS = [
@@ -10,13 +11,42 @@ const ALLOWED_ORIGINS = [
   'http://localhost:5173'
 ];
 
+// Simple in-memory rate limiting (resets on cold start)
+const rateLimitMap = new Map();
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+const MAX_REQUESTS_PER_WINDOW = 5;
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+
+  if (!record || now - record.timestamp > RATE_LIMIT_WINDOW) {
+    rateLimitMap.set(ip, { timestamp: now, count: 1 });
+    return false;
+  }
+
+  record.count++;
+  if (record.count > MAX_REQUESTS_PER_WINDOW) {
+    return true;
+  }
+  return false;
+}
+
 // Sanitize input to prevent injection attacks
 function sanitizeInput(str) {
   if (typeof str !== 'string') return '';
-  return str
+  let sanitized = str
     .trim()
     .slice(0, 1000) // Limit length
     .replace(/[<>]/g, ''); // Remove potential HTML tags
+
+  // Prevent Google Sheets formula injection
+  // Cells starting with =, +, -, @ are interpreted as formulas
+  if (/^[=+\-@]/.test(sanitized)) {
+    sanitized = "'" + sanitized;
+  }
+
+  return sanitized;
 }
 
 // Validate email format
@@ -40,6 +70,12 @@ export default async function handler(req, res) {
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  // Rate limiting check
+  const clientIP = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
+  if (isRateLimited(clientIP)) {
+    return res.status(429).json({ error: 'Too many requests. Please try again later.' });
   }
 
   try {
