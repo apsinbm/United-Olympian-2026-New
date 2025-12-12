@@ -20,6 +20,7 @@ export const LANGUAGES: Language[] = [
   { code: 'EN', label: 'English' },
   { code: 'FR', label: 'Français' },
   { code: 'ES', label: 'Español' },
+  { code: 'PT', label: 'Português' },
   { code: 'RU', label: 'Русский' },
   { code: 'AR', label: 'العربية' },
   { code: 'CN', label: '中文' },

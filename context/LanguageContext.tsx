@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import type { Translations } from '../i18n';
 import { translations } from '../i18n';
 
-type LanguageCode = 'EN' | 'FR' | 'ES' | 'RU' | 'AR' | 'CN';
+type LanguageCode = 'EN' | 'FR' | 'ES' | 'PT' | 'RU' | 'AR' | 'CN';
 
 interface LanguageContextType {
   language: LanguageCode;

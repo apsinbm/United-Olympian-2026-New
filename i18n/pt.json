@@ -1,0 +1,379 @@
+{
+  "nav": {
+    "brand": "OLIMPIANOS UNIDOS",
+    "team": "A Equipa",
+    "accomplishments": "As Nossas Conquistas",
+    "actionPlan": "Plano de Ação 2026",
+    "joinMovement": "Junte-se ao Movimento"
+  },
+  "hero": {
+    "badge": "Campanha Oficial 2026",
+    "title1": "Nova Liderança.",
+    "title2": "Experiência Comprovada.",
+    "subtitle": "Uma Campeã Olímpica. Uma Estrela da NBA. Um Génio dos Negócios.",
+    "subtitleHighlight": "Ideias frescas construídas sobre o que funciona.",
+    "ctaPrimary": "Conheça a Equipa",
+    "ctaSecondary": "Ver Plano de Ação 2026"
+  },
+  "voteBanner": {
+    "label": "O Pacote Completo:",
+    "candidates": "Pernilla (Presidente) + Lumi (Secretário-Geral) + Thomas (Tesoureiro)"
+  },
+  "collaboration": {
+    "highlight": "Três Continentes. Uma Visão Unificada.",
+    "subtitle": "Liderança que representa todos os Olimpianos."
+  },
+  "team": {
+    "sectionLabel": "Conheça os Candidatos",
+    "sectionTitle": "A Equipa Que",
+    "sectionTitleHighlight": "Entrega Resultados",
+    "sectionSubtitle": "Juntos, trazemos legado olímpico, perspicácia empresarial global e experiência em defesa dos atletas.",
+    "viewFullProfile": "Ver Perfil Completo",
+    "forPresident": "Para Presidente",
+    "forSecretaryGeneral": "Para Secretário-Geral",
+    "forTreasurer": "Para Tesoureiro",
+    "videoIntroduction": "Apresentação em Vídeo",
+    "biography": "Biografia",
+    "athleticAchievements": "Conquistas Atléticas",
+    "governanceExperience": "Experiência em Governança",
+    "keyAchievement": "Conquista Principal",
+    "trackRecord": "Histórico",
+    "business": "Negócios",
+    "philosophy": "Filosofia",
+    "education": "Educação",
+    "myVision": "A Minha Visão para a WOA",
+    "videos": "Vídeos",
+    "photoGallery": "Galeria de Fotos",
+    "close": "Fechar",
+    "followOn": "Seguir em",
+    "visitWebsite": "Visitar Website",
+    "athleticHighlights": "Destaques Atléticos",
+    "country": "País",
+    "basedIn": "Baseado em",
+    "connect": "Conectar"
+  },
+  "core": {
+    "sectionLabel": "Porquê Escolher-nos",
+    "sectionTitle": "Três Razões.",
+    "sectionTitleHighlight": "Uma Escolha Clara.",
+    "sectionSubtitle": "Nova liderança com experiência para entregar e visão para ir mais longe.",
+    "built": {
+      "title": "Nós Construímos",
+      "subtitle": "A WOA Moderna",
+      "description": "Ajudámos a entregar todos os principais programas dos quais os Olimpianos dependem hoje. Somos credíveis porque o fizemos—14 anos de resultados comprovados, não promessas."
+    },
+    "secure": {
+      "title": "Nós Assegurámos",
+      "subtitle": "Independente e Confiável",
+      "description": "Protegemos a independência da WOA enquanto reconstruímos a forte relação de trabalho com o COI que traz financiamento e influência."
+    },
+    "lead": {
+      "title": "Estamos a Ouvir",
+      "subtitle": "A Equipa Certa",
+      "description": "Uma Campeã Olímpica, uma Estrela da NBA e um Génio dos Negócios—com expertise complementar: Pernilla traz governança olímpica e experiência no COI, Lumi traz visão de negócios do desporto profissional, Thomas traz perspicácia financeira e tecnológica. O pacote completo, ouvindo as suas necessidades."
+    }
+  },
+  "achievements": {
+    "sectionLabel": "14 Anos de Entrega Bem-Sucedida",
+    "sectionTitle": "O Que Já",
+    "sectionTitleHighlight": "Construímos",
+    "sectionSubtitle": "Aqui está o nosso histórico.",
+    "viewAll": "Ver Todas as {count} Conquistas",
+    "showLess": "Mostrar Menos",
+    "relatedResources": "Recursos Relacionados",
+    "quote": "Há 14 anos, a WOA fazia muito pouco. Sem subsídios, sem bolsas, sem kits de ferramentas para NOAs, sem Oficiais de Desenvolvimento. A nossa equipa construiu os recursos dos quais a sua NOA depende hoje.",
+    "quoteCTA": "Continue o que funciona!",
+    "items": {
+      "olyDesignation": {
+        "title": "Designação OLY",
+        "description": "Criámos as letras pós-nominais OLY para todos os Olimpianos em todo o mundo"
+      },
+      "worldForum": {
+        "title": "Fórum Mundial de Olimpianos",
+        "description": "Estabelecemos o encontro global de Olimpianos"
+      },
+      "serviceToSociety": {
+        "title": "Subsídios de Serviço à Sociedade",
+        "description": "Financiamento para Olimpianos com impacto comunitário"
+      },
+      "iocFunding": {
+        "title": "Aumento de Financiamento do COI",
+        "description": "Aumentámos o financiamento do COI em até 300%"
+      },
+      "devOfficers": {
+        "title": "Oficiais de Desenvolvimento",
+        "description": "Estabelecemos oficiais de desenvolvimento regionais para apoiar as NOAs"
+      },
+      "devGrants": {
+        "title": "Subsídios de Desenvolvimento",
+        "description": "Criámos subsídios de desenvolvimento para ajudar a fazer crescer as NOAs"
+      },
+      "olyHouseRio": {
+        "title": "OLY House Rio",
+        "description": "OLY House premiada no Rio 2016"
+      },
+      "serviceToOlympians": {
+        "title": "Subsídios de Serviço aos Olimpianos",
+        "description": "Apoio direto aos Olimpianos"
+      },
+      "olyHouseParis": {
+        "title": "OLY House Paris",
+        "description": "A melhor OLY House de sempre em Paris 2024"
+      },
+      "fundraising": {
+        "title": "Sucesso na Angariação de Fundos",
+        "description": "Angariámos milhões para financiar as OLY Houses e os Fóruns Mundiais de Olimpianos"
+      },
+      "scholarships": {
+        "title": "Bolsas Universitárias",
+        "description": "Oportunidades educacionais para Olimpianos em todo o mundo"
+      },
+      "olyCeremonies": {
+        "title": "Cerimónias OLY",
+        "description": "Estabelecemos cerimónias de reconhecimento para Olimpianos"
+      },
+      "healthResearch": {
+        "title": "Investigação em Saúde",
+        "description": "Primeiro inquérito global de saúde musculoesquelética de Olimpianos"
+      },
+      "olympiansForLife": {
+        "title": "Olimpianos para a Vida",
+        "description": "Criámos os prémios e cerimónias Olimpianos para a Vida"
+      },
+      "website": {
+        "title": "Website Olympian.org",
+        "description": "Reconstruímos o website Olympian.org"
+      },
+      "noaGuide": {
+        "title": "Guia e Kits de Ferramentas NOA",
+        "description": "Criámos um Guia e Kits de Ferramentas NOA abrangentes"
+      },
+      "relationships": {
+        "title": "Rede de Relacionamentos",
+        "description": "Construímos relacionamentos com a World Academy of Sport, SkillsBuild e mais"
+      },
+      "iocAgreement": {
+        "title": "Novo Acordo com o COI",
+        "description": "Assegurámos independência, financiamento de longo prazo e estabilidade para todos os programas da WOA"
+      },
+      "campaigns": {
+        "title": "Campanhas Globais Bem-Sucedidas",
+        "description": "Quando o Ébola atacou e as nossas NOAs pediram ajuda, lançámos #TargetEbola e graças à comunidade global de Olimpianos enviámos seis contentores de material médico e outros suprimentos para a Serra Leoa e Libéria. A nossa campanha #OlympiansforUkraine angariou fundos para ajudar famílias de Olimpianos ucranianos deslocados."
+      }
+    }
+  },
+  "actionPlan": {
+    "sectionLabel": "O Manifesto",
+    "sectionTitle": "O Nosso Plano de",
+    "sectionTitleHighlight": "Ação 2026",
+    "sectionSubtitle": "Não temos apenas slogans. Temos um roteiro concreto, financiado e acionável para modernizar a WOA e capacitar as Associações Nacionais de Olimpianos.",
+    "whyMatters": "Porque isto importa",
+    "whyMattersText": "A WOA precisa evoluir de um órgão cerimonial para uma rede de apoio funcional. O nosso plano foca-se na descentralização financeira e em ferramentas tangíveis para a vida após o desporto.",
+    "commitment": "Compromisso",
+    "viewAll": "Ver Todos os {count} Compromissos",
+    "showLess": "Mostrar Menos",
+    "items": {
+      "relations": {
+        "title": "Relações Independentes mas Colaborativas com o COI",
+        "description": "Mantendo a nossa independência como associação enquanto trabalhamos de perto e construtivamente com o COI. Somos a verdadeira ponte."
+      },
+      "rights": {
+        "title": "Saúde, Pensões e Soberania de Imagem",
+        "description": "Iremos defender agressivamente uma rede de segurança global, fazendo lobby por cobertura de seguro de saúde e esquemas de pensão para Olimpianos. Além disso, exigiremos a proteção absoluta dos Direitos de Imagem após os Jogos. Uma vez terminada a competição, a sua imagem e os seus dados pertencem a si, e trabalharemos para garantir os quadros que assegurem que controla o seu próprio legado."
+      },
+      "reform": {
+        "title": "Manter e Melhorar a Equidade de Género",
+        "description": "Comprometemo-nos a proteger e melhorar ativamente a histórica reforma de representação de género 50/50 iniciada pelo Comité Constitucional da WOA presidido por Pernilla Wiberg."
+      },
+      "transparency": {
+        "title": "Continuar a Transparência Financeira",
+        "description": "A administração atual passou de publicar os nossos relatórios de auditoria anuais de quatro em quatro anos para publicá-los todos os anos. Continuaremos essa prática e garantiremos que implementamos as melhores práticas financeiras mais recentes e processos de boa governança."
+      },
+      "dignity": {
+        "title": "O Fundo de Transição de Vida",
+        "description": "Estabeleceremos um subsídio dedicado especificamente para as NOAs realizarem workshops locais de saúde mental e transição de vida e carreira. Os recursos serão flexíveis para atender às necessidades culturais e económicas locais."
+      },
+      "empowerment": {
+        "title": "Construir a Capacitação das NOAs",
+        "description": "Nomearemos um Oficial de Desenvolvimento para cada continente e priorizaremos workshops e reuniões regionais e continentais para construir a capacidade e experiência das NOAs."
+      },
+      "digital": {
+        "title": "Turbinar o OLY Connect",
+        "description": "Aproveitaremos a expertise tecnológica de Thomas Tang para tornar o OLY Connect a aplicação indispensável para Olimpianos que lhes proporciona benefícios, oportunidades, conexões e networking e apoio empresarial, de carreira e de vida."
+      },
+      "legacy": {
+        "title": "Aumentar os Subsídios para NOAs",
+        "description": "Os Subsídios de Desenvolvimento de NOAs e os Subsídios de Serviço à Sociedade e Serviço aos Olimpianos estão sempre sobrescritos. Angraremos mais financiamento para aumentar o número de subsídios que podemos atribuir todos os anos."
+      }
+    }
+  },
+  "endorsement": {
+    "quote": "Durante 14 anos, trabalhámos incansavelmente para criar a WOA de hoje que serve as necessidades dos Olimpianos e os capacita a retribuir às suas comunidades através dos nossos muitos serviços, iniciativas e subsídios. Pernilla, Lumi e Thomas foram fundamentais para muitas destas conquistas. Têm a minha total confiança para continuar este trabalho e levar a WOA a alturas ainda maiores. E, crucialmente, para proteger a nossa independência.",
+    "author": "Joël Bouzou",
+    "title": "Presidente da WOA (2011-2026)"
+  },
+  "contact": {
+    "title": "Trabalhe connosco para levar a WOA ao próximo nível.",
+    "subtitle": "Queremos ouvir Olimpianos e Associações Nacionais de Olimpianos. Solicite uma reunião com Pernilla, Lumi ou Thomas para discutir as necessidades da sua NOA e dos seus Olimpianos.",
+    "tagline": "Nós construímos. Nós assegurámos. Trabalharemos consigo para fazê-la crescer.",
+    "form": {
+      "nameLabel": "Nome Completo (OLY)",
+      "namePlaceholder": "Maria Silva, OLY",
+      "noaLabel": "Associação Nacional",
+      "noaPlaceholder": "ex. Associação de Olimpianos de Portugal",
+      "emailLabel": "Endereço de Email",
+      "emailPlaceholder": "maria@exemplo.com",
+      "whatsappLabel": "Número WhatsApp",
+      "whatsappPlaceholder": "+351 912 345 678",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Alguma questão ou informação que gostaria de partilhar...",
+      "submit": "Solicitar Reunião",
+      "submitting": "A enviar..."
+    },
+    "success": {
+      "title": "Pedido Enviado!",
+      "message": "Entraremos em contacto brevemente para agendar.",
+      "another": "Enviar outro pedido"
+    },
+    "error": "Algo correu mal. Por favor tente novamente ou contacte-nos diretamente."
+  },
+  "footer": {
+    "brand": "OLIMPIANOS UNIDOS",
+    "description": "Somos um grupo de OLYs dedicados a servir a Associação Mundial de Olimpianos com integridade, transparência e ação.",
+    "navigation": "Navegação",
+    "navMission": "A Nossa Missão",
+    "navCandidates": "Os Candidatos",
+    "navActionPlan": "Plano de Ação 2026",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidade",
+    "copyright": "2026 Campanha Olimpianos Unidos. Todos os direitos reservados.",
+    "tagline": "Construído para o futuro do desporto."
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: Dezembro 2025",
+    "sections": {
+      "collection": {
+        "title": "Informação que Recolhemos",
+        "content": "Recolhemos informação que nos fornece diretamente, incluindo o seu nome, endereço de email, Associação Nacional de Olimpianos, número de WhatsApp e quaisquer mensagens que submeta através do nosso formulário de contacto."
+      },
+      "usage": {
+        "title": "Como Usamos a Sua Informação",
+        "content": "Usamos a sua informação para responder às suas questões, agendar reuniões com os nossos candidatos e comunicar sobre a campanha Olimpianos Unidos 2026. Não vendemos nem partilhamos a sua informação pessoal com terceiros para fins de marketing."
+      },
+      "thirdParty": {
+        "title": "Serviços de Terceiros",
+        "content": "O nosso website pode incorporar conteúdo de serviços de terceiros como YouTube e Vimeo para conteúdo de vídeo. Estes serviços podem recolher informação sobre a sua visita. Por favor consulte as respetivas políticas de privacidade para mais informação."
+      },
+      "retention": {
+        "title": "Retenção de Dados",
+        "content": "Retemos a sua informação apenas pelo tempo necessário para cumprir os propósitos descritos nesta política ou conforme exigido por lei."
+      },
+      "rights": {
+        "title": "Os Seus Direitos",
+        "content": "Tem o direito de aceder, corrigir ou eliminar a sua informação pessoal. Para exercer estes direitos, por favor contacte-nos usando o formulário de contacto no nosso website."
+      },
+      "contact": {
+        "title": "Contacte-nos",
+        "content": "Se tiver questões sobre esta Política de Privacidade, por favor use o formulário de contacto no nosso website para nos contactar."
+      }
+    },
+    "close": "Fechar"
+  },
+  "candidates": {
+    "pernilla": {
+      "name": "Pernilla Wiberg, OLY",
+      "role": "Para Presidente",
+      "sport": "Esqui Alpino",
+      "country": "Suécia",
+      "location": "Idre Fjäll, Suécia e Monte Carlo, Mónaco",
+      "keyAchievement": "Dupla Campeã Olímpica com mais de 20 anos de administração desportiva e defesa dos atletas. Liderou as reformas constitucionais da WOA permitindo representação de género 50/50.",
+      "philosophy": "Tornar a vida quotidiana melhor para os Olimpianos. Fazer o que se diz.",
+      "business": "Empresária e Proprietária do Hotel Pernilla Wiberg (Idre Fjäll, Suécia). CEO da Pernilla Wiberg Sportpromotion.",
+      "achievements": [
+        "Tripla Medalhista Olímpica (Ouro 1992, Ouro 1994, Prata 1998)",
+        "4x Campeã Mundial",
+        "24 Vitórias Individuais na Taça do Mundo",
+        "Campeã Geral da Taça do Mundo FIS 1997",
+        "Vencedora de corridas da Taça do Mundo nas 5 disciplinas",
+        "Reconhecida Comentadora de TV"
+      ],
+      "governance": [
+        "Membro do COI (2002–2010): Comissões de Atletas, Ética, Nomeações, Coordenação",
+        "Presidiu a Comissão de Avaliação do COI para os 1os Jogos Olímpicos da Juventude de Inverno (2008)",
+        "Representante da WOA na Comissão de Atletas do COI (2020–2025)",
+        "Vice-Presidente da WOA (Atual)",
+        "Membro dos Campeões pela Paz"
+      ],
+      "bioFull": "Pernilla Wiberg é uma lenda nas pistas e uma força na sala de reuniões. Como Tripla Medalhista Olímpica com 24 vitórias individuais na Taça do Mundo, 61 pódios na Taça do Mundo e o título Geral da Taça do Mundo de 1997, é uma das poucas esquiadoras da história a vencer corridas nas cinco disciplinas alpinas—o seu ouro no Campeonato Mundial de 1991 foi o primeiro para uma mulher escandinava em 33 anos.\n\nPara além da competição, tornou-se uma reconhecida comentadora desportiva de TV para a Sveriges Television (SVT). Na governança, serviu como Membro do COI durante oito anos em múltiplas comissões, presidiu a Comissão de Avaliação do COI para os primeiros Jogos Olímpicos da Juventude de Inverno, e representou a WOA na Comissão de Atletas do COI de 2020–2025.\n\nComo atual Vice-Presidente da WOA, foi fundamental na histórica reforma de representação de género 50/50. Membro dos Campeões pela Paz e empresária de sucesso, é proprietária e opera o Hotel Pernilla Wiberg na Suécia e é CEO da Pernilla Wiberg Sportpromotion. Baseada em Idre Fjäll, Suécia e Monte Carlo, Mónaco desde 1995—estrategicamente posicionada perto do Patrono da WOA Príncipe Albert e do COI em Lausana. É casada e tem dois filhos. Fluente em sueco, inglês, francês, alemão e norueguês.",
+      "manifesto": "Como Olimpiana, antiga Membro do COI e atual Vice-Presidente da WOA, candidato-me a Presidente da Associação Mundial de Olimpianos com uma missão clara: conectar, apoiar e capacitar Olimpianos ao longo das suas vidas—enquanto defendo ferozmente os nossos direitos dentro do movimento olímpico. A WOA deve ser forte, independente e focada em atender às necessidades dos Olimpianos e ajudar as vossas NOAs a crescer e prosperar.\n\nNos últimos 14 anos, transformámos a WOA de uma ideia em realidade. Criámos as letras pós-nominais OLY que nos unem como comunidade global. Estabelecemos o Fórum Mundial de Olimpianos e as OLY Houses que celebram a nossa identidade partilhada. Garantimos Subsídios de Desenvolvimento de NOAs, Subsídios de Serviço à Sociedade e bolsas universitárias. Lançámos campanhas que mudaram vidas como #TargetEbola e #OlympiansforUkraine. Conduzimos o primeiro inquérito global de saúde de Olimpianos. E eu pessoalmente presidi às reformas constitucionais que alcançaram a histórica representação de género 50/50. Nada disto existia antes de o construirmos.\n\nMas o nosso trabalho não está terminado. O movimento olímpico assenta em três pilares: Comités Olímpicos Nacionais, Federações Internacionais e Olimpianos. Sem nós, não há Jogos Olímpicos. No entanto, as questões fundamentais permanecem: Os Olimpianos têm acesso a sistemas de pensões? Temos cobertura de saúde vitalícia? Controlamos as filmagens das nossas próprias performances? Estas são as batalhas que devemos vencer.\n\nSe for eleita, a nossa primeira prioridade será uma revisão abrangente de 360 graus dos processos da WOA, prioridades e um inquérito às vossas necessidades. Queremos ouvir-vos de forma estruturada porque a vossa voz deve moldar a nossa direção. Trabalharemos para garantir um acordo ainda mais forte com o COI enquanto procuramos financiamento externo para aumentar os subsídios às NOAs e Olimpianos.\n\nReuni uma equipa extraordinária para esta missão. Olumide \"Lumi\" Oyedeji como Secretário-Geral traz a sua experiência como Vice-Presidente do CON e a sua fundação que impactou mais de 45.000 jovens. Thomas Tang como Tesoureiro traz o seu brilhantismo empreendedor e expertise empresarial global. Juntos, representamos três continentes e combinamos excelência olímpica com liderança comprovada em administração desportiva e negócios.\n\nUma WOA forte trabalhando em harmonia com o COI requer liderança excecional. Temos a experiência, o histórico e a visão para entregar. Juntos, podemos ter um impacto enorme—não temendo a mudança, mas abraçando-a. Enfrentando assuntos difíceis de frente. Ouvindo-nos uns aos outros e trabalhando juntos como Olimpianos.\n\nTemos o poder de moldar o nosso futuro. Vamos usá-lo. Estamos prontos para o desafio. E vocês?"
+    },
+    "lumi": {
+      "name": "Olumide Oyedeji, OLY",
+      "role": "Para Secretário-Geral",
+      "sport": "Basquetebol",
+      "country": "Nigéria",
+      "location": "Lagos, Nigéria",
+      "keyAchievement": "Estrela da NBA tornada defensora dos atletas. Transformou a Associação de Olimpianos da Nigéria e fundou programas de juventude que mentoram mais de 45.000 jovens em mais de 30 cidades em mais de 20 países em todo o mundo.",
+      "philosophy": "Liderança que Coloca o Atleta em Primeiro. Compreender o negócio de mil milhões de dólares do desporto profissional para melhor proteger o bem-estar, reforma e direitos de imagem dos atletas.",
+      "business": "Presidente e CEO: Legendary Venture e Lume Global Consultancy (mais de 200 funcionários, incluindo 6 Olimpianos e mais de 20 antigos atletas). Fundador e Presidente: Fundação Juvenil Olumide Oyedeji (2000–Presente). Presidente e CEO: Hoops & Read Basketball Club (Liga Principal da Nigéria). Presidente: Dolphins Basketball Club de Lagos.",
+      "achievements": [
+        "Primeiro jogador africano draft fora da América para a NBA (2000)",
+        "Jogador da NBA (Seattle SuperSonics, Orlando Magic, Atlanta Hawks)",
+        "Liderou a Nigéria à primeira Medalha de Ouro de sempre no Basquetebol nos Jogos All Africa 2011",
+        "Liderou a Nigéria ao primeiro Ouro AfroBasket de sempre (2015) e primeira aparição Olímpica (2012)",
+        "Capitão da Seleção da Nigéria (2006–2016)",
+        "Único Africano a competir em TODOS os principais torneios: Jogos Olímpicos, Taça do Mundo, NBA, EuroLeague, Jogos da Commonwealth, Jogos All Africa",
+        "Prémios MVP nas ligas alemã, coreana, chinesa e nigeriana",
+        "Jogou profissionalmente em 18 países em 4 continentes durante 2 décadas"
+      ],
+      "governance": [
+        "Vice-Presidente: Comité Olímpico da Nigéria",
+        "Presidente: Associação de Olimpianos da Nigéria",
+        "Presidente: Comité de Emprego da Associação Mundial de Olimpianos",
+        "Presidente: Comissão de Atletas da Nigéria",
+        "Presidente: Basquetebol da África Ocidental",
+        "Embaixador BAL",
+        "Embaixador NBA África",
+        "Embaixador Global Laureus",
+        "Antigo Membro Executivo: Comissão de Jogadores da FIBA",
+        "Vice-Presidente: Conselho de Desenvolvimento da Zona 3 da FIBA",
+        "Membro do Conselho: Federação de Basquetebol da Nigéria",
+        "Presidente: Comissão Desporto para Todos do CON"
+      ],
+      "bioFull": "Olumide \"Lumi\" Oyedeji é um dos jogadores de basquetebol mais condecorados da história africana e um verdadeiro homem renascentista. Não apenas um atleta profissional lendário, mas também Orador de Carreira e Motivacional, Administrador Desportivo, especialista em Orientação e Aconselhamento, especialista em Gestão de Performance, profissional de Liderança e Gestão, Psicólogo e Filantropo bem reconhecido.\n\nO primeiro jogador africano de sempre draft fora da América para a NBA (2000), fez história como o único Africano a competir em TODOS os principais torneios de basquetebol do mundo—Jogos Olímpicos, Taça do Mundo, NBA, EuroLeague, Jogos da Commonwealth e Jogos All Africa. A sua notável carreira estendeu-se por mais de duas décadas (1996–2016), jogando profissionalmente em 18 países em 4 continentes com diferentes contextos culturais, dando-lhe uma compreensão única das necessidades dos Olimpianos em todos os continentes.\n\nComo Capitão da Seleção da Nigéria de 2006–2016, liderou a Nigéria à sua primeira Medalha de Ouro de sempre no Basquetebol nos Jogos All Africa 2011 em Moçambique, ao primeiro Ouro AfroBasket de sempre na Tunísia 2015, e à primeira aparição Olímpica em Londres 2012. A sua carreira internacional inclui 9 Campeonatos FIBA África, 5 Jogos All Africa (Ouro 2011, Prata 2003, Bronze 1999/2007/2015), e campeonatos em Espanha, Itália, Grécia, Reino Unido, Rússia, Alemanha, Japão, Coreia do Sul, China, Jordânia, Eslovénia, Kuwait e Porto Rico. Ganhou prémios MVP nas ligas alemã, coreana, chinesa e nigeriana.\n\nPara além do desporto, é Presidente e CEO da Legendary Venture e Lume Global Consultancy, empregando mais de 200 pessoas incluindo 6 Olimpianos e mais de 20 antigos atletas. Agora baseado em Lagos, serve como Vice-Presidente do Comité Olímpico da Nigéria, Presidente da Associação de Olimpianos da Nigéria, Presidente do Comité de Emprego da WOA e Presidente do Basquetebol da África Ocidental.\n\nComo Presidente da Associação de Olimpianos da Nigéria, transformou a organização através de rebranding abrangente, garantiu benefícios de seguro para Olimpianos, estabeleceu a Aldeia Olímpica e centro de recreação com hectares de terra, alcançou a inclusão da NOA como membro pleno do Comité Executivo do Comité Olímpico da Nigéria, e estabeleceu o Fundo Fiduciário de Olimpianos. A sua filosofia de liderança centra-se em recompensar, apoiar e celebrar Olimpianos enquanto promove a sua inclusão na tomada de decisões.\n\nEmbaixador BAL, Embaixador NBA África e Embaixador Global Laureus, a sua fundação mentorou mais de 45.000 jovens em mais de 30 cidades em mais de 20 países desde 2000. Através do Hoops & Read Basketball Club, produziu 2 jogadores da NBA, 45 jogadores universitários e mais de 20 profissionais na Europa, Ásia e América do Sul."
+    },
+    "thomas": {
+      "name": "Thomas Tang, OLY",
+      "role": "Para Tesoureiro",
+      "sport": "Esqui Alpino",
+      "country": "Taipé Chinês",
+      "location": "Taipé, com residências em Park City (Utah), Portland (Oregon), Hong Kong e Guiné-Bissau",
+      "keyAchievement": "Génio dos Negócios e Tecnologia. Construiu uma empresa tecnológica global do zero que alimenta transmissões de Jogos Olímpicos e Taças do Mundo FIFA em todo o mundo. Ativo no desenvolvimento de desportos de inverno.",
+      "business": "Fundador e Presidente: Apantac LLC (Líder global em broadcast e ProAV, sede em Beaverton, Oregon com escritórios em Paris, Taipé, Tóquio, Singapura e Cidade do México). Presidente: Eubank Investment Group.",
+      "trackRecord": "Fundou a Apantac na sua cave em 2008. Ganhou o prestigiado PICK HIT AWARD no NAB 2009 e múltiplos prémios「Best of Show」. Em 2014: mais de 200 produtos distribuídos em mais de 40 países. A tecnologia alimenta transmissões de Jogos Olímpicos, Taças do Mundo de Futebol e emissoras nacionais em todo o mundo. Experiência anterior: VP na Avitech International (cresceu o negócio 8x), Diretor de Marketing na Divisão Broadcast da Philips Electronics (responsabilidade P&L de 50M USD), Diretor da Área Ásia-Pacífico na Vizrt, trabalhou em simuladores de voo F-14/F-16 e sistemas de treino do Space Shuttle da NASA na Evans & Sutherland. Detém 6 patentes e trabalhos publicados em espetroscopia laser, produção virtual e tecnologia AV.",
+      "achievements": [
+        "Olimpiano de Inverno por duas vezes (Calgary 1988, Albertville 1992)",
+        "Competidor nos Campeonatos Mundiais Alpinos (1989)",
+        "Competidor na Taça do Mundo Alpina (1989)",
+        "Seleção Nacional de Esqui do Taipé Chinês (1987–1992)"
+      ],
+      "governance": [
+        "Secretário-Geral: Federação de Desportos de Inverno da Guiné-Bissau (2023–Presente)",
+        "Presidente e CEO: Apantac LLC (2008–Presente)",
+        "Presidente: Eubank Investment Group (2012–Presente)",
+        "Presidente: Anextus Trading & Export, Guiné-Bissau (2024–Presente)",
+        "Membro do Conselho: Câmara de Comércio Taiwanesa Americana (2023–Presente)",
+        "Diretor de Assuntos Internacionais: Associação de Olimpianos do Taipé Chinês"
+      ],
+      "education": [
+        "Harvard Business School - Educação Executiva (Marketing e Estratégia Empresarial)",
+        "Westminster College - M.S., Ciência da Computação",
+        "Universidade de Utah - M.S., Física Aplicada",
+        "Universidade de Utah - B.S., Física"
+      ],
+      "manifesto": "Como Olimpiano, líder e defensor global dos atletas, candidato-me a Tesoureiro da Associação Mundial de Olimpianos com uma missão clara de salvaguardar a integridade financeira da WOA, fortalecer a sua sustentabilidade a longo prazo e garantir que os Olimpianos beneficiem de uma gestão de recursos transparente, responsável e impactante. O meu percurso profissional inclui mais de 30 anos de liderança executiva em negócios internacionais, tecnologia e desenvolvimento sem fins lucrativos. Geri orçamentos multimilionários, construí organizações globais bem-sucedidas e implementei sistemas financeiros sólidos. Trarei estes mesmos princípios e competências adquiridas para a WOA.\n\nSe for eleito, garantirei transparência e responsabilidade financeira através de padrões de reporte claros, auditorias independentes contínuas e manterei comunicação aberta para que cada NOA possa ver exatamente como os recursos da WOA são utilizados. Trabalharei para garantir financiamento sustentável e construir parcerias de longo prazo que honrem os valores olímpicos enquanto asseguro que a WOA permanece financeiramente forte e independente. Acredito que a colaboração com o COI é essencial para alinhamento e propósito partilhado, mas a WOA deve sempre manter a sua própria identidade, autonomia e capacidade de defender os Olimpianos com clareza e neutralidade.\n\nO meu compromisso estende-se ao serviço ao nível comunitário, onde o coração do movimento olímpico verdadeiramente vive. Garantirei que mais recursos chegam a iniciativas de base apoiando educação, saúde, transição de carreira e programas locais que elevam os jovens e inspiram esperança. NOAs mais pequenas e nações em desenvolvimento receberão atenção especial para garantir acesso equitativo e impacto significativo.\n\nAcredito profundamente no poder dos Olimpianos para inspirar paz, serviço e unidade. Como Tesoureiro, honrarei essa responsabilidade com integridade, disciplina e compromisso inabalável. Juntos, fortaleceremos a WOA e capacitaremos Olimpianos para as gerações vindouras.",
+      "bioFull": "Thomas Tang combina a determinação olímpica com a inovação de Silicon Valley. Um Olimpiano de Inverno por duas vezes pelo Taipé Chinês que competiu em Campeonatos Mundiais e Taças do Mundo, agora serve como Chef de Mission para a Guiné-Bissau nos Jogos Olímpicos de Milano-Cortina 2026 e Secretário-Geral da sua Federação de Desportos de Inverno—impulsionando a introdução de desportos de inverno numa nação tropical, garantindo a adesão à FIS e estabelecendo programas de desenvolvimento de atletas. O seu legado olímpico é um assunto de família—a sua filha competiu em Patinagem Artística a nível internacional, e os seus filhos qualificaram-se para os Jogos Olímpicos de 2022 e 2026 em Esqui Alpino.\n\nThomas fundou a Apantac na sua cave durante a crise financeira de 2008 e construiu-a tornando-a numa líder global de tecnologia broadcast, ProAV e openGear—ganhando múltiplos prémios「Best of Show」incluindo o prestigiado NAB PICK HIT AWARD em 2009, e agora enviando mais de 200 produtos para mais de 40 países, da Gronelândia à Nova Zelândia. A sua tecnologia alimentou transmissões olímpicas, Taças do Mundo de Futebol, principais ligas desportivas profissionais e emissoras nacionais em todo o mundo, e é usada diariamente pelas principais redes sociais para os seus espaços de eventos.\n\nA sua carreira de mais de 30 anos abrange liderança executiva em negócios internacionais, tecnologia e desenvolvimento sem fins lucrativos. Antes de fundar a Apantac, serviu como Vice-Presidente na Avitech International (2004–2008) liderando vendas globais e expansão de produto em tecnologias broadcast e multiviewer, Diretor de Marketing na Divisão Broadcast da Philips Electronics (1999–2004) dirigindo estratégia na América do Norte e Ásia-Pacífico com responsabilidade P&L de 50M USD, Diretor da Área Ásia-Pacífico na Vizrt (1997–1999) expandindo presença de mercado para gráficos broadcast e sistemas de visualização em tempo real, e Gestor Regional de Vendas na Evans & Sutherland (1989–1997) onde começou como Engenheiro de Software Sénior trabalhando em simuladores de voo F-14/F-16 e sistemas de treino do Space Shuttle da NASA antes de avançar para vendas regionais.\n\nThomas detém patentes e trabalhos publicados incluindo Espetroscopia Laser (SPIE, 1987), Calibração Física de Câmara com Fundos Virtuais (1996), Sombras Dinâmicas em Produção de Estúdio Virtual (1997), Saídas Multiviewer em Cascata via SATA (2009), Montagem Magnética Mecânica para Equipamento AV (2014), e Gestão Inteligente de Saída DA Baseada em EDID (2018).\n\nTambém serve como Membro do Conselho da Câmara de Comércio Taiwanesa Americana (2023–Presente), apoiando colaboração empresarial trans-Pacífico e empreendedorismo taiwanês na América do Norte, e como Presidente do Eubank Investment Group (2012–Presente) e Anextus Trading & Export na Guiné-Bissau (2024–Presente).\n\nCom educação executiva da Harvard Business School em Marketing e Estratégia Empresarial, um M.S. em Ciência da Computação pelo Westminster College, e tanto um M.S. em Física Aplicada como um B.S. em Física pela Universidade de Utah, Thomas traz perspicácia financeira e excelência operacional incomparáveis à WOA. Fluente em inglês, mandarim, cantonês e taiwanês."
+    }
+  }
+}

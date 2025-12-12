@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
                   {LANGUAGES.map((lang) => (
                     <button
                       key={lang.code}
-                      onClick={() => { setLanguage(lang.code as 'EN' | 'FR' | 'ES' | 'RU' | 'AR' | 'CN'); setLangOpen(false); }}
+                      onClick={() => { setLanguage(lang.code as 'EN' | 'FR' | 'ES' | 'PT' | 'RU' | 'AR' | 'CN'); setLangOpen(false); }}
                       className="block px-4 py-2 text-sm w-full text-left hover:bg-gray-100"
                     >
                       {lang.label}
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
                 <span
                   key={l.code}
                   className={`text-xs border px-2 py-1 rounded cursor-pointer transition-colors ${language === l.code ? 'bg-gold text-navy-deep border-gold' : 'text-gray-400 border-gray-600 hover:border-gold hover:text-gold'}`}
-                  onClick={() => { setLanguage(l.code as 'EN' | 'FR' | 'ES' | 'RU' | 'AR' | 'CN'); setIsOpen(false);}}
+                  onClick={() => { setLanguage(l.code as 'EN' | 'FR' | 'ES' | 'PT' | 'RU' | 'AR' | 'CN'); setIsOpen(false);}}
                 >
                   {l.code}
                 </span>
