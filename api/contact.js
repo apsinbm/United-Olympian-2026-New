@@ -141,6 +141,6 @@ export default async function handler(req, res) {
     console.error('Error submitting form:', error.message);
     console.error('Stack:', error.stack);
     // Return generic error to client (don't leak internal details)
-    return res.status(500).json({ error: 'Failed to submit form' });
+    return res.status(500).json({ error: 'Failed to submit form', debug: error.message });
   }
 }
