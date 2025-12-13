@@ -39,7 +39,7 @@ export const CANDIDATES: Candidate[] = [
       { year: 2002 }
     ],
     country: 'Sweden',
-    location: 'Idre Fjäll, Sweden & Monte Carlo, Monaco',
+    location: 'Sweden & Monaco',
     imageAction: 'Pernilla Business.jpg',
     imageHeadshot: 'Pernilla Sport.webp',
     achievements: [
