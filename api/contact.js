@@ -101,21 +101,13 @@ export default async function handler(req, res) {
     // Initialize Google Sheets API - try GOOGLE_CREDENTIALS first, fall back to individual vars
     let credentials;
     if (process.env.GOOGLE_CREDENTIALS) {
-      try {
-        credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
-        console.log('Using GOOGLE_CREDENTIALS, client_email:', credentials.client_email);
-      } catch (parseErr) {
-        console.error('Failed to parse GOOGLE_CREDENTIALS:', parseErr.message);
-        throw new Error('Invalid GOOGLE_CREDENTIALS JSON');
-      }
+      credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
     } else {
       credentials = {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
       };
-      console.log('Using individual env vars, client_email:', credentials.client_email);
     }
-    console.log('Using SHEET_ID:', SHEET_ID);
 
     const auth = new google.auth.GoogleAuth({
       credentials,
@@ -141,11 +133,6 @@ export default async function handler(req, res) {
     console.error('Error submitting form:', error.message);
     console.error('Stack:', error.stack);
     // Return generic error to client (don't leak internal details)
-    return res.status(500).json({
-      error: 'Failed to submit form',
-      debug: error.message,
-      sheetId: SHEET_ID,
-      hasCredentials: !!process.env.GOOGLE_CREDENTIALS
-    });
+    return res.status(500).json({ error: 'Failed to submit form' });
   }
 }
