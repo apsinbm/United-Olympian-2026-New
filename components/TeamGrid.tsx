@@ -115,6 +115,8 @@ const MORE_PHOTOS = [
   '/Pernilla/More photos/7a.jpg',
   '/Pernilla/More photos/8a.jpg',
   '/Pernilla/More photos/9a.jpg',
+  '/Pernilla/More photos/WhatsApp Image 2025-12-12 at 17.00.37.jpeg',
+  '/Pernilla/More photos/WhatsApp Image 2025-12-12 at 17.00.38.jpeg',
 ];
 
 // Lumi gallery photos (mixed order for variety)
