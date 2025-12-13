@@ -74,15 +74,15 @@
     }
   },
   "achievements": {
-    "sectionLabel": "14年成功交付",
+    "sectionLabel": "十四年成功交付",
     "sectionTitle": "我们已经",
     "sectionTitleHighlight": "建设完成的成就",
-    "sectionSubtitle": "这是我们的记录。",
-    "viewAll": "查看全部{count}项成就",
-    "showLess": "收起",
+    "sectionSubtitle": "以下是我们的实绩记录。",
+    "viewAll": "查看全部 {count} 项成就",
+    "showLess": "显示较少",
     "relatedResources": "相关资源",
-    "quote": "14年前，WOA几乎没有任何作为。没有资助、没有奖学金、没有NOA工具包、没有发展官员。我们的团队建立了您的NOA今天所依赖的资源。",
-    "quoteCTA": "让成功继续！",
+    "quote": "十四年前，世界奥林匹克运动员协会几乎毫无作为。没有补助金、没有奖学金、没有NOA工具包、没有发展专员。我们的团队打造了您所在NOA今日依赖的资源体系。",
+    "quoteCTA": "延续成功之道！",
     "items": {
       "olyDesignation": {
         "title": "OLY称号",

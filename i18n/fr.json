@@ -1,7 +1,7 @@
 {
   "nav": {
     "brand": "OLYMPIENS UNIS",
-    "team": "L'Équipe",
+    "team": "L'équipe",
     "accomplishments": "Nos Réalisations",
     "actionPlan": "Plan d'Action 2026",
     "joinMovement": "Rejoignez le Mouvement"
@@ -10,79 +10,79 @@
     "badge": "Campagne Officielle 2026",
     "title1": "Nouveau Leadership.",
     "title2": "Expérience Prouvée.",
-    "subtitle": "Une Championne Olympique. Une Star NBA. Un Génie des Affaires.",
-    "subtitleHighlight": "Des idées nouvelles fondées sur ce qui fonctionne.",
-    "ctaPrimary": "Rencontrez l'Équipe",
-    "ctaSecondary": "Voir le Plan d'Action 2026"
+    "subtitle": "Un champion olympique. Une star de la NBA. Un génie des affaires.",
+    "subtitleHighlight": "Des idées novatrices fondées sur ce qui fonctionne.",
+    "ctaPrimary": "Découvrez la liste des candidats",
+    "ctaSecondary": "Consultez le plan d'action 2026"
   },
   "voteBanner": {
-    "label": "L'Équipe Complète :",
-    "candidates": "Pernilla (Présidente) + Lumi (Secrétaire Général) + Thomas (Trésorier)"
+    "label": "Le package complet :",
+    "candidates": "Pernilla (présidente) + Lumi (secrétaire générale) + Thomas (trésorier)"
   },
   "collaboration": {
-    "highlight": "Trois Continents. Une Vision Unifiée.",
-    "subtitle": "Un leadership qui représente tous les Olympiens."
+    "highlight": "Trois continents. Une vision commune.",
+    "subtitle": "Un leadership qui représente tous les athlètes olympiques."
   },
   "team": {
-    "sectionLabel": "Rencontrez les Candidats",
-    "sectionTitle": "L'Équipe Qui",
-    "sectionTitleHighlight": "Délivre",
-    "sectionSubtitle": "Ensemble, nous apportons l'héritage olympique, le sens des affaires mondial et l'expérience de la défense des athlètes.",
-    "viewFullProfile": "Voir le Profil Complet",
-    "forPresident": "Pour Présidente",
-    "forSecretaryGeneral": "Pour Secrétaire Général",
-    "forTreasurer": "Pour Trésorier",
-    "videoIntroduction": "Présentation Vidéo",
+    "sectionLabel": "Découvrez les candidats",
+    "sectionTitle": "L'équipe qui",
+    "sectionTitleHighlight": "tient ses promesses",
+    "sectionSubtitle": "Ensemble, nous apportons l'héritage olympique, un sens aigu des affaires à l'échelle mondiale et une expérience dans la défense des intérêts des athlètes.",
+    "viewFullProfile": "Voir le profil complet",
+    "forPresident": "Pour la présidence",
+    "forSecretaryGeneral": "Pour le poste de secrétaire général",
+    "forTreasurer": "Pour le poste de trésorier",
+    "videoIntroduction": "Vidéo de présentation",
     "biography": "Biographie",
-    "athleticAchievements": "Palmarès Sportif",
-    "governanceExperience": "Expérience en Gouvernance",
-    "keyAchievement": "Réalisation Clé",
-    "trackRecord": "Parcours",
+    "athleticAchievements": "Réalisations sportives",
+    "governanceExperience": "Expérience en matière de gouvernance",
+    "keyAchievement": "Réalisations clés",
+    "trackRecord": "Bilan",
     "business": "Entreprise",
     "philosophy": "Philosophie",
-    "education": "Formation",
-    "myVision": "Ma Vision pour l'AMO",
+    "education": "Éducation",
+    "myVision": "Ma vision pour la WOA",
     "videos": "Vidéos",
-    "photoGallery": "Galerie Photos",
+    "photoGallery": "Galerie photos",
     "close": "Fermer",
     "followOn": "Suivre sur",
-    "visitWebsite": "Visiter le Site",
-    "athleticHighlights": "Palmarès Sportif",
+    "visitWebsite": "Visiter le site web",
+    "athleticHighlights": "Faits marquants sportifs",
     "country": "Pays",
     "basedIn": "Basé à",
-    "connect": "Connecter"
+    "connect": "Se connecter"
   },
   "core": {
-    "sectionLabel": "Pourquoi Nous Choisir",
-    "sectionTitle": "Trois Raisons.",
-    "sectionTitleHighlight": "Un Choix Clair.",
-    "sectionSubtitle": "Un nouveau leadership avec l'expérience pour délivrer et la vision pour aller plus loin.",
+    "sectionLabel": "Pourquoi nous choisir",
+    "sectionTitle": "Trois raisons.",
+    "sectionTitleHighlight": "Un choix évident.",
+    "sectionSubtitle": "Un nouveau leadership avec l'expérience nécessaire pour tenir ses promesses et la vision pour aller plus loin.",
     "built": {
-      "title": "Nous l'Avons Construit",
-      "subtitle": "L'AMO Moderne",
-      "description": "Nous avons contribué à la mise en place de chaque programme majeur sur lequel les Olympiens comptent aujourd'hui. Nous sommes crédibles parce que nous l'avons fait—14 ans de résultats prouvés, pas de promesses."
+      "title": "Nous l'avons construit",
+      "subtitle": "La WOA moderne",
+      "description": "Nous avons contribué à la mise en place de tous les programmes majeurs dont dépendent aujourd'hui les athlètes olympiques. Nous sommes crédibles parce que nous avons fait nos preuves, avec 14 ans de résultats concrets, pas de promesses."
     },
     "secure": {
-      "title": "Nous l'Avons Sécurisé",
-      "subtitle": "Indépendant et Fiable",
-      "description": "Nous avons protégé l'indépendance de l'AMO tout en reconstruisant la relation de travail solide avec le CIO qui apporte financement et influence."
+      "title": "Nous l'avons sécurisé",
+      "subtitle": "Indépendant et fiable",
+      "description": "Nous avons protégé l'indépendance de la WOA tout en rétablissant une relation de travail solide avec le CIO, qui apporte financement et influence."
     },
     "lead": {
-      "title": "Nous Sommes à l'Écoute",
-      "subtitle": "La Bonne Équipe",
-      "description": "Une Championne Olympique, une Star NBA et un Génie des Affaires—avec des expertises complémentaires : Pernilla apporte la gouvernance olympique et l'expérience du CIO, Lumi apporte la connaissance du business du sport professionnel, Thomas apporte l'expertise financière et technologique. L'équipe complète, à l'écoute de vos besoins."
+      "title": "Nous sommes à votre écoute",
+      "subtitle": "La bonne équipe",
+      "description": "Une championne olympique, une star de la NBA et un génie des affaires, avec des compétences complémentaires : Pernilla apporte son expérience de la gouvernance olympique et du CIO, Lumi apporte sa connaissance du monde du sport professionnel, Thomas apporte son sens des finances et de la technologie. Une équipe complète, à l'écoute de vos besoins."
     }
   },
   "achievements": {
-    "sectionLabel": "14 Ans de Réalisations Réussies",
-    "sectionTitle": "Ce Que Nous Avons",
-    "sectionTitleHighlight": "Déjà Construit",
+    "sectionLabel": "14 ans de succès",
+    "sectionTitle": "Ce que nous avons",
+    "sectionTitleHighlight": "déjà accompli",
     "sectionSubtitle": "Voici notre bilan.",
-    "viewAll": "Voir les {count} Réalisations",
-    "showLess": "Voir Moins",
-    "relatedResources": "Ressources Associées",
-    "quote": "Il y a 14 ans, l'AMO faisait très peu. Pas de subventions, pas de bourses, pas de guides pour les ANO, pas d'Agents de Développement. Notre équipe a construit les ressources sur lesquelles votre ANO compte aujourd'hui.",
-    "quoteCTA": "Continuons ce qui fonctionne !",
+    "viewAll": "Tout afficher {count} Réalisations",
+    "showLess": "Afficher moins",
+    "relatedResources": "Ressources connexes",
+    "quote": "Il y a 14 ans, la WOA ne faisait pas grand-chose. Pas de subventions, pas de bourses, pas de kits NOA, pas de responsables du développement. Notre équipe a créé les ressources sur lesquelles votre NOA s'appuie aujourd'hui.",
+    "quoteCTA": "Continuez ce qui fonctionne !",
     "items": {
       "olyDesignation": {
         "title": "Désignation OLY",
@@ -163,119 +163,119 @@
     }
   },
   "actionPlan": {
-    "sectionLabel": "Le Manifeste",
-    "sectionTitle": "Notre",
-    "sectionTitleHighlight": "Plan d'Action 2026",
-    "sectionSubtitle": "Nous n'avons pas que des slogans. Nous avons une feuille de route concrète, financée et actionnable pour moderniser l'AMO et autonomiser les Associations Nationales d'Olympiens.",
-    "whyMatters": "Pourquoi c'est important",
-    "whyMattersText": "L'AMO doit évoluer d'un organisme cérémoniel vers un réseau de soutien fonctionnel. Notre plan se concentre sur la décentralisation financière et des outils concrets pour la vie après le sport.",
+    "sectionLabel": "Le manifeste",
+    "sectionTitle": "Notre plan d'action pour 2026",
+    "sectionTitleHighlight": "",
+    "sectionSubtitle": "Nous n'avons pas seulement des slogans. Nous avons une feuille de route concrète, financée et réalisable pour moderniser la WOA et donner plus de pouvoir aux associations nationales olympiques.",
+    "whyMatters": "Pourquoi est-ce important",
+    "whyMattersText": "La WOA doit évoluer d'un organisme cérémoniel à un réseau de soutien fonctionnel. Notre plan se concentre sur la décentralisation financière et les outils concrets pour la vie après le sport.",
     "commitment": "Engagement",
-    "viewAll": "Voir les {count} Engagements",
-    "showLess": "Voir Moins",
+    "viewAll": "Voir tous les {count} engagements",
+    "showLess": "Afficher moins",
     "items": {
       "relations": {
-        "title": "Relations CIO Indépendantes mais Collaboratives",
-        "description": "Maintenir notre indépendance en tant qu'association tout en travaillant étroitement et constructivement avec le CIO. Nous sommes le vrai pont."
+        "title": "Relations indépendantes mais collaboratives avec le CIO",
+        "description": "Maintenir notre indépendance en tant qu'association tout en travaillant en étroite collaboration et de manière constructive avec le CIO. Nous sommes le véritable pont."
       },
       "rights": {
-        "title": "Santé, Retraites et Souveraineté de l'Image",
-        "description": "Nous défendrons agressivement un filet de sécurité mondial, en faisant pression pour une couverture d'assurance maladie et des régimes de retraite pour les Olympiens. De plus, nous exigerons la protection absolue des Droits à l'Image après les Jeux. Une fois la compétition terminée, votre image et vos données vous appartiennent, et nous travaillerons à sécuriser les cadres qui vous garantissent le contrôle de votre propre héritage."
+        "title": "Santé, retraites et souveraineté de l'image",
+        "description": "Nous défendrons activement un filet de sécurité mondial, en faisant pression pour obtenir une couverture d'assurance maladie et des régimes de retraite pour les athlètes olympiques. En outre, nous exigerons la protection absolue des droits à l'image après les Jeux. Une fois la compétition terminée, votre image et vos données vous appartiennent, et nous nous efforcerons de mettre en place les cadres nécessaires pour vous permettre de contrôler votre propre héritage."
       },
       "reform": {
-        "title": "Maintien et Renforcement de l'Équité de Genre",
-        "description": "Nous nous engageons à protéger activement et à renforcer la réforme historique de représentation 50/50 des genres initiée par le Comité de Constitution de l'AMO présidé par Pernilla Wiberg."
+        "title": "Maintenir et renforcer l'égalité des sexes",
+        "description": "Nous nous engageons à protéger et à renforcer activement la réforme historique de la représentation paritaire 50/50 initiée par le comité constitutionnel de la WOA présidé par Pernilla Wiberg."
       },
       "transparency": {
-        "title": "Poursuivre la Transparence Financière",
-        "description": "L'administration actuelle est passée de la publication de nos rapports d'audit annuels tous les quatre ans à leur publication annuelle. Nous continuerons cette pratique et veillerons à mettre en œuvre les dernières meilleures pratiques financières et processus de bonne gouvernance."
+        "title": "Poursuivre la transparence financière",
+        "description": "L'administration actuelle est passée de la publication de nos rapports d'audit annuels tous les quatre ans à leur publication chaque année. Nous poursuivrons cette pratique et veillerons à mettre en œuvre les dernières meilleures pratiques financières et les processus de bonne gouvernance."
       },
       "dignity": {
-        "title": "Le Fonds de Transition de Vie",
-        "description": "Nous établirons une subvention dédiée spécifiquement pour que les ANO organisent des ateliers locaux de santé mentale et de transition de vie et de carrière. Les ressources seront flexibles pour répondre aux besoins culturels et économiques locaux."
+        "title": "Le Fonds de transition de vie",
+        "description": "Nous mettrons en place une subvention spécifique destinée aux NOA afin qu'elles puissent organiser des ateliers locaux sur la santé mentale et la transition de vie et de carrière. Les ressources seront flexibles afin de répondre aux besoins culturels et économiques locaux."
       },
       "empowerment": {
-        "title": "Renforcer l'Autonomisation des ANO",
-        "description": "Nous nommerons un Agent de Développement pour chaque continent et prioriserons les ateliers et réunions régionaux et continentaux pour renforcer la capacité et l'expérience des ANO."
+        "title": "Renforcer l'autonomie des NOA",
+        "description": "Nous nommerons un responsable du développement pour chaque continent et donnerons la priorité aux ateliers et réunions régionaux et continentaux afin de renforcer les capacités et l'expérience des NOA."
       },
       "digital": {
         "title": "Dynamiser OLY Connect",
-        "description": "Nous utiliserons l'expertise technologique de Thomas Tang pour faire d'OLY Connect l'application indispensable pour les Olympiens qui leur offre des avantages, des opportunités, des connexions, et un réseau de soutien professionnel, de carrière et de vie."
+        "description": "Nous tirerons parti de l'expertise technologique de Thomas Tang pour faire d'OLY Connect l'application indispensable aux athlètes olympiques, leur offrant des avantages, des opportunités, des connexions, ainsi qu'un réseau et un soutien pour leurs activités professionnelles, leur carrière et leur vie personnelle."
       },
       "legacy": {
-        "title": "Augmenter les Subventions ANO",
-        "description": "Les Subventions de Développement ANO et les Subventions Service à la Société et Service aux Olympiens sont toujours sursollicitées. Nous collecterons plus de fonds pour augmenter le nombre de subventions que nous pouvons attribuer chaque année."
+        "title": "Augmenter les subventions aux NOA",
+        "description": "Les subventions de développement des NOA et les subventions pour les services à la société et aux athlètes olympiques sont toujours sursouscrites. Nous collecterons davantage de fonds afin d'augmenter le nombre de subventions que nous pouvons octroyer chaque année."
       }
     }
   },
   "endorsement": {
-    "quote": "Depuis 14 ans, nous avons travaillé sans relâche pour créer l'AMO d'aujourd'hui qui répond aux besoins des Olympiens et leur permet de redonner à leurs communautés à travers nos nombreux services, initiatives et subventions. Pernilla, Lumi et Thomas ont été essentiels à nombre de ces réalisations. Ils ont toute ma confiance pour poursuivre ce travail et porter l'AMO vers de nouveaux sommets. Et, surtout, pour protéger notre indépendance.",
+    "quote": "Depuis 14 ans, nous travaillons sans relâche pour créer la WOA d'aujourd'hui, qui répond aux besoins des athlètes olympiques et leur permet de redonner à leurs communautés grâce à nos nombreux services, initiatives et subventions. Pernilla, Lumi et Thomas ont joué un rôle essentiel dans bon nombre de ces réalisations. Ils ont toute ma confiance pour poursuivre ce travail et mener la WOA vers de nouveaux sommets. Et, surtout, pour protéger notre indépendance.",
     "author": "Joël Bouzou",
-    "title": "Président de l'AMO (2011-2026)"
+    "title": "Président de la WOA (2011-2026)"
   },
   "contact": {
-    "title": "Travaillons ensemble pour porter l'AMO au niveau supérieur.",
-    "subtitle": "Nous voulons entendre les Olympiens et les Associations Nationales d'Olympiens. Demandez une réunion avec Pernilla, Lumi ou Thomas pour discuter des besoins de votre ANO et de vos Olympiens.",
-    "tagline": "Nous l'avons construit. Nous l'avons sécurisé. Nous travaillerons avec vous pour le faire grandir.",
+    "title": "Travaillez avec nous pour faire passer la WOA au niveau supérieur.",
+    "subtitle": "Nous voulons entendre les athlètes olympiques et les associations nationales olympiques. Demandez un rendez-vous avec Pernilla, Lumi ou Thomas pour discuter des besoins de votre association nationale olympique et de vos athlètes olympiques.",
+    "tagline": "Nous l'avons construite. Nous l'avons sécurisée. Nous travaillerons avec vous pour la développer.",
     "form": {
-      "nameLabel": "Nom Complet (OLY)",
-      "namePlaceholder": "Marie Dupont, OLY",
-      "noaLabel": "Association Nationale",
-      "noaPlaceholder": "ex. Association des Olympiens Français",
-      "emailLabel": "Adresse Email",
-      "emailPlaceholder": "marie@example.com",
+      "nameLabel": "Nom complet (OLY)",
+      "namePlaceholder": "Jane Doe, OLY",
+      "noaLabel": "Association nationale",
+      "noaPlaceholder": "Par exemple, Association française des Olympiens",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "jane@example.com",
       "whatsappLabel": "Numéro WhatsApp",
-      "whatsappPlaceholder": "+33 6 12 34 56 78",
+      "whatsappPlaceholder": "+1 234 567 8900",
       "messageLabel": "Message",
-      "messagePlaceholder": "Des questions ou informations que vous souhaitez partager...",
-      "submit": "Demander une Réunion",
-      "submitting": "Envoi en cours..."
+      "messagePlaceholder": "Toutes les questions ou informations que vous souhaitez partager...",
+      "submit": "Demander un rendez-vous",
+      "submitting": "Envoi..."
     },
     "success": {
-      "title": "Demande Envoyée !",
-      "message": "Nous vous contacterons bientôt pour planifier.",
+      "title": "Demande envoyée !",
+      "message": "Nous vous contacterons rapidement pour fixer un rendez-vous.",
       "another": "Soumettre une autre demande"
     },
     "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement."
   },
   "footer": {
-    "brand": "OLYMPIENS UNIS",
-    "description": "Nous sommes un groupe d'OLY dédiés à servir l'Association Mondiale des Olympiens avec intégrité, transparence et action.",
+    "brand": "OLYMPIANS UNITED",
+    "description": "Nous sommes un groupe d'OLY qui se consacre à servir l'Association mondiale des olympiens avec intégrité, transparence et action.",
     "navigation": "Navigation",
-    "navMission": "Notre Mission",
-    "navCandidates": "Les Candidats",
-    "navActionPlan": "Plan d'Action 2026",
-    "legal": "Mentions Légales",
-    "privacyPolicy": "Politique de Confidentialité",
-    "copyright": "2026 Campagne Olympiens Unis. Tous droits réservés.",
-    "tagline": "Construit pour l'avenir du sport."
+    "navMission": "Notre mission",
+    "navCandidates": "Les candidats",
+    "navActionPlan": "Plan d'action 2026",
+    "legal": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "Campagne Olympians United 2026. Tous droits réservés.",
+    "tagline": "Conçu pour l'avenir du sport."
   },
   "privacy": {
-    "title": "Politique de Confidentialité",
-    "lastUpdated": "Dernière mise à jour : Décembre 2025",
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : décembre 2025",
     "sections": {
       "collection": {
-        "title": "Informations que Nous Collectons",
-        "content": "Nous collectons les informations que vous fournissez directement, notamment votre nom, adresse email, Association Nationale d'Olympiens, numéro WhatsApp et tout message que vous soumettez via notre formulaire de contact."
+        "title": "Informations que nous collectons",
+        "content": "Nous collectons les informations que vous nous fournissez directement, notamment votre nom, votre adresse e-mail, votre association nationale olympique, votre numéro WhatsApp et tout message que vous envoyez via notre formulaire de contact."
       },
       "usage": {
-        "title": "Comment Nous Utilisons Vos Informations",
-        "content": "Nous utilisons vos informations pour répondre à vos demandes, planifier des réunions avec nos candidats et communiquer sur la campagne Olympiens Unis 2026. Nous ne vendons ni ne partageons vos informations personnelles avec des tiers à des fins marketing."
+        "title": "Comment nous utilisons vos informations",
+        "content": "Nous utilisons vos informations pour répondre à vos demandes, organiser des réunions avec nos candidats et communiquer au sujet de la campagne Olympians United 2026. Nous ne vendons ni ne partageons vos informations personnelles avec des tiers à des fins de marketing."
       },
       "thirdParty": {
-        "title": "Services Tiers",
-        "content": "Notre site peut intégrer du contenu de services tiers tels que YouTube et Vimeo pour le contenu vidéo. Ces services peuvent collecter des informations sur votre visite. Veuillez consulter leurs politiques de confidentialité respectives pour plus d'informations."
+        "title": "Services tiers",
+        "content": "Notre site web peut intégrer du contenu provenant de services tiers tels que YouTube et Vimeo pour le contenu vidéo. Ces services peuvent collecter des informations sur votre visite. Veuillez vous référer à leurs politiques de confidentialité respectives pour plus d'informations."
       },
       "retention": {
-        "title": "Conservation des Données",
-        "content": "Nous conservons vos informations uniquement le temps nécessaire pour atteindre les objectifs décrits dans cette politique ou selon les exigences légales."
+        "title": "Conservation des données",
+        "content": "Nous conservons vos informations uniquement pendant la durée nécessaire à la réalisation des objectifs décrits dans la présente politique ou conformément à la loi."
       },
       "rights": {
-        "title": "Vos Droits",
-        "content": "Vous avez le droit d'accéder, de corriger ou de supprimer vos informations personnelles. Pour exercer ces droits, veuillez nous contacter via le formulaire de contact de notre site."
+        "title": "Vos droits",
+        "content": "Vous avez le droit d'accéder à vos informations personnelles, de les corriger ou de les supprimer. Pour exercer ces droits, veuillez nous contacter à l'aide du formulaire de contact disponible sur notre site web."
       },
       "contact": {
-        "title": "Nous Contacter",
-        "content": "Si vous avez des questions sur cette Politique de Confidentialité, veuillez utiliser le formulaire de contact de notre site pour nous joindre."
+        "title": "Contact",
+        "content": "Si vous avez des questions concernant la présente politique de confidentialité, veuillez utiliser le formulaire de contact disponible sur notre site web pour nous contacter."
       }
     },
     "close": "Fermer"
