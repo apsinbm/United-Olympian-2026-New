@@ -632,7 +632,7 @@ const TeamGrid: React.FC = () => {
                                 style={
                                   num === 1 ? { objectPosition: '40% center' } :
                                   num === 3 ? { objectPosition: 'center 15%' } :
-                                  num === 7 ? { objectPosition: '30% center' } :
+                                  num === 7 ? { objectPosition: '15% center' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
@@ -1092,7 +1092,7 @@ const TeamGrid: React.FC = () => {
                                 style={
                                   num === 1 ? { objectPosition: '40% center' } :
                                   num === 3 ? { objectPosition: 'center 15%' } :
-                                  num === 7 ? { objectPosition: '30% center' } :
+                                  num === 7 ? { objectPosition: '15% center' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
