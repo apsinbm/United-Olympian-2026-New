@@ -327,8 +327,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/news/1106/woa-olympic-games-musculoskeletal-health-study-kicks-off-in-pyeongchang/', label: 'Study Launch', description: 'Start of global musculoskeletal health study' },
       { url: 'https://bjsm.bmj.com/content/55/1/46', label: 'BJSM Paper', description: 'British Journal of Sports Medicine paper on injuries and later-life health in 3,357 retired Olympians' },
       { url: 'https://pubmed.ncbi.nlm.nih.gov/33168580', label: 'PubMed Entry', description: 'PubMed entry for the BJSM Olympian health study' },
-      { url: 'https://napier.ac.uk/about-us/news/olympianhealth', label: 'Edinburgh Napier', description: 'Edinburgh Napier University article on Dr Debbie Palmer\'s leadership of the study' },
-      { url: 'https://www.fims.org/news/the-long-term-health-of-olympians-a-fims-and-woa-collaboration/', label: 'FIMS News', description: 'FIMS/WOA news about collaboration on long-term Olympian health' },
+      { url: 'https://napier.ac.uk/about-us/news/olympianhealth', label: 'Edinburgh Napier', description: 'Edinburgh Napier University article on Dr Debbie Palmer\'s leadership of the study' }
     ]
   },
   {
@@ -379,8 +378,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     links: [
       { url: 'https://olympians.org/skillsbuild/', label: 'SkillsBuild', description: 'WOA page introducing the SkillsBuild partnership for Olympians' },
       { url: 'https://worldacademy.sport/news-scholarship-mou', label: 'WAoS Press Release', description: 'WAoS press release on its scholarship MOU with WOA' },
-      { url: 'https://worldacademy.sport/scholarship', label: 'WAoS Scholarships', description: 'WAoS scholarship information aligned with Olympian programmes' },
-      { url: 'https://www.fims.org/news/the-long-term-health-of-olympians-a-fims-and-woa-collaboration/', label: 'FIMS Partnership', description: 'FIMS news on partnering with WOA on Olympian health' },
+      { url: 'https://worldacademy.sport/scholarship', label: 'WAoS Scholarships', description: 'WAoS scholarship information aligned with Olympian programmes' }
     ]
   },
   {
@@ -408,8 +406,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/news/1675/woa-upholds-athletes-right-to-compete-and-launches-ukraine-appeal/', label: '#GiveBackToUkraine', description: 'WOA upholds athletes\' right to compete and launches Ukraine appeal' },
       { url: 'https://olympians.org/news/1678/join-olympians-around-the-world-and-raise-your-whitecard-on-april6/', label: 'WhiteCard Campaign', description: 'WhiteCard / Peace and Sport campaign call' },
       { url: 'https://olympians.org/news/1688/please-donate-now-to-olympiansforukraine/', label: 'Donation Appeal', description: 'Main #OlympiansforUkraine donation appeal' },
-      { url: 'https://www.insidethegames.biz/articles/1130425/trauma-recovery-woa', label: 'Trauma Recovery', description: 'InsideTheGames story on trauma-recovery work for Ukrainian Olympians funded by the appeal' },
-      { url: 'https://www.olympics.com/ioc/news/ioc-stands-in-solidarity-with-ukraine', label: 'IOC Support', description: 'IOC stands in solidarity with Ukraine' },
+      { url: 'https://www.insidethegames.biz/articles/1130425/trauma-recovery-woa', label: 'Trauma Recovery', description: 'InsideTheGames story on trauma-recovery work for Ukrainian Olympians funded by the appeal' }
     ]
   },
 ];
