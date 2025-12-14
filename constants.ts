@@ -467,11 +467,6 @@ export const ACTION_PLAN: ActionPoint[] = [
     description: 'The current administration moved from publishing our annual audit reports every four years to publishing them every year. We will continue that practice and ensure we implement the latest financial best practices and good governance processes. Going forward, WOA consolidated reports will be published on the WOA website.'
   },
   {
-    id: 'dignity',
-    title: "The Life Transition Fund",
-    description: 'We will establish a dedicated grant specifically for NOAs to run local mental health and life and career transition workshops. Resources will be flexible to meet local cultural and economic needs.'
-  },
-  {
     id: 'empowerment',
     title: 'Building NOA Empowerment',
     description: 'We will appoint a Development Officer for every continent and prioritise regional and continental workshops and meetings to build NOA capacity and experience.'
