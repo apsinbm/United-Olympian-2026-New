@@ -192,8 +192,7 @@ export const ACHIEVEMENTS: Achievement[] = [
       { url: 'https://olympians.org/news/442/world-olympians-forum-gets-underway-in-moscow/', label: 'First WOF Success', description: 'Report from World Olympians Forum in Moscow' },
       { url: 'https://olympians.org/news/1292/successful-world-olympians-forum-empowers-olympians-worldwide/', label: '2019 Lausanne Forum', description: 'Full article on the 2019 World Olympians Forum in Lausanne' },
       { url: 'https://olympics.ie/inaugural-world-olympians-forum-declared-a-resounding-success/', label: 'Irish NOC Report', description: 'Irish NOC report on the success of the inaugural WOF' },
-      { url: 'https://eurolympic.org/inaugural-world-olympians-forum', label: 'EOC Coverage', description: 'European Olympic Committees coverage of the first WOF' },
-      { url: 'https://olympics.com/ioc/news/the-biggest-ever-international-athletes-forum', label: 'IOC Article', description: 'IOC article referencing joint IOC–WOA sessions and WOF context' },
+      { url: 'https://eurolympic.org/inaugural-world-olympians-forum', label: 'EOC Coverage', description: 'European Olympic Committees coverage of the first WOF' }
     ]
   },
   {
