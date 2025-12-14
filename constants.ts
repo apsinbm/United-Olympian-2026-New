@@ -464,7 +464,7 @@ export const ACTION_PLAN: ActionPoint[] = [
   {
     id: 'transparency',
     title: 'Continuing Financial Transparency',
-    description: 'The current administration moved from publishing our annual audit reports every four years to publishing them every year. We will continue that practice and ensure we implement the latest financial best practices and good governance processes.'
+    description: 'The current administration moved from publishing our annual audit reports every four years to publishing them every year. We will continue that practice and ensure we implement the latest financial best practices and good governance processes. Going forward, WOA consolidated reports will be published on the WOA website.'
   },
   {
     id: 'dignity',
