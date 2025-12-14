@@ -739,7 +739,7 @@ const TeamGrid: React.FC = () => {
                   {selectedCandidate.id === 'pernilla' ? (
                     <iframe
                       className="w-full aspect-video"
-                      src="https://www.youtube.com/embed/E1ypHlcJQ6M"
+                      src="https://www.youtube.com/embed/FnkBuJN9_QI"
                       title="Pernilla Wiberg - Video Bio"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
