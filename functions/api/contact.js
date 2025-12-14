@@ -52,6 +52,16 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+// Base64url encode helper for Cloudflare Workers
+function base64urlEncodeBytes(bytes) {
+  let binary = '';
+  const len = bytes.byteLength || bytes.length;
+  for (let i = 0; i < len; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary).replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
+}
+
 // Create JWT for Google API authentication
 async function createJWT(credentials) {
   const header = {
@@ -68,8 +78,12 @@ async function createJWT(credentials) {
     exp: now + 3600
   };
 
-  const encodedHeader = btoa(JSON.stringify(header)).replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
-  const encodedPayload = btoa(JSON.stringify(payload)).replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
+  // Use TextEncoder for proper UTF-8 encoding
+  const headerBytes = new TextEncoder().encode(JSON.stringify(header));
+  const payloadBytes = new TextEncoder().encode(JSON.stringify(payload));
+
+  const encodedHeader = base64urlEncodeBytes(headerBytes);
+  const encodedPayload = base64urlEncodeBytes(payloadBytes);
 
   const signatureInput = `${encodedHeader}.${encodedPayload}`;
 
@@ -80,7 +94,12 @@ async function createJWT(credentials) {
     .replace('-----END PRIVATE KEY-----', '')
     .replace(/\s/g, '');
 
-  const binaryKey = Uint8Array.from(atob(pemContents), c => c.charCodeAt(0));
+  // Decode base64 PEM to bytes
+  const binaryString = atob(pemContents);
+  const binaryKey = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    binaryKey[i] = binaryString.charCodeAt(i);
+  }
 
   const cryptoKey = await crypto.subtle.importKey(
     'pkcs8',
@@ -96,10 +115,7 @@ async function createJWT(credentials) {
     new TextEncoder().encode(signatureInput)
   );
 
-  const encodedSignature = btoa(String.fromCharCode(...new Uint8Array(signature)))
-    .replace(/=/g, '')
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_');
+  const encodedSignature = base64urlEncodeBytes(new Uint8Array(signature));
 
   return `${signatureInput}.${encodedSignature}`;
 }
