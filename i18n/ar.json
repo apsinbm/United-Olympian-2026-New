@@ -223,6 +223,7 @@
       "whatsappPlaceholder": "+20 10 123 4567",
       "messageLabel": "الرسالة",
       "messagePlaceholder": "أي أسئلة أو معلومات تود مشاركتها...",
+      "privacyLabel": "أوافق على سياسة الخصوصية وأوافق على معالجة بياناتي.",
       "submit": "طلب اجتماع",
       "submitting": "جارٍ الإرسال..."
     },

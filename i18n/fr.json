@@ -223,6 +223,7 @@
       "whatsappPlaceholder": "+1 234 567 8900",
       "messageLabel": "Message",
       "messagePlaceholder": "Toutes les questions ou informations que vous souhaitez partager...",
+      "privacyLabel": "J'accepte la politique de confidentialité et consens au traitement de mes données.",
       "submit": "Demander un rendez-vous",
       "submitting": "Envoi..."
     },

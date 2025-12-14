@@ -223,6 +223,7 @@
       "whatsappPlaceholder": "+1 234 567 8900",
       "messageLabel": "Message",
       "messagePlaceholder": "Any questions or information you'd like to share...",
+      "privacyLabel": "I agree to the Privacy Policy and consent to having my data processed.",
       "submit": "Request Meeting",
       "submitting": "Sending..."
     },

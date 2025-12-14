@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -144,9 +145,22 @@ const Contact: React.FC = () => {
                     placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    checked={privacyAccepted}
+                    onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                    disabled={loading}
+                    className="mt-1 w-4 h-4 text-gold border-gray-300 rounded focus:ring-gold cursor-pointer disabled:cursor-not-allowed"
+                  />
+                  <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
+                    {t('contact.form.privacyLabel')}
+                  </label>
+                </div>
                 <button
                   type="submit"
-                  disabled={loading}
+                  disabled={loading || !privacyAccepted}
                   className="w-full bg-crimson hover:bg-crimson-hover text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {loading ? (
