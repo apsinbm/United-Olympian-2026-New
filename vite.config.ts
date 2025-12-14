@@ -8,7 +8,7 @@ export default defineConfig({
         host: '0.0.0.0',
         proxy: {
           '/api': {
-            target: 'https://olympiansunited.vercel.app',
+            target: 'https://olympiansunited.org',
             changeOrigin: true,
             secure: true,
           }
