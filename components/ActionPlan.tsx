@@ -4,7 +4,7 @@ import { useTranslation } from '../context/LanguageContext';
 
 const MOBILE_INITIAL_COUNT = 3;
 
-const actionPlanKeys = ['relations', 'rights', 'reform', 'transparency', 'dignity', 'empowerment', 'digital', 'legacy'] as const;
+const actionPlanKeys = ['relations', 'rights', 'reform', 'transparency', 'empowerment', 'digital', 'legacy'] as const;
 
 const ActionPlan: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
