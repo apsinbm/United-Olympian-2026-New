@@ -1,7 +1,7 @@
 import { google } from 'googleapis';
 
-// Use environment variable for Sheet ID (defense in depth)
-const SHEET_ID = process.env.GOOGLE_SHEET_ID || '1543n4DIpHyBXFHFoGZGS9lggPlue2xLZ-bNyKYcU1Ko';
+// Sheet ID from environment variable (required)
+const SHEET_ID = process.env.GOOGLE_SHEET_ID;
 
 // Allowed origins for CORS
 const ALLOWED_ORIGINS = [
@@ -76,6 +76,12 @@ export default async function handler(req, res) {
   const clientIP = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
   if (isRateLimited(clientIP)) {
     return res.status(429).json({ error: 'Too many requests. Please try again later.' });
+  }
+
+  // Fail early if Sheet ID is not configured
+  if (!SHEET_ID) {
+    console.error('GOOGLE_SHEET_ID environment variable is not set');
+    return res.status(500).json({ error: 'Service configuration error' });
   }
 
   try {
