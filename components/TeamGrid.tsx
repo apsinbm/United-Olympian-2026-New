@@ -630,7 +630,9 @@ const TeamGrid: React.FC = () => {
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
+                                  num === 1 ? { objectPosition: '40% center' } :
                                   num === 3 ? { objectPosition: 'center 15%' } :
+                                  num === 7 ? { objectPosition: '30% center' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
@@ -645,6 +647,7 @@ const TeamGrid: React.FC = () => {
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
+                                  num === 1 ? { objectPosition: '40% center' } :
                                   [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
                                   num === 18 ? { objectPosition: 'center 20%' } :
                                   undefined
@@ -1087,7 +1090,9 @@ const TeamGrid: React.FC = () => {
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
+                                  num === 1 ? { objectPosition: '40% center' } :
                                   num === 3 ? { objectPosition: 'center 15%' } :
+                                  num === 7 ? { objectPosition: '30% center' } :
                                   num === 17 ? { objectPosition: 'center 25%' } :
                                   num === 13 ? { transform: 'scale(1.5)' } :
                                   undefined
@@ -1102,6 +1107,7 @@ const TeamGrid: React.FC = () => {
                                 loading="lazy"
                                 className="w-full h-full object-cover hover:opacity-80 transition-opacity cursor-pointer"
                                 style={
+                                  num === 1 ? { objectPosition: '40% center' } :
                                   [3, 4, 8, 9, 13, 16].includes(num) ? { objectPosition: 'top' } :
                                   num === 18 ? { objectPosition: 'center 20%' } :
                                   undefined
