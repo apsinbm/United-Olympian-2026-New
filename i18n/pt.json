@@ -58,9 +58,9 @@
     "sectionTitleHighlight": "Uma Escolha Clara.",
     "sectionSubtitle": "Nova liderança com experiência para entregar e visão para ir mais longe.",
     "built": {
-      "title": "Nós Construímos",
+      "title": "Sabemos o que funciona",
       "subtitle": "A WOA Moderna",
-      "description": "Ajudámos a entregar todos os principais programas dos quais os Olimpianos dependem hoje. Somos credíveis porque o fizemos—14 anos de resultados comprovados, não promessas."
+      "description": "Pernilla tem sido Vice-Presidente da WOA e ajudou a construir estes programas. A nossa equipa sabe o que está a funcionar e protegerá estas conquistas enquanto as leva mais longe."
     },
     "secure": {
       "title": "Nós Assegurámos",
@@ -74,14 +74,14 @@
     }
   },
   "achievements": {
-    "sectionLabel": "14 Anos de Entrega Bem-Sucedida",
-    "sectionTitle": "O Que Já",
-    "sectionTitleHighlight": "Construímos",
-    "sectionSubtitle": "Aqui está o nosso histórico.",
+    "sectionLabel": "Histórico comprovado",
+    "sectionTitle": "A WOA",
+    "sectionTitleHighlight": "hoje",
+    "sectionSubtitle": "Vale a pena proteger. Vale a pena expandir.",
     "viewAll": "Ver Todas as {count} Conquistas",
     "showLess": "Mostrar Menos",
     "relatedResources": "Recursos Relacionados",
-    "quote": "Há 14 anos, a WOA não tinha subsídios, bolsas, kits de ferramentas para NOAs, nem Oficiais de Desenvolvimento. Hoje tem. Pernilla participou na construção desta fundação. A nossa equipa protegerá e expandirá estas conquistas.",
+    "quote": "A WOA antes não tinha subsídios, bolsas, kits de ferramentas para NOAs, nem Oficiais de Desenvolvimento. Hoje tem. Pernilla tem participado na construção desta fundação. A nossa equipa protegerá e expandirá estas conquistas.",
     "quoteCTA": "Continue o que funciona!",
     "items": {
       "olyDesignation": {
