@@ -18,9 +18,13 @@ const AppContent: React.FC = () => {
 
   return (
     <div className={`min-h-screen font-sans text-navy-deep ${isRTL ? 'rtl' : 'ltr'}`}>
+      {/* Skip to main content link for accessibility */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <VoteDisciplineBanner variant="top" />
       <Navbar />
-      <main>
+      <main id="main-content" role="main">
         <Hero />
         <CollaborationBanner />
         <TeamGrid />

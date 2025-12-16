@@ -52,6 +52,22 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+// Verify Cloudflare Turnstile token
+async function verifyTurnstileToken(token, ip, secretKey) {
+  const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      secret: secretKey,
+      response: token,
+      remoteip: ip
+    })
+  });
+
+  const data = await response.json();
+  return data.success === true;
+}
+
 // Base64url encode helper for Cloudflare Workers
 function base64urlEncodeBytes(bytes) {
   let binary = '';
@@ -196,7 +212,7 @@ export async function onRequestPost(context) {
 
   try {
     const body = await request.json();
-    const { name, noa, email, whatsapp, message } = body;
+    const { name, noa, email, whatsapp, message, turnstileToken } = body;
 
     // Validate required fields
     if (!name || !noa || !email) {
@@ -212,6 +228,25 @@ export async function onRequestPost(context) {
         status: 400,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' }
       });
+    }
+
+    // Verify Turnstile CAPTCHA (if secret key is configured)
+    const TURNSTILE_SECRET = env.TURNSTILE_SECRET_KEY;
+    if (TURNSTILE_SECRET) {
+      if (!turnstileToken) {
+        return new Response(JSON.stringify({ error: 'Security verification required' }), {
+          status: 400,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        });
+      }
+
+      const isValidToken = await verifyTurnstileToken(turnstileToken, clientIP, TURNSTILE_SECRET);
+      if (!isValidToken) {
+        return new Response(JSON.stringify({ error: 'Security verification failed. Please try again.' }), {
+          status: 400,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        });
+      }
     }
 
     // Sanitize all inputs

@@ -1,6 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Send, ArrowRight, Loader2 } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
+
+// Declare Turnstile global type
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (container: HTMLElement, options: {
+        sitekey: string;
+        callback: (token: string) => void;
+        'error-callback'?: () => void;
+        'expired-callback'?: () => void;
+        theme?: 'light' | 'dark' | 'auto';
+      }) => string;
+      reset: (widgetId: string) => void;
+      remove: (widgetId: string) => void;
+    };
+  }
+}
+
+const TURNSTILE_SITE_KEY = '0x4AAAAAAAxxx'; // Replace with actual site key from Cloudflare dashboard
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -8,6 +27,50 @@ const Contact: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
+
+  // Initialize Turnstile widget
+  useEffect(() => {
+    const initTurnstile = () => {
+      if (window.turnstile && turnstileRef.current && !widgetIdRef.current) {
+        widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+          sitekey: TURNSTILE_SITE_KEY,
+          callback: (token: string) => {
+            setTurnstileToken(token);
+          },
+          'error-callback': () => {
+            setTurnstileToken(null);
+          },
+          'expired-callback': () => {
+            setTurnstileToken(null);
+          },
+          theme: 'light'
+        });
+      }
+    };
+
+    // Wait for Turnstile to load
+    if (window.turnstile) {
+      initTurnstile();
+    } else {
+      const checkTurnstile = setInterval(() => {
+        if (window.turnstile) {
+          clearInterval(checkTurnstile);
+          initTurnstile();
+        }
+      }, 100);
+      return () => clearInterval(checkTurnstile);
+    }
+
+    return () => {
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.remove(widgetIdRef.current);
+        widgetIdRef.current = null;
+      }
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -21,6 +84,7 @@ const Contact: React.FC = () => {
       email: (form.elements.namedItem('email') as HTMLInputElement).value,
       whatsapp: (form.elements.namedItem('whatsapp') as HTMLInputElement).value,
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+      turnstileToken: turnstileToken,
     };
 
     try {
@@ -67,8 +131,8 @@ const Contact: React.FC = () => {
           {/* Form Side */}
           <div className="md:w-1/2 p-12 bg-white flex flex-col justify-center">
             {submitted ? (
-              <div className="text-center animate-fade-in">
-                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center animate-fade-in" role="status" aria-live="polite">
+                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
                   <Send size={32} />
                 </div>
                 <h3 className="text-2xl font-bold text-navy-deep mb-2">{t('contact.success.title')}</h3>
@@ -83,7 +147,7 @@ const Contact: React.FC = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {error && (
-                  <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
+                  <div role="alert" aria-live="polite" className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
                     {t('contact.error')}
                   </div>
                 )}
@@ -152,15 +216,19 @@ const Contact: React.FC = () => {
                     checked={privacyAccepted}
                     onChange={(e) => setPrivacyAccepted(e.target.checked)}
                     disabled={loading}
+                    aria-required="true"
                     className="mt-1 w-4 h-4 text-gold border-gray-300 rounded focus:ring-gold cursor-pointer disabled:cursor-not-allowed"
                   />
                   <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
                     {t('contact.form.privacyLabel')}
                   </label>
                 </div>
+                {/* Cloudflare Turnstile CAPTCHA */}
+                <div ref={turnstileRef} className="flex justify-center" aria-label="Security verification"></div>
                 <button
                   type="submit"
-                  disabled={loading || !privacyAccepted}
+                  disabled={loading || !privacyAccepted || !turnstileToken}
+                  aria-busy={loading}
                   className="w-full bg-crimson hover:bg-crimson-hover text-white font-bold py-4 rounded-lg shadow-lg transform active:scale-95 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {loading ? (

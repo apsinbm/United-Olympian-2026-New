@@ -13,6 +13,15 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://olympiansunited.org/" />
 
+    <!-- Hreflang Tags for Multi-language SEO -->
+    <link rel="alternate" hreflang="en" href="https://olympiansunited.org/?lang=en" />
+    <link rel="alternate" hreflang="fr" href="https://olympiansunited.org/?lang=fr" />
+    <link rel="alternate" hreflang="es" href="https://olympiansunited.org/?lang=es" />
+    <link rel="alternate" hreflang="pt" href="https://olympiansunited.org/?lang=pt" />
+    <link rel="alternate" hreflang="ru" href="https://olympiansunited.org/?lang=ru" />
+    <link rel="alternate" hreflang="ar" href="https://olympiansunited.org/?lang=ar" />
+    <link rel="alternate" hreflang="x-default" href="https://olympiansunited.org/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://olympiansunited.org/" />
@@ -40,6 +49,14 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://player.vimeo.com">
+
+    <!-- Preload critical images -->
+    <link rel="preload" href="/images/hero/unnamed-5.jpg" as="image">
+
+    <!-- Cloudflare Turnstile for CAPTCHA -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <!-- Google Fonts with display=swap for performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
@@ -111,6 +128,101 @@
     }
     </script>
 
+    <!-- Person Schema for Candidates (AI Search Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pernilla Wiberg",
+      "alternateName": "Pernilla Wiberg, OLY",
+      "jobTitle": "WOA Vice President, Candidate for WOA President 2026",
+      "description": "Triple Olympic medalist in Alpine Skiing, WOA Vice President, and candidate for WOA President 2026. Led constitutional reforms enabling 50/50 gender representation.",
+      "nationality": {"@type": "Country", "name": "Sweden"},
+      "birthPlace": {"@type": "Place", "name": "Sweden"},
+      "award": ["Olympic Gold Medal 1992", "Olympic Gold Medal 1994", "Olympic Silver Medal 1998", "4x World Champion", "FIS World Cup Overall Champion 1997"],
+      "memberOf": [{"@type": "Organization", "name": "World Olympians Association"}, {"@type": "Organization", "name": "International Olympic Committee (2002-2010)"}],
+      "sameAs": ["https://www.linkedin.com/in/pernilla-wiberg-bjerke-oly-0609271ba/", "https://x.com/pernillawiberg", "https://www.instagram.com/pernillawiberg/"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Olumide Oyedeji",
+      "alternateName": ["Lumi", "Olumide Oyedeji, OLY"],
+      "jobTitle": "Vice President Nigeria Olympic Committee, Candidate for WOA Secretary General 2026",
+      "description": "NBA player and first African drafted outside America to the NBA. Vice President of Nigeria Olympic Committee. Led Nigeria to first Olympic basketball appearance. Mentored 45,000+ youth worldwide.",
+      "nationality": {"@type": "Country", "name": "Nigeria"},
+      "award": ["NBA Draft Pick 2000", "AfroBasket Gold Medal 2015", "All Africa Games Gold Medal 2011"],
+      "memberOf": [{"@type": "Organization", "name": "World Olympians Association"}, {"@type": "Organization", "name": "Nigeria Olympic Committee"}],
+      "sameAs": ["https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/", "https://x.com/olumideoyedeji1", "https://www.instagram.com/olumideoyedeji1/"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thomas Tang",
+      "alternateName": "Thomas Tang, OLY",
+      "jobTitle": "CEO of Apantac LLC, Candidate for WOA Treasurer 2026",
+      "description": "Two-time Winter Olympian for Chinese Taipei. Founder and CEO of Apantac, a global broadcast technology company. Harvard Business School executive education. Technology powers Olympic broadcasts worldwide.",
+      "nationality": {"@type": "Country", "name": "Taiwan"},
+      "award": ["Two-time Winter Olympian (Calgary 1988, Albertville 1992)", "NAB PICK HIT Award 2009"],
+      "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Harvard Business School"}, {"@type": "CollegeOrUniversity", "name": "University of Utah"}],
+      "sameAs": ["https://www.linkedin.com/in/thomas-tang-oly-5202b84/", "https://www.apantac.com"]
+    }
+    </script>
+
+    <!-- FAQ Schema for AI Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is running for WOA President in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pernilla Wiberg, OLY is running for WOA President in 2026. She is a triple Olympic medalist in Alpine Skiing (Gold 1992, Gold 1994, Silver 1998), current WOA Vice President, and former IOC Member (2002-2010). She led the WOA constitutional reforms enabling 50/50 gender representation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is running for WOA Secretary General in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Olumide Oyedeji, OLY (known as Lumi) is running for WOA Secretary General. He is a former NBA player (Seattle SuperSonics, Orlando Magic, Atlanta Hawks), the first African drafted outside America to the NBA (2000), Vice President of the Nigeria Olympic Committee, and has mentored over 45,000 youth worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is running for WOA Treasurer in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thomas Tang, OLY is running for WOA Treasurer. He is a two-time Winter Olympian for Chinese Taipei (Calgary 1988, Albertville 1992), founder and CEO of Apantac LLC, a global broadcast technology company whose technology powers Olympic Games broadcasts worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Olympians United 2026 campaign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Olympians United 2026 is a campaign slate for the World Olympians Association elections featuring Pernilla Wiberg for President, Olumide Oyedeji for Secretary General, and Thomas Tang for Treasurer. The team brings combined experience in Olympic athletics, sports administration, business leadership, and athlete advocacy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the WOA election 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The WOA General Assembly election takes place in 2026. National Olympians Associations (NOAs) vote for the leadership positions including President, Secretary General, and Treasurer."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
       /* Critical CSS inlined for performance */
       ::-webkit-scrollbar {
@@ -132,6 +244,31 @@
       /* Prevent layout shift */
       body {
         min-height: 100vh;
+      }
+      /* Accessibility: Respect user's motion preferences */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      /* Skip to content link (accessibility) */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #D4AF37;
+        color: #0F4C75;
+        padding: 8px 16px;
+        z-index: 100;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 0 0 4px 0;
+      }
+      .skip-link:focus {
+        top: 0;
       }
     </style>
 
