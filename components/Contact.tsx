@@ -19,7 +19,7 @@ declare global {
   }
 }
 
-const TURNSTILE_SITE_KEY = '0x4AAAAAAAxxx'; // Replace with actual site key from Cloudflare dashboard
+const TURNSTILE_SITE_KEY = '0x4AAAAAACHFrmZM1yAOY7AO';
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
