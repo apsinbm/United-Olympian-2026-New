@@ -20,7 +20,6 @@ export const LANGUAGES: Language[] = [
   { code: 'PT', label: 'Português' },
   { code: 'RU', label: 'Русский' },
   { code: 'AR', label: 'العربية' },
-  { code: 'CN', label: '中文' },
 ];
 
 export const CANDIDATES: Candidate[] = [
