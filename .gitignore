@@ -34,3 +34,4 @@ dist-ssr
 *service-account*.json
 olympians-united-*.json
 .env*.local
+translation-audit.csv
