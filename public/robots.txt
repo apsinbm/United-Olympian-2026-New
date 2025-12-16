@@ -1,0 +1,32 @@
+# Olympians United 2026 Campaign Website
+# https://olympiansunited.org
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://olympiansunited.org/sitemap.xml
+
+# Disallow admin/api paths
+Disallow: /api/
+Disallow: /.env
+Disallow: /.env.local
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /

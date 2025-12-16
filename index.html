@@ -3,11 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olympians United 2026 | Ocean Gradient Theme</title>
 
-    <!-- Google Fonts -->
+    <!-- Primary SEO Meta Tags -->
+    <title>Olympians United 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang for WOA</title>
+    <meta name="title" content="Olympians United 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang for WOA" />
+    <meta name="description" content="Vote for experienced leadership at the World Olympians Association. Pernilla Wiberg for President, Olumide Oyedeji for Secretary General, Thomas Tang for Treasurer. New leadership with proven experience." />
+    <meta name="keywords" content="WOA, World Olympians Association, Pernilla Wiberg, Olumide Oyedeji, Thomas Tang, Olympic athletes, WOA election 2026, Olympians United" />
+    <meta name="author" content="Olympians United 2026 Campaign" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://olympiansunited.org/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://olympiansunited.org/" />
+    <meta property="og:title" content="Olympians United 2026 | New Leadership. Proven Experience." />
+    <meta property="og:description" content="Vote for experienced leadership at the World Olympians Association. Pernilla Wiberg for President, Olumide Oyedeji for Secretary General, Thomas Tang for Treasurer." />
+    <meta property="og:image" content="https://olympiansunited.org/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Olympians United 2026" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://olympiansunited.org/" />
+    <meta property="twitter:title" content="Olympians United 2026 | New Leadership. Proven Experience." />
+    <meta property="twitter:description" content="Vote for experienced leadership at the World Olympians Association. Pernilla Wiberg, Olumide Oyedeji & Thomas Tang." />
+    <meta property="twitter:image" content="https://olympiansunited.org/images/og-image.jpg" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts with display=swap for performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
@@ -18,24 +52,24 @@
           extend: {
             colors: {
               navy: {
-                deep: '#0F4C75', // Deep ocean blue
-                light: '#3282B8', // Mid ocean blue
+                deep: '#0F4C75',
+                light: '#3282B8',
               },
               gold: {
-                DEFAULT: '#D4AF37', // Classic Olympic gold
+                DEFAULT: '#D4AF37',
                 hover: '#B8960C',
               },
               crimson: {
-                DEFAULT: '#3282B8', // Replace red with mid blue
+                DEFAULT: '#3282B8',
                 hover: '#0F4C75',
               },
               light: {
-                grey: '#F7FBFC', // Soft ocean white
+                grey: '#F7FBFC',
               },
               ocean: {
-                deep: '#0F4C75',    // Deep ocean
-                mid: '#3282B8',     // Mid blue
-                light: '#BBE1FA',   // Sky blue / foam
+                deep: '#0F4C75',
+                mid: '#3282B8',
+                light: '#BBE1FA',
               }
             },
             fontFamily: {
@@ -46,8 +80,39 @@
         }
       }
     </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Olympians United 2026",
+      "url": "https://olympiansunited.org",
+      "logo": "https://olympiansunited.org/rings-logo.png",
+      "description": "Campaign for WOA leadership elections 2026 - Pernilla Wiberg for President, Olumide Oyedeji for Secretary General, Thomas Tang for Treasurer",
+      "sameAs": [
+        "https://www.linkedin.com/in/pernilla-wiberg-bjerke-oly-0609271ba/",
+        "https://www.linkedin.com/in/olumide-oyedeji-oly-23508b1b3/",
+        "https://www.linkedin.com/in/thomas-tang-oly-5202b84/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Olympians United 2026",
+      "url": "https://olympiansunited.org",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://olympiansunited.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <style>
-      /* Custom scrollbar for webkit */
+      /* Critical CSS inlined for performance */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -64,7 +129,12 @@
       html {
         scroll-behavior: smooth;
       }
+      /* Prevent layout shift */
+      body {
+        min-height: 100vh;
+      }
     </style>
+
   <script type="importmap">
 {
   "imports": {
