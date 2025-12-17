@@ -761,6 +761,16 @@ const TeamGrid: React.FC = () => {
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                     />
+                  ) : selectedCandidate.id === 'lumi' ? (
+                    <video
+                      controls
+                      className="w-full aspect-video object-cover"
+                      poster="/Lumi/lumi_bio_thumbnail.jpg"
+                      preload="none"
+                    >
+                      <source src="/Lumi/lumi_bio.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   ) : (
                     <video
                       controls
