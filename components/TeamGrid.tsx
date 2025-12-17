@@ -451,7 +451,7 @@ const TeamGrid: React.FC = () => {
                   }}
                   alt={`${translated.name} sport`}
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: candidate.id === 'lumi' ? 'center 35%' : candidate.id === 'pernilla' ? 'center 15%' : 'center' }}
+                  style={{ objectPosition: candidate.id === 'lumi' ? 'center 35%' : candidate.id === 'pernilla' ? '25% center' : 'center' }}
                 />
               </div>
 
