@@ -26,11 +26,24 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   const isRTL = language === 'AR';
 
+  // Page titles for each language
+  const pageTitles: Record<LanguageCode, string> = {
+    EN: 'Olympians United 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang for WOA',
+    FR: 'Olympiens Unis 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang pour la WOA',
+    ES: 'Olímpicos Unidos 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang para la WOA',
+    PT: 'Olimpianos Unidos 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang para a WOA',
+    RU: 'Олимпийцы Объединённые 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang для WOA',
+    AR: 'الأولمبيون المتحدون 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang لـ WOA',
+    CN: '奥林匹克联盟 2026 | Pernilla Wiberg, Olumide Oyedeji & Thomas Tang for WOA',
+  };
+
   useEffect(() => {
     localStorage.setItem('language', language);
     // Update document direction for RTL languages
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
     document.documentElement.lang = language.toLowerCase();
+    // Update page title for current language
+    document.title = pageTitles[language] || pageTitles.EN;
   }, [language, isRTL]);
 
   const setLanguage = (lang: LanguageCode) => {
