@@ -230,23 +230,29 @@ export async function onRequestPost(context) {
       });
     }
 
-    // Verify Turnstile CAPTCHA (if secret key is configured)
+    // Verify Turnstile CAPTCHA (required - fail closed if not configured)
     const TURNSTILE_SECRET = env.TURNSTILE_SECRET_KEY;
-    if (TURNSTILE_SECRET) {
-      if (!turnstileToken) {
-        return new Response(JSON.stringify({ error: 'Security verification required' }), {
-          status: 400,
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-        });
-      }
+    if (!TURNSTILE_SECRET) {
+      console.error('TURNSTILE_SECRET_KEY environment variable is not set');
+      return new Response(JSON.stringify({ error: 'Service configuration error' }), {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      });
+    }
 
-      const isValidToken = await verifyTurnstileToken(turnstileToken, clientIP, TURNSTILE_SECRET);
-      if (!isValidToken) {
-        return new Response(JSON.stringify({ error: 'Security verification failed. Please try again.' }), {
-          status: 400,
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-        });
-      }
+    if (!turnstileToken) {
+      return new Response(JSON.stringify({ error: 'Security verification required' }), {
+        status: 400,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      });
+    }
+
+    const isValidToken = await verifyTurnstileToken(turnstileToken, clientIP, TURNSTILE_SECRET);
+    if (!isValidToken) {
+      return new Response(JSON.stringify({ error: 'Security verification failed. Please try again.' }), {
+        status: 400,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      });
     }
 
     // Sanitize all inputs

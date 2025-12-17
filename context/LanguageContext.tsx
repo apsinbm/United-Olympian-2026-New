@@ -18,8 +18,27 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
+// Map URL lang param to LanguageCode
+const langParamMap: Record<string, LanguageCode> = {
+  en: 'EN',
+  fr: 'FR',
+  es: 'ES',
+  pt: 'PT',
+  ru: 'RU',
+  ar: 'AR',
+  cn: 'CN',
+};
+
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<LanguageCode>(() => {
+    // Priority: URL param > localStorage > default
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const langParam = urlParams.get('lang')?.toLowerCase();
+      if (langParam && langParamMap[langParam]) {
+        return langParamMap[langParam];
+      }
+    }
     const saved = localStorage.getItem('language') as LanguageCode;
     return saved || 'EN';
   });

@@ -6,13 +6,8 @@ export default defineConfig({
       server: {
         port: 3000,
         host: '0.0.0.0',
-        proxy: {
-          '/api': {
-            target: 'https://olympiansunited.org',
-            changeOrigin: true,
-            secure: true,
-          }
-        }
+        // Note: API calls in dev will fail - use Cloudflare Pages local dev (wrangler pages dev)
+        // or deploy to preview environment for full API testing
       },
       plugins: [react()],
       resolve: {
