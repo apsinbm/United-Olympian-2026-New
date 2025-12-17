@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom colors */
+  --color-navy-deep: #0F4C75;
+  --color-navy-light: #3282B8;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #B8960C;
+  --color-crimson: #3282B8;
+  --color-crimson-hover: #0F4C75;
+  --color-light-grey: #F7FBFC;
+  --color-ocean-deep: #0F4C75;
+  --color-ocean-mid: #3282B8;
+  --color-ocean-light: #BBE1FA;
+
+  /* Custom fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Merriweather', serif;
+}
