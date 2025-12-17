@@ -750,6 +750,17 @@ const TeamGrid: React.FC = () => {
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                     />
+                  ) : selectedCandidate.id === 'thomas' ? (
+                    <iframe
+                      className="w-full aspect-video"
+                      src="https://www.youtube.com/embed/YYUSY_Q_DUQ"
+                      title="Thomas Tang - Video Bio"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
                   ) : (
                     <video
                       controls
