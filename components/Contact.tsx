@@ -159,6 +159,7 @@ const Contact: React.FC = () => {
                     name="name"
                     required
                     disabled={loading}
+                    autoComplete="name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder={t('contact.form.namePlaceholder')}
                   />
@@ -171,6 +172,7 @@ const Contact: React.FC = () => {
                     name="noa"
                     required
                     disabled={loading}
+                    autoComplete="organization"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder={t('contact.form.noaPlaceholder')}
                   />
@@ -183,6 +185,7 @@ const Contact: React.FC = () => {
                     name="email"
                     required
                     disabled={loading}
+                    autoComplete="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder={t('contact.form.emailPlaceholder')}
                   />
@@ -194,6 +197,7 @@ const Contact: React.FC = () => {
                     id="whatsapp"
                     name="whatsapp"
                     disabled={loading}
+                    autoComplete="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent outline-none transition disabled:bg-gray-100"
                     placeholder={t('contact.form.whatsappPlaceholder')}
                   />
