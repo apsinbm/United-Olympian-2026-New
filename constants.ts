@@ -421,7 +421,7 @@ export const CORE_MESSAGES = [
     id: 'secure',
     title: 'We Secured It',
     subtitle: 'Independent & Trusted',
-    description: 'Together, we helped champion the protection of WOA\'s independence while rebuilding a productive working relationship with the IOC that delivers funding and influence.',
+    description: 'Together, our team helped champion the protection of WOA\'s independence while rebuilding a productive working relationship with the IOC that delivers funding and influence.',
     icon: 'Shield'
   },
   {
