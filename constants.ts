@@ -171,7 +171,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'olyDesignation',
     title: 'OLY Designation',
-    description: 'Created the OLY post-nominal letters for all Olympians worldwide',
+    description: 'OLY post-nominal letters for all Olympians worldwide',
     links: [
       { url: 'https://olympians.org/news/983/oly-post-nominal-letters-to-honour-olympians/', label: 'WOA Announcement', description: 'Launch of OLY post-nominal letters' },
       { url: 'https://olympians.org/news/986/over-3000-olympians-register-for-oly-letters/', label: 'Thousands Register', description: 'Early take-up of OLY post-nominals' },
@@ -184,7 +184,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'worldForum',
     title: 'World Olympians Forum',
-    description: 'Established the global gathering of Olympians',
+    description: 'Global gathering of Olympians',
     links: [
       { url: 'https://olympians.org/news/403/moscow-to-host-the-inaugural-world-olympians-forum/', label: 'Inaugural Forum', description: 'Announcement of the first World Olympians Forum' },
       { url: 'https://olympians.org/news/442/world-olympians-forum-gets-underway-in-moscow/', label: 'First WOF Success', description: 'Report from World Olympians Forum in Moscow' },
@@ -210,7 +210,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'iocFunding',
     title: 'IOC Funding Increase',
-    description: 'Increased funding from IOC by up to 300%',
+    description: 'Increase in funding from IOC by over 300%',
     links: [
       { url: 'https://olympians.org/news/1945/ioc-and-woa-strengthen-their-partnership-to-better-support-olympians/', label: '2025 Agreement', description: 'Strengthened IOC–WOA partnership and funding' },
       { url: 'https://olympians.org/news/497/athlete-welfare-a-top-priority-for-woa-in-2016/', label: 'Athlete Welfare Priority', description: 'Athlete welfare and funding priorities' },
@@ -220,7 +220,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'devOfficers',
     title: 'Development Officers',
-    description: 'Established regional development officers to support NOAs',
+    description: 'Regional development officers to support NOAs',
     links: [
       { url: 'https://olympians.org/news/1179/establish-regional-development-officers-to-support-noas/', label: 'Asia Officer', description: 'Announcement of regional Development Officers' },
       { url: 'https://olympians.org/news/1295/woa-welcomes-new-development-officers/', label: 'Americas Recruitment', description: 'New Development Officers introduced' },
@@ -230,7 +230,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'devGrants',
     title: 'Development Grants',
-    description: 'Created development grants to help grow NOAs',
+    description: 'Development grants to help grow NOAs',
     links: [
       { url: 'https://olympians.org/noas/grants/', label: 'Grants Overview', description: 'Central grants page describing NOA Development Grants and other WOA grant streams' },
       { url: 'https://olympians.org/grants/development-grants/', label: 'Development Grants', description: 'Specific page for NOA Development Grants with criteria and application details' },
@@ -280,7 +280,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'fundraising',
     title: 'Fundraising Success',
-    description: 'Raised millions to fund OLY Houses and World Olympians Forums',
+    description: 'Millions raised to fund OLY Houses and World Olympians Forums',
     links: [
       { url: 'https://olympians.org/news/1924/another-5-years-of-clean-financial-audits-for-woa/', label: 'Clean Audits', description: 'Clean PwC audit sequence for WOA finances' },
       { url: 'https://olympians.org/news/735/olympians-reunion-centre-by-ey-wins-top-rio-award/', label: 'EY Partnership', description: 'Story showing the EY-backed Rio OLY House winning a hospitality award' },
@@ -331,7 +331,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'olympiansForLife',
     title: 'Olympians for Life',
-    description: 'Created the Olympians for Life awards and ceremonies',
+    description: 'Olympians for Life awards and ceremonies',
     links: [
       { url: 'https://olympians.org/olympians/olympians-for-life/', label: 'Programme Page', description: 'Official Olympians for Life programme page' },
       { url: 'https://olympians.org/news/1869/jesse-owens-and-luz-long-among-5-awarded-olympians-for-life-by-woa-patron-prince-albert/', label: 'Paris 2024 Inductees', description: 'Article on the Paris 2024 Olympians for Life inductees' },
@@ -345,7 +345,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'website',
     title: 'Olympian.org Website',
-    description: 'Rebuilt the Olympian.org website',
+    description: 'Rebuilt Olympian.org website',
     links: [
       { url: 'https://olympians.org/news/13/world-olympians-association-launches-new-website/', label: 'New Brand Launch', description: 'Original launch of the Olympian.org website' },
       { url: 'https://olympians.org/library/world_olympians_association_unveils_new_brand_identity_and_website_in_sochi_final.pdf', label: 'Full Press Release', description: 'Full press release on the 2014 rebrand and website launch' },
@@ -357,7 +357,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'noaGuide',
     title: 'NOA Guide & Toolkits',
-    description: 'Created comprehensive NOA Guide and Toolkits',
+    description: 'Comprehensive NOA Guide and Toolkits',
     links: [
       { url: 'https://olympians.org/noas/noa-guide/', label: 'NOA Guide', description: 'Main NOA Guide homepage' },
       { url: 'https://olympians.org/news/1286/new-noa-guide-will-boost-capabilities/', label: 'Guide Launch', description: 'Launch article for the NOA Guide at the World Olympians Forum' },
@@ -393,7 +393,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   {
     key: 'campaigns',
     title: 'Successful Global Campaigns',
-    description: 'When Ebola struck and our NOAs asked for help we launched #TargetEbola and thanks to the global Olympian community we sent six containers of medical and other supplies to Sierra Leone and Liberia. Our #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.',
+    description: 'When Ebola struck and our NOAs asked for help the WOA launched #TargetEbola and thanks to the global Olympian community the WOA sent containers of medical and other supplies to Sierra Leone and Liberia. The #OlympiansforUkraine campaign raised funding to help displaced Ukrainian Olympian families.',
     links: [
       { url: 'https://olympians.org/news/204/join-the-targetebola-fundraising-campaign-and-help-save-lives/', label: '#TargetEbola Launch', description: 'WOA article on launching the #TargetEbola fundraising campaign' },
       { url: 'https://olympians.org/news/491/olympians-answer-call-to-help-ebola-hit-communities/', label: 'Olympians Mobilise', description: 'Olympians mobilise for Ebola-hit communities' },
