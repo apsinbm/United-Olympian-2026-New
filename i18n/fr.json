@@ -64,8 +64,8 @@
     },
     "secure": {
       "title": "Nous l'avons obtenu",
-      "subtitle": "Indépendante et fiable",
-      "description": "Ensemble, notre équipe a contribué à défendre la protection de l'indépendance de la WOA tout en reconstruisant une relation de travail productive avec le CIO qui apporte financement et influence."
+      "subtitle": "Indépendant et fiable",
+      "description": "Ensemble, notre équipe a contribué à défendre l'indépendance de la WOA tout en rétablissant une relation de travail productive avec le CIO, qui apporte un financement et de nouvelles opportunités à la WOA, aux NOA et aux olympiens."
     },
     "lead": {
       "title": "Nous sommes à votre écoute",
@@ -74,23 +74,23 @@
     }
   },
   "achievements": {
-    "sectionLabel": "Construire sur les progrès, préparer la prochaine phase",
+    "sectionLabel": "S'appuyer sur les progrès réalisés, préparer la prochaine étape",
     "sectionTitle": "La WOA",
     "sectionTitleHighlight": "Aujourd'hui",
     "sectionSubtitle": "Cela vaut la peine d'être protégé. Cela vaut la peine d'être développé.",
     "viewAll": "Tout afficher {count} Réalisations",
     "showLess": "Afficher moins",
     "relatedResources": "Ressources connexes",
-    "quote": "La WOA n'avait autrefois ni subventions, ni bourses, ni outils NOA, ni responsables du développement. Aujourd'hui, elle en dispose. Pernilla a participé à la création de cette fondation. Notre équipe protégera et développera ces acquis.",
+    "quote": "La WOA n'avait autrefois ni subventions, ni bourses, ni outils pour les NOA, ni responsables du développement. Aujourd'hui, elle dispose de tout cela. Pernilla a participé à la mise en place de ces fondations. Notre équipe protégera et développera ces acquis.",
     "quoteCTA": "Poursuivons ce qui fonctionne !",
     "items": {
       "olyDesignation": {
         "title": "Désignation OLY",
-        "description": "Création des lettres post-nominales OLY pour tous les athlètes olympiques du monde entier"
+        "description": "Lettres post-nominales OLY pour tous les athlètes olympiques du monde entier"
       },
       "worldForum": {
         "title": "Forum mondial des athlètes olympiques",
-        "description": "Création du rassemblement mondial des athlètes olympiques"
+        "description": "Rassemblement mondial des athlètes olympiques"
       },
       "serviceToSociety": {
         "title": "Subventions pour les services rendus à la société",
@@ -122,43 +122,43 @@
       },
       "fundraising": {
         "title": "Succès de la collecte de fonds",
-        "description": "Collecte de millions de dollars pour financer les maisons OLY et les forums mondiaux des athlètes olympiques"
+        "description": "Des millions de dollars collectés pour financer les OLY Houses et les forums mondiaux des athlètes olympiques"
       },
       "scholarships": {
         "title": "Bourses universitaires",
-        "description": "Opportunités de formation pour les athlètes olympiques du monde entier"
+        "description": "Opportunités éducatives pour les athlètes olympiques du monde entier"
       },
       "olyCeremonies": {
         "title": "Cérémonies OLY",
-        "description": "Mise en place de cérémonies de reconnaissance pour les athlètes olympiques"
+        "description": "Cérémonies de reconnaissance établies pour les athlètes olympiques"
       },
       "healthResearch": {
         "title": "Recherche sur la santé",
         "description": "Première enquête mondiale sur la santé musculo-squelettique des athlètes olympiques"
       },
       "olympiansForLife": {
-        "title": "Olympians for Life",
-        "description": "Création des prix et cérémonies Olympians for Life"
+        "title": "Olympiens pour la vie",
+        "description": "Prix et cérémonies Olympiens pour la vie"
       },
       "website": {
         "title": "Site web Olympian.org",
         "description": "Reconstruction du site web Olympian.org"
       },
       "noaGuide": {
-        "title": "Guide et kits d'outils pour les NOA",
-        "description": "Création d'un guide et de kits d'outils complets pour les NOA"
+        "title": "Guide et boîtes à outils des NOA",
+        "description": "Guide complet et boîtes à outils des NOA"
       },
       "relationships": {
-        "title": "Réseau de relations",
+        "title": "Réseau relationnel",
         "description": "Établissement de relations avec la World Academy of Sport, SkillsBuild, etc."
       },
       "iocAgreement": {
         "title": "Nouvel accord avec le CIO",
-        "description": "Garantie de l'indépendance, du financement à long terme et de la stabilité de tous les programmes de la WOA"
+        "description": "Indépendance, financement à long terme et stabilité garantis pour tous les programmes de la WOA"
       },
       "campaigns": {
         "title": "Campagnes mondiales réussies",
-        "description": "Lorsque l'épidémie d'Ebola a frappé et que nos associations nationales olympiques (ANO) ont demandé de l'aide, nous avons lancé #TargetEbola et, grâce à la communauté olympique mondiale, nous avons envoyé six conteneurs de fournitures médicales et autres à la Sierra Leone et au Liberia. Notre campagne #OlympiansforUkraine a permis de collecter des fonds pour aider les familles olympiques ukrainiennes déplacées."
+        "description": "Lorsque l'épidémie d'Ebola a frappé et que nos NOA ont demandé de l'aide, la WOA a lancé #TargetEbola et, grâce à la communauté olympique mondiale, la WOA a envoyé des conteneurs de fournitures médicales et autres à la Sierra Leone et au Liberia. La campagne #OlympiansforUkraine a permis de collecter des fonds pour aider les familles olympiques ukrainiennes déplacées."
       }
     }
   },
@@ -175,7 +175,7 @@
     "items": {
       "relations": {
         "title": "Relations indépendantes mais collaboratives avec le CIO",
-        "description": "Nous maintiendrons l'indépendance de la WOA tout en travaillant de manière constructive avec le CIO et d'autres partenaires. Notre rôle est de connecter, soutenir et garantir que les voix des athlètes olympiques soient entendues."
+        "description": "Nous maintiendrons l'indépendance de la WOA tout en travaillant de manière constructive avec le CIO et d'autres partenaires. Notre rôle est de mettre en relation, de soutenir et de faire entendre la voix des athlètes olympiques."
       },
       "rights": {
         "title": "Santé, retraites et souveraineté de l'image",
@@ -194,11 +194,11 @@
         "description": "Nous nommerons un responsable du développement pour chaque continent et donnerons la priorité aux ateliers et réunions régionaux et continentaux afin de renforcer les capacités et l'expérience des NOA."
       },
       "digital": {
-        "title": "Booster OLY Connect",
-        "description": "Nous tirerons parti de l'expertise technique de Thomas Tang pour faire d'OLY Connect l'application indispensable aux athlètes olympiques, leur offrant des avantages, des opportunités, des connexions, ainsi qu'un réseau et un soutien pour leur carrière, leur vie professionnelle et leur vie personnelle."
+        "title": "Renforcer OLY Connect",
+        "description": "Nous tirerons parti de l'expertise technologique de Thomas Tang pour faire d'OLY Connect l'application indispensable aux athlètes olympiques, leur offrant des avantages, des opportunités, des connexions, ainsi qu'un réseau et un soutien professionnels, personnels et pour leur carrière."
       },
       "legacy": {
-        "title": "Augmenter les subventions des NOA",
+        "title": "Augmenter les subventions aux NOA",
         "description": "Les subventions de développement des NOA et les subventions pour les services à la société et aux athlètes olympiques sont toujours sursouscrites. Nous collecterons davantage de fonds afin d'augmenter le nombre de subventions que nous pouvons octroyer chaque année."
       }
     }
@@ -211,7 +211,7 @@
   "contact": {
     "title": "Travaillez avec nous pour faire passer la WOA au niveau supérieur.",
     "subtitle": "Nous souhaitons connaître l'avis des athlètes olympiques et des associations nationales olympiques. Demandez un rendez-vous avec Pernilla, Lumi ou Thomas pour discuter des besoins de votre association nationale olympique et de vos athlètes olympiques.",
-    "tagline": "Nous l'avons créé. Nous l'avons sécurisé. Nous travaillerons avec vous pour le développer.",
+    "tagline": "Nous l'avons construit. Nous l'avons sécurisé. Nous travaillerons avec vous pour le développer.",
     "form": {
       "nameLabel": "Nom complet (OLY)",
       "namePlaceholder": "Jane Doe, OLY",
