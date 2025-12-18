@@ -49,7 +49,7 @@ const CoreMessages: React.FC = () => {
                 <p className="text-gray-300 text-lg leading-relaxed">{t(`core.${key}.description`)}</p>
               </div>
 
-              <div className="absolute bottom-4 right-4 text-6xl font-extrabold text-white/5">
+              <div className="absolute bottom-4 right-4 text-6xl font-extrabold text-white/30">
                 {index + 1}
               </div>
             </div>
