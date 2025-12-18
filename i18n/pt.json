@@ -34,7 +34,7 @@
     "forTreasurer": "Para Tesoureiro",
     "videoIntroduction": "Vídeo de apresentação",
     "biography": "Biografia",
-    "athleticAchievements": "Conquistas Atléticas",
+    "athleticAchievements": "Conquistas desportivas",
     "governanceExperience": "Experiência em Governança",
     "keyAchievement": "Principais Conquistas",
     "trackRecord": "Histórico",
@@ -45,12 +45,12 @@
     "videos": "Vídeos",
     "photoGallery": "Galeria de fotos",
     "close": "Fechar",
-    "followOn": "Siga em",
-    "visitWebsite": "Visitar o site",
-    "athleticHighlights": "Destaques Atléticos",
+    "followOn": "Siga-nos",
+    "visitWebsite": "Visite o site",
+    "athleticHighlights": "Destaques desportivos",
     "country": "País",
-    "basedIn": "Sediado em",
-    "connect": "Conectar"
+    "basedIn": "Sede",
+    "connect": "Ligar"
   },
   "core": {
     "sectionLabel": "Porquê escolher-nos",
@@ -63,34 +63,34 @@
       "description": "Estávamos alinhados nas prioridades-chave das ANOs antes da AGE de Lausana em 2024. Compreendemos o que as ANOs partilharam connosco até agora sobre o que valorizam, o que funcionou bem e onde são necessárias melhorias. A nossa equipa está empenhada em proteger o progresso já alcançado enquanto move a WOA para uma nova direção prática."
     },
     "secure": {
-      "title": "Nós garantimos isso",
+      "title": "Conseguimos",
       "subtitle": "Independente e confiável",
-      "description": "Juntos, a nossa equipa ajudou a defender a proteção da independência da WOA enquanto reconstruímos uma relação de trabalho produtiva com o COI que proporciona financiamento e influência."
+      "description": "Juntos, a nossa equipa ajudou a defender a proteção da independência da WOA, ao mesmo tempo que reconstruiu uma relação de trabalho produtiva com o COI, que proporciona financiamento e novas oportunidades para a WOA, as NOAs e os atletas olímpicos."
     },
     "lead": {
       "title": "Estamos a ouvir",
       "subtitle": "A equipa certa",
-      "description": "Uma campeã olímpica, uma estrela da NBA e um gênio dos negócios — com conhecimentos complementares: Pernilla traz experiência em governança olímpica e no COI, Lumi traz visão profissional sobre o negócio do desporto e Thomas traz perspicácia financeira e tecnológica. O pacote completo, atento às suas necessidades."
+      "description": "Uma campeã olímpica, uma estrela da NBA e um gênio dos negócios — com conhecimentos complementares: Pernilla traz experiência em governança olímpica e no COI, Lumi traz insights sobre o negócio do desporto profissional e Thomas traz perspicácia financeira e tecnológica. O pacote completo, ouvindo as suas necessidades."
     }
   },
   "achievements": {
-    "sectionLabel": "Construindo sobre o progresso, preparando a próxima fase",
+    "sectionLabel": "Aproveitando o progresso, preparando a próxima fase",
     "sectionTitle": "A WOA",
     "sectionTitleHighlight": "Hoje",
     "sectionSubtitle": "Vale a pena proteger. Vale a pena expandir.",
-    "viewAll": "Ver tudo {count} Conquistas",
+    "viewAll": "Ver todas as {count} conquistas",
     "showLess": "Mostrar menos",
     "relatedResources": "Recursos relacionados",
-    "quote": "A WOA antes não tinha subsídios, bolsas de estudo, kits de ferramentas NOA nem diretores de desenvolvimento. Hoje tem. Pernilla fez parte da construção dessa base. A nossa equipa protegerá e expandirá esses ganhos.",
-    "quoteCTA": "Continue o que funciona!",
+    "quote": "A WOA já não teve subsídios, bolsas de estudo, kits de ferramentas para as NOAs nem responsáveis pelo desenvolvimento. Hoje tem. Pernilla fez parte da construção desta base. A nossa equipa irá proteger e expandir estes ganhos.",
+    "quoteCTA": "Continuar o que funciona!",
     "items": {
       "olyDesignation": {
         "title": "Designação OLY",
-        "description": "Criou as letras pós-nominais OLY para todos os atletas olímpicos em todo o mundo"
+        "description": "Letras pós-nominais OLY para todos os atletas olímpicos em todo o mundo"
       },
       "worldForum": {
         "title": "Fórum Mundial de Atletas Olímpicos",
-        "description": "Estabeleceu o encontro global de atletas olímpicos"
+        "description": "Encontro global de atletas olímpicos"
       },
       "serviceToSociety": {
         "title": "Subsídios para serviços prestados à sociedade",
@@ -101,28 +101,28 @@
         "description": "O financiamento do COI cresceu para mais do triplo dos níveis anteriores."
       },
       "devOfficers": {
-        "title": "Responsáveis pelo Desenvolvimento",
-        "description": "Estabelecemos responsáveis regionais de desenvolvimento para apoiar as NOAs"
+        "title": "Diretores de desenvolvimento",
+        "description": "Diretores de desenvolvimento regionais para apoiar as NOAs"
       },
       "devGrants": {
-        "title": "Subsídios de desenvolvimento",
-        "description": "Criámos subsídios de desenvolvimento para ajudar no crescimento das NOAs"
+        "title": "Subsídios para desenvolvimento",
+        "description": "Subsídios para desenvolvimento para ajudar a expandir as NOAs"
       },
       "olyHouseRio": {
-        "title": "Casa OLY Rio",
-        "description": "OLY House premiada no Rio 2016"
+        "title": "OLY House Rio",
+        "description": "OLY House premiada na Rio 2016"
       },
       "serviceToOlympians": {
-        "title": "Subsídios para serviços prestados a atletas olímpicos",
-        "description": "Apoio direto a atletas olímpicos"
+        "title": "Subsídios para Serviços aos Atletas Olímpicos",
+        "description": "Apoio direto aos atletas olímpicos"
       },
       "olyHouseParis": {
         "title": "OLY House Paris",
         "description": "A melhor OLY House de sempre em Paris 2024"
       },
       "fundraising": {
-        "title": "Sucesso na Angariação de Fundos",
-        "description": "Angariámos milhões para financiar as Casas OLY e os Fóruns Mundiais de Atletas Olímpicos"
+        "title": "Sucesso na angariação de fundos",
+        "description": "Milhões angariados para financiar OLY Houses e Fóruns Mundiais de Atletas Olímpicos"
       },
       "scholarships": {
         "title": "Bolsas de estudo universitárias",
@@ -130,35 +130,35 @@
       },
       "olyCeremonies": {
         "title": "Cerimónias OLY",
-        "description": "Estabeleceu cerimónias de reconhecimento para atletas olímpicos"
+        "description": "Cerimónias de reconhecimento estabelecidas para atletas olímpicos"
       },
       "healthResearch": {
         "title": "Investigação em Saúde",
         "description": "Primeiro inquérito global sobre saúde musculoesquelética dos atletas olímpicos"
       },
       "olympiansForLife": {
-        "title": "Olympians for Life",
-        "description": "Criação dos prémios e cerimónias Olympians for Life"
+        "title": "Atletas Olímpicos para a Vida",
+        "description": "Prémios e cerimónias dos Atletas Olímpicos para a Vida"
       },
       "website": {
         "title": "Site Olympian.org",
         "description": "Reconstrução do site Olympian.org"
       },
       "noaGuide": {
-        "title": "Guia e kits de ferramentas para as NOAs",
-        "description": "Criou um guia e kits de ferramentas abrangentes para as NOAs"
+        "title": "Guia e kits de ferramentas da NOA",
+        "description": "Guia e kits de ferramentas abrangentes da NOA"
       },
       "relationships": {
-        "title": "Rede de relações",
-        "description": "Estabelecimento de relações com a Academia Mundial do Desporto, SkillsBuild e muito mais"
+        "title": "Rede de relacionamentos",
+        "description": "Construção de relacionamentos com a Academia Mundial do Desporto, SkillsBuild e muito mais"
       },
       "iocAgreement": {
-        "title": "Novo Acordo com o COI",
-        "description": "Garantimos independência, financiamento a longo prazo e estabilidade para todos os programas da WOA"
+        "title": "Novo acordo com o COI",
+        "description": "Garantia de independência, financiamento a longo prazo e estabilidade para todos os programas da WOA"
       },
       "campaigns": {
         "title": "Campanhas globais bem-sucedidas",
-        "description": "Quando o Ébola surgiu e as nossas NOAs pediram ajuda, lançámos a campanha #TargetEbola e, graças à comunidade olímpica global, enviámos seis contentores com material médico e outros suprimentos para a Serra Leoa e a Libéria. A nossa campanha #OlympiansforUkraine angariou fundos para ajudar famílias olímpicas ucranianas deslocadas."
+        "description": "Quando o Ébola surgiu e as nossas NOAs pediram ajuda, a WOA lançou a campanha #TargetEbola e, graças à comunidade olímpica global, a WOA enviou contentores com suprimentos médicos e outros para a Serra Leoa e a Libéria. A campanha #OlympiansforUkraine angariou fundos para ajudar famílias olímpicas ucranianas deslocadas."
       }
     }
   },
@@ -190,8 +190,8 @@
         "description": "A atual administração passou de publicar os relatórios de auditoria da WOA a cada quatro anos para publicá-los anualmente. Continuaremos essa prática e fortalecê-la-emos adotando os mais recentes padrões financeiros e de governança. Os relatórios consolidados da WOA serão disponibilizados no site da WOA. Também realizaremos uma revisão completa de 360 graus de todos os processos e prioridades da WOA, e consultaremos cada ANO para garantir que os seus pontos de vista, necessidades e expectativas sejam plenamente refletidos na próxima fase do nosso trabalho."
       },
       "empowerment": {
-        "title": "Desenvolvendo o empoderamento da NOA",
-        "description": "Iremos nomear um Diretor de Desenvolvimento para cada continente e dar prioridade a workshops e reuniões regionais e continentais para desenvolver a capacidade e a experiência da NOA."
+        "title": "Fortalecimento das NOA",
+        "description": "Nomearemos um Diretor de Desenvolvimento para cada continente e priorizaremos workshops e reuniões regionais e continentais para fortalecer a capacidade e a experiência das NOA."
       },
       "digital": {
         "title": "Potenciando o OLY Connect",
@@ -199,7 +199,7 @@
       },
       "legacy": {
         "title": "Aumentando as bolsas da NOA",
-        "description": "As Bolsas de Desenvolvimento da NOA e as Bolsas de Serviço à Sociedade e Serviço aos Atletas Olímpicos estão sempre com excesso de inscrições. Iremos angariar mais fundos para aumentar o número de bolsas que podemos conceder todos os anos."
+        "description": "As bolsas de desenvolvimento da NOA e as bolsas de serviço à sociedade e aos atletas olímpicos estão sempre sobrecarregadas. Angariaremos mais fundos para aumentar o número de bolsas que podemos conceder todos os anos."
       }
     }
   },
@@ -211,7 +211,7 @@
   "contact": {
     "title": "Trabalhe connosco para levar a WOA ao próximo nível.",
     "subtitle": "Queremos ouvir os atletas olímpicos e as associações nacionais de atletas olímpicos. Solicite uma reunião com Pernilla, Lumi ou Thomas para discutir as necessidades da sua NOA e dos seus atletas olímpicos.",
-    "tagline": "Nós construímos. Nós protegemos. Vamos trabalhar consigo para fazer crescer.",
+    "tagline": "Nós construímos. Nós garantimos. Vamos trabalhar consigo para fazer crescer.",
     "form": {
       "nameLabel": "Nome completo (OLY)",
       "namePlaceholder": "Jane Doe, OLY",
