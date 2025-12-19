@@ -19,7 +19,6 @@ export const LANGUAGES: Language[] = [
   { code: 'ES', label: 'Español' },
   { code: 'PT', label: 'Português' },
   { code: 'RU', label: 'Русский' },
-  { code: 'AR', label: 'العربية' },
 ];
 
 export const CANDIDATES: Candidate[] = [
