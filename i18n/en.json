@@ -1,19 +1,31 @@
 {
   "nav": {
     "brand": "OLYMPIANS UNITED",
+    "home": "Home",
     "team": "The Team",
+    "priorities": "Priorities",
+    "delivery": "How We'll Deliver",
+    "updates": "Updates",
+    "contact": "Contact",
     "accomplishments": "Our Accomplishments",
     "actionPlan": "2026 Action Plan",
     "joinMovement": "Join the Movement"
   },
   "hero": {
     "badge": "Official 2026 Campaign",
-    "title1": "New Leadership.",
-    "title2": "Proven Experience.",
-    "subtitle": "An Olympic Champion. An NBA Star. A Business Wizard.",
-    "subtitleHighlight": "Fresh ideas built on what works.",
-    "ctaPrimary": "Meet the Slate",
-    "ctaSecondary": "View 2026 Action Plan"
+    "title1": "Olympians United",
+    "title2": "",
+    "subtitle": "Pernilla Wiberg • Lumi Räsänen • Thomas Grøndahl",
+    "subtitleHighlight": "",
+    "tagline": "Practical empowerment. Measurable results. Delivered for NOAs.",
+    "ctaPrimary": "Our Priorities",
+    "ctaSecondary": "Meet the Team",
+    "oldTitle1": "New Leadership.",
+    "oldTitle2": "Proven Experience.",
+    "oldSubtitle": "An Olympic Champion. An NBA Star. A Business Wizard.",
+    "oldSubtitleHighlight": "Fresh ideas built on what works.",
+    "oldCtaPrimary": "Meet the Slate",
+    "oldCtaSecondary": "View 2026 Action Plan"
   },
   "voteBanner": {
     "label": "The Complete Package:",
@@ -376,5 +388,282 @@
       "manifesto": "As part of a strong leadership team alongside Pernilla Wiberg and Olumide Oyedeji, I am running for Treasurer of the World Olympians Association with a clear mission to safeguard WOA's financial integrity, strengthen its long-term sustainability, and ensure Olympians benefit from transparent, accountable, and impactful resource management.\n\n[My professional background](https://app.box.com/s/5xdpz83s6jj72m7z4ozbp4ts601bsj2a) spans more than 30 years of executive leadership across international business, technology, and nonprofit development. I have managed multimillion-dollar budgets, built successful global organizations, and implemented robust financial systems grounded in responsibility and trust. I will bring these same principles to serve the WOA.\n\nI will prioritize financial transparency and accountability through clear reporting standards, continued independent audits, and open communication so every NOA can clearly understand how WOA resources are utilized. I will also focus on securing sustainable funding and building long-term partnerships that honor Olympic values while ensuring WOA remains financially strong and independent. Collaboration with the IOC is essential for alignment and shared purpose, yet WOA must always preserve its autonomy and its ability to advocate for Olympians with clarity and neutrality.\n\nMy commitment extends to service at the community level, where the heart of the Olympian movement truly lives. I will work to ensure more resources reach grassroots initiatives, supporting education, health, career transition, and youth programs, while giving special attention to smaller NOAs and developing nations to ensure equitable access and meaningful impact.\n\nAs Treasurer, I will serve with integrity, discipline, and unwavering dedication, strengthening the WOA and empowering Olympians for generations to come.",
       "bioFull": "Thomas Tang combines Olympic grit with Silicon Valley innovation. A two-time Winter Olympian for Chinese Taipei who competed at World Championships and World Cups, he now serves as Chef de Mission for Guinea-Bissau at the 2026 Milano-Cortina Olympics and Secretary General of their Winter Sports Federation—driving the introduction of winter sports in a tropical nation, securing FIS membership, and establishing athlete development programs. His Olympic legacy is a family affair—his daughter competed at Figure Skating at an international level, and his sons have qualified for the 2022 and 2026 Olympics in Alpine Skiing.\n\nThomas founded Apantac in his basement during the 2008 financial crisis and built it into a global broadcast, ProAV, and openGear technology leader—winning multiple \"Best of Show\" awards including the prestigious NAB PICK HIT AWARD in 2009, and now shipping 200+ products to 40+ countries, from Greenland to New Zealand. His technology has powered Olympic broadcasts, Soccer World Cups, major professional sports leagues, and national broadcasters worldwide, and is used daily by leading social media for their event spaces.\n\nHis 30+ year career spans executive leadership across international business, technology, and nonprofit development. Prior to founding Apantac, he served as Vice President at Avitech International (2004–2008) leading global sales and product expansion in broadcast and multiviewer technologies, Director of Marketing at Philips Electronics Broadcast Division (1999–2004) directing strategy across North America and Asia-Pacific with $50M P&L responsibility, Asia Pacific Area Director at Vizrt (1997–1999) expanding market presence for broadcast graphics and real-time visualization systems, and Regional Sales Manager at Evans & Sutherland (1989–1997) where he started as a Senior Software Engineer working on F-14/F-16 flight simulators and NASA Space Shuttle training systems before advancing to regional sales.\n\nThomas holds patents and published works including Laser Spectroscopy (SPIE, 1987), Physical Camera Calibration with Virtual Backgrounds (1996), Dynamic Shadows in Virtual Studio Production (1997), Cascading Multiviewer Outputs via SATA (2009), Mechanical Magnetic Mounting for AV Equipment (2014), and Intelligent EDID-Based DA Output Management (2018).\n\nHe also serves as Board Member of the Taiwanese American Chamber of Commerce (2023–Present), supporting cross-Pacific business collaboration and Taiwanese entrepreneurship in North America, and as President of Eubank Investment Group (2012–Present) and Anextus Trading & Export in Guinea-Bissau (2024–Present).\n\nWith Harvard Business School executive education in Marketing & Business Strategy, an M.S. in Computer Science from Westminster College, and both an M.S. in Applied Physics and B.S. in Physics from the University of Utah, Thomas brings unmatched financial acumen and operational excellence to the WOA. Fluent in English, Mandarin, Cantonese, and Taiwanese."
     }
+  },
+  "sixPriorities": {
+    "sectionTitle": "What We Will Deliver",
+    "sectionSubtitle": "Six pillars of practical empowerment for the Olympic family.",
+    "learnMore": "Learn more",
+    "items": {
+      "olympiansBeyondSport": {
+        "title": "Empowering Olympians Beyond Sport",
+        "description": "Career transition, leadership pathways, and lifelong wellbeing support."
+      },
+      "projectsLegacy": {
+        "title": "Empowering Projects and Legacy",
+        "description": "Sustainable Olympian-led initiatives, reunions, and lasting impact."
+      },
+      "noaSupport": {
+        "title": "Empowering NOAs",
+        "description": "Governance tools, strategy support, volunteer management, and data systems."
+      },
+      "financialSustainability": {
+        "title": "Empowering Financial Sustainability",
+        "description": "Fundraising models, grants access, and partnerships for long-term health."
+      },
+      "technology": {
+        "title": "Empowering Through Technology",
+        "description": "AI for communication, digital presence, and smarter impact tools."
+      },
+      "collaboration": {
+        "title": "Empowering Collaboration",
+        "description": "Peace-building, Olympian-Paralympian cooperation, and NOA-IOC coordination."
+      }
+    }
+  },
+  "deliveryTeaser": {
+    "sectionTitle": "How We'll Deliver",
+    "sectionSubtitle": "This isn't just talk. Here's how we ensure execution.",
+    "ctaButton": "See the Full Delivery Plan",
+    "items": {
+      "roadmap": {
+        "title": "First 100 Days Focus",
+        "description": "We hit the ground running with concrete actions: NOA consultation framework, toolkit launch, and partnership pipeline activation."
+      },
+      "tools": {
+        "title": "Tools NOAs Can Use",
+        "description": "Templates, playbooks, shared resources, and proven models—built with NOAs, for NOAs."
+      },
+      "accountability": {
+        "title": "Regular Communication",
+        "description": "Predictable updates, clear points of contact, and transparent progress tracking. You'll always know where we stand."
+      }
+    }
+  },
+  "finalCTA": {
+    "headline": "Ready for Leadership That Delivers?",
+    "subline": "Join the movement for practical empowerment and measurable results.",
+    "ctaButton": "Join the Movement"
+  },
+  "prioritiesPage": {
+    "title": "Our Priorities",
+    "intro": "The next WOA presidency will focus on practical empowerment across the Olympic family. Empowerment means giving NOAs, Olympians, and Olympian-led projects the tools, support, and partnerships they need to succeed. Our six priorities are built on this foundation. Each is specific, achievable, and designed to deliver measurable value.",
+    "whatThisLooksLike": "What this looks like:",
+    "pillars": {
+      "olympiansBeyondSport": {
+        "title": "Empowering Olympians Beyond Sport",
+        "description": "Olympic careers end, but Olympians' leadership, networks, and influence extend far beyond the podium. We will focus on career transition support, leadership development pathways, mental health and wellbeing resources, and creating opportunities for Olympians to stay connected to the Olympic movement and step into positions of influence within sport, business, and society.",
+        "examples": [
+          "Career transition toolkits and mentorship networks connecting retiring athletes with business, governance, and education opportunities",
+          "Leadership development programs designed for Olympians entering sports administration, NOC governance, or community roles",
+          "Mental health and wellbeing support systems tailored to the unique challenges Olympians face post-competition",
+          "Clear pathways for Olympians to engage with NOAs, NOCs, and the IOC in meaningful, long-term roles"
+        ]
+      },
+      "projectsLegacy": {
+        "title": "Empowering Projects and Legacy",
+        "description": "Olympians lead incredible initiatives—community programs, reunions, educational projects, and legacy-building efforts. Too often, these projects struggle for lack of support, funding models, or visibility. We will enable sustainable Olympian-led initiatives by providing practical models for project governance, funding pathways, and networks that connect projects across NOAs to share best practices and scale impact.",
+        "examples": [
+          "Proven project governance templates and sustainability models that help Olympian-led initiatives thrive",
+          "Support for Olympic reunions and networks that keep Olympians connected and engaged",
+          "Visibility platforms that showcase successful NOA projects, enabling knowledge-sharing and replication",
+          "Legacy frameworks that help NOAs and Olympians design initiatives with long-term impact in mind"
+        ]
+      },
+      "noaSupport": {
+        "title": "Empowering NOAs",
+        "description": "NOAs are the backbone of the Olympic movement, yet they often operate with limited resources, unclear governance structures, and minimal support systems. We will focus on practical governance tools, strategic planning support, volunteer management resources, and robust data and database systems that help NOAs operate more effectively, engage their members, and demonstrate their value to NOCs and the broader Olympic family.",
+        "examples": [
+          "Governance toolkits covering board structures, election processes, financial transparency, and compliance best practices",
+          "Strategic planning templates and workshops that help NOAs define clear goals and measure progress",
+          "Volunteer management guides and recruitment strategies to build stronger, more engaged NOA teams",
+          "Database and CRM systems that enable NOAs to track members, communicate effectively, and report impact"
+        ]
+      },
+      "financialSustainability": {
+        "title": "Empowering Financial Sustainability",
+        "description": "Financial sustainability is the foundation of long-term NOA success. We will provide fundraising and sponsorship models proven to work in the Olympic context, connect NOAs to grants and funding opportunities, facilitate partnerships with corporate, philanthropic, and institutional funders, and promote strategies that ensure NOAs can operate independently and sustainably for the long term.",
+        "examples": [
+          "Fundraising playbooks tailored to NOAs, including sponsorship pitch templates, donor cultivation strategies, and event fundraising models",
+          "Direct access to grants programs and funding opportunities through WOA partnerships",
+          "Partnership brokering that connects NOAs with corporate sponsors, foundations, and institutional funders aligned with Olympic values",
+          "Financial planning tools and benchmarking data that help NOAs build healthy, sustainable budgets"
+        ]
+      },
+      "technology": {
+        "title": "Empowering Through Technology",
+        "description": "Technology—especially AI—can transform how NOAs communicate, write proposals, manage data, and demonstrate impact. We will provide AI-powered tools for drafting funding applications, creating professional communications, and analyzing member engagement. We will also strengthen NOAs' digital presence through website templates, social media toolkits, and platforms that amplify their stories and successes.",
+        "examples": [
+          "AI-powered writing assistants for grant proposals, sponsorship pitches, and professional communications",
+          "Website and digital presence templates designed specifically for NOAs, with multilingual and mobile-first design",
+          "Social media toolkits and content calendars that help NOAs tell their stories and engage members",
+          "Data dashboards and analytics tools that track member engagement, project outcomes, and organizational health"
+        ]
+      },
+      "collaboration": {
+        "title": "Empowering Collaboration",
+        "description": "The Olympic movement is strongest when it works together. We will promote peace-building through Olympism, foster constructive collaboration between Olympians and Paralympians, strengthen cooperation within and between NOAs, and improve coordination between NOAs, NOCs, the WOA, and the IOC. Collaboration isn't just symbolic—it's practical. When we work together, we deliver better outcomes for everyone.",
+        "examples": [
+          "Peace-building initiatives that use the Olympic spirit to bridge divides and foster dialogue",
+          "Joint programs and events that bring Olympians and Paralympians together in shared purpose",
+          "Regional NOA networks that facilitate cross-border collaboration, knowledge-sharing, and collective advocacy",
+          "Clear, constructive communication channels between NOAs, NOCs, WOA, and IOC that reduce friction and increase alignment"
+        ]
+      }
+    },
+    "woaRole": {
+      "title": "WOA's Role: Enabler and Connector",
+      "description": "The WOA presidency isn't about control—it's about enablement. Our role is to listen to NOAs, understand their needs, and provide the tools, partnerships, and support that make success possible. We will clarify the WOA's role in relation to NOAs, ensuring boundaries are respected and collaboration is constructive. We will only pursue partnerships that deliver direct, measurable value to NOAs. And we will operate with transparency, accountability, and a relentless focus on practical results."
+    },
+    "footerCTA": {
+      "headline": "Ready to See How We'll Deliver?",
+      "ctaButton": "View Our Delivery Plan"
+    }
+  },
+  "howWeDeliver": {
+    "title": "How We'll Deliver",
+    "subtitle": "This isn't just talk. Here's how we ensure execution, accountability, and measurable results.",
+    "first100Days": {
+      "title": "First 100 Days Focus",
+      "intro": "We hit the ground running. Here are the concrete actions we will take in the first 100 days to establish momentum, build trust, and deliver early wins.",
+      "actions": [
+        {
+          "title": "Launch NOA Consultation Framework",
+          "description": "Establish regular, structured listening sessions with NOAs to understand priorities, pain points, and opportunities. This will shape our ongoing strategy."
+        },
+        {
+          "title": "Release First Toolkit Package",
+          "description": "Publish governance templates, fundraising playbooks, and strategic planning guides—ready to use, tested, and tailored to NOAs."
+        },
+        {
+          "title": "Activate Partnership Pipeline",
+          "description": "Initiate conversations with corporate sponsors, foundations, and institutional partners committed to delivering direct NOA value. No vanity deals—only partnerships that work."
+        },
+        {
+          "title": "Establish Clear Communication Cadence",
+          "description": "Set up predictable update cycles—monthly transparency reports, quarterly town halls, and a simple, accessible point of contact for every NOA."
+        },
+        {
+          "title": "Deliver Quick Wins",
+          "description": "Identify and execute 2-3 immediate, high-impact actions based on urgent NOA feedback—demonstrating that this presidency listens and acts."
+        }
+      ]
+    },
+    "toolsForNOAs": {
+      "title": "Tools NOAs Can Use",
+      "intro": "We don't just talk about support—we deliver it. Here are the practical resources we will provide.",
+      "commitment": "Every tool will be built with NOAs, tested by NOAs, and available in multiple languages.",
+      "tools": [
+        {
+          "title": "Governance Toolkits",
+          "description": "Board structures, election processes, financial transparency templates, compliance guides."
+        },
+        {
+          "title": "Fundraising Playbooks",
+          "description": "Sponsorship pitch decks, donor cultivation strategies, event fundraising models, grant application templates."
+        },
+        {
+          "title": "Strategic Planning Templates",
+          "description": "Goal-setting frameworks, progress tracking tools, impact measurement guides."
+        },
+        {
+          "title": "AI-Powered Writing Assistants",
+          "description": "Tools to draft funding proposals, professional communications, and social media content quickly and effectively."
+        },
+        {
+          "title": "Digital Presence Templates",
+          "description": "Website designs, social media toolkits, content calendars—multilingual and mobile-first."
+        },
+        {
+          "title": "Database and CRM Systems",
+          "description": "Member tracking, communication management, impact reporting platforms."
+        },
+        {
+          "title": "Best Practice Libraries",
+          "description": "Case studies, proven models, and examples from successful NOAs around the world."
+        }
+      ]
+    },
+    "partnerships": {
+      "title": "Partnerships and Deals",
+      "intro": "We will only pursue partnerships that deliver direct, measurable value to NOAs. No vanity. No distractions. Just results.",
+      "principles": [
+        {
+          "title": "NOA-First Filter",
+          "description": "Every potential partnership must answer the question: \"How does this help NOAs?\" If the answer isn't clear and direct, we don't pursue it."
+        },
+        {
+          "title": "Proven Partners",
+          "description": "We prioritize working with organizations that have a track record of delivering for the Olympic movement—corporate sponsors, foundations, and institutions aligned with Olympic values."
+        },
+        {
+          "title": "Transparency",
+          "description": "Every major partnership will be communicated to NOAs with clear details: what it delivers, how NOAs can access it, and how success will be measured."
+        },
+        {
+          "title": "No Exclusive Lockouts",
+          "description": "Partnerships should open doors for NOAs, not close them. We won't sign deals that limit NOAs' ability to pursue their own opportunities."
+        }
+      ],
+      "examplesTitle": "Examples of Value-Driven Partnerships:",
+      "examples": [
+        "Corporate sponsors providing funding, grants, or in-kind support directly to NOAs",
+        "Foundations offering capacity-building resources, training, and technical assistance",
+        "Technology providers delivering free or discounted platforms, tools, and AI services for NOA use",
+        "Educational institutions offering scholarships, executive training, and leadership development for Olympians"
+      ]
+    },
+    "communication": {
+      "title": "Communication and Accountability",
+      "intro": "You'll always know where we stand. Regular updates, predictable cadence, and clear points of contact.",
+      "tagline": "We don't just promise accountability—we build it into everything we do.",
+      "commitments": [
+        {
+          "title": "Monthly Transparency Reports",
+          "description": "Short, factual updates on what we've done, what's in progress, and what's next. No spin. Just facts."
+        },
+        {
+          "title": "Quarterly Town Halls",
+          "description": "Open Q&A sessions with NOA representatives—virtual, accessible, recorded, and translated."
+        },
+        {
+          "title": "Dedicated Points of Contact",
+          "description": "Every NOA will know exactly who to reach for governance questions, technical support, partnership inquiries, and strategic advice."
+        },
+        {
+          "title": "Measurable Progress Tracking",
+          "description": "Clear metrics for each priority area—we'll set targets, track progress, and report results publicly."
+        },
+        {
+          "title": "Rapid Response Mechanism",
+          "description": "Urgent issues get immediate attention. No bureaucracy. Just action."
+        }
+      ]
+    },
+    "footerCTA": {
+      "headline": "Ready to Work With a Team That Delivers?",
+      "ctaButton": "Meet the Team"
+    }
+  },
+  "teamPage": {
+    "title": "Meet the Olympians United Slate",
+    "subtitle": "Three leaders. One vision. Practical empowerment for NOAs.",
+    "intro": "Our team brings complementary expertise from three continents: Pernilla's Olympic governance and IOC experience, Lumi's professional sport business insight, and Thomas's financial and technology acumen. Together, we are committed to protecting the progress already made while moving the WOA forward in a fresh and practical new direction.",
+    "viewFullBio": "View Full Bio",
+    "reachUs": {
+      "title": "How to Reach Us",
+      "description": "We're here to listen. Contact us with questions, ideas, or to discuss how we can support your NOA."
+    }
+  },
+  "updatesPage": {
+    "title": "Campaign Updates",
+    "subtitle": "Latest news and milestones from the Olympians United campaign.",
+    "noUpdates": "No updates yet. Check back soon!",
+    "updates": [
+      {
+        "date": "January 3, 2026",
+        "headline": "Consultation Conversations Underway",
+        "body": "Over the past two weeks, our team has connected with NOA representatives from 15 countries to discuss priorities for the next presidency. The themes are clear: practical support, financial sustainability, and stronger collaboration. These conversations are shaping our delivery roadmap, and we're grateful for the insights shared.\n\nMore consultations scheduled this week. If your NOA would like to connect, reach out anytime."
+      }
+    ]
   }
 }
