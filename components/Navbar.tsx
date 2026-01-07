@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Medal, Menu, X, Globe } from "lucide-react";
+import { Medal, Menu, X, Globe, ChevronDown } from "lucide-react";
 import { LANGUAGES } from "../constants";
 import { useLanguage, useTranslation } from "../context/LanguageContext";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [langOpenMobile, setLangOpenMobile] = useState(false);
   const { language, setLanguage } = useLanguage();
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -76,10 +77,14 @@ const Navbar: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center space-x-1 text-sm bg-navy-light px-3 py-1 rounded hover:bg-navy-light/80 transition"
+                className="flex items-center space-x-2 text-sm bg-navy-light/60 border border-white/20 px-3 py-1.5 rounded-md hover:bg-navy-light/80 hover:border-white/30 transition-all"
+                aria-label="Select language"
+                title="Change language (5 available)"
               >
-                <Globe size={14} />
-                <span>{language}</span>
+                <Globe size={16} />
+                <span className="hidden lg:inline text-xs">Languages</span>
+                <span className="font-medium">{language}</span>
+                <ChevronDown size={12} className="opacity-70" />
               </button>
               {langOpen && (
                 <div className="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 text-navy-deep ring-1 ring-black ring-opacity-5">
@@ -114,6 +119,42 @@ const Navbar: React.FC = () => {
             >
               {t("nav.joinMovement")}
             </button>
+          </div>
+
+          {/* Mobile Language Selector - visible only on mobile */}
+          <div className="md:hidden relative flex items-center mr-3">
+            <button
+              onClick={() => setLangOpenMobile(!langOpenMobile)}
+              className="flex items-center text-sm bg-navy-light/60 border border-white/20 p-2 rounded-md hover:bg-navy-light/80 transition"
+              aria-label="Select language"
+            >
+              <Globe size={18} />
+            </button>
+            {langOpenMobile && (
+              <div className="absolute right-0 top-12 w-32 bg-white rounded-md shadow-lg py-1 text-navy-deep ring-1 ring-black ring-opacity-5 z-50">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      setLanguage(
+                        lang.code as
+                          | "EN"
+                          | "FR"
+                          | "ES"
+                          | "PT"
+                          | "RU"
+                          | "AR"
+                          | "CN",
+                      );
+                      setLangOpenMobile(false);
+                    }}
+                    className="block px-4 py-2 text-sm w-full text-left hover:bg-gray-100"
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
