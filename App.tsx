@@ -4,8 +4,16 @@ import { LanguageProvider } from "./context/LanguageContext";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./pages/HomePage";
 import CandidatePage from "./pages/CandidatePage";
+import MaintenancePage from "./components/MaintenancePage";
+
+// Toggle this to true to show maintenance page, false to show normal site
+const MAINTENANCE_MODE = true;
 
 const App: React.FC = () => {
+  if (MAINTENANCE_MODE) {
+    return <MaintenancePage />;
+  }
+
   return (
     <LanguageProvider>
       <BrowserRouter>
